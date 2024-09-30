@@ -1,0 +1,1852 @@
+/* @group Login Page */
+#ctl00_PageContent_Login1_PasswordTextBox {
+	padding:10px;
+	margin: 10px 10px 0 0;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	color:#888;
+	outline:none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	border: 1px solid #C8C8C8;
+}
+
+    #ctl00_PageContent_Login1_PasswordTextBox:focus {
+        border: 2px solid #4D97E0;
+    }
+
+input:focus {
+    border: 2px solid #4D97E0;
+}
+
+input[type=password]:focus {
+    border: 2px solid #4D97E0;
+}
+
+textarea:focus {
+    border: 2px solid #4D97E0;
+}
+
+select:focus {
+    border: 2px solid #4D97E0;
+}
+
+#ctl00_PageContent_Login1_PasswordLabel {
+    margin-top: 10px;
+}
+
+.password {
+	width: 155px;
+}
+
+.LoginCMPasswordChangeContentDiv {
+    margin-left: 15px;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.LoginCMPasswordChangeContentDivBorder{
+	margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.LoginCMPasswordChangeContentPassword{
+    text-align: left;
+    width: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size:12px;
+}
+
+.LoginCMPasswordChangeContentTextBox{
+    width: 230px;
+}
+
+.LoginCMPasswordChangeContentPasswordCol{
+    display: inline !important;
+    position: absolute !important;
+}
+
+.LoginCMPasswordChangeContentPasswordCol {
+    padding: 7px;
+    width: 350px !important;
+    text-align: left;
+    line-height: 15px;
+    background-color: #f5f4f4;
+    border: 1px solid #C8C8C8;
+    height: auto;
+    margin: 0 10px 0 125px;
+}
+
+.LoginCMPasswordChangeContentEndDiv{
+    float: right;
+    width: 28%;
+    margin-top: -62px;
+}
+
+/*.LoginCMPasswordChangeMainContent .PassLabel {
+	width: 230px;
+}
+
+.LoginCMPasswordChangeMainContent .PassInput {
+	width: 250px;
+
+}*/
+
+.LoginCMPasswordChangeMainContent .NoMargin {
+	width: 498px;
+	margin: auto!important;
+}
+
+.LoginCMPasswordChangeMainContent .button-containerADA {
+	width: 478px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 0 5px 0;
+}
+
+/*.LoginCMPasswordChangeMainContent .button-containerADA .ColorButton {
+	position: relative;
+	left: 50px;
+}*/
+
+div.LoginPasswordChangeContentPasswordCol {
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    padding: 5px;
+    text-align: left;
+    font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.LoginCollectQuestionsFieldSet {
+    width: 710px;
+    line-height: 25px;
+	margin: 0 auto !important;
+	padding: 10px 0 0!important;
+}
+
+.LoginCollectQuestionsFieldSet label {
+	width: 150px!important;
+}
+
+.LoginCollectQuestionsPrompt{
+    margin-left:215px;
+    white-space:nowrap;
+    display: none;
+    font-weight:600;
+    font-style: normal;
+    color:#ff0000;
+}
+
+.LoginCollectQuestionsPromptWidth{
+    width: 415px;
+    padding:10px 10px 10px 10px;
+}
+
+.LoginCollectQuestionsButton{
+    text-align:inherit;
+    padding-left:260px;
+}
+
+.LoginCollectQuestionsAswerLabel{
+    padding-left:33px;
+}
+
+.unselectedPageTab {
+	width: 20%;
+	display: table-cell;
+	border-style: none;
+	text-align: center;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-right-style: solid;
+	border-right-color: rgba(0, 0, 0, 0.1);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.unselectedPageTab:hover {
+	cursor: pointer;
+}
+
+#pageTab2.pageTab, #pageTab1.pageTab {
+	width: 20%;
+	display: table-cell;
+	border-style: none;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+	font-style: normal;
+	background-color: rgba(0, 0, 0, 0.05);
+	cursor: default;
+}
+
+#tabLink1:hover, #tabLink2:hover {
+	cursor: inherit;
+}
+
+#ctl00_PageContent_AvailableFundsDataElement_DataLabel_Panel, #ctl00_PageContent_AvailableFundsDataElement_DataInput_Panel {
+	display: none;
+}
+
+div.AlertEventEditDataListRight {
+    font-weight: 400;
+    font-style: normal;
+    width: 240px;
+	padding-left: 5px;
+}
+
+div.AlertEventEditDataListLeft {
+    font-weight: 400;
+    font-style: normal;
+    width: 200px;
+	padding-left: 10px;
+}
+
+/*.AlertEventEditDataList tbody tr td {
+	height: 25px;
+}*/
+
+/*.EventAlertsSubmitEmailButton {
+    margin: 5px;
+}*/
+
+.AlertEventEditGridHeading .AlertEventEditGridDivLeft {
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 0 5px 8px;
+    text-align:left;
+	width: 200px;
+	font-size: 12px;
+}
+
+.AlertEventEditGridHeading .AlertEventEditGridDivRight {
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 0 5px 5px;
+    text-align:left;
+	width: 240px;
+	font-size: 12px;
+}
+
+.AlertEventEditConfirmSmsTD .SMSAddressNumberAreaCode {
+    width:50px;
+}
+
+.AlertEventEditConfirmSmsTD .SMSAddressNumberPrefix {
+    width: 50px;
+}
+
+.AlertEventEditConfirmSmsTD .SMSAddressNumberLine {
+    width: 92px;
+}
+
+.ModernRightSubmitButton{
+    float:right;
+}
+
+.ModernRightCancelButton{
+    float:right;
+    right:100px;
+}
+
+.ModernCancelButton{
+    right:80px;
+    position:relative;
+}
+
+.ModernSubmitButton{
+    left:80px;
+    position:relative;
+}
+
+.LoginTransferToColdFusionModernized{
+    text-align:center;
+}
+
+.LoginMultiFactorAuthModernized{
+    text-align:center;
+	padding-top: 0;
+    padding-bottom: 10px;
+}
+
+
+/*.ChallegeQuestionsSubmitButton{
+    left:255px;
+    position:relative;
+}*/
+
+/*.ChallangeQuestionsText{
+	padding: 0 0 10px 98px;
+	margin: auto !important;
+	width: 650px;
+}*/
+
+.ChallengeQuestionsContent .button-containerADA {
+    margin: auto;
+	width: 530px;
+	text-align: right;
+	padding: 10px 0;
+}
+
+/*.ChallengeQuestionsContent .button-containerADA .StandardButton {
+	position: relative;
+	left: 7px;
+}*/
+
+.ChallengeQuestionFieldSet .QuestionLabel {
+	padding-right: 8px;
+	margin-left: -4px;
+}
+
+.ChallengeQuestionFieldSet input {
+	width: 465px;
+}
+
+.ChallengeQuestionFieldSet .ChallengeQuestionAnswerRow {
+	padding-bottom: 10px;
+}
+
+.ChallengeQuestionFieldSet aria-label {
+	background-color: #f45a5a;
+}
+
+.ChallengePhoneMainContentDiv .derivedColor {
+	width: 500px;
+	margin: auto;
+	padding-left: 45px;
+	padding-bottom: 20px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.ChallengePhoneDiv1 {
+	width: 500px;
+	margin: auto;
+}
+
+.ChallengePhoneDiv2 {
+	width: 500px;
+	margin: auto;
+	padding-left: 0!important;
+	position: relative;
+	left: 25px;
+}
+
+.ChallengePhoneMainContentDiv .button-containerADA {
+	width: 500px;
+	margin: auto;
+	text-align: right;
+	padding-top: 15px;
+}
+
+.LoginContainer .HeaderRange {
+	margin-top: 8px;
+    white-space: nowrap;
+    width: auto;
+}
+
+.LoginContainer .row {
+	width: 900px;
+}
+
+.LoginContainer .six.columns:nth-child(1) {
+	width: 375px;
+}
+
+.LoginContainer .six.columns:nth-child(2) {
+	width: 525px;
+}
+
+/*.LoginButtonContainerDiv {
+    padding-left: 395px;
+}*/
+
+.LoginContainer .LoginButtonContainerDiv {
+	width: 900px;
+	margin: -7px auto 0;
+	padding: 0 300px 5px 0;
+	text-align: right;
+}
+
+.LoginContainer .NoMargin {
+	padding: 10px 0 0;
+	margin: 0;
+}
+
+.LoginSelfResetLinkButton {
+    display: block;
+	padding-bottom: 0;
+	text-align: right;
+    margin-left: 80% ;
+}
+
+.LoginPasswordSelfResetDiv {
+	display: none;
+}
+
+.LoginPWSelfReset .row {
+	width: 900px;
+}
+
+.LoginPWSelfReset .row.LoginPWSelfResetRow, .LoginPWSelfReset .row .LoginPWSelfResetUnlock {
+	padding-top: 5px;
+}
+
+.LoginPWSelfReset .six.columns:nth-child(1) {
+	width: 375px;
+}
+
+.LoginPWSelfReset .six.columns:nth-child(2) {
+	width: 525px;
+}
+
+.LoginPWSelfReset .whatsThis {
+	margin-left: 10px;
+}
+
+.LoginPWSelfReset .NoMargin {
+	padding-bottom: 3px;
+}
+
+.LoginPWSelfReset .row input {
+	width: 243px;
+}
+
+.LoginPWSelfReset .button-containerADA {
+	padding-top: 0;
+	width: 900px;
+	margin: auto;
+}
+
+.LoginPasswordSelfResetButton {
+	position: relative;
+	left: 172px;
+	display: table-cell;
+}
+
+.LoginPasswordSelfResetDivTableCell {
+	display: table-cell;
+}
+
+.LoginEmailSubjectDivTableCell {
+	display: table-cell;
+	padding-top: 2px;
+}
+
+div.LoginWatermarkDiv {
+	border: 0;
+	color: #484848;
+}
+
+div.LoginWatermarkDivTableImage {
+    width: 50%;
+}
+
+div.LoginWatermarkDivTableImageLabel {
+    vertical-align:top;
+    padding-top: 14px;
+    width: 220px;
+    display:block;
+	margin-left: -74px;
+	height: auto;
+}
+
+.LoginContainer .jha-user-watermark img {
+	width: 75px;
+	margin-top: 10px;
+	margin-right: 81px;
+}
+
+div.jha-user-watermark img {
+	width: 75px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 8px;
+}
+
+.LoginTextBox {
+    padding-right: 0px;
+    font-weight: normal;
+    font-style: normal;
+    color: #484848;
+}
+.LoginIdTextBox,
+.LoginPwdTextBox
+{
+    width: 216px;
+}
+
+.LoginWelcomeLiteralDiv {
+	padding-bottom: 8px;
+}
+
+div#WelcomeMessageDiv.welcome-message {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+/* Login CM */
+.LoginCMLoginButtonWrapper .LoginCMLoginButton
+{
+    margin-right: -400px;
+}
+.LoginCMLoginIDWrapper
+{
+    margin-bottom: 10px;
+}
+
+/* Login Security Features */
+div.LoginSecurityConfirmationButtonDiv {
+    padding-left: 300px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.LoginSecurityFeaturesCenterText {
+    width: 425px;
+    margin: 0 auto !important;
+    padding: 0 0 15px 0;
+    margin-left: 38%;
+    word-wrap: break-word;
+}
+
+/* Login Collect Questions */
+.LoginCollectPersonalQuestionsSelectText {
+    padding-left: 157px;
+    width: 710px;
+    margin: auto;
+    padding-right: 80px;
+    word-wrap: break-word;
+}
+
+.LoginCollectQuestionsButtonContainer {
+	width: 710px;
+	margin: auto;
+	text-align: right!important;
+	padding-right: 80px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+.LoginCollectQuestionsDropDown
+{
+    width: 475px !important;
+}
+    .LoginCollectQuestionsDropDown:focus {
+        border: 2px solid #4D97E0 !important;
+    }
+
+
+div.ui-datepicker {
+    width: 240px;
+}
+
+/*ENROLL DISCLOSURE*/
+.OnlineEnrollmentAgreementDiv1 .infoPanel {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #C8C8C8 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.OnlineEnrollmentAgreementDiv1 {
+	margin-bottom: 0!important;
+}
+
+.OnlineEnrollmentAgreementDiv3 {
+	width: 500px;
+	margin: auto!important;
+	padding: 5px 0;
+	text-align: right;
+	position: relative;
+	left: 5px;
+}
+
+/*ENROLL VERIFY/PERSONAL INFO*/
+.EnrollVerifyInfoContent .split_container, .EnrollPersonalInfoContent .split_container {
+	margin: auto;
+	padding-bottom: 0;
+}
+
+/*.EnrollVerifyInfoContent .split_container .left, .EnrollPersonalInfoContent .split_container .left {
+	width: 165px;
+}*/
+
+.EnrollVerifyInfoContent .split_container label, .EnrollPersonalInfoContent .split_container label {
+	padding: 3px 10px 0 0;
+	height: 35px;
+	margin-top: 6px;
+}
+
+.EnrollVerifyInfoContent .split_container .right, .EnrollPersonalInfoContent .split_container .right {
+	width: 200px;
+	float: left;
+}
+
+.EnrollVerifyInfoContent .split_container input, .EnrollPersonalInfoContent .split_container input {
+	margin-top: 6px;
+}
+
+.EnrollVerifyInfoContent .PageSection {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.EnrollVerifyInfoContent .button-containerADA {
+	width: 410px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.EnrollPersonalInfoContent .subheading {
+    padding-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #C8C8C8;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+}
+
+.EnrollPersonalInfoContent .split_container #ctl00_PageContent_InitialTextBox {
+	width: 100px!important;
+}
+
+.EnrollPersonalInfoContent .split_container #ctl00_PageContent_StateDropDownList {
+	width: 200px!important;
+	margin-left: 0;
+	margin-bottom: 0;
+	margin-top: 6px;
+	height: 34px;
+}
+
+.EnrollPersonalInfoContent .split_container #ctl00_PageContent_ZipCodeTextBox {
+	width: 100px!important;
+}
+
+.EnrollPersonalInfoContent .buttons {
+	width: 430px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.EnrollPersonalInfoContent .buttons input {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#enrollmentConfirmation, .OnlineEnrollmentConfirmationAutoEnrollText {
+	border-style: none;
+	width: 400px;
+	margin: auto;
+	height: auto;
+	padding: 10px 0 0;
+}
+
+.OnlineEnrollmentConfirmationButtons {
+	width: 400px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+/*ONLINE AGREEMENT*/
+.OnlineAgreementContent .subheading, .OnlineAgreementContent .enrollmentSubTitle, .OnlineAgreementContent .LoginOnlineAgreementDiv, .OnlineAgreementContent .LoginOnlineAgreementDiv2, .LoginOnlineAgreementButtonDiv {
+	width: 500px;
+	margin: auto;
+}
+
+.OnlineAgreementContent .subheading {
+	padding-top: 5px;
+}
+
+.OnlineAgreementContent .enrollmentSubTitle {
+	padding-bottom: 2px;
+	padding-top: 10px;
+	font-size: 11px;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.OnlineAgreementContent .infoPanel {
+    border: 1px solid #C8C8C8 !important;
+    overflow-y: auto;
+}
+
+.OnlineAgreementContent .LoginOnlineAgreementDiv3 {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.LoginOnlineAgreementButtonDiv {
+	padding-bottom: 10px;
+	margin-top: -15px;
+    text-align: right;
+}
+
+.LoginOnlineAgreementButtonDivTableCell {
+    padding-bottom: 10px;
+    margin-top: -15px;
+    display: table-cell;
+}
+
+/*CHANGE PIN - REQUIRED*/
+.RequiredChangePINContent .enrollmentSubTitle {
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+    font-size: 8px;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/*.RequiredChangePINContent .LoginPasswordChangeMarginLeft {
+	margin: auto!important;
+	text-align: left;
+}*/
+
+.RequiredChangePINContent .LoginPasswordChangeMarginLeft .LabelCol {
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.RequiredChangePINContent .LoginPasswordChangeMarginLeft .LabelCol label {
+	font-weight: 600!important;
+	font-style: normal;
+}
+
+.RequiredChangePINContent .LoginPasswordChangeMarginLeft .InputCol {
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.RequiredChangePINContent .LoginPasswordChangeMarginLeft .LoginPasswordChangeTextBox, input.LoginPasswordChangeNewAliasTextBox {
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.LoginPasswordChangePasswordNoteLabel, .LoginPasswordChangeNewAliasNoteLabel {
+	color: #303030!important;
+}
+
+.LoginPasswordChangePasswordNoteDiv {
+    margin-left: 17px !important;
+    width: 370px !important;
+    background-color: #f5f4f4;
+    top: -39px;
+    padding: 5px 5px;
+    border: 1px solid #C8C8C8;
+}
+
+.LoginPasswordvalidateerror {
+    background-color: rgba(204,16,16,0.04) !important;
+    border: 1px solid #CC1010 !important;
+}
+
+.RequiredChangePINContent {
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+.enrollmentSubTitle.LoginPasswordChangeAliasSpacing {
+    margin-top: 50px;
+    padding-right: 210px;
+}
+
+.LoginPasswordMovedLeft {
+    padding-right:150px !important;
+}
+
+#ctl00_PageContent_CurrentAliasHeadingLabel {
+	color: #484848;
+	padding-right: 4px;
+}
+div.LoginPasswordChangeNewAliasDiv {
+    width:auto;
+}
+.LoginPasswordChangeNewAliasNoteDiv {
+	width: 370px!important;
+	background-color: #f5f4f4;
+	border: 1px solid #e2e3e3;
+	padding: 5px 8px !important;
+	margin-left: 17px;
+	margin-top: 0px;
+}
+
+/*.RequiredChangePINContent .button-containerADA {
+    margin: 0;
+    padding: 0 0 7px 0;
+    margin-right:-100px;
+}*/
+
+.RequiredChangePINContent .button-containerADA {
+    width: 225px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 0 7px 0;
+    word-wrap: break-word;
+}
+
+.RequiredChangePINContent .CenteringDiv {
+    margin-right: 200px;
+    word-wrap: break-word;
+}
+/*.AuthPinPassChangeButton{
+    margin-right:385px !important;
+}*/
+
+.LoginCollectQuestionsMainContainer .subheading {
+	width: 600px;
+	margin: auto!important;
+	text-align: left;
+	padding-left: 100px;
+	padding-right: 35px;
+}
+
+.LoginCollectQuestionsConfirmFieldSet {
+	width: 600px;
+	margin: auto!important;
+}
+
+.LoginCollectQuestionsConfirmFieldSet .questionLabel {
+	width: 150px;
+	font-weight: 600;
+	font-style: normal;
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+.LoginCollectQuestionsConfirmQuestion, .LoginCollectQuestionsConfirmAnswer {
+	width: 400px!important;
+	font-weight: 400!important;
+	font-style: normal;
+	text-align: left!important;
+	padding: 0!important;
+	margin-top: 1px;
+}
+
+.CollectPhoneNumbersMainDiv select {
+	height: 35px!important;
+	margin-right: 10px;
+	width: 100px;
+}
+
+.CollectPhoneNumbersMainDiv input {
+	height: 35px!important;
+	margin-bottom: 14px;
+	margin-right: 4px;
+	margin-left: 1px;
+}
+
+.CollectPhoneNumbersMainDiv .extentionLabel {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.CollectPhoneNumbersMainDiv .extentionLabel b {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.CollectPhoneNumbersMainDiv #ctl00_PageContent_ddlOptional1PhoneType {
+	margin-top: 3px;
+}
+
+.CollectPhoneNumbersMainDiv h2 {
+	margin-bottom: 2px!important;
+}
+
+.CollectPhoneContent p.subheading.derivedColor {
+	width: 423px;
+	margin: auto;
+}
+
+/*.CollectPhoneNumbersMainDiv .button-containerADA {
+	text-align: right;
+}*/
+
+/* Login */
+.LoginbugFixLabel {
+    display: none;
+}
+
+input.LoginbugFixInput {
+    display: none;
+}
+
+.LoginWelcomeMessage {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.LoginWatermark {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.LoginDivTableFullWidth {
+    display:table;
+    width: 100%;
+}
+
+.LoginDivTableRow {
+    display:table-row;
+}
+
+.LoginClearFix {
+    clear:both;
+}
+
+.LoginFormDiv {
+    padding: 10px;
+}
+
+.LoginIdLabel {
+    float:right;
+    line-height:25px;
+}
+
+.LoginPasswordLabel {
+    float:right;
+    line-height:25px;
+}
+
+.LoginBrowserLabelDiv {
+    width:100%;
+    text-align: center;
+}
+
+.LoginBrowserLabelSpan {
+    width: 50%;
+    margin: 0 auto;
+    text-align:left;
+}
+
+.LoginLinksLabelDiv1 {
+    width: 100%;
+    text-align: left;
+}
+
+.LoginLinksLabelDiv2 {
+    text-align: left;
+}
+
+.LoginVerisign {
+    text-align: right;
+    padding-top: 15px;
+}
+
+.LoginPINAgreementModal {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.LoginModalVerbiage {
+    text-align: left;
+    width: 500px;
+}
+
+.LoginButtonContainer {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.LoginPinAgreementButtonGroup {
+    text-align: left;
+    width: 500px;
+}
+
+.LoginPinAgreementDivTable {
+    display: table-cell;
+    vertical-align:middle;
+    padding-left:5px;
+}
+
+.LoginPinAgreementAgreeLbl {
+    display: table-cell;
+    padding-left:5px;
+}
+
+.LoginPinAgreementGroupDivRow {
+    display: table-row;
+    height:10px;
+}
+
+.LoginPinAgreementGroupDivCell {
+    display: table-cell;
+    vertical-align:middle;
+    padding-left:5px;
+}
+
+.LoginPinAgreementDisagree {
+    display: table-cell;
+    padding-left:5px;
+}
+
+.AuthenticationCit2CtaImage{
+    float:right;
+}
+
+.LoginCollectQuestionsDiv{
+    margin-bottom:30px;
+}
+
+.LoginCollectQuestionsLabel{
+    white-space:nowrap;
+    text-align:left;
+    padding-left: 32px;
+}
+
+.LoginCollectQuestionsButtons{
+    width:600px;
+    margin:0 auto;
+    text-align:right;
+}
+
+.LoginEmailPromptEmailHeader {
+	font-weight: bold;
+	font-style: normal;
+	padding-left: 10px;
+	padding-top: 5px;
+    margin: auto !important;
+    text-align:left;
+    font-size:small;
+    padding-bottom:10px;
+}
+
+.LoginEmailPromptEmailHeader, .LoginEmailPromptContent .FormFieldset, .LoginEmailPromptContent .button-containerADA {
+	width: 450px;
+	margin: auto;
+}
+
+.FormFieldsetdiv1, .FormFieldsetdiv2, .FormFieldsetdiv3 {
+    width: 600px;
+    margin: auto;
+}
+
+.EsiPDFError {
+    color: red;
+    display: inline;
+    font:normal!important;
+    width:auto !important;
+    padding-left:1px !important;
+}
+.LoginEmailPromptContent .FormFieldset label {
+	width: 150px;
+    text-align:left;
+}
+
+.LoginEmailPromptContent .FormFieldset {
+	padding-bottom: 0;
+}
+
+.LoginEmailPromptContent .button-containerADA {
+	text-align: right;
+	padding-right: 34px;
+	padding-top: 0;
+}
+
+.LoginEmailPromptPasswordQuestion{
+    width:600px;
+}
+.LoginEmailPromptPasswordAnswer{
+    width:600px;
+}
+
+.LoginCellPhonePromptHeader {
+	font-weight: 600;
+	font-style: normal;
+	padding-left: 34px;
+	padding-top: 5px;
+    margin: auto !important;
+}
+.LoginCellPhonePromptHeader, .LoginCellPhonePromptContent .FormFieldset, .LoginCellPhonePromptContent .button-containerADA {
+	width: 450px;
+	margin: auto;
+}
+
+.LoginCellPhonePromptContent .FormFieldset label {
+	width: 160px;
+}
+
+.LoginCellPhonePromptContent .FormFieldset {
+	padding-bottom: 0;
+}
+
+.LoginCellPhonePromptContent .button-containerADA {
+	text-align: right;
+	padding-right: 34px;
+	padding-top: 0;
+}
+
+.LoginNewUserSetupDiv{
+    margin-bottom:30px;
+}
+
+.LoginNewUserSetupFieldsetDiv1{
+    margin:0;
+}
+
+.LoginNewUserSetupFieldsetDiv1Label{
+    text-align:left;
+    width:auto;
+}
+
+.LoginNewUserSetupCurrentPasswordTextBox{
+    width:244px;
+}
+
+.LoginNewUserSetupNewPasswordNoteLabel{
+    color:blue;
+    width:470px;
+    text-align:left;
+    vertical-align:top;
+    height:20px;
+    line-height:15px;
+}
+
+.LoginNewUserSetupCurrentAliasLabel{
+    text-align:left;
+}
+
+.LoginNewUserSetupVerisignPlaceHolder{
+    text-align:right;
+}
+
+.OnlineEnrollmentConfirmationConfirmationLabel{
+    text-align:left;
+    font-size:130%;
+}
+
+.OnlineEnrollmentConfirmationAutoEnrollText{
+    margin:15px 30px 15px 30px;
+}
+
+.OnlineEnrollmentConfirmationButtons{
+    margin: -5px 15px 15px 0;
+}
+
+.OnlineEnrollmentEmailConfirmConfirmationText{
+    margin: 15px 30px 15px 30px;
+}
+
+.OnlineEnrollmentSecurityPageSectionDiv{
+    margin: 5px 5px 11px;
+	text-align: center;
+}
+
+.OnlineEnrollmentSecuritySSNValidatorGroupDiv{
+    white-space:nowrap;
+}
+
+.OnlineEnrollmentEmailConfirmErrorMessageLabel{
+    color:red;
+}
+
+.OnlineEnrollmentEmailConfirmConfirmationTextP1{
+    margin: 2% 20%;
+    text-align:center;
+}
+
+.OnlineEnrollmentEmailConfirmConfirmationTextP2{
+    margin: 1% 20%;
+    text-align:center;
+}
+
+.OnlineEnrollmentEmailConfirmConfirmationTextP3{
+    margin: 1% 22%;
+    text-align:center;
+}
+
+.OnlineEnrollmentEmailConfirmConfirmationTextP4{
+    margin: 2% 22%;
+    text-align:center;
+}
+
+.OnlineEnrollmentSecurityBizTypeLabel {
+    padding-left:15px;
+}
+.OnlineEnrollmentSecurityAccountTypeDropDown
+{
+    height: 34px !important;
+}
+.EnrollVerifyInfoContent .split_container span.OnlineEnrollmentSecurityBizTypeRadio label {
+    margin-top:0;
+}
+
+.AuthLoginEmailButtonContainer {
+    text-align: right;
+	padding-right: 40px!important;
+    padding: 0 49px;
+}
+
+.AuthEmailLogin{
+    width:245px;
+}
+
+.AuthCellPhoneLogin{
+    width:245px;
+}
+
+.LoginCollectQuestionsMainContainer .subheading {
+	width: 600px;
+	margin: auto!important;
+	text-align: left;
+	padding-left: 100px;
+	padding-right: 35px;
+}
+
+.LoginCollectQuestionsConfirmFieldSet {
+	width: 600px;
+	margin: auto!important;
+}
+
+.LoginCollectQuestionsConfirmFieldSet .questionLabel {
+	width: 150px;
+	font-weight: 600;
+	font-style: normal;
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+.LoginCollectQuestionsConfirmQuestion, .LoginCollectQuestionsConfirmAnswer {
+	width: 400px!important;
+	font-weight: 400!important;
+	font-style: normal;
+	text-align: left!important;
+	padding: 0!important;
+	margin-top: 1px;
+}
+
+.CollectPhoneNumbersMainDiv select {
+	height: 35px!important;
+	margin-right: 10px;
+	width: 100px;
+}
+
+.CollectPhoneNumbersMainDiv input {
+	height: 35px!important;
+	margin-bottom: 15px;
+	margin-right: 4px;
+	margin-left: 1px;
+}
+
+.CollectPhoneNumbersMainDiv .extentionLabel {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.CollectPhoneNumbersMainDiv .extentionLabel b {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.CollectPhoneNumbersMainDiv #ctl00_PageContent_ddlOptional1PhoneType {
+	margin-top: 3px;
+}
+
+.CollectPhoneNumbersMainDiv h2 {
+	margin-bottom: 2px!important;
+}
+
+.CollectPhoneContent p.subheading.derivedColor {
+    width: 423px;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+.CollectPhoneNumbersMainDiv .button-containerADA {
+	text-align: right;
+}
+
+.LoginWelcomeLiteralDiv {
+	padding-bottom: 8px;
+}
+
+div#WelcomeMessageDiv.welcome-message {
+    border-bottom: 1px solid #C8C8C8;
+}
+
+/* Login CM */
+.LoginCMLoginButtonWrapper .LoginCMLoginButton {
+    margin-right: -400px;
+}
+
+.LoginCMLoginIDWrapper {
+    margin-bottom: 10px;
+}
+
+/* Login Security Features */
+div.LoginSecurityConfirmationButtonDiv {
+    padding-left: 300px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.LoginSecurityFeaturesCenterText {
+    width: 425px;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    word-wrap: break-word;
+}
+
+.LoginSecurityConfirm .subheading.derivedColor {
+    width: 400px;
+    margin: auto;
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+/* Login Collect Questions */
+.LoginCollectPersonalQuestionsSelectText {
+    padding-left: 157px;
+    width: 710px;
+    margin: auto;
+    padding-right: 80px;
+    word-wrap: break-word;
+}
+
+.LoginCollectQuestionsButtonContainer {
+	width: 706px;
+	margin: auto;
+	text-align: right!important;
+	padding-right: 80px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+.LoginTextBox {
+    padding-right: 0px;
+    font-weight: normal;
+    font-style: normal;
+    color: #484848;
+}
+
+.LoginIdTextBox, .LoginPwdTextBox {
+    width: 216px;
+}
+
+.subheading.ChallangeQuestionsText, .ChallangeQuestionsText {
+    padding: 5px 0 10px 120px;
+    margin: auto;
+    width: 650px;
+    word-wrap: break-word;
+}
+
+.PassCardConfirmTable{
+    padding: 0;
+    border-spacing:0;
+    border:0;
+}
+
+.PassCardConfirmStatusLabelGreen{
+    color:green;
+}
+
+.PassCardConfirmStatusLabelRed{
+    color:red;
+}
+
+.PassCardConfirmDatagrid{
+    border-collapse:collapse;
+}
+
+.PassCardConfirmDatagrid  tr td {
+	padding: 0 10px;
+}
+
+.PassCardListdatagrid{
+    border-collapse:collapse;
+}
+
+.PassCardListdatagrid  tr td {
+	padding: 0 10px;
+}
+
+.PassCardListTable tr td:nth-child(1) {
+	width: 14%;
+}
+
+.PassCardListTable tr td:nth-child(2), .PassCardListTable tr td:nth-child(3), .PassCardListTable tr td:nth-child(4) {
+	width: 20%;
+}
+
+.PassCardListTable tr td:nth-child(5), .PassCardListTable tr td:nth-child(6), .PassCardListTable tr td:nth-child(7) {
+	width: 9%;
+}
+
+.PassCardListdatagrid .BillShrinkPager td, .PassCardConfirmDatagrid .BillShrinkPager td {
+    background-color: #ffffff;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 1px solid #C8C8C8 !important;
+}
+
+.PassCardListButtonContainer, .PassCardConfirmButtonBar {
+	padding: 0 3px 0 0;
+	margin: -39px 0 0;
+	text-align: right;
+}
+
+.PasswordChangeTable{
+    border-spacing:0;
+}
+
+.PasswordChangeTableTD1{
+    font-weight:600;
+    font-style: normal;
+    color:red;
+}
+.PasswordChangeRetailTable{
+    border-spacing:2px;
+    margin:40px 0 0 0;
+}
+
+.PasswordChangeRetailTableTD1{
+    width:50px;
+}
+
+.PasswordChangeTableTDNowrap{
+    white-space:nowrap;
+}
+
+.PasswordChangeRetailTableTD3{
+    vertical-align:top;
+}
+
+.PasswordChangeCMTable{
+    border-spacing:2px;
+    width:50%;
+    margin:40px 0 0 0;
+}
+
+.PasswordChangeCMTableTD1{
+    white-space:nowrap;
+    width:20%;
+}
+
+.PasswordChangeButtonDiv{
+    padding-top:5px;
+}
+
+.PasswordChangeClearDiv{
+    clear:both;
+}
+
+.CollectPhoneNumbersMainDiv{
+    text-align: center;
+}
+.CollectPhoneNumbersSubDiv{
+    margin: 10px auto 0; display: table;
+}
+.CollectPhoneNumbersSubH2{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CollectPhoneNumbersSubDivRow{
+    display: table-row;
+    text-align: left;
+    font-weight: bold;
+}
+
+div.CollectPhoneNumbersSubDivRowLeft{
+    display: table-row;
+    text-align: left;
+    height: 30px;
+}
+.CollectPhoneNumbersSubDivRowCell{
+    text-align: right;
+    display: table-cell;
+    padding-right: 5px;
+}
+.CollectPhoneNumbersSubDivCellNumber{
+    display: table-cell;
+    padding-right: 5px;
+}
+.CollectPhoneNumbersDivRow{
+    display: table-row;
+}
+.CollectPhoneNumbersDivDropDown{
+    height:22px;
+    margin-bottom:3px;
+}
+.CollectPhoneNumbersDivTextBox{
+    margin-top:3px;
+    width:40px;
+}
+.CollectPhoneNumbersDivTextBox64{
+    margin-top:3px;
+    width:64px;
+}
+.CollectPhoneNumbersDivTextBox50{
+    margin-top:3px;
+    width:50px;
+}
+.CollectPhoneNumbersSecondDiv{
+    margin: 10px auto 0;
+    display: table;
+}
+div.CollectPhoneNumbersConfirmDiv{
+    margin: 10px auto 10px;
+    display: table;
+}
+.CollectPhoneNumbersMainDiv .button-containerADA.ConfirmPhoneChangeDiv
+{
+    width: 550px;
+    margin: 10px auto;
+    padding-right: 20px;
+}
+/* Login Security Features */
+div.LoginSecurityConfirmationButtonDiv {
+    padding-left: 300px;
+}
+.LoginSecurityFeaturesCenterText {
+    width: 425px;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    word-wrap: break-word;
+}
+.LoginCollectPersonalQuestions {
+    padding-left: 670px !important;
+}
+
+.FormFieldset .LoginNewCmAliasNewSSOIDLabel {
+    width:290px;
+}
+
+.LoginNewUserSetupNewAliasTextBox{
+    width:244px;
+}
+.LoginCMPasswordChangeButtonContainer {
+    margin-right:25px;
+}
+
+.FormFieldset.LoginNewCmAliasFormFieldset {
+    margin: -10px auto 0 auto;
+    width: 867px;
+}
+
+.LoginNewCmAliasMainContent .LoginNewCmAliasInfoLabelP {
+    margin: 10px auto 0 auto;
+    padding: 0;
+    width: 267px;
+}
+.LoginNewCmAliasInfoLabelP .LoginNewCmAliasInfoLabel {
+    margin-left:0;
+}
+.LoginNewCmAliasMainContent .LoginNewCmAliasPasswordLabelDiv {
+    width: 255px;
+    margin: 5px 0 10px 280px;
+}
+
+.LoginNewCmAliasMainContent .FormFieldset .LoginNewCmAliasPasswordLabel {
+    color: inherit;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input.CollectPhoneNumbersDivTextBoxWidth40 {
+    width:45px;
+}
+input.CollectPhoneNumbersDivTextBoxWidth48,
+input.CollectPhoneNumbersDivTextBoxWidth49,
+input.CollectPhoneNumbersDivTextBoxWidth50 {
+    width:55px;
+}
+.CollectPhoneNumbersButtonDiv input.ColorButton {
+    margin-right: 0;
+}
+.CollectPhoneNumbersEmptyDiv {
+   display:none;
+}
+
+
+
+.CommercialLoginScreenLabel {
+    text-align:center;
+    padding-bottom:10px;
+}
+.CommercialLoginFieldSet {
+    padding: 15px 0 0 0;
+}
+.CommercialLoginFieldSet .row {
+    width: 700px;
+}
+.CommercialLoginFieldSet .columns:nth-child(1) {
+    width: 280px;
+}
+.CommercialLoginFieldSet .columns:nth-child(2) {
+    width: 420px;
+}
+.CommercialLoginFieldSet .columns label,
+.CommercialLoginWatermarkLabel {
+    float: right;
+    padding: 5px 0 0 0;
+    font-weight: 400;
+}
+.CommercialLoginFieldSet input
+{
+    width: 245px !important;
+}
+.CommercialLoginButtonDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    text-align: right;
+    padding: 0 166px 10px 0;
+}
+.CommercialLoginWatermarkPlaceholderCenter {
+    text-align:center;
+    font-weight:normal;
+}
+.CommercialLoginWatermarkPlaceholderRight {
+    text-align:right;
+}
+.CommercialLoginWatermarkTable {
+    display:table;
+    width:100%;
+}
+.CommercialLoginWatermarkRow {
+    display:table-row;
+}
+.jha-user-watermark.CommercialLoginWatermarkRowDiv {
+    display:table-cell;
+    width:50%;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.CommercialLoginDiv .jha-user-watermark img {
+    width: 75px;
+    margin-top: 10px;
+    margin-right: 77px;
+}
+div.CommercialLoginWatermarkLabelDiv {
+    vertical-align: top;
+    padding: 14px 0 0 5px;
+    width: 220px;
+    display: block;
+    margin-left: -70px;
+    height: auto;
+}
+/*.CommercialLoginFieldSet .columns .CommercialLoginPasswordLabel {
+    padding-top:14px;
+}*/
+.CommercialLoginFieldSet .DataLabel {
+    margin-top: 8px;
+    display: block;
+    line-height: inherit;
+}
+input[type=password].CommercialLoginPasswordTextbox {
+    margin-bottom:10px;
+}
+input.CollectPhoneNumbersDivTextBoxWidth40
+{
+    width: 44px;
+}
+input.CollectPhoneNumbersDivTextBoxWidth50
+{
+    width: 55px;
+}
+.CollectPhoneNumbersConfirmDiv .button-containerADA input
+{
+    margin-right: 0 !important;
+}
+.CollectPhoneNumberSpaceDiv
+{
+    display: none;
+}
+.CommercialLoginIdTextLabel {
+    margin-bottom: 12px;
+}
+div.CommercialLoginWatermarkDiv {
+    border:0;
+}
+.FormFieldset .LoginNewCmAliasNewSSOIDLabel {
+    width:290px;
+}
+
+.LoginNewUserSetupNewAliasTextBox{
+    width:244px;
+}
+.LoginCMPasswordChangeButtonContainer {
+    margin-right:25px;
+}
+
+.FormFieldset.LoginNewCmAliasFormFieldset {
+    margin: -10px auto 0 auto;
+    width: 867px;
+}
+
+.LoginNewCmAliasMainContent .LoginNewCmAliasInfoLabelP {
+    margin: 10px auto 0 auto;
+    padding: 0;
+    width: 330px;
+    padding-left: 31px;
+    margin-bottom: 20px;
+}
+.LoginNewCmAliasInfoLabelP .LoginNewCmAliasInfoLabel {
+    margin-left:0;
+}
+.LoginNewCmAliasMainContent .LoginNewCmAliasPasswordLabelDiv {
+    width: 255px;
+    margin: 5px 0 10px 280px;
+}
+.LoginNewCmAliasTableCellDiv2.LoginNewCmAliasIDNoteDiv {
+    width: 370px;
+    margin: 0 0 3px 10px;
+    background-color: #F5F5F5;
+    padding: 5px;
+    border: 1px solid #C8C8C8;
+    display: block;
+}
+.LoginNewCmAliasTableCellDiv2.LoginNewCmAliasPasswordNoteDiv {
+    width: 370px;
+    margin: 0 0 0 10px;
+    background-color: #F5F5F5;
+    padding: 5px;
+    border: 1px solid #C8C8C8;
+    display: block;
+}
+.LoginNewCmAliasTableCellDiv2.LoginNewCmAliasPasswordNoteDiv span, .LoginNewCmAliasTableCellDiv2.LoginNewCmAliasIDNoteDiv span {
+    color: inherit;
+    font-weight: 400;
+}
+.LoginNewCmAliasMainContent .FormFieldset .LoginNewCmAliasPasswordLabel {
+    color: inherit;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input.CollectPhoneNumbersDivTextBoxWidth40 {
+    width:45px;
+}
+input.CollectPhoneNumbersDivTextBoxWidth48,
+input.CollectPhoneNumbersDivTextBoxWidth49,
+input.CollectPhoneNumbersDivTextBoxWidth50 {
+    width:55px;
+}
+.CollectPhoneNumbersButtonDiv input.ColorButton {
+    margin-right: 0;
+}
+.LoginNewSSOSetupButtonDiv {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: -80px;
+    padding-left: 465px;
+}
+
+.LoginNewCmAliasButtonDiv {
+    width: 400px;
+    margin: 0 auto;
+    padding-left: 88px;
+}
+
+.CollectPhoneNumbersEmptyDiv {
+   display:none;
+}
+p.LoginCollectPersonalQuestionsPLabel {
+    width: 830px;
+    margin: 0 auto;
+    padding-left: 230px;
+}
+.LoginCMPasswordChangeContentPasswordColLabel {
+    color: black !important;
+
+}
+.AuthVerifyPDFcontinue {
+    font-weight: 600 !important;
+    padding-left:3px;
+    padding-right:3px;
+}
+.AuthPasswordStrengthControl {
+    padding-left: 8px;
+}
+.LoginNewCmAliasIDNoteDiv {
+    width: 250px;
+    margin: 0 0 10px 10px;
+    background-color: #F5F5F5;
+    padding: 5px;
+    border: 1px solid #C8C8C8;
+    display: block;
+}
+.LoginNewCmAliasTableCellDiv {
+    padding-bottom: 5px !important;
+    text-align:right;
+}
+.LoginNewSSOCmAliasInfoLabelP {
+    margin-left: 0px !important;
+    padding-bottom: 10px;
+}
+.LoginNewSSOMailContent {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:none;
+    padding-right:110px !important;
+}
+.NewSSOInputFieldsLabel {
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #C8C8C8;
+    margin-right: 7px;
+}
+.LoginNewSSOCmAliasButtonDiv {
+    text-align:right;
+}
+.LoginNewSSORowLabels {
+    text-align:right;
+    padding-right:5px;
+    padding-top: 7px;
+    width:290px;
+}
+.jha-dynarule-popup-container {
+    width: 270px;
+}
+
+#ctl00_LaunchBar_exitTabLinkButton:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_PageContent_JHASecureH1:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+.OnlineAgmtConfirmationDiv:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_PageContent_PrintButton:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_PageContent_DeclineButton:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_PageContent_AcceptButton:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_PageContent_CheckBox1:focus {
+    outline: 2px solid #4D97E0 !important;
+}

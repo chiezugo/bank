@@ -1,0 +1,9843 @@
+/*Linked Style Sheets*/
+@import url(ACH.css);
+@import url(ARP.css);
+@import url(Auth.css);
+@import url(WaterMark.css);
+@import url(Transfers.css);
+@import url(MessageCenter.css);
+@import url(Wires.css);
+@import url(CashManager.css);
+@import url(Options.css);
+@import url(PowerOn.css);
+@import url(Account.css);
+@import url(BillPay.css);
+@import url(EpisysACH.css);
+@import url(EpisysWires.css);
+@import url(ESI.css);
+
+.primaryBoxHeader {
+	border-top-style: none;
+	border-bottom-style: none;
+    background-color: #F9F6E9;
+}
+
+.MainContent {
+	border-top-style: none;
+}
+
+#ctl00_Banner_BannerMultiLogo {
+	margin-top: -10px;
+}
+
+#ctl00_Banner_BankLogo {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    outline: none;
+}
+#ctl00_Banner_BankLogo:focus {
+    border: 2px solid #4D97E0 !important;
+}
+
+#ctl00_WatermarkFdicEhlBanner1_FdicImageButton {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    outline: none;
+}
+#ctl00_WatermarkFdicEhlBanner1_FdicImageButton:focus {
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_WatermarkFdicEhlBanner1_watermark_WatermarkImage {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    outline: none;
+}
+#ctl00_WatermarkFdicEhlBanner1_watermark_WatermarkImage:focus {
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_WatermarkFdicEhlBanner1_EhlImageButton:focus {
+    border: 2px solid #4D97E0 !important;
+}
+#ctl00_WatermarkFdicEhlBanner1_EhlImageButton {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    outline: none;
+}
+#ctl00_WatermarkFdicEhlBanner1_EhlImageButton :focus {
+    border: 2px solid #4D97E0 !important;
+}
+.HiddenSkipToMain:focus {
+    outline:none;
+    border: 2px solid #4D97E0 !important;
+}
+
+/* @group Self-Clearing Floats */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+img, object, embed {
+	border: 0px;
+}
+
+.jha-user-watermark {
+	width: 25%;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.wrap {
+    white-space: pre-wrap;
+}
+
+body {
+	color: #151515;
+	font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	min-width: 995px;
+	background-image: none;
+}
+
+td.NT, td.RightBoldTD {
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* @group Form Items */
+
+select {
+    padding: 9px 36px 9px 9px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: url(../Images/selection_background.svg) right no-repeat #ffffff;
+    color: #484848;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #C8C8C8;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type=text], textarea {
+    padding: 9px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #484848;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #C8C8C8;
+    background: #FFFFFF;
+    box-shadow: inset 0 3px 6px 0 rgba(0,0,0,0.10);
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 2px solid #4D97E0;
+}
+
+input[type=password]:focus {
+    border: 2px solid #4D97E0;
+}
+
+textarea:focus {
+    border: 2px solid #4D97E0;
+}
+
+select:focus {
+    border: 2px solid #4D97E0 !important;
+}
+
+input[type=password] {
+    padding: 9px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #484848;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #C8C8C8;
+    background: #FFFFFF;
+    box-shadow: inset 0 3px 6px 0 rgba(0,0,0,0.10);
+    border-radius: 3px;
+}
+
+input[type=checkbox] {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+}
+
+label {
+	font-weight: 400 !important;
+	font-style: normal;
+	font-size: 12px;
+	color: #484848;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+.fieldLabel {
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	padding-left: 5px;
+}
+
+/* @end */
+
+/* @group Navigation */
+
+/* LAUNCH BAR NAVIGATION */
+.authLaunch_container {
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: -17px;
+    margin-left: 500px;
+}
+
+#launchBar_container {
+    margin-right: 0px;
+    margin-top: -4px;
+}
+
+authLaunchBar a {
+    float: right;
+    height: 20px;
+}
+
+
+#launchBar_container ul {
+	float: right;
+	height: 20px;
+}
+
+#launchBar_container li a {
+	font-size: 12px;
+	list-style: none;
+	text-decoration: none;
+}
+
+#launchBar li {
+	float: left;
+	clear: right;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+#launchBar li a {
+    outline: none;
+}
+#launchBar li a:focus {
+    border: 2px solid #4D97E0 !important;
+}
+
+
+/* PRIMARY NAVIGATION */
+#menu-primary {
+    border: 1px solid #C8C8C8;
+    border-bottom: none;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    height: 54px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    background: none;
+    background-color: #ffffff;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+    #menu-primary li {
+        border-left: 1px solid #C8C8C8;
+        border-right: 1px solid #C8C8C8;
+        display: block;
+        float: left;
+        height: 54px;
+        list-style: none;
+        position: relative;
+        text-align: center;
+        width: 110px;
+    }
+
+#menu-primary li .jha-nav-icon, #menu-primary li .third-party-icon {
+	display: block;
+	padding-top: 15px;
+	text-decoration: none;
+}
+
+#menu-primary .left {
+	 border-left: none;
+	 margin-left: 0px;
+}
+
+    #menu-primary .right {
+        border-right: 1px solid #C8C8C8;
+        margin-right: 0px;
+    }
+
+    #menu-primary .selected {
+        border-left: 1px solid #C8C8C8;
+        border-right: 1px solid #C8C8C8;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        margin-right: -1px;
+        position: relative;
+        background-image: none;
+    }
+
+#menu-primary .selected a {
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: none;
+}
+
+#menu-primary li.left.selected {
+	border-radius: 2px 0px 0px 0px;
+	-moz-border-radius: 2px 0px 0px 0px;
+	-ms-border-radius: 2px 0px 0px 0px;
+	-webkit-border-radius: 2px 0px 0px 0px;
+	position: relative;
+}
+
+#menu-primary li.right.selected {
+	border-radius: 0px 2px 0px 0px;
+	-moz-border-radius: 0px 2px 0px 0px;
+	-ms-border-radius: 0px 2px 0px 0px;
+	-webkit-border-radius: 0px 2px 0px 0px;
+	position: relative;
+}
+
+#menu-primary li a.jha-nav-icon:before, #menu-primary li a.third-party-icon:before {
+    color: #8C9AA5;
+}
+#menu-primary li .jha-nav-icon, #menu-primary li .third-party-icon {
+    color: #607383;
+}
+#menu-primary li:not(.selected):hover {
+    background-color:#FDFDFD;
+}
+#menu-primary li a {
+    outline: none;
+}
+#menu-primary li a:focus {
+    border: 2px solid #4D97E0 !important;
+}
+
+/* SECONDARY NAVIGATION */
+#menuBar_container, #menu-secondary-container {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#menuBar, #menu-secondary {
+    height: 33px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid #C8C8C8;
+    background-color: #f3f4f6;
+    background-image: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+#menuBar {
+    height:31px;
+    border-width: 1px 0 1px 0;
+}
+#menuBar li, #menu-secondary li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+#menuBar li a, #menu-secondary li a {
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 7px 20px 6px 20px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: none;
+	color: #607383;
+    width:auto;
+}
+#menuBar .selected, #menu-secondary .selected {
+	background-image: none;
+}
+#menuBar li.selected:not(:first-child) a, #menu-secondary li.selected:not(:first-child) a {
+    border-left: 1px solid #C8C8C8;
+}
+#menuBar .selected a, #menu-secondary .selected a {
+    background-color: #FAFAFA;
+    border-right: 1px solid #C8C8C8;
+}
+#menuBar li a:hover, #menu-secondary li a:hover {
+    background-color: #C8C8C8;
+    }
+#menu-secondary li a:focus {
+    border: 2px solid #4D97E0 !important;
+    outline:none;
+}
+
+/* TERTIARY NAVIGATION */
+#menu-tertiary {
+    height: 27px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #f3f4f6;
+    border-right: 1px solid #C8C8C8;
+    border-left: 1px solid #C8C8C8;
+    clear: left;
+}
+
+#menu-tertiary li {
+	list-style: none;
+	position: relative;
+	text-align: center;
+	float: left;
+}
+
+#menu-tertiary li:first-child {
+	border-left: none;
+}
+
+#menu-tertiary li a {
+	color: #607383;
+	display: block;
+	font-size: 12px;
+	padding: 4px 20px 4px 20px;
+	position: relative;
+	text-decoration: none;
+}
+
+    #menu-tertiary .selected {
+        background: #ffffff;
+        border-right: 1px solid #C8C8C8;
+        border-left: 1px solid #C8C8C8;
+        border-bottom: 1px solid #ffffff;
+    }
+
+#menu-tertiary li:not(.selected) a:hover {
+    background-color: #FAFAFA;
+}
+
+/*BUTTONS*/
+select:disabled {
+	cursor: default;
+	opacity: 0.5;
+    background-color: white;
+}
+.DoListActionBackGroundGray
+{
+    background-color: white !important;
+}
+a.ColorLink, a.StandardLink
+{
+    text-decoration:none;
+}
+
+input.ColorButton:hover,
+a.ColorLink {
+	opacity: 0.95;
+}
+
+div.ui-dialog-buttonset button.ColorButton:hover {
+	opacity: 0.95!important;
+}
+
+a.ColorLink, a.StandardLink,
+a.ColorLink:hover, a.StandardLink:hover,
+a.ColorLink:visited, a.StandardLink:visited
+{
+    text-decoration: none;
+}
+
+.Jha-AlertsDataGrid.datagrid th:last-child {
+    padding-right:5px;
+    text-align:center;
+    width: 100px;
+}
+
+.ui-datepicker-trigger {
+	background-color: #ffffff;
+	border: 0px none;
+    margin: 5px 0 0 6px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* @end */
+
+/* @group Messaging */
+
+/* MESSAGES */
+.Disclaimer, .continueMessage {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: block;
+    margin: 20px 20px;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border: 1px solid #C8C8C8 !important;
+}
+
+.DisclaimerContainer {
+	padding: 0px;
+}
+
+.Disclaimer p {
+	margin: 0;
+}
+
+.DisclaimerDiv {
+	line-height: 3px
+}
+
+.InfoMessage_container {
+    background-color: #f4f4f4;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: block;
+    margin: 5px 20px;
+    position: relative;
+    border: 1px solid #C8C8C8 !important;
+}
+
+.InfoMessage_container .InfoMessageTable {
+	border: none;
+
+}
+.InfoMessageTable{
+    display: table;
+    width: 100%;
+}
+
+.InfoMessageTableRow{
+    display: table-row;
+}
+
+.InfoMessage_container .InfoMessageLabel, .InfoMessage_container .ErrorMessageLabel  .ErrorMessageTD{
+	border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-ms-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	font-weight: 400;
+	font-style: normal;
+	padding: 10px;
+	position: relative;
+	text-align: right;
+	vertical-align: middle;
+	width: 180px;
+	display: table-cell;
+}
+
+.InfoMessage_container .InfoMessageLabel {
+	background-color: #038711;
+	color: #fff;
+    display: table-cell;
+
+}
+
+.InfoMessage_container .ErrorMessageLabel {
+	background-color: #a4140a;
+	color: #fff;
+	display: table-cell;
+    -webkit-border-radius: 5px 0 0 5px;
+
+}
+.InfoMessageErrorFooter{
+    width: 100%;
+    text-align: right;
+    color: GrayText;
+    font-size: x-small;
+}
+.InfoMessageErrorFooterDiv{
+    height: 10px;
+
+}
+.InfoMessage_container .InfoMessageTD, .InfoMessage_container .ErrorMessageTD {
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+	padding: 10px;
+}
+
+.ajax-message {
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: block;
+    margin: 20px 20px;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border: 1px solid #C8C8C8 !important;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* @end */
+
+/* @group Common Content */
+
+#content, #contentNoTopMenu {
+    background-color: #ffffff;
+    border: 1px solid #C8C8C8;
+    border-top-style: none;
+}
+
+#content {
+	border-radius: 0 0 2px 2px;
+	-moz-border-radius: 0 0 2px 2px;
+	-ms-border-radius: 0 0 2px 2px;
+	-webkit-border-radius: 0 0 2px 2px;
+	border-top-style: none;
+}
+
+#contentNoTopMenu {
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-top-style: none;
+}
+
+div#bankaddress {
+	padding-right: 1%;
+	background-color: transparent;
+}
+
+.HeaderHelp:hover {
+    cursor: pointer;
+}
+
+.HelpLink {
+    background: inherit;
+}
+.HelpLink img {
+    display: inherit;
+}
+    .HelpLink:focus {
+        border: 2px solid #4D97E0;
+        padding-top: 12px;
+    }
+
+.ui-datepicker-trigger {
+    background-color: #ffffff;
+    border: 0px none #ffffff;
+    margin: 0 0 0 3px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.NewStopPaymentsDatePicker {
+    width:180px;
+}
+
+#marketing-ads-container {
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+
+div.MainContent_Container, div#contentBlockFooter {
+	display: block;
+	margin: 0 10px 0 10px;
+	padding: 10px 0 10px 0;
+	width: auto;
+}
+
+div.MainContent_Container, div.MainContent_Container table {
+	/* hack for IE not rendering tabs on account listing. */
+	position: relative;
+	border-top-style: none;
+}
+
+.MainContentBgColor, .MainContentBgColorCfm, h2 {
+	background-color: #ffffff;
+}
+
+.MainContent {
+	margin-bottom: 15px;
+	padding: 0px;
+	position: relative;
+    border-top-style: none;
+    padding-top:inherit;
+}
+
+.MainContentAccountTransactionSearch {
+    min-width: 960px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 0px;
+    position: relative;
+    border: 1px solid #C8C8C8;
+}
+
+.enrollmentSubTitle {
+	border-bottom: 0px none;
+	margin: 15px 15px 0px 15px;
+}
+
+.enrollmentAutoTitle {
+	border-bottom: solid thin;
+	margin: 15px 0px 0px 0px;
+}
+
+.subheading {
+	margin: 0px 15px 15px 15px;
+	padding-top: 15px;
+}
+
+.headerLabel {
+    margin: 15px 15px 0px 0px;
+}
+
+.headerLabelLeftIndent {
+    margin: 15px 15px 0px 15px;
+}
+
+p.contentLabel {
+    margin: 15px;
+}
+
+/* @end */
+
+/* @group Tabs / Headers */
+
+.pageTab {
+	padding-left: 20px;
+    padding-right: 20px;
+	width: auto;
+	height: 34px !important;
+	border: none;
+	background-image: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.HeaderHelp {
+	width: 100%;
+	padding-top: 3px;
+}
+
+.pageTab, .pageTab span, .pageTab div, .pageTab div a span {
+	font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	text-align: left;
+}
+
+.pageTab span, .pageTab div, .pageTab a, .pageTab div a span {
+	display: inline;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+
+.unselectedPageTab {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius-topright: 5px;
+	height: 34px !important;
+	padding: 0 20px;
+	position: relative;
+}
+
+.unselectedPageTab, .unselectedPageTab span, .unselectedPageTab div, .unselectedPageTab div a span {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	text-shadow: #ffffff 0 1px 1px;
+}
+
+.unselectedPageTab span, .unselectedPageTab div, .unselectedPageTab a, .unselectedPageTab div a span {
+    color: #484848;
+	display: inline;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+
+.HeaderRow {
+	border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	-ms-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius-topright: 2px;
+	height: 34px !important;
+	padding-right: 20px;
+	text-align: left;
+	border-bottom: 0px;
+}
+.DoubleTabHeaderRow {
+	border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	-ms-border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius-topright: 2px;
+	height: 34px !important;
+	padding-right: 20px;
+	text-align: left;
+	border-bottom: 0px;
+}
+
+.DoubleTabHeaderRow .ViewRangeBar {
+	margin-right: 15px;
+	margin-top: 4px;
+}
+
+.DoubleTabHeaderRow tr td:nth-child(2) {
+	display: none;
+}
+
+/* @end */
+
+/* @group Datagrids */
+
+tr.AccentTR {
+    background-color: #ffffff;
+}
+
+.datagrid tr, #datagrid tr {
+	background-color: #f3f4f6;
+	border: none;
+}
+
+.datagrid tr.altColor, #datagrid tr.altColor, tr.Accent2TR, p.altColor {
+	background-color: #ffffff;
+	border: none;
+}
+
+.widget-content .datagrid tr {
+    height: auto !important;
+    min-height: 18px;
+    max-height: 35px;
+    border: none;
+}
+
+th.GridHeading, th.RightGridHeading, th.CenterGridHeading {
+	background-color: #ffffff;
+	border: none;
+}
+
+.datagrid tr.th, #datagrid tr.th {
+	background-color: #efefef !important;
+	border: none;
+}
+
+#datagrid tr.Total {
+	border: none;
+}
+
+.datagrid .th, .datagrid tr.th td, .datagrid tr.th th, .datagrid tr.th td a, .datagrid tr.th a, #datagrid tr.th td, #datagrid tr.th th, #datagrid tr.th td a, #datagrid tr.Total td {
+	background-color: #ffffff;
+	color: #484848;
+	font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif !important;
+	font-weight: 400;
+	font-style: normal;
+	height: 30px;
+	border: none;
+}
+
+.datagrid tr td, #datagrid tr td {
+	font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	height: 40px;
+	vertical-align: middle;
+	border: none;
+}
+
+.datagrid td.selectionItem {
+	float: right;
+	padding: 2px;
+	text-align: left;
+	width: 200px;
+	border: none;
+}
+
+.datagrid {
+	border-style: none;
+}
+
+/* @end */
+
+/* @group Modals / Info */
+
+.infoPanel {
+    border-width: 1px;
+    border-style: Solid;
+    height: 310px;
+    overflow-y: scroll;
+    white-space: normal;
+    padding: 5px;
+}
+
+/*  JQUERY UI MULTIPLE SELECT WIDGET OVERRIDES  - HTTP://WWW.ERICHYNDS.COM/JQUERY/JQUERY-UI-MULTISELECT-WIDGET */
+.ui-multiselect {
+	font-size: 11px;
+	font-weight: 400;
+	font-style: normal;
+	margin-right: 10px;
+	position: relative;
+	font-style: normal;
+}
+
+.ui-dialog-titlebar {
+	border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	-ms-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	font-style: normal;
+}
+
+/* MODALS */
+.modal-container {
+	font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.modal-content, .ui-button-text {
+	font-size: 12px;
+}
+
+.modal-disclaimer {
+    border: solid 1px #C8C8C8;
+    font-size: 12px;
+    padding: 2px 2px;
+}
+
+.modal-browserVersion {
+    text-align: center;
+    min-height: 0;
+    margin: 2em 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#alertsListDiv .datagrid tr {
+	height: 40px !important;
+}
+
+/* @end */
+
+/* @group Define Widgets */
+
+.widget-container {
+    border: 1px solid #C8C8C8;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    padding: 1px;
+    position: relative;
+    background-image: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.widget-header {
+	background: none;
+	filter: none;
+	height: 33px;
+	font-size: 12px;
+	padding: 2px 2px 5px 0px;
+	text-shadow: none;
+}
+
+td.widget-icons-cell {
+	padding-top: 0;
+}
+td.widget-icons-cell a {
+    text-decoration: none;
+}
+td.widget-icons-cell a img {
+    display: none;
+}
+
+.widget-header td.pageTab {
+	background: none;
+	border: none;
+	padding: 0 0 5px 2px;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	text-shadow: none;
+}
+	/* Hover color 75% opc*/
+    /* section header icon color */
+.widget-header-graphic-config {
+	background: url('../Images/widget_gear.svg') no-repeat;
+}
+
+.widget-header-graphic-config:hover {
+	background: url('../Images/widget_gear.svg') no-repeat;
+	opacity: 0.75;
+}
+
+.widget-header-graphic-nav {
+	background: url('../Images/widget_arrow.svg') no-repeat;
+}
+
+.widget-header-graphic-nav:hover {
+	background: url('../Images/widget_arrow.svg') no-repeat;
+	opacity: 0.75;
+}
+
+.widget-header-graphic-remove {
+	background: url('../Images/widget_close.svg') no-repeat;
+}
+
+.widget-header-graphic-remove:hover {
+	background: url('../Images/widget_close.svg') no-repeat;
+	opacity: 0.75;
+}
+
+.widget-content {
+	background: #ffffff;
+	border: none;
+	font-size: 12px;
+	margin: 0 -1px -1px -1px;
+	padding: 0;
+	position: relative;
+}
+
+.widget-content .widget-button-container {
+	padding: 5px 4px 5px 5px;
+	text-align: right;
+}
+
+.buttonRow {
+	float: right;
+}
+
+.button-container { text-align: right; }
+.button-container-options { text-align: center; }
+
+.textRow td {
+	padding-left: 10px;
+}
+
+.buttonRow td {
+	padding: 0px;
+}
+/* @end */
+
+/* CONTENT */
+
+/* @group iPay CSS */
+
+div.widget-content.iPayMultiQuickPaymentWidget table.downloadwidgettable {
+    border-top: 1px solid #C8C8C8;
+}
+
+a.ipay-sp-delete-payment img {
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-left: 3px;
+}
+
+.ipay-sp-list-container .ipay-method-cell,
+.ipay-sp-list-container .ipay-amount-cell,
+.ipay-sp-list-container .ipay-pay-from-account-cell,
+.ipay-sp-list-container .ipay-payment-date-cell,
+.ipay-sp-list-container .ipay-est-arrival-date-cell {
+	padding: 5px;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group MyNetTeller Page */
+
+#mynetteller-action-links {
+	font-size: 12px;
+	margin: -5px 0 10px 13px;
+}
+
+#widget-table .widget-column-left-bp {
+	padding: 10px 2px 10px 10px;
+}
+
+#widget-table .widget-column-right-bp {
+	padding: 10px 10px;
+    float: none;
+}
+
+#widget-table .widget-column-right {
+	padding-right: 10px;
+	padding-left: 0;
+}
+
+#widget-table .widget-column-left {
+	padding-right: 0px;
+	padding-left: 10px;
+}
+
+span.k-numeric-wrap.k-state-default.k-expand-padding {
+	width: 202px;
+	padding: 0;
+	margin: 0;
+}
+
+/* @group Widgets */
+
+/* - GoTo Widget - */
+.GoToWidget table.alertswidgettable tr.item-row td {
+	margin: 0;
+	padding: 2px 10px;
+}
+
+.widget-content #goto-container {
+	height: auto;
+	max-height: 400px;
+	border: none;
+	margin-bottom: -1px;
+}
+
+#goto-container .goto-row td {
+	padding: 0px 5px 0px 10px;
+}
+
+/* - Alerts Widget - */
+.AlertsWidget table.alertswidgettable tr.item-row td {
+	margin: 0;
+	padding: 5px 0px 5px 7px;
+}
+
+/* - Schedule Transfer Widget - */
+.widget-content #transfer-widget-container {
+	padding: 2px 0px 5px 5px;
+	margin: 0;
+}
+
+.transfer-widget-button-container {
+	padding: 2px 5px 5px 0px;
+	text-align: right;
+}
+
+#submit-transfer.ColorButton {
+	width: 100%;
+}
+
+.widget-content #transfer-widget-container select {
+	width: 196px;
+}
+
+.widget-content #transfer-widget-container label {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	color: #484848;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* - Non-Owned Transfer Widget - */
+.widget-content #nonowned-transfer-widget-container {
+	padding: 2px 10px 5px 10px;
+	margin: 0;
+}
+
+.nonowned-transfer-widget-button-container {
+	padding: 2px 5px 5px 0px;
+	text-align: right;
+}
+
+.widget-content #nonowned-transfer-widget-container label {
+	margin: 2px 0 0;
+}
+
+/* - MultiCurrenct Transfer Widget - */
+.widget-content #multicurrency-transfer-widget-container {
+	padding: 2px 10px 5px 10px;
+	margin: 0;
+}
+
+.multicurrency-transfer-widget-button-container {
+	padding: 2px 5px 5px 0px;
+	text-align: right;
+}
+
+.widget-content #multicurrency-transfer-widget-container label {
+	margin: 2px 0 0;
+}
+
+/* - Messages Widget - */
+img#ctl00_Image1 {
+	visibility: hidden; /*WOULD LIKE TO REPLACE THIS IMAGE - Trey*/
+}
+
+#btnSendMessages.ColorButton {
+	width: 100%;
+}
+
+/* - Download Widget - */
+.download-widget-container table.downloadwidgettable tr.item-row td {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding: 5px 0 0 0px;
+}
+
+td.DownloadWidgetDateRangeTableBeginDateTD {
+	width: 195px;
+}
+
+.download-widget-container table.downloadwidgettable tr.item-row td select {
+	width: 195px;
+}
+
+#btnSubmit.ColorButton {
+	width: 100%;
+}
+
+/* - Account Balances Widget - */
+.account-balances-container {
+	height: auto;
+	max-height: 500px;
+	padding: 0px;
+	border: none;
+	margin-bottom: -1px;
+}
+
+.account-balances-container table {
+	padding: 0 0 0 0;
+}
+
+.account-balances-container .account-row tr {
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+
+.account-balances-container .account-row td {
+	padding: 0px 10px 0px 8px;
+	height: 25px;
+}
+
+/* - Send Money Widget - */
+.widget-content .p2p-container {
+	height: auto;
+	border: none;
+	margin-bottom: -1px;
+}
+
+/* - My Accounts Widget - */
+.account-list-data-container {
+	height: auto;
+	overflow: auto;
+}
+
+.account-list-container {
+	border: none;
+}
+
+/* - Recent Statements Widget - */
+.statement-list-container .statement-row td {
+	padding: 0px 5px 0px 13px;
+}
+
+th.statement-name-cell.borderedgridcell {
+	padding-left: 13px;
+}
+
+.statement-list-container.datagrid {
+	border-style: none;
+}
+
+.statement-list-data-container {
+	height: auto;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.statement-date-cell {
+	text-align: center !important;
+}
+
+/* - View Scheduled/Recent Transfers Widgets - */
+.recent-transfers-container .transfer-row td,
+.scheduled-transfers-container .transfer-row td {
+	padding: 0px 5px;
+}
+
+.scheduled-transfers-data-container,
+.recent-transfers-data-container {
+	overflow: auto;
+	height: auto;
+}
+
+.scheduled-transfers-container {
+	border: none;
+}
+
+.transfer-date-cell {
+	text-align: center !important;
+}
+
+.transfer-amount-cell {
+	width: 100px;
+}
+
+.recent-transfers-container.datagrid {
+	border-style: none;
+}
+/* - View Scheduled/Recent IBT Transfers Widgets - */
+.recent-ibt-container {
+    border: none;
+}
+.recent-ibt-container th.transfer-amount-cell {
+    padding-right:15px;
+}
+.recent-ibt-container th.transfer-link-cell {
+    padding-right:30px;
+}
+.recent-ibt-container .transfer-row td,
+.scheduled-ibt-container .transfer-row td {
+	padding: 0px 5px;
+}
+.recent-ibt-container .transfer-date-cell {
+    width: 85px;
+}
+.recent-ibt-container td.transfer-cell {
+    padding-left:13px;
+}
+
+.scheduled-ibt-data-container,
+.recent-ibt-data-container {
+	height: auto;
+	max-height: 400px;
+	overflow: auto;
+}
+
+div.scheduled-ibt-container.datagrid {
+	border-style: none;
+}
+
+/* - Recent Transactions Widget - */
+.recent-transactions-container .trans-row td {
+	padding: 0px 5px;
+}
+
+.recent-transactions-data-container {
+	height: auto;
+	max-height: 520px;
+	overflow: auto;
+}
+
+div.recent-transactions-container.datagrid {
+	border: none;
+	margin-bottom: -1px;
+}
+
+/* - Welcome Widget - */
+div.widget-content.WelcomeWidget {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* - Did You Know Widget - */
+#ctl00_hypDYK {
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* RECENT PAYMENTS WIDGET */
+.recent-payments-container .payment-row td {
+	padding: 0px 5px;
+}
+
+.recent-payments-data-container {
+	height: auto;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.payment-date-cell {
+	text-align: center !important;
+}
+
+.payment-amount-cell {
+	width: 100px;
+}
+
+.recent-payment-modal-container {
+	font: normal 12px/14px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.recent-payments-container {
+	border-style: none;
+}
+
+/* SCHEDULED PAYMENTS WIDGET */
+.scheduled-payments-container {
+	overflow-x: hidden;
+}
+
+.ScheduledPaymentsGrid tbody tr.Total td {
+	font-weight: 600 !important;
+	font-style: normal;
+	height: 25px !important;
+}
+
+/* PROCESSED PAYMENTS WIDGET */
+.processed-payments-container {
+	overflow-x: hidden;
+}
+.processed-payments-data-container {
+    max-height: 400px;
+}
+/* PAYMENT WIDGETS */
+.payment-row .ProcessDateColumn {
+	text-align: center !important;
+}
+
+.buttonsTable {
+	height: 50px !important;
+	width: 100% !important;
+}
+
+.PaymentsQuickEditConfirmBlock .buttonsTable tr td.btnEditContainer {
+	padding: 5px;
+	text-align: center;
+	width: 70px;
+}
+
+/* NON-CLEARED PAYMENTS WIDGET */
+.noncleared-payments-container {
+	overflow-x: hidden;
+}
+
+/* POS PAY EXCEPTIONS WIDGET */
+.positive-pay-exceptions-container {
+    height: 230px;
+}
+
+.positive-pay-exceptions-container .positive-pay-exception-row td {
+	padding: 0px 5px;
+}
+
+.positive-pay-exceptions-container .check-number-cell {
+    text-align: center;
+}
+
+.positive-pay-exceptions-data-container {
+	height: 116px;
+	overflow: auto;
+}
+
+/* ESI WIDGET */
+.esi-list-data-container {
+	height: 116px;
+	overflow: auto;
+}
+
+.PowerPayHistorySelectCentTextBox{
+    width: 40px;
+}
+
+#paymentInlineCalendar {
+	margin-left: 4px;
+	padding-top: 5px;
+    width: 245px;
+}
+
+#paymentInlineCalendarLegend {
+	padding-bottom: 7px;
+	padding-top: 2px;
+}
+
+#paymentInlineCalendarLegend tr:nth-child(2) {
+	display: none;
+}
+
+#paymentInlineCalendarLegend tr:nth-child(1) {
+	height: 30px;
+}
+
+.multi-quick-payment-container .widget-button-container {
+	padding: 10px 3px 2px 0;
+}
+
+/*OFM WIDGETS*/
+object#divofmnetworthsummarychart {
+	height: 250px;
+}
+
+object#divofmcashflowchart {
+	height: 210px;
+	margin-bottom: -5px;
+	margin-top: 5px;
+}
+
+object#divofmsavingschart {
+	height: 220px;
+	margin-bottom: -5px;
+}
+
+object#divofmspendingchart {
+	height: 344px;
+}
+
+/* @end */
+/* @end */
+
+/* @group Transfers Page */
+
+/*NEW TRANSFERS*/
+
+select#ctl00_PageContent_ctl00_Template_paymentOptions,
+select#ctl00_PageContent_ctl00_Template_transferFromAccount.transfer-from,
+select#ctl00_PageContent_ctl00_Template_transferToAccount.transfer-to,
+select#ctl00_PageContent_ctl00_Template_frequency.transfer-frequency,
+select#ctl00_PageContent_ctl00_Template_firstDay.transfer-first-day,
+select#ctl00_PageContent_ctl00_Template_secondDay.transfer-second-day,
+select#ctl00_PageContent_ctl00_Template_weekDay.transfer-week-day,
+select#ctl00_PageContent_ctl00_Template_monthDay,
+input#ctl00_PageContent_ctl00_Template_transferMemo,
+select#ctl00_PageContent_ctl00_dlAccountIndex {
+	width: 250px;
+	margin-top: 5px;
+}
+
+.AccountTransfersNewTemplateDivWrapper .datepicker.hasDatepicker {
+	width: 218px;
+	padding-right: 5px;
+	padding-left: 9px;
+	margin-top: 5px;
+}
+
+.AccountTransfersNewTemplateDateDiv .ui-datepicker-trigger {
+	margin-top: 6px;
+	padding-left: 5px;
+}
+
+.button-containerADA.AccountTransfersNewTemplateButtonContainer {
+	padding-bottom: 10px;
+	width: 700px;
+	margin: auto;
+	text-align: right;
+	padding-right: 272px;
+}
+
+#ada_maincontent div.MainContent fieldset.FormFieldset {
+	padding-top: 15px;
+}
+
+/*PENDING TRANSFERS*/
+
+input.k-formatted-value.transfer-amount.DoListActionBackGroundWhite.k-input {
+	width: 200px;
+}
+
+select#frequencyEdit.transfer-frequency, #editFormDiv #WeekDay {
+	width: 200px;
+}
+
+.mmddyyyy {
+	visibility: hidden;
+}
+
+#editFormDiv #FirstDay, #editFormDiv #SecondDay, #editFormDiv #MonthDay {
+	width: 200px;
+}
+
+#editFormDiv input#ScheduledDateEdit, #editFormDiv #StopDate, #editFormDiv #StartDate {
+	width: 172px;
+}
+
+#editFormDiv div.button-containerADA {
+	padding-left: 192px;
+}
+
+#editFormDiv {
+	margin-left: -75px;
+}
+
+#editFormDiv .editTransferAmount, #editFormDiv .editTransferFrequency, #editFormDiv #editWeekDayRow, #editFormDiv #editMonthDayRow, #editFormDiv #editFirstDayRow, #editFormDiv #editSecondDayRow, #editFormDiv #editStartDateRow {
+	padding-bottom: 5px;
+}
+
+/* @end */
+
+/* @group Transaction Search Page */
+
+.MainContentAccountTransactionSearch .primaryBoxHeader {
+	background-color: #ffffff;
+	padding-left: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    border-width: 0 0 1px 0;
+}
+
+.dl-account {
+	width: 200px;
+}
+
+.searchCriteriaGroupAccountTransactionSearch, .searchCriteriaGroup {
+	display: table;
+	width: 100%;
+}
+
+.searchCriteriaGroupAccountTransactionSearch .criteriaBox, .searchCriteriaGroup .criteriaBox {
+	display: block;
+}
+
+.MainContentAccountTransactionSearch .innerWrapper {
+	padding-left: 10px;
+}
+
+.byDate {
+	display: table;
+	width: 100%;
+}
+
+.byAmount {
+	display: table;
+	width: 100%;
+}
+
+
+.byCheck {
+	display: table;
+	width: 100%;
+}
+
+.sortBy {
+	display: table;
+	width: 100%;
+}
+
+.sortOrder {
+	display: table;
+	width: 100%;
+}
+
+.viewType {
+	display: table;
+	width: 100%;
+}
+
+.criteriaBox {
+	background-color: #ffffff;
+	float: left;
+	height: 22px;
+	padding: 5px 0;
+	position: relative;
+	width: 500px;
+}
+
+button:focus::-moz-focus-inner,
+input[type="reset"]:focus::-moz-focus-inner,
+input[type="button"]:focus::-moz-focus-inner,
+input[type="submit"]:focus::-moz-focus-inner,
+input[type="file"] > input[type="button"]:focus::-moz-focus-inner {
+       border-color: #181818;
+}
+/* @end */
+
+/* @group Transaction Download */
+
+select.dl-account, select.dl-range, select.dl-format {
+	width: 260px;
+}
+
+.AccountTransactionDowloadDiv .fieldLabel {
+	position: relative;
+	right: 10px;
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: middle;
+}
+
+.AccountTransactionDowloadDiv .item-row {
+	vertical-align: middle;
+}
+
+/* @end */
+
+/* @group Rate Info Page */
+.rate-info-container .datagrid td {
+	padding-left: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.rate-info-container .datagrid {
+	border-style: none;
+}
+
+.rate-info-container .pageTab {
+    width: 8%;
+    border: 1px solid #C8C8C8;
+    height: 34px !important;
+    border-bottom: 0px;
+    border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius-topright: 2px;
+}
+
+/* @end */
+
+/* @group Transaction Listing Page */
+
+.TransactionsDataGrid tr:nth-child(even) {
+    background-color: transparent !important;
+}
+
+.TransactionsDataGrid tr:nth-child(odd) {
+    background-color: #f2f2f2 !important;
+}
+
+.TransactionsDataGrid tr td {
+	padding: 4px 8px;
+}
+
+.TransactionsDataGrid .Breakout {
+    font-size: 12px;
+}
+
+#ctl00_PageContent_ctl00_tab_accountsDropDownList {
+	width: 300px;
+}
+
+.ViewRangeBar {
+	float: right;
+}
+
+/*  Bill Shrink  */
+.bill-shrink-container {
+	padding-left: 10px;
+}
+
+
+/* @end */
+
+/* @group Account Listing Page */
+.account-listing-container .datagrid tr td, .account-listing-container .datagrid th {
+	padding: 5px 5px 5px 6px;
+}
+
+.account-listing-container .datagrid {
+	border: none;
+}
+
+.account-listing-container .datagrid th.TextRight {
+	padding-right: 5px;
+}
+
+.account-listing-container .datagrid th.TextLeft {
+	padding-left: 5px;
+}
+
+.account-listing-container .HeaderHelp img {
+    margin-top: 5px;
+}
+.account-listing-container .datagrid th:last-child {
+    padding-right: 120px;
+}
+
+.MarketingMessageADA {
+	margin-left: 10px;
+}
+
+.SpacedBoldADA {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.SmallTextADA {
+	margin-left: 10px;
+}
+
+/* @end */
+
+.CheckBoxRightAligned {
+	text-align:right;
+}
+
+.HeaderRange {
+	width: 200px;
+	text-align: right;
+}
+
+
+
+/* @end */
+
+/* WIRES AWAITING APPROVAL, WIRES TRANSMITTED */
+.wires-awaiting-container .wire-row td,
+.wires-xmitted-container .wire-row td {
+	padding: 0px 5px;
+}
+
+.wires-awaiting-data-container,
+.wires-xmitted-data-container {
+	height: 116px;
+	overflow: auto;
+}
+
+.wires-awaiting-container .wire-amount-cell {
+	text-align: right;
+}
+
+.wires-xmitted-container .wire-date-cell {
+	text-align: center;
+}
+
+/* CURRENT, PRIOR DAY VIEWS */
+.current-day-container, .prior-day-container {
+	margin: 0 75px;
+	width: 550px;
+}
+
+/* AUTHENTICATION */
+table.XSmallTable {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: auto;
+}
+
+table.XSmallTable td {
+	padding:4px 2px 4px 2px;
+}
+
+table.XSmallTable th {
+	padding:4px 2px 4px 2px;
+}
+
+/* OPTIONS ACCOUNTS VIEW */
+.options-account-content-container {
+	width: 490px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.OptionsAccountsContainerDiv {
+	margin: 0;
+}
+
+.OptionsAccountsContainerTable.ui-sortable {
+	width: 480px;
+}
+
+.OptionsAccountsContainerTable.ui-sortable input {
+	width: 178px;
+}
+
+.options-account-content-container .sortable-row {
+	cursor: pointer;
+}
+
+.account-type-group-dropdown-container select {
+	width: 250px;
+}
+
+span.OptionsAccountsSpan {
+	float: left;
+	padding-top: 10px;
+}
+
+.options-account-content-container div {
+	padding: 4px 10px;
+}
+
+.account-type-group-dropdown-container .OptionsAccountsLabel {
+	padding-left: 1px;
+ }
+
+.OptionsAccountsLabel .OptionsAccountsSpan .focus{
+    border: 1px solid #C8C8C8;
+}
+
+
+.OptionsAccountsContainerDiv .button-container-options {
+	margin: 0;
+	padding: 0 17px 0 0;
+	text-align: right;
+}
+
+.options-account-content-container div.button-container-options {
+    padding-left: 352px;
+}
+
+.options-account-content-container .sortable {
+	background: url(../Images/buttons_sprite.png) no-repeat -35px -54px;
+	padding: 5px 13px;
+}
+
+.options-account-content-container .sortable:hover {
+	background: url(../Images/buttons_sprite.png) no-repeat -35px -78px;
+}
+
+.options-account-content-container ul#popup {
+    position: absolute;
+    width: 10em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    background: #ccc;
+    color: #484848;
+    border: 1px solid #000;
+    top: 1em;
+    left: 1em;
+    cursor: default;
+    z-index: 40;
+}
+
+.options-account-content-container ul#popup li {
+    text-align: left;
+    margin: 0.3em 0;
+    padding: 0 0.2em;
+}
+
+.options-account-content-container ul#popup li.focus,
+.options-account-content-container ul#popup li.hover,
+.options-account-content-container li.moving {
+    background: #00c;
+    color: #fff;
+}
+
+.options-account-content-container ul.highlight {
+    background: #c00;
+    color: #484848;
+}
+
+.options-account-content-container .sortable-row,
+.options-account-content-container .sortable-row.focused ul li {
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+}
+
+    .options-account-content-container .sortable-row.focused,
+    .options-account-content-container .sortable-row.focused ul li.focused {
+        background-color: #C8C8C8;
+        border-color: gray;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+.amount-textbox-align {
+    text-align:left;
+   	padding: 2px;
+}
+
+.poweron-list-container .poweron-row td {
+	padding: 1px 10px;
+}
+
+.empty-container {
+	padding: 10px !important;
+}
+
+#datagrid .UsersDataGrid tr td,
+#datagrid .IpAddressDataGrid tr td {
+	padding: 0 0 0 5px;
+}
+
+/*Not categorized yet - Trey*/
+.ofmTOSPanel {
+    white-space: normal;
+    border-width: 0px;
+    border-style: Solid;
+    padding: 0px;
+}
+.OfmMainTOSButtonsTD .OfmMainSubmitButton
+{
+    cursor: pointer !important;
+}
+
+.rsaInputRow {
+    text-align:right;
+}
+
+.rsaTable {
+    width: 50%;
+}
+
+.confirmationWrapper
+{
+    border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	position: relative;
+}
+
+/* TRANSACTION SEARCH */
+.searchPrimaryLabel {
+	float: left;
+	font-weight: 600;
+	font-style: normal;
+	margin-left: 10px;
+	padding: 14px 0px 5px 0px;
+	width: 100px;
+    text-align: right;
+}
+
+.searchFieldLabel {
+	float: left;
+	font-weight: 400;
+	font-style: normal;
+	margin-right: 7px;
+    padding: 9px 0 0 0;
+    width: 50px;
+text-align: right;
+}
+
+.searchPrimaryLabelSearchDiv{
+    float: left;
+}
+
+.searchPrimaryLabelView {
+	float: left;
+	font-weight: 600;
+	font-style: normal;
+	padding: 10px 0 10px 78px;
+}
+
+.searchPrimaryLabelClearLeft {
+	clear: left;
+    float: left;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 47px;
+    padding: 10px 0;
+}
+
+.searchPrimaryLabelAccountTransactionSearch {
+	float: left;
+    font-weight: 400;
+    font-style: normal;
+    width: 160px;
+    text-align: right;
+    padding-top: 10px;
+	padding-right: 10px;
+}
+
+.AccountTransactionSearchCheckboxChecks {
+    width:135px;
+}
+
+.AccountTransactionSearchCheckboxTransactions {
+    width:205px;
+}
+
+.searchFieldLabelFloat {
+    float:left;
+}
+
+.AccountTransactionSearchSelect {
+    margin-left: 60px;
+}
+
+.searchFieldLabelFloatRight {
+    font-weight: 400;
+    font-style: normal;
+    margin-right:10px;
+}
+
+.searchFieldLabelFloatFifty {
+    float:left;
+    width:200px;
+}
+
+.transferFieldLabelFloatFifty {
+    float:right;
+    width:50%
+}
+
+.searchFieldLabelFloatTwentyFive {
+    float: left;
+    width: 25%;
+}
+
+.primaryBox {
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #C8C8C8;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+    border-top-style: none;
+}
+
+.searchCriteriaGroup {
+	float: left;
+	padding: 5px 0;
+}
+
+.searchCriteriaGroupSortDiv {
+    float: left;
+    padding-top:5px;
+    width:100%;
+}
+
+.searchCriteriaGroup100Percent {
+	float: left;
+    width:100%;
+    padding: 5px 0;
+}
+
+.searchCriteriaGroup310 {
+	float: left;
+    width:310px;
+}
+
+.searchCriteriaGroupAccountTransactionSearch {
+	float: left;
+	padding: 10px 0px;
+}
+
+.searchCriteriaClearBoth {
+    clear:both;
+}
+
+.searchCriteriaButtonDiv{
+    width: 938px;
+}
+
+.innerDivAccountTransactionSearch {
+    float:left;
+    width: 200px;
+}
+
+.innerDivAccountTransactionSearch68 {
+    float:left;
+}
+
+.innerDivAccountTransactionSearch32 {
+    float:left;
+}
+
+.criteriaBoxSortBy {
+	background-color: #ffffff;
+	float: left;
+	height: 22px;
+	padding: 5px 0;
+	position: relative;
+	width: 828px;
+}
+
+.criteriaBoxSortOrder {
+	background-color: #ffffff;
+	float: left;
+	padding: 10px 0 10px 55px;
+}
+
+.criteriaBoxView {
+	background-color: #ffffff;
+	float: left;
+	height: 22px;
+	padding: 5px 0;
+	position: relative;
+	width: 610px;
+}
+
+.innerWrapper {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.datepicker {
+    vertical-align:top;
+    width:85px;
+}
+
+.newskin-button-container {
+	margin: 5px 5px 5px 0;
+	text-align: right;
+	position: relative;
+	right: 10px;
+}
+
+.disabled {
+	color: #484848;
+    }
+
+.Div2 {
+    padding: 5px 5px 5px 5px;
+}
+
+/*  Bill Shrink  */
+.BillShrinkFooter {
+    float: left;
+    width: 50%;
+}
+
+.BillShrinkFooter div:first-child {
+margin-left:auto !important;
+margin-right:auto !important;
+float:none !important;
+}
+
+.HeaderDiv{
+    padding-left: 10px;
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+.HeaderRange{
+    padding-right: 8px;
+}
+
+.HeaderRangeNoPrint{
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.HeaderRangeSinceLast{
+    padding-right: 8px;
+     padding-bottom: 5px;
+     float:right;
+}
+
+.currentBalanceLabel{
+    margin-right: 20px;
+}
+
+.AvailBalDivHide{
+    display:none;
+}
+
+.AvailBalDivWide490{
+    width:490px;
+}
+
+.divPaddingTop5{
+    padding-top:5px;
+}
+
+.divPaddingTop10{
+    padding-top:10px;
+}
+
+.dataGridDivTransactions{
+    padding-left: 5px; padding-right: 5px;
+}
+
+.noTransactionsDivHide{
+    padding: 10px;
+    display: none;
+}
+
+/* Stop Payments */
+.StopPaymentsTD {
+    text-align:right;
+    white-space:nowrap;
+}
+
+.StopPaymentsNewTD {
+    width:220px;
+}
+
+.StopPaymentDatagrid {
+    border:0;
+    margin-top: 50px;
+}
+
+.StopPaymentTable{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.StopPaymentTable tr td
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#datagrid tr td {
+    border-right: 1px solid #C8C8C8;
+    padding: 0 10px;
+}
+
+#deletegrid tr td {
+    border-right: 1px solid #C8C8C8;
+    padding: 0 10px;
+}
+
+.StopPaymentsConfirmationDiv{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.StopPaymentsConfirmationDivcenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-bottom: 10px;
+}
+
+.StopPaymentsConfirmationTD{
+    width:100px;
+}
+
+.StopPaymentsConfirmationTDHeight{
+    height:50px;
+}
+
+.StopPaymentsConfirmationTDBold{
+    font-weight:600 !important;
+    font-style: normal;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px!important;
+}
+
+td.StopPaymentsConfirmationfieldLabel {
+    width: 100px;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+    vertical-align: top;
+}
+
+.StopPaymentsConfirmationTableBorder tbody tr td div.button-container {
+	margin-right: -238px;
+}
+
+.StopPaymentsListfieldLabel {
+    width: 50%;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+}
+
+.StopPaymentsfieldLabel {
+    width: 400px;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding-left: 5px;
+}
+
+.StopPaymentContentDiv {
+    text-align:right;
+    white-space:nowrap;
+    padding-bottom:5px;
+}
+
+.StopPaymentsNewTable {
+    border:0;
+    margin:0 auto;
+    width:500px;
+}
+
+.StopPaymentsReviewTable {
+    border:0;
+    margin:0 auto;
+    width:400px;
+}
+
+.NewStopPaymentDateTextBox {
+    width:140px;
+    padding-top:4px;
+}
+
+.NewStopPaymentDateTextBox + .ui-datepicker-trigger {
+    background-color: #ffffff;
+	border: 0px none #ffffff;
+    margin: 0 0 0 3px;
+    padding-top:6px;
+    vertical-align: middle;
+}
+
+.NewStopPaymentDateTextBox + .ui-datepicker-trigger {
+    background-color: #ffffff;
+	border: 0px none #ffffff;
+    margin: 0 0 0 3px;
+    padding-top:6px;
+    vertical-align: middle;
+}
+
+.StopPaymentsNewTableTD {
+    width:181px;
+}
+
+.StopPaymentsNewTopPadding{
+    padding-top:10px;
+}
+
+.ViewStopPaymentShowModal {
+    width:500px;
+}
+
+.StopPaymentsListDropDownList {
+    width:250px;
+}
+
+#datagrid .StopPaymentDatagrid tr td, #datagrid  tr td {
+    border-right:none;
+}
+
+ .StopPaymentDatagrid tr td.AccountDesignator {
+    text-align: left;
+    padding-left: 15px !important;
+ }
+
+.StopPaymentDatagrid tr .CheckNumber {
+    text-align: center;
+    width: 150px;
+}
+
+.StopPaymentDatagrid tr .Amount {
+    text-align: right;
+    width: 150px;
+}
+
+.StopPaymentDatagrid tr .Payee {
+    text-align: left;
+}
+
+.StopPaymentDatagrid tr .CheckDate {
+    text-align: center;
+    width: 100px;
+}
+
+.StopPaymentDatagrid tr .ViewLink {
+    text-align: center;
+    width: 75px;
+}
+.StopPaymentListAcctSelect
+{
+    font-weight: 400 !important;
+    font-style:normal;
+}
+table.StopPaymentListDialog td.fieldLabel
+{
+    vertical-align:top;
+}
+
+.StopPaymentsConfirmationButtonDiv {
+    float:right;
+}
+
+.StopPaymentViewForm {
+    visibility:hidden;
+    display:none;
+}
+
+/* TRANSFERS */
+.confirmationHeader {
+    background-image: url(../Images/gradients_sprite.png);
+    background-position: 0 -174px;
+    background-repeat: repeat-x;
+    padding-left: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.AccountTransferConfirmationDiv {
+    margin: 15px;
+    text-align: left;
+    width: 800px;
+}
+
+.AccountTransferConfirmationHeaderDiv {
+    border-bottom: 1px solid #C8C8C8;
+    display: inline-block;
+}
+
+.AccountTransferConfirmationAmountDiv {
+    background-color: #ECF6ED;
+    display:inline-block;
+    width:100%;
+}
+
+.AccountTransferConfirmationFailureDiv {
+    margin: 15px;
+    text-align: left;
+    width: 800px;
+}
+
+.AccountTransferConfirmationHeaderFailure {
+    background-color: #D10000;
+    color: White;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.AccountTransferConfermationHeaderDivLabel {
+    background-color: #F7F7F7;
+    display:inline-block;
+}
+
+.AccountTransferFormSpan{
+	font-weight: 600;
+	font-style: normal;
+    width: 230px;
+    display: inline-block;
+    text-align:left;
+    line-height: 25px;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.AccountTransferFieldLabelFloatFifty {
+    float:right;
+    width:50%
+}
+
+.AccountTransactionDowloadDiv {
+    margin-top: 15px;
+}
+
+.AccountTransactionDowloadDDL {
+    width:250px;
+}
+
+.AccountTransactionDowloadCheckBox {
+    float: left;
+    margin: 5px 10px;
+    border: 0px solid #C8C8C8;
+    display: block;
+    width: 310px;
+}
+
+.AccountTransactionDowloadfieldLabel {
+	font-size: 12px;
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+    width: 400px;
+    position: relative;
+	right: 10px;
+
+}
+
+.AccountStatmentTable {
+    border-collapse: collapse;
+}
+
+.AccountStatmentMainContainer {
+    display: block;
+	margin: 0 20px;
+	padding: 10px 0 10px 0;
+	width: auto;
+    position: relative;
+    margin: 2px;
+}
+
+.AccountStatmentMarketingDiv {
+    padding-left: 15px;
+}
+
+/* Account Transfers Pending  */
+.AccountTransfersPendingDataGridDiv {
+    padding: 0px;
+	border-style: none;
+	margin-left: -1px;
+	margin-bottom: -6px;
+	margin-right: -1px;
+}
+
+div.datagridFooter {
+	background-color: #ffffff;
+	margin-left: 0;
+	line-height: 34px;
+	padding-right: 10px;
+}
+
+.AccountTransfersPendingDeleteTable tbody td {
+    padding: 0 10px;
+}
+
+.AccountTransfersPendingDataGridDiv table tbody tr.th th:first-child {
+    text-align: center;
+    width: 10%;
+}
+
+/* Account Transfers Template List  */
+.AccountTransfersTemplateSelectDiv {
+    padding:0 0 10px 25px !important;
+}
+.AccountTransfersTemplateCellCenter {
+    text-align:center;
+}
+.AccountTransfersTemplateListDataGridDiv {
+    padding: 0px;
+	border-style: none;
+	margin-left: -1px;
+	margin-bottom: -6px;
+	margin-right: -1px;
+}
+
+/*div.datagridFooter {
+	background-color: #ffffff;
+	margin-left: 0;
+	line-height: 34px;
+	padding-right: 10px;
+}*/
+
+/*.AccountTransfersPendingDeleteTable tbody td {
+    padding: 0 10px;
+}*/
+
+.AccountTransfersTemplateListDataGridDiv table tbody tr.th th:first-child {
+    text-align: center;
+    width: 10%;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(1), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(1) {
+    text-align: center;
+    width: 100px;
+    border:none;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(2), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(2) {
+    text-align: left;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(3), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(3) {
+    text-align: left;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(4), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(4) {
+    text-align: left;
+
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(5), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(5) {
+    text-align: center;
+    width: 200px;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(6), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(6) {
+    text-align: left;
+    width: 165px;
+	padding-left: 5px;
+}
+/*.AccountTransfersTemplateListDataGridDiv .datagrid tr.th th:nth-child(7), .AccountTransfersTemplateListDataGridDiv .datagrid tr td.td:nth-child(7) {
+    text-align: left;
+    width: 165px;
+	padding-left: 5px;
+}*/
+.AccountTransfersTemplateListDataGridDiv .dataGridFooterRightInfo {
+    padding-top: 2px;
+    /*padding-right: 0px;*/
+	/*margin-top: 3px;*/
+    /*margin-right: 0px;*/
+}
+.AccountTransfersTemplateListDataGridDiv .datagridFooterLeftInfo
+{
+    padding-left: 7px;
+    padding-top: 2px;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tbody {
+    border: 1px solid #E2E2E2;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid tbody tr.th th {
+    padding: 10px 0;
+}
+.AccountTransfersTemplateListDataGridDiv .datagrid .td:last-child {
+    padding-right: 3px;
+}
+.AccountTransfersTemplateListCellCenter {
+    text-align:center;
+}
+.AccountTransfersTemplateListWidth100P {
+    width:100%;
+}
+.AccountTransfersTemplateViewOnlyDiv {
+    visibility: hidden;
+    display: none;
+}
+.AccountTransfersTemplateListDataGridDiv tr td input.TransferTemplateDollarTextBox,
+.AccountTransfersTemplateListDataGridDiv tr td input.TransferTemplateCentsTextBox  {
+    margin-top: 3px;
+}
+input.TransferTemplateDollarTextBox {
+    width: 90px !important;
+}
+
+input.TransferTemplateCentsTextBox {
+    width: 35px !important;
+}
+
+.FormFieldset div span.AccountTransferTemplateSpanLabel {
+    padding: 0 10px 3px 0;
+    font-weight: 400;
+    font-style: normal;
+    color: #484848;
+    font-size: 12px;
+}
+.AccountTransfersTemplateNoTransfersDiv {
+    padding: 10px;
+    text-align: center;
+
+}
+.AccountTransfersTemplateClearDiv {
+    clear: both;
+}
+
+/* Account Transfers New */
+.AccountTransfersNewTotalFundsToAcctDiv {
+    width: 250px;
+    display: inline;
+    margin-left: 25px;
+    position: relative;
+    top: 4px;
+}
+
+.AccountTransfersNewTransferDateTextBox {
+    width: 90px;
+}
+
+.AccountTransfersNewTransferMemoTextBox {
+    width: 250px;
+}
+
+.AccountTransfersNewTransactionNoteDiv {
+    text-align: left;
+    margin: -123px 0 65px 435px;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+div.AccountTransfersNewPrincipalNoteDiv {
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    padding: 5px;
+    text-align: left;
+    font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    width: 245px;
+    text-align: left;
+    padding: 5px;
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+div.AccountTransfersTransferToInfoNoteDiv {
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    padding: 5px;
+    text-align: left;
+    font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 5px;
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+.newTransferFieldSet .transfer-from, .newTransferFieldSet .transfer-to {
+    width:250px;
+}
+
+.AccountTransfersNewMemoNoteDiv {
+    margin: -37px 0 0 435px;
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    position: absolute;
+}
+
+/* Account Transfers New - Review */
+.AcctTransNewFieldset .AcctTransNewLabel {
+    padding-right: 10px;
+}
+
+/*.AcctTransNewFieldset {
+    text-align: center;
+}*/
+
+/* Account Transfers History */
+.AccountTransfersHistoryHeaderDiv {
+    padding: 0 10px 10px 20px;
+}
+
+.AccountTransfersHistoryHeaderRangeDiv {
+    margin-top:7px;
+}
+
+.AccountTransfersHistoryDataGridDiv {
+	padding: 0;
+	border-top: 1px solid #e2e3e3;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(1), .AccountTransfersHistoryDataGridDiv td:nth-child(1) {
+text-align: left;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(2), .AccountTransfersHistoryDataGridDiv td:nth-child(2) {
+text-align: left;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(3), .AccountTransfersHistoryDataGridDiv td:nth-child(3) {
+text-align: right;
+width: 125px;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(4), .AccountTransfersHistoryDataGridDiv td:nth-child(4) {
+text-align: center;
+width: 150px;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(5), .AccountTransfersHistoryDataGridDiv td:nth-child(5) {
+text-align: center;
+width: 100px;
+}
+
+.AccountTransfersHistoryDataGridDiv tbody tr.th th:nth-child(6), .AccountTransfersHistoryDataGridDiv td:nth-child(6) {
+text-align: center;
+width: 110px;
+}
+
+.AccountTransfersHistoryDataGridDiv .datagridFooter {
+	padding: 4px 10px 4px 4px;
+	margin-bottom: -6px;
+	margin-left: -1px;
+	border-right-style: none;
+	border-top: 1px solid #e2e3e3;
+	background-color: #ffffff;
+}
+.AccountTransfersHistoryDataGridDiv .datagridFooter .dataGridFooterRightInfo
+{
+    float: none;
+    padding-right: 360px;
+}
+
+.ShowModalViewTransferDetails .DataLabel {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: 10px;
+}
+
+.ShowModalViewTransferDetails #viewForm fieldset.FormFieldset.NoMargin div span {
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: right;
+	float: left;
+	width: 45%;
+}
+/* InterbankTransfers*/
+div.InterbankTransfersHsaContributionNoteDiv {
+    border: 1px solid #C8C8C8;
+    background-color: #f5f5f5;
+    padding: 5px;
+    text-align: left;
+    font: normal 12px/18px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 5px;
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Download Widget */
+
+.DownloadWidgetDateRangeDiv {
+    display: none;
+    width: 180px;
+}
+
+.DownloadWidgetDateRangeTable {
+    width: 160px;
+    margin: 0px 0px 0px 20px;
+}
+
+.DownloadWidgetDateRangeTableFromTD {
+    width: 80px;
+    text-align: right;
+}
+
+.DownloadWidgetDateRangeTableSpacerTD {
+    width: 5px;
+}
+
+.DownloadWidgetDateRangeTableBeginDateTD {
+    width: 90px;
+    text-align: right;
+}
+
+.DownloadWidgetDateRangeTableToTD {
+    text-align: right;
+}
+
+.DownloadWidgetDateRangeTableEndDateTD {
+    text-align: right;
+}
+
+/* Account List Widget */
+.AccountListWidgetHeaderTable, .AccountListWidgetDataTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+/* iPayRecentPaymentsWidget */
+.iPayRecentPaymentsWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.iPayRecentPaymentsWidgetDisplayNone {
+    display: none;
+}
+
+.iPayRecentPaymentsWidgetWidth325 {
+    width:325px;
+}
+
+.iPayRecentPaymentsWidgetTDRight5 {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.iPayRecentPaymentsWidgetTDBoldLeft5 {
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+
+.iPayRecentPaymentsWidgetTDRight5Nowrap {
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+.iPayRecentPaymentsWidgetTDLeft5 {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* Accounts Popup */
+#MenuAccountsPopup, div.popupMenuContainer {
+    display: none;
+    position: absolute;
+    border: 1px solid #C8C8C8;
+    background-color: #f3f4f6;
+}
+
+#MenuAccountsPopupUL, div.popupMenuContainer ul {
+    margin: 0;
+    padding: 0;
+}
+
+#MenuAccountsPopupUL li, div.popupMenuContainer ul li {
+    list-style: none;
+    border-top:1px solid #f3f4f6;
+    border-bottom:1px solid #f3f4f6;
+    float: none!important;
+}
+#MenuAccountsPopupUL li:hover, div.popupMenuContainer ul li:hover {
+    background-color:#fff;
+    border-top:1px solid #e3e3e3;
+    border-bottom:1px solid #e3e3e3;
+}
+#MenuAccountsPopupUL li a, div.popupMenuContainer ul li a {
+    color: #607383!important;
+    text-decoration: none;
+	padding: 4px 20px 4px 20px !important;
+    display: block;
+    white-space: nowrap;
+    background-color: inherit!important;
+}
+#MenuAccountsPopupUL li a:hover, div.popupMenuContainer ul li a:hover {
+    background-color: inherit!important;
+}
+#MenuAccountsPopupUL li:first-child:hover, div.popupMenuContainer ul li:first-child:hover {
+    border-top: 1px solid #f3f4f6;
+}
+#MenuAccountsPopupUL li:last-child:hover, div.popupMenuContainer ul li:last-child:hover {
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.EmailPromptLabel {
+    text-align:left;
+    font-size:130%;
+}
+
+.HeaderDivPadding {
+margin: 0px;
+padding: 0px 0px 0px 0px;
+}
+
+.NoJavaScriptSpan {
+    color:#FF0000;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:12px;
+}
+
+.NoJavaScriptLink {
+    color:#FF0000;
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:12px;
+}
+
+.EmailPromptTable {
+width:100%;
+}
+
+.BannerMultiLogoDivHeader {
+    display: table; width: 100%;
+}
+
+.bankLogoL {
+    float: left;
+    text-align: left;
+    display: table-cell
+}
+
+.bankLogoR {
+    float: right;
+    text-align: right;
+    display: table-cell
+}
+
+.BannerMultiLogoMainContentDiv {
+    padding-left:5px;padding-top:5px;
+}
+
+.IAVRTextBox {
+    z-index: 101;
+    left: 64px;
+    position: absolute;
+    top: 72px;
+    width: 96px;
+    Height: 24px;
+}
+
+.IAVRlabel {
+    z-index: 102;
+    left: 16px;
+    position: absolute;
+    top: 72px;
+    Width: 40px;
+    Height:24px;
+}
+
+.BlockedUserDiv {
+    margin:5px;
+}
+
+.BlockedUserTD {
+    width:15%;
+}
+
+.BlockedUserTable {
+    padding: 0;
+    border-spacing: 0;
+}
+
+.customWebsiteText {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: 400;
+	font-style: normal;
+	color: #484848;
+}
+
+.customWebsiteTextFooter {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	line-height: 12px;
+	font-weight: 400;
+	font-style: normal;
+	color: #484848;
+}
+
+.customWebsiteHeaderSmall {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	line-height: 12px;
+	font-weight: 600;
+	font-style: normal;
+	color: #484848;
+}
+
+.customWebsiteText a {
+	color: #0000CC;
+	text-decoration: underline;
+        text-align:center;
+    vertical-align: top;
+}
+
+.customWebsiteText a:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+.customWebsiteTextFooter a {
+	color: #0000CC;
+	text-decoration: underline;
+    width: 431px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.customWebsiteTextFooter a:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+.FooterSusquehannaTableCell {
+    display:table-cell;
+    float:right;
+}
+
+.FooterSusquehannaDivTable {
+    display: table;
+    width: 100%;
+}
+
+.FooterSusquehannaTable {
+     width: 771px;
+     border:0;
+     border-spacing:0;
+     padding: 0;
+}
+
+.FooterSusquehannaTDTop {
+    vertical-align: top;
+}
+
+.FooterSusquehannaImageFDIC {
+    width:90px;
+    height:40px;
+    border:0;
+}
+
+.FooterSusquehannaImageNCUA {
+    width:50px;
+    height:40px;
+    border:0;
+}
+
+.FooterSusquehannaImageEHL {
+    width:47px;
+    height:55px;
+    border:0;
+}
+
+.FooterSusquehannaImageSpacer1 {
+    width:159px;
+    height:5px;
+}
+
+.FooterSusquehannaFDICDiv {
+    width:159px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FooterSusquehannaEHLDiv {
+    width:177px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FooterSusquehannaImageSpacer2 {
+    width:177px;
+    height:5px;
+}
+
+.FooterSusquehannaImageSpacerFDIC {
+    width:65px;
+    height:35px;
+    border:0;
+}
+
+.FooterSusquehannaImageSpacerEHAD {
+    width:50px;
+    height:54px;
+}
+
+.AccountSelectionTable {
+    width:800px;
+}
+
+.AccountSelectionTableTD {
+     vertical-align: top;
+     width:220px;
+}
+
+.AccountSelectionTableHeaderDiv {
+     width:550px;
+}
+
+.AccountSelectionSubTable {
+     border: 0;
+     padding: 1px;
+}
+
+.AccountSelectionFixedHeader {
+    background-color: #E5E5FE;
+}
+
+.AccountSelectionTH1 {
+    text-align:left;
+    width:15px;
+}
+
+.AccountSelectionTH2 {
+    text-align:left;
+    width:165px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTH3 {
+    text-align:left;
+    width:90px;
+        padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTH4 {
+    text-align:left;
+    width:70px;
+        padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTH5 {
+    text-align:left;
+    width:130px;
+        padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionListView {
+    border: 1px solid #C8C8C8;
+    height: 230px;
+    width: 550px;
+    overflow: auto
+}
+
+.AccountSelectionListView_CCM {
+    border-bottom:1px solid #e3e3e3;
+    height:230px;
+    width:550px;
+    overflow:auto
+}
+
+.AccountSelectionListView_CCMTheme2 {
+    border-bottom:1px solid #e3e3e3;
+    width:515px;
+    overflow:auto
+}
+
+.AccountSelectionTD1 {
+    text-align:left; width:15px;
+}
+
+.AccountSelectionTD2 {
+    text-align:left;
+    width:165px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTD3 {
+    text-align:left;
+    width:100px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTD4 {
+    text-align:left;
+    width:80px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionTD5 {
+    text-align:right;
+    width:120px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.AccountSelectionListViewTable {
+    border: 0;
+    padding: 1px;
+}
+
+.pospayreport-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index:1;
+    width:200px;
+    background-color: #f3f4f6;
+}
+
+.pospayreport-dropdown-menu:hover .pospayreport-dropdown-content{
+    display: block;
+}
+.pospayreport-dropdown-item{
+    display:block;
+    text-align:left;
+    color: #607383;
+}
+
+.AdditionalReportingfieldLabel {
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding-left: 5px;
+    width: 35px;
+}
+
+.AdditionalReportingfieldRow {
+    height:6px;
+}
+
+.AdditionalReportingfieldRowSmaller {
+    font-size:smaller;
+}
+
+.AdditionalReportingDivTop {
+    vertical-align:top;
+}
+
+.divAdditionalOptions {
+    margin-top:5px;
+}
+
+.AdditionReportsAmounts {
+    height: 6px; font-size: smaller;
+}
+
+.AdditionReportsAmountsTD {
+    font-style:italic;
+    text-align:right;
+    padding-right:10px
+}
+
+.AdditionReportsTable {
+    border: 0;
+}
+
+.DateRangeTable {
+    border: 0;
+}
+
+.DateRangeSelectionTableEDI {
+    border:0;
+    width:1200px;
+}
+
+.DateRangeSelectionTableRBL, .DateRangeSelectionTableRBL {
+    border:0;
+}
+
+.DateRangeSelectionTableRBL {
+    width:1200px;
+}
+
+.DateRangeSelectionTableCMC {
+    width: 820px;
+}
+
+.DateRangeSelectionTD140 {
+    width:140px;
+}
+
+.DateRangeSelectionTD160Display {
+    width:160px;
+    font-weight:400;
+    font-style: normal;
+    text-align: center;
+    padding-left:15px
+}
+
+.DateRangeSelectionTD200 {
+    width:200px;
+}
+
+.DateRangeSelectionTD800 {
+    width: 800px;
+}
+
+.DateRangeSelectionTD900 {
+    width:900px;
+}
+
+.DateRangeSelectionTD1000 {
+    width:1000px;
+}
+
+.DateRangefieldLabel30 {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	padding-left: 5px;
+    width: 30px;
+}
+
+.DateRangefieldLabel35 {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px;
+	padding-left: 5px;
+    width: 35px;
+}
+
+.DateRangefieldLabel50 {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+    width: 50px;
+}
+
+.DateRangefieldLabel160 {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+    width: 160px;
+}
+
+.DateRangeDivTop {
+    vertical-align:top;
+}
+
+.DateRangeDivTop20 {
+    vertical-align:top;
+    width: 20px;
+}
+
+.DateRangeDivTop40 {
+    vertical-align:top;
+    width: 40px;
+}
+
+.DateRangeDivTop80 {
+    vertical-align:top;
+    width: 80px;
+}
+
+.DateRangeDivTop90 {
+    vertical-align:top;
+    width: 90px;
+}
+
+.DateRangeDivTop220 {
+    vertical-align:top;
+    width: 220px;
+}
+
+.DateRangeDiv160 {
+    width:160px;
+    font-weight:400;
+    font-style: normal;
+    text-align: center;
+    padding-left:15px
+}
+
+.DateRangeDivMargin5 {
+    margin-top:5px;
+}
+
+.DateRangeDivMargin5Hide {
+    margin-top:5px;
+    display:none;
+}
+
+.DateRangeFontBold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.DateRangeFontItalic8 {
+	font-weight: 400;
+    font-style: italic;
+    font-size: 8px;
+}
+
+.DateRangeLabelFrom,.DateRangeLabelTo{
+    vertical-align : middle;
+    margin-top  : 5px;
+}
+
+.DateRangeLabelPrevNumOfDays{
+    margin-top  : 3px;
+}
+
+/* International Wire Widget */
+.InternationalWireWidgetHiddenDiv {
+    visibility: hidden;
+    display: none;
+}
+
+.InternationalWireWidgetTable {
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 2px;
+}
+
+.InternationalWireWidgetTableCellCenter {
+    text-align: center;
+}
+
+
+.InternationalWireWidgetTableCellLeft295 {
+    width: 295px;
+    text-align: left;
+}
+
+.InternationalWireWidgetSelect {
+    width: 350px;
+}
+
+.InternationalWireWidgetSelectMargin {
+    width: 350px;
+    margin-top:2px;
+}
+
+.InternationalWireWidgetButtonContainer {
+    margin:15px 0px 15px;
+}
+
+.InternationalWireWidgetPanel {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.InternationalWireWidgetFloatLeft {
+    float: left;
+}
+
+.InternationalWireWidgetWidth20Percent {
+    width:20%;
+}
+
+.InternationalWireWidgetWidth30Left {
+    width: 30%;
+    text-align: left;
+}
+
+.InternationalWireWidgetWidth50Left {
+    width: 50%;
+    text-align: left;
+}
+
+.InternationalWireWidgetDivBottomButtonContainer {
+    margin:0px 0px 5px;
+}
+
+.InternationalWireWidgetDivWirePinWrapper {
+    float: left;
+    padding-top: 5px;
+}
+
+.InternationalWireWidgetDivWirePinInput {
+    width: 35px;
+    margin-right: 120px;
+}
+
+.InternationalWireWidgetAlignTop {
+    vertical-align: top;
+}
+
+.WiresTransmittedTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+/* Alerts Modal */
+.modal-body {
+    margin: 2px 2px 2px 2px !important;
+}
+
+.AlertsModalPanel {
+    display: inline;
+    width: 500px;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+.AlertsModalDetailDiv {
+    display: none;
+}
+
+.AlertsModalTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.AlertsModalTableTDUpdatePanel {
+    text-align: right;
+    display: none;
+}
+
+.AlertsModalDivDatagrid {
+    text-align: left;
+    border: solid 1px #C8C8C8;
+}
+
+.AlertsModalDivDatagrid500 {
+    text-align: left;
+    border: solid 1px #C8C8C8;
+    width: 500px;
+}
+
+.AlertsModalTDRight {
+    text-align: right;
+}
+
+.AlertsModalAnchorPointer {
+    cursor:pointer;
+}
+
+.AlertsModalTD5 {
+    width:5px;
+}
+
+.AlertsModalEmptyColumn {
+    width: 5px;
+}
+
+.AlertsModalPagerStyle {
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.AlertsModalItemStyle {
+    width: 50px;
+}
+
+.AlertsModalColumn1HeaderStyle {
+    width: 160px;
+}
+
+.AlertsModalColumn2ItemStyle {
+    text-align: center;
+}
+
+.AlertsModalColumn2HeaderStyle {
+    width: 40px;
+}
+
+.AlertsModalPagerStyle20 {
+    height: 20px;
+}
+
+/* Statement Modal */
+.StatementModalDivContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.StatementModalDivContent {
+    height: 450px;
+    width: 100%;
+}
+
+.StatementModalNotAvailable {
+    width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Scheduled Transfer Modal */
+.ScheduledTransferModalWidth110 {
+    width: 110px;
+}
+
+.modal-header td.pageTab {
+    background-color: #fff;
+}
+
+.pageTab div {
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Configure Account List Widget */
+.ConfigureAccountListWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureAccountListWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+.ConfigureAccountListWidgetHeight5 {
+    height:5px;
+}
+
+.ConfigureAccountListWidgetRenameInput {
+    width: 200px;
+}
+
+.ConfigureAccountListWidgetErrorLabel {
+    color: red;
+}
+
+/* Configure Account Statement List Widget */
+.ConfigureAccountStatementListWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureAccountStatementListWidgetContent {
+    border: solid 1px #C8C8C8;
+    padding: 10px 5px;
+}
+
+.ConfigureAccountStatementListWidgetListBox {
+    height: 220px;
+    width: 720px;
+}
+
+/* Configure Go To Widget */
+.ConfigureGoToWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureGoToWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+/* Configure MyNetTeller Widget */
+.ConfigureMyNetTellerWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureMyNetTellerWidgetContent {
+    border: solid 1px #C8C8C8;
+    padding: 10px 5px;
+}
+
+.ConfigureMyNetTellerWidgetDropdownWrapper {
+    margin: 5px 0 10px 5px;
+}
+
+.ConfigureMyNetTellerWidgetListBox {
+    height: 220px;
+    width: 735px;
+}
+
+/* Configure Recent Transactions Widget */
+.ConfigureRecentTransactionsWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureRecentTransactionsWidgetContent {
+    border: solid 1px #C8C8C8;
+    padding: 10px 5px;
+}
+
+.ConfigureRecentTransactionsWidgetContentMargin {
+    margin: 5px 0 10px 5px;
+}
+
+.ConfigureRecentTransactionsWidgetListBox {
+    height: 220px;
+    width: 735px;
+}
+
+/* Configure Recent IBT Widget */
+.ConfigureRecentIBTWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureRecentIBTWidgetContent {
+    border: solid 1px #C8C8C8;
+    padding: 10px 5px;
+}
+
+.ConfigureRecentIBTWidgetListBox {
+    height: 220px;
+    width: 720px;
+}
+
+/* Scheduled IBT Modal */
+.ScheduledIBTModal210 {
+    width: 210px;
+}
+
+/* Holds Info Modal */
+.HoldsInfoModalTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ExportPopupDiv{
+    display:none; overflow-y:auto;
+}
+
+.ExportPopupHide{
+    display:none;
+}
+
+.ExportPopupBold{
+    font-weight:600;
+    font-style: normal;
+}
+
+.ExportPopupMargin{
+    margin:15px;
+}
+
+.LaunchBarDiv{
+    azimuth:inherit;
+}
+
+.LaunchBarTop4{
+    margin-top:-4px;
+}
+
+.LiveChatDiv{
+    padding-top: 10px;
+}
+
+.SMSAddressDiv{
+    padding:0 0 15px 0;
+}
+
+.SMSAddressLabel{
+    width:100%;text-align:left;
+}
+
+.SMSAddressFloatLeft{
+    float: left;
+}
+
+.SMSAddressHeaderDiv{
+    position: relative;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    left: 0px;
+}
+
+.SMSAddressHeaderDivSub{
+    float: left;
+    white-space: nowrap;
+}
+
+.SMSAddressAertCode{
+    margin: 0 2px 0 0;
+    width: 25px;
+}
+
+.SMSAddressPrefix{
+    margin: 0 2px 0 2px;
+    width: 25px;
+}
+
+.SMSAddressLine{
+    margin: 0 0 0 2px;
+    width: 35px;
+}
+
+.SMSAddressPad0{
+    padding: 0;
+}
+
+.SMSAddressCarrier{
+    position: relative;
+    width: 100%;
+    left: 0px;
+    padding: 5px 0 5px 0;
+}
+
+.TransactionTypeTable{
+     border: 0;
+}
+
+.TransactionTypeTD{
+    width: 220px;
+}
+
+.TransactionTypeTD200{
+    width: 200px;
+}
+
+.TransactionTypeDiv{
+    margin-top:5px;
+}
+
+.TransactionTypefieldLabel35 {
+	font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	padding-left: 5px;
+    width: 35px;
+}
+
+.NetTellerCalerdarLabel{
+    width: 200px;
+}
+
+.NetTellerCalerdarTextBox{
+    width: 75px;
+}
+
+.PrintableTextPanel{
+    Width:100%;
+    Height:95%;
+    border-color: #181818;
+    padding:10px;
+}
+
+.PrintableTextDiv{
+    text-align:center;
+}
+
+.RoutingNumberSearchPanel{
+     border-style:solid;
+     border-color:#181818;
+     border-width:2px;
+     background-color:white;
+     display:none;
+     z-index: 103;
+     position: absolute;
+     left:40px;
+     Width:675px;
+}
+
+.RoutingNumberSearchButtonTable {
+    text-align: right;
+    padding-right: 4px;
+    width: 350px;
+    margin: 10px auto 0 auto;
+}
+
+.RoutingNumberSearchTable th.RoutingNumberSearchTH{
+    text-align:center;
+}
+
+.TimeOutManagerDiv{
+    display: none;
+    text-align: left;
+}
+
+.TimeOutManagerP{
+    margin-top: 15px;
+}
+
+.TimeOutManagerSpan{
+    border: 0px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: right;
+    width: 20px;
+}
+
+.CMLoginEmailDiv{
+    margin: 15px 30px 15px 30px;
+}
+
+.WireViewApproveModalCol1{
+    width: 20%;
+}
+
+.WireViewApproveModalCol2{
+    width: 1%;
+}
+
+.WireViewApproveModalCol3{
+    width: 30%;
+}
+
+.WireViewApproveModalCol4{
+    width: 50%;
+}
+
+.WireViewApproveModalNoWrap{
+    white-space: nowrap;
+}
+
+.ScheduledPaymentDetailsModalTable{
+    width:350px;
+}
+
+.ScheduledPaymentDetailsModalTDBold{
+    font-weight:600;
+    font-style: normal;
+}
+
+.ScheduledPaymentDetailsModalTDLeft{
+    text-align:left;
+}
+
+.ScheduledPaymentDetailsModalTDRight{
+    text-align:right;
+}
+
+.ScheduledPaymentDetailsModalTR{
+    padding-left:10px;
+    padding-bottom:20px;
+}
+
+.ScheduledPaymentDetailsModalTDDiv{
+    text-align:left;
+    padding:5px;
+    width:100%;
+}
+
+.ScheduledPaymentDetailsModalSubTable{
+    text-align:left;
+    width:150px;
+}
+
+.ScheduledPaymentDetailsModalSubTableTD{
+    text-align:center;
+    padding: 0 10px 0 10px;
+}
+
+.RecentPaymentModalTable{
+    width:90%;
+}
+
+.RecentPaymentModalTableLabel{
+    text-align:right;
+    vertical-align:text-top;
+    white-space:nowrap;
+}
+
+.RecentPaymentModalTableLiteral{
+    font-weight:600;
+    font-style: normal;
+    text-align:left;
+    vertical-align:text-top;
+    padding-left:5px;
+}
+
+.RecentPaymentModalTableLabelRight{
+    text-align:right;
+}
+
+.RecentTransferModalTable{
+    padding:4px;
+    border-spacing:2px;
+    border: 0;
+}
+
+.P2PModalDivRadio{
+    margin:0px 0px 0px 50px;
+}
+
+.P2PModalDivButton{
+    margin:0px 0px 0px 325px;
+}
+
+.P2PModalDivTextbox{
+    width: 250px;
+}
+
+.PayeeTypeInfoMessageModalDivContainer{
+    height: 100%; width: 100%;
+}
+
+.PayeeTypeInfoMessageModalDivContent{
+    height: 450px; width: 100%;
+}
+
+/* Load Transfer To Accounts */
+.LoadTransferToAccountsWidth100 {
+    width: 100%;
+}
+
+.LoadMultiCurrencyTransferFromAccountsWidth100 {
+    width: 100%;
+}
+
+/* Print Statement */
+.PrintStatementFont20 {
+    font-size: 20px;
+}
+
+.PrintStatementFont13 {
+    font-size: 13px;
+}
+
+/* Positive Pay Exceptions Widget */
+.PositivePayExceptionsWidgetTable {
+    padding: 0;
+    border: 0;
+}
+
+/* Internal Non Owned Transfer Widget */
+.widget-content #nonowned-transfer-widget-container #InternalNonOwnedTransferWidgetCurrentDateLabel,
+.widget-content #nonowned-transfer-widget-container #InternalNonOwnedTransferWidgetNextBusinessDayLabel {
+    display: inline;
+}
+
+/* Configure ESI Widget */
+.ConfigureESIWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureESIWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+/* Configure PowerOn Widget */
+.ConfigurePowerOnWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigurePowerOnWidgetContent {
+    border: solid 1px #C8C8C8;
+    padding: 10px 5px;
+}
+
+.ConfigurePowerOnWidgetListBox {
+    height: 220px;
+    width: 720px;
+}
+
+/* Configure Saved Report Widget */
+.ConfigureSavedReportWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureSavedReportWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+/* Ajax Loading Container */
+.AjaxLoadingContainerQtip {
+    width: 200px;
+    padding: 14px;
+    border: 1px solid #C8C8C8;
+    border-radius: 4px;
+}
+
+/* Payment Calendar */
+.PaymentCalendarHidden {
+    display: none;
+}
+
+.PaymentCalendarWidth20 {
+    width: 20px;
+}
+
+.PaymentCalendarDivBlue{
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-color: #2020FF;
+    border-width: thin;
+    border-style: solid;
+}
+
+.PaymentCalendarDivGreen {
+    width: 15px;
+    height: 15px;
+    background: #D4FF9F;
+    border-width: thin;
+    border-style: solid;
+}
+.PaymentCalendarDivGrey {
+    width: 15px;
+    height: 15px;
+    background: #9999CC;
+    border-width: thin;
+    border-style: solid;
+}
+
+/* Processed Payments By Date Widget */
+.ProcessedPaymentsByDateWidgetDataGrid {
+    font-weight:400;
+    font-style: normal;
+}
+
+.ProcessedPaymentsByDateWidgetNoRecordsDiv {
+    width: 100%;
+    font-size: 12px;
+}
+
+.ProcessedPaymentsByDateWidgetNoRecordsLabel {
+    width: 100%;
+    font-size: 12px;
+}
+
+.ProcessedPaymentsByDateWidgetHidden {
+    display: none;
+}
+
+.ProcessedPaymentsByDateWidgetTable {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.ProcessedPaymentsByDateWidgetTDRightTopNowrap {
+    text-align: right;
+    vertical-align: text-top;
+    white-space: nowrap;
+}
+
+.ProcessedPaymentsByDateWidgetLabelRight {
+    text-align: right;
+}
+
+.ProcessedPaymentsByDateWidgetTDBoldLeftTop5 {
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+
+.ProcessedPaymentsByDateWidgetTDLeftTop5 {
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+
+/* Scheduled Payments By Date Widget */
+.ScheduledPaymentsByDateWidgetNoRecordsDiv {
+    width: 100%;
+    font-size: 12px;
+}
+
+.ScheduledPaymentsByDateWidgetNoRecordsLabel {
+    width: 100%;
+    font-size: 12px;
+}
+
+.ScheduledPaymentsByDateWidgetHidden {
+    display: none;
+}
+
+.ScheduledPaymentsByDateWidgetTable {
+    width: 325px;
+}
+
+.ScheduledPaymentsByDateWidgetRight5 {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.ScheduledPaymentsByDateWidgetBoldLeft5 {
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.ScheduledPaymentsByDateWidgetRight5Nowrap {
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+.ScheduledPaymentsByDateWidgetLeft5 {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.ScheduledPaymentsByDateWidgetCenter20 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ScheduledPaymentsByDateWidgetCenter5100 {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.ScheduledPaymentsByDateWidgetLeft100 {
+    text-align: left;
+    width: 100%;
+}
+
+.ScheduledPaymentsByDateWidgetCenter {
+    text-align:center;
+}
+
+.ScheduledPaymentsByDateWidgetHeight20 {
+    height: 20px;
+}
+
+/* Bill Pay Charge Details */
+.BillPayChargeDetailsWidgetTop {
+    vertical-align: top;
+}
+
+.BillPayChargeDetailsWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.BillPayChargeDetailsWidgetRightNowrap {
+    text-align: right;
+    white-space:nowrap;
+}
+
+.BillPayChargeDetailsWidgetNowrap {
+    white-space:nowrap;
+}
+
+.BillPayChargeDetailsWidgetTableWidth100 {
+    width: 100%;
+}
+
+.BillPayChargeDetailsWidgetTableCell1 {
+    white-space:nowrap;
+    text-align: left;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.BillPayChargeDetailsWidgetTableCell2 {
+    white-space:nowrap;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.BillPayChargeDetailsWidgetTableCellBottom20 {
+    padding-bottom: 20px;
+}
+
+.BillPayChargeDetailsWidgetTablePadding {
+    width: 100%;
+    padding: 30px 15px 30px 15px;
+}
+
+/* Saved Report Widget */
+.SavedReportWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.SavedReportWidgetTDLink {
+    text-align: left;
+    width: 130px;
+    padding-left: 5px;
+    padding-right: 10px;
+    text-wrap: normal;
+    border: none;
+}
+
+.SavedReportWidgetNowrap {
+    white-space: nowrap;
+}
+
+/* Account List Widget Qualstar */
+.AccountListWidgetQualstarTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.AccountListWidgetQualstarHeight10 {
+    height: 10px;
+}
+
+/* Account List Template Widget */
+.AccountListTemplateWidgetMarginLeft5 {
+    margin-left: 5px;
+}
+
+.AccountListTemplateWidgetTableNoBorder {
+    border: none;
+}
+
+.AccountListTemplateWidgetTableNoBorder thead .th th {
+    font-weight: bold !important;
+}
+
+.AccountListTemplateWidgetHeight10 {
+    height: 10px;
+}
+
+/* Non Cleared Processed Payments By Date Widget */
+.NonClearedProcessedPaymentsByDateWidgetDataGrid {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetNoRecordsDiv {
+    width: 100%;
+    font-size: 12px;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetNoRecordsLabel {
+    width: 100%;
+    font-size: 12px;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetHidden {
+    display: none;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetTable {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetRightTopNowrap {
+    text-align: right;
+    vertical-align: text-top;
+    white-space: nowrap;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetRight {
+    text-align:right;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetTDBoldLeftTop5 {
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetTDLeftTop5 {
+    text-align: left;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
+
+.NonClearedProcessedPaymentsByDateWidgetHeight20 {
+    height: 20px;
+}
+
+/* Account Transactions */
+.AccountTransactionsDateColumn {
+    width:10%;
+    white-space:nowrap;
+	text-align: center;
+}
+
+.AccountTransactionsCheckNumber {
+    width:12%;
+    white-space:nowrap;
+	text-align: center;
+}
+
+#ctl00_PageContent_ctl00_tab_transactionsDataGrid tbody tr.th th:nth-child(1), #ctl00_PageContent_ctl00_tab_transactionsDataGrid tbody tr.th th:nth-child(2) {
+	text-align: center;
+}
+
+/* Account Transaction Search */
+.AccountTransactionSearchTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    width:100%;
+}
+
+.AccountTransactionSearchRightNowrap {
+    text-align:right;
+    white-space:nowrap;
+}
+
+.AccountTransactionSearchAmountTextBox {
+    width: 132px;
+}
+
+.AccountTransactionSearchCheckTextBox {
+    width: 132px;
+}
+
+.criteriaBox .k-numeric-wrap .AccountTransactionSearchAmountTextBox {
+    width: 139px;
+}
+
+.criteriaBox .k-numeric-wrap .AccountTransactionSearchCheckTextBox {
+    width: 139px;
+}
+
+/* Stop Payments Confirmation */
+.StopPaymentsConfirmationTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border:0;
+}
+
+.StopPaymentsConfirmationTableBorder {
+    border:0;
+}
+
+/* Lease Security Main */
+.LeaseSecurityMainContainer {
+    padding:0 0 0 18px;
+}
+
+.LeaseSecurityMainTable {
+    width: auto;
+}
+
+.LeaseSecurityMainTDAccountLabel {
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 5px 0 0;
+}
+
+.LeaseSecurityMainTDLandlord {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.LeaseSecurityMainTDLeftNowrap {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.LeaseSecurityMainTDLeftNowrapBold {
+    text-align: left;
+    white-space: nowrap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.LeaseSecurityMainTDLeftNowrapPaddingLeft {
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 0 0 5px;
+}
+
+.LeaseSecurityMainHidden {
+    display: none;
+}
+
+.StandardTable{
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+}
+
+#ctl00_PageContent_ctl00_pnlMessageInfo {
+	border-bottom: 1px solid #e2e3e3;
+}
+
+.fileUploadContainer .ChooseButton {
+    border: 1px solid #C8C8C8;
+    border-collapse: collapse;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: none #f9f9f9;
+    font-weight: 400;
+    font-style: normal;
+    padding: 7px;
+    width: 422px;
+    margin-right: 5px;
+}
+
+.fileUploadContainer.fileUploadContainerMessageSend .ChooseButton {
+    width: 354px;
+}
+
+.fileUploadContainer .UploadButton {
+    border-collapse: collapse;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-image: none;
+    height: 35px;
+    padding: 7px 15px;
+    background-color: #FFF;
+    color: #303030 !important;
+    border: 1px solid #C8C8C8;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 1px;
+}
+
+.fileUploadContainer .UploadButton:hover, .fileUploadContainer .ChooseButton:hover {
+	opacity: 0.8;
+}
+
+/*ALERTS*/
+.Jha-AlertDetailDiv {
+    margin: 10px;
+    display: none;
+}
+
+.Jha-AlertDetailDescriptionInnerDiv {
+    padding: 10px 0 10px 10px;
+}
+
+.datagrid div.Jha-AlertDetailDescription {
+    height:0;
+}
+
+.Jha-AlertsDataGrid {
+    text-align: left;
+    border: solid 1px #C8C8C8;
+}
+
+.Jha-alertsListDiv {
+    margin: 10px;
+}
+
+.Jha-Alerts-Panel {
+    border-style: solid;
+    border-color: #181818;
+    border-width: 2px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 475px;
+}
+
+.BlackhawkEstmtDiv{
+    border:none;
+    padding:10px;
+}
+
+.BlackhawkEstmtTableTD1{
+    padding-top:0px;
+}
+
+.BlackhawkEstmtMainContentTable{
+    border-collapse:collapse;
+    border:0;
+    border-spacing: 5px;
+}
+
+.BlackhawkEstmtMainContentTD{
+    text-align:right;
+}
+
+.BluePointsDivMsg{
+    margin-left:5%;
+}
+
+.BluePointsRDCSSOAccountsDiv {
+    border: 1px solid #C8C8C8;
+    width: auto;
+    padding: 5px;
+}
+
+.CACheckImageTD{
+    margin: 0 auto 0 auto;
+}
+
+.CACheckImageImage{
+    width:600px;
+    border:2px solid #181818;
+}
+
+.CBSIAugeoDiv{
+    border: 1px solid #808080;
+    width:auto;
+    padding:5px;
+}
+
+.CBSIAugeoAccountsDiv{
+    border: 1px solid #808080;
+    width:auto;
+    padding:5px;
+}
+
+.CenlarSSOAccountsDiv{
+    width:700px;
+    padding:5px;
+    border:1px solid #808080;
+}
+
+.CenlarSSOAccountsMargin{
+    margin-left:2%;
+}
+
+.StandardDropDownList{
+    width:210px;
+}
+
+.DivNoBorder{
+    border:none;
+}
+
+.DivMsg{
+    margin-left:5%;
+}
+
+.CheckFreeAcceptDiv{
+    border:1px solid gray;
+}
+
+.RightCell{
+    white-space:nowrap;
+    text-align:right;
+}
+
+.CheckFreeHandoffDiv{
+    margin:25px 15px 25px 15px;
+}
+
+.Bold{
+    font-weight:700;
+    font-style: normal;
+}
+
+.CheckFreeHandoffTable{
+    width:10%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.CheckFreeHandoffTableTH{
+    white-space:nowrap;
+}
+
+.CheckFreePayLynxHandoffDiv{
+    margin-left:30px;
+    width:500px;
+    padding:5px;
+}
+
+.CheckFreeRXPAccountsDiv{
+    width:700px;
+    border:1px solid #808080;
+    padding:5px;
+}
+
+.CheckFreeSignupSubmitDiv {
+    border: 1px solid #C8C8C8;
+}
+
+.CorporateOneCheckImageTD{
+    margin: 0 auto 0 auto;
+}
+
+.CorporateOneCheckImageImage{
+    height:270px;
+}
+
+.COWWWEnrollDiv{
+    margin:15px;
+}
+
+.COWWWEnrollButtonDiv{
+    text-align:center;
+}
+
+.COWWWEnrollButtonDivRight{
+    text-align:right;
+}
+
+.CusoSSOAccountsDiv{
+    width:auto;
+    padding:5px;
+    border:1px solid #808080;
+}
+
+.CustomGenericTabDiv{
+    padding-left:10%;
+    border:1px solid #808080;
+}
+
+.CustomSSOHandoffDiv {
+    border: 1px solid #C8C8C8;
+}
+
+.DeposZipEnhancedDiv{
+    margin-left:20px;
+    width:800px;
+    padding:5px;
+}
+
+.DeposZipSSOAccountsDiv{
+    padding:5px;
+    width:700px;
+    border:1px solid #808080;
+}
+
+.DeposZipSSOAccountsTDLeft{
+    text-align:left;
+}
+
+.DeposZipSSOAccountsTD{
+    width:180px;
+}
+
+.DeposZipSSOAccountsTDButton{
+    text-align:center;
+    width:700px;
+    padding:5px;
+}
+
+.DeposZipSSOAccountsDropDownList{
+    width:150px;
+}
+
+.DisplayAPIEstatementsDiv{
+    margin:0px;
+    background-color:white;
+}
+.DisplayAPIEstatementsTable{
+    border:0;
+    padding: 0;
+    border-spacing: 0;
+    background-color: white;
+}
+
+.DisplayAPIEstatementsDisclosureTextPanel{
+    overflow-y:scroll;
+    border:0 solid;
+    padding:5px;
+}
+
+.DisplayAPIEstatementsNavTable{
+    border-width:4px;
+    height:40px;
+    vertical-align:middle;
+    margin: 0 auto 0 auto;
+}
+
+.DisplayAPIEstatementsTableAlign{
+    vertical-align:middle;
+    margin: 0 auto 0 auto;
+}
+
+.DisplayAPIEstatementsSPAXTable{
+    border-width:0;
+    vertical-align:middle;
+    margin: 0 auto 0 auto;
+}
+
+.DisplayArcImagesTable{
+    width:600px;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.DisplayArcImagesTableTD1{
+    padding:10px;
+    background-color:red;
+    width:600px;
+}
+
+.DisplayArcImagesTable2{
+    background-color:white;
+    width:100%;
+}
+
+.DisplayArcImagesTableTD2{
+    padding:10px;
+}
+
+.DisplayArcImagesTable3{
+    background-color:white;
+    width:100%;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.DisplayArcImagesTableTD3{
+    text-align:right;
+}
+
+.DisplayArcImagesTableSpan{
+    text-decoration:underline;
+}
+
+
+.DisplayArcImagesTableTD4{
+    width:1%;
+    white-space:nowrap;
+    vertical-align:bottom;
+}
+
+.DisplayArcImagesTableTD5{
+    width:60%;
+    vertical-align:bottom;
+}
+
+.DisplayArcImagesTableTD6{
+    vertical-align:bottom;
+}
+
+.DisplayArcImagesTable4{
+    width:100%;
+}
+
+.DisplayArcImagesTableTR{
+    height:1px;
+}
+
+.DisplayArcImagesTableTD7{
+    background-color:#181818;
+}
+
+.DisplayArcImagesTableTD8{
+    white-space:nowrap;
+    vertical-align:bottom;
+}
+
+.DisplayArcImagesTableTD5pct{
+    width:5%;
+}
+
+.DisplayArcImagesTableTD40pct{
+    width:40%;
+}
+
+.DisplayArcImagesTableTD15pct{
+    width:15%;
+}
+
+.DisplayArcImagesTableTD9{
+    padding:5px;
+    background-color:red;
+}
+
+.DisplayDraftImagesFrontPanel{
+    padding-bottom:1px;
+    padding-top:1px;
+}
+
+.DisplayDraftImagesBackPanel{
+    padding-bottom:1px;
+    padding-top:5px;
+}
+
+.EdiDownloadDiv{
+    margin: 10px 10px 10px 30px;
+}
+
+.EdiDownloadTD1{
+    white-space:nowrap;
+}
+
+.EdiDownloadTD2{
+    margin: 0 auto 0 auto;
+}
+
+.EdiPendingDataGrid tr td{
+    padding:10px;
+}
+
+.EnsentaSSOAccountsDiv{
+    margin-left:20px;
+    width:800px;
+    padding:5px;
+}
+
+.ENSIDiv{
+    text-align:center;
+}
+
+.StandardDiv {
+    border: 1px solid #C8C8C8;
+    width: 700px;
+    padding: 5px
+}
+
+.FiServDepositSSOAccountsTD1{
+    text-align:left;
+}
+
+.FiServDepositSSOAccountsTD2{
+    width:180px;
+}
+
+.FiServDepositSSOAccountsTD3{
+    text-align:center;
+    width:700px;
+    padding:5px;
+}
+
+.FiServDepositSSOAccountsAccountsLabel{
+    font-weight:600;
+    font-style: normal;
+}
+
+.FiServDepositSSOAccountsDropDownList{
+    width:150px;
+}
+
+.InfoLinkGenericImageDiv{
+    text-align:center;
+}
+
+.InfoLinkGenericImageImg{
+    width:20px;
+    height:20px;
+    border:0;
+}
+
+.StandardDivAuto {
+    border: 1px solid #C8C8C8;
+    width: auto;
+    padding: 5px
+}
+
+.PostLoginPromptDiv{
+    color:red;
+    text-align:left;
+}
+
+.PostLoginPromptTDRight{
+    text-align:right;
+}
+
+.PostLoginPromptTDLeft{
+    text-align:left;
+}
+
+.PostLoginPromptPaperStatementDiv{
+    overflow-y:auto;
+    display:none;
+}
+
+.PromotionalPromptDiv{
+    text-align:left;
+}
+
+.PromotionalPromptImage{
+    border-style:solid;
+    border-color:#181818;
+    background-color:#FFFF99;
+}
+
+.PromotionalPromptLabel{
+    font-size:x-small;
+}
+
+.RdmSSODiv{
+    text-align:center;
+}
+
+.RdmSSOImg{
+    width:20px;
+    height:20px;
+    border:0;
+}
+
+.ThirdPartyHandoffDive {
+    border: solid 1px #C8C8C8;
+}
+
+.ThirdPartyHandoffDiv{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom:15px;
+}
+
+.ThirdPartyHandoffAccountDiv{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.ThirdPartyHandoffAccountsTable{
+    width:100%;
+}
+
+.ThirdPartyHandoffAccountsTableTableCell{
+    text-align:center;
+}
+
+.ThirdPartyHandoffAccountsContent{
+    text-align:right;
+    width:10%;
+}
+
+.order-check-container{
+    width:400px;
+    height:200px;
+}
+
+.disclosure-container{
+    width:400px;
+    min-width:400px;
+    height:200px;
+    resize:none;
+}
+
+.uBankingDialog{
+    width:1000px;
+    height:1000px;
+    resize:both;
+    overflow:scroll;
+}
+
+.PostLoginPromptPanel{
+    width:600px;
+    height:400px;
+    overflow-y:scroll;
+}
+
+.TableSpacing0
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* View NSF Items */
+.ViewNsfItemsDG {
+	border-collapse:collapse;
+}
+.ViewNsfItemsDG tr td {
+	border-right: 1px solid #E2E2E2;
+	padding: 0 10px;
+}
+
+/* Order Checks */
+.OrderChecksMainDiv {
+    padding-bottom: 7px;
+    padding-left: 5px;
+	width: 520px;
+	margin: auto;
+}
+.OrderChecksTable2
+{
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+.OrderChecksTable2 td, .OrderChecksTable2 th
+{
+    border-collapse: separate;
+}
+
+select#ddlAccount {
+	width: 250px;
+}
+
+td#ctl00_PageContent_ctl00_TableCell1.SpacedBoldTD {
+	padding-top: 20px;
+	text-align: right;
+	padding-right: 2px;
+}
+
+#ctl00_PageContent_ctl00_Table2 tbody tr td.ButtonTD {
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+/*Order Checks - Clark American*/
+.OrderChecksClarkeAmericanFieldset
+{
+    width:500px;
+    margin:0 auto;
+}
+.OrderChecksClarkeAmericanFieldset div.row.seven
+{
+    width: 100%;
+    margin-bottom: 2px;
+}
+.OrderChecksClarkeAmericanFieldset div.row.seven div.six.columns input,
+.OrderChecksClarkeAmericanFieldset div.row.seven div.six.columns select
+{
+    width: 255px;
+}
+.OrderChecksClarkeAmericanConfirmZipCode input
+{
+    width: 70px !important;
+}
+
+/* Bill Shrink */
+.BillShrinkDollarIcon {
+    padding-left: 50px;
+    vertical-align: middle;
+}
+
+.BillShrinkModalFrame {
+    border:0;
+}
+
+/* Stop Payments Search */
+.StopPaymentSearchViewTabSearchButton {
+    display: none;
+}
+
+.StopPaymentSearchViewTabItemCountDiv {
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.StopPaymentSearchSearchForm {
+    display: none;
+}
+
+.StopPaymentSearchSearchForm .nowrap {
+    white-space: nowrap;
+}
+
+.StopPaymentSearchSearchDate1 {
+    vertical-align: top;
+}
+
+.StopPaymentSearchSearchDate2Container {
+    display: none;
+}
+
+.StopPaymentSearchSearchDate2 {
+    vertical-align: top;
+}
+
+.StopPaymentSearchSearchDateText {
+    display: none;
+}
+
+.StopPaymentSearchSearchCheck2Container {
+    display: none;
+}
+
+.StopPaymentSearchSearchAmount1 {
+    width: 100px;
+}
+
+.StopPaymentSearchSearchAmount2Container {
+    display: none;
+}
+
+.StopPaymentSearchSearchAmount2 {
+    width: 100px;
+}
+
+.StopPaymentSearchSearchFormTd50 {
+    width: 50%;
+}
+
+.StopPaymentSearchResetButton {
+    display: none;
+}
+
+.StopPaymentSearchStrongLabel {
+    font-weight: 600;
+    font-style: normal;
+}
+
+.OptionsDisplayRadiolist .row {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+.OptionsDisplayRadiolist {
+	width: 880px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.DisplayDefaultsContent fieldset {
+	margin-top: 0;
+}
+
+.OptionsPasswordResetQAResetLabel {
+    width:300px;
+}
+
+.OptionsPasswordResetQAQuestionTextBox {
+    width:200px;
+}
+
+.OptionsPasswordResetQAQuestionImage {
+    border:none;
+    margin-bottom:-3px;
+}
+
+
+.SecurityAlertConfirmEmailTable {
+    padding: 35px 0 0 0;
+}
+
+.SecurityAlertConfirmEmailTableTD {
+    padding: 0 0 15px 5px;
+}
+
+.SecurityAlertConfirmEmailLabel {
+    font-weight:600;
+    font-style: normal;
+    width:100px;
+    text-align:left;
+}
+
+.SecurityAlertConfirmEmailTextBox {
+    width:300px;
+}
+
+.SecurityAlertConfirmSMSTable {
+    padding:35px 0 0 5px;
+}
+
+.SecurityAlertEmailFeeControlsTable {
+    width:100%;
+    padding:0 0 0 5px;
+
+}
+
+.SecurityAlertButtonTD {
+    text-align:center;
+}
+
+.AlertOptionsTR {
+    font-weight:600;
+    font-style: normal;
+    color: #484848;
+}
+
+.AlertOptionsTD {
+    width:3%;
+}
+
+.AlertOptionsLinkButton {
+    font-weight:600;
+    font-style: normal;
+    color:blue;
+}
+
+.AlertOptionsAlertButtonTD {
+	margin-top: 8px;
+}
+
+.WebAlertEditPersonalAlertTextBox {
+    width:250px !important;
+}
+
+.WebAlertEditEmailTextBox {
+    width:300px;
+}
+
+.WebAlertEditSMSAlertsAreaCode {
+    margin: 0 2px 0 0;
+    width:30px;
+}
+
+.WebAlertEditSmsRepeaterDiv {
+    float:left;
+    white-space:nowrap;
+    padding:0 5px 5px 0;
+}
+
+.WebAlertEditSMSAlertsPrefix {
+    margin: 0 2px 0 2px;
+    width:30px;
+}
+
+.WebAlertEditSMSAlertsLine {
+    margin:0 0 0 2px;
+    width:38px;
+}
+
+.WebAlertEditSMSCarrierDiv {
+    float:left;
+}
+
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol0 {
+	width: 2%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol1 {
+	width: 25%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol2, #ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol3 {
+	width: 15%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol4 {
+	width: 30%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol5, #ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol6 {
+	width: 6%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid .AlertOptionsGridsCol7 {
+	width: 1%;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid tbody {
+	background-color: #f3f4f6;
+}
+
+#ctl00_PageContent_ctl00__AlertDataGrid tbody tr.altColor {
+	height: 30px;
+	background-color: #fff;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol0 {
+	width: 2%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol1 {
+	width: 25%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol2, #ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol3 {
+	width: 15%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol4 {
+	width: 30%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol5, #ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol6 {
+	width: 6%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid .AlertOptionsGridsCol7 {
+	width: 1%;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid tbody {
+	background-color: #f3f4f6;
+}
+
+#ctl00_PageContent_ctl01__AlertDataGrid tbody tr.altColor {
+	height: 30px;
+	background-color: #fff;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol0 {
+	width: 2%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol1 {
+	width: 20%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol2 {
+	width: 5%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol3 {
+	width: 30%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol4 {
+	width: 30%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol5, #ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol6 {
+	width: 6%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid .AlertOptionsGridsCol7 {
+	width: 1%;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid tbody {
+	background-color: #f3f4f6;
+}
+
+#ctl00_PageContent_ctl02__AlertDataGrid tbody tr.altColor {
+	height: 30px;
+	background-color: #fff;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol0 {
+	width: 2%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol1 {
+	width: 17%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol2 {
+	width: 37%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol3 {
+	width: 1%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol4{
+	width: 30%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol5, #ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol6 {
+	width: 6%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid .AlertOptionsGridsCol7 {
+	width: 1%;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid tbody {
+	background-color: #f3f4f6;
+}
+
+#ctl00_PageContent_ctl03__AlertDataGrid tbody tr.altColor {
+	height: 30px;
+	background-color: #fff;
+}
+
+.AlertOptionsRowHeight td:nth-child(6), .AlertOptionsRowHeight td:nth-child(7) {
+	text-align: center;
+}
+
+.AlertOptionsRowHeight {
+	height: 30px;
+	background-color: #f3f4f6;
+}
+
+.AlertOptionsLinkButton{
+    color:blue;
+}
+
+.AlertOptionsGridHeader .th{
+	height: 25px;
+	background-color: #ffffff;
+}
+
+.WebAlertEditEmailTextBox{
+    width:300px;
+}
+
+.WebAlertEditSMSAlertsAreaCode{
+    margin: 0 2px 0 0;
+    width:30px;
+}
+
+.WebAlertEditSmsRepeaterDiv{
+    float:left;
+    white-space:nowrap;
+    padding:0 5px 5px 0;
+}
+
+.WebAlertEditSMSAlertsPrefix{
+    margin: 0 2px 0 2px;
+    width:30px;
+}
+
+.WebAlertEditSMSAlertsLine{
+    margin:0 0 0 2px;
+    width:38px;
+}
+
+.WebAlertEditSMSCarrierDiv{
+    float:left;
+}
+
+/* Auth Info Message */
+.AuthInfoMessageCookieMessage {
+    border: solid 1px #C8C8C8;
+    color: #FF0000;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.AuthInfoMessageBankDisclaimer {
+    border: solid 1px #C8C8C8;
+}
+
+.AuthInfoMessageDivHeight3 {
+    height:3px;
+}
+
+.AuthInfoMessageDisclaimer {
+    border: solid 1px #C8C8C8;
+}
+
+.AuthInfoMessageInfoMessageTable {
+    display: table;
+    width: 100%;
+}
+
+.AuthInfoMessageTableRow {
+    display: table-row;
+}
+
+.AuthInfoMessageTableCell {
+    display: table-cell;
+}
+
+.AuthInfoMessageErrorCode {
+    width:100%;
+    text-align:right;
+    color:GrayText;
+    font-size:x-small;
+    padding-right: 24px;
+}
+
+.AuthInfoMessageDivHeight10 {
+    height:10px;
+}
+
+/* Top Menu */
+.TopMenuHelpTabLinkButton {
+    cursor: help;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+
+/* IE10 Select Fix */
+select::-ms-expand {
+    display: none;
+}
+
+/*iPay Widgets*/
+#IPayQPWidgetContainer .buttonsContainer {
+	padding: 0;
+}
+
+#IPayQPWidgetContainer .buttonsContainer input.submit-iPay-multi-qp {
+    margin:5px;
+}
+.ipay-rp-widget-container .msg-container, .ipay-sp-widget-container .msg-container {
+	border-top: 1px solid #e6e6e6;
+}
+
+#IPayQPWidgetContainer {
+	margin-right: 0px;
+	background-color: #ffffff;
+	height: auto !important;
+}
+
+.ipay-qp-list-container.datagrid, .ipay-rp-list-container.datagrid, .ipay-sp-list-container.datagrid {
+	border-style: none;
+}
+
+#IPayQPWidgetContainer div.ipay-qp-list-container.datagrid div.ipay-qp-list-data-container.widget-data-container table {
+	height: auto !important;
+    border-bottom:1px solid #e3e3e3;
+}
+
+.ipay-qp-list-data-container.widget-data-container, .ipay-rp-list-data-container.widget-data-container {
+	height: auto !important;
+}
+
+.ipay-header-container {
+	height: 60px !important;
+}
+
+/*table header fix*/
+.ipay-qp-widget-container .ipay-header-wrapper, .ipay-rp-widget-container .ipay-header-wrapper, .ipay-sp-widget-container .ipay-header-wrapper {
+overflow: hidden;
+max-height: 30px;
+}
+
+.ipay-qp-widget-container .ipay-payee-name-container, .ipay-rp-widget-container .ipay-payee-name-container, .ipay-sp-widget-container .ipay-payee-name-container {
+	padding: 0 5px 0 12px;
+	display: table-cell;
+	margin: 0;
+	width: 100%;
+	min-width: 125px;
+}
+
+th.ipay-amount-container.borderedgridcell {
+	text-align: right;
+}
+
+#IPayQPWidgetContainer div.ipay-qp-list-container.datagrid div.ipay-header-wrapper div.ipay-header-container table.iPayMultiQuickPaymentsWidgetHeaderTable thead tr.ipay-header-row.th th.ipay-amount-container.borderedgridcell {
+	text-align: left;
+	padding-left: 14px;
+}
+
+#paymentDateHeader {
+	text-align: left;
+	padding-left: 9px;
+}
+
+th.ipay-payee-name-container.borderedgridcell {
+	padding-left: 12px;
+	padding-right: 0px;
+	width: 100%;
+	min-width: 125px;
+}
+
+th.ipay-account-container.borderedgridcell {
+	padding-left: 10px;
+}
+
+#IPayRPWidgetContainer div.ipay-rp-footer-container.widget-footer-container table {
+	display: none;
+}
+
+.ipay-payment-id-container {
+	display: none;
+}
+
+.ipay-rp-list-data-container.widget-data-container {
+	height: 100px;
+}
+
+.ipay-rp-list-data-container, .ipay-sp-list-data-container, .ipay-qp-list-data-container {
+    max-height: 500px;
+}
+
+.ipay-qp-widget-container .ipay-date-container {
+	min-width: 135px;
+	width: 135px;
+	padding-right: 10px;
+}
+
+input.iPayMultiQuickPaymentWidgetDateTextBox {
+    width: 90px !important;
+}
+
+.ProcessedPaymentsDataGrid th.widget-header-last-col {
+	display: table-cell;
+}
+
+.processed-payments-container th.AmountColumn, .processed-payments-container .AmountColumn {
+    padding-right: 15px;
+}
+
+.processed-payments-container th.ProcessDateColumn, .processed-payments-container .ProcessDateColumn {
+    padding-right: 15px;
+}
+
+.processed-payments-container .PaymentStatusColumn {
+    text-align: left;
+    width: 180px;
+}
+
+td.ipay-account-container.borderedgridcell {
+	padding-left: 10px;
+}
+
+th#paymentDateHeader.ipay-date-container.borderedgridcell.ipay-rp-date-header {
+	text-align: center;
+	padding: 0;
+}
+
+.ipay-rp-widget-container .ipay-status-container {
+	text-align: center;
+}
+
+.ipay-amount-container {
+    width: 90px;
+    min-width: 90px;
+}
+
+.EPSDiv {
+    width:700px;
+    border:1px solid #808080;
+    padding:5px;
+}
+
+.EPSDivTextBox {
+    width:693px;
+    border:none;
+    height:55px;
+    font-family:Arial;
+}
+
+.EPSDivLabel {
+    border:none;
+    color:red;
+    font-weight:600;
+    font-style: normal;
+}
+
+.EPSDiv2 {
+    margin-left:30px;
+    width:700px;
+    padding:5px;
+}
+
+.EPSDiv2TD1 {
+    width:300px;
+}
+
+.EPSDiv2TD1Label1 {
+    border:none;
+    color:red;
+    font-size:small;
+    font-weight:600;
+    font-style: normal;
+}
+
+.EPSDiv2TD1Label2 {
+    border:none;
+}
+
+.EPSDiv2TD2 {
+    width:185px;
+}
+
+.EPSDiv2TD3 {
+    width:335px;
+}
+
+.EPSDiv2TD4 {
+    width:300px;
+}
+
+.EPSDiv2TD4Label {
+    border:none;
+    color:red;
+    font-size:small;
+    font-weight:600;
+    font-style: normal;
+}
+
+.EPSDiv2TD4Label2 {
+    border:none;
+}
+
+.EPSDiv2TD5 {
+    width:185px;
+}
+
+.EPSDiv2TD6 {
+    width:335px;
+}
+
+.EPSDiv3 {
+    text-align:center;
+    width:700px;
+    padding:5px;
+}
+
+.OrderChecksClarkeAmericanConfirmErrorMessageTable {
+    display:table;
+    width:100%;
+}
+
+.OrderChecksClarkeAmericanConfirmTableCell {
+    display: table-cell;
+}
+
+.OrderChecksClarkeAmericanConfirmButtonContainer {
+    margin-right: 61px;
+}
+
+.row .OrderChecksClarkeAmericanConfirmDataLabel {
+    width: 33.33333%;
+}
+
+.row .OrderChecksClarkeAmericanConfirmZipCode {
+    width: 25%
+}
+
+.OrderChecksClarkeAmericanConfirmHelpCell {
+    background-color: #eaeaea;
+}
+
+.AlertContactsDeleteContactButtonGroup {
+    margin:15px;
+}
+
+.AlertContactsfieldLabel {
+    padding:15px 0 0 5px;
+    white-space:nowrap;
+}
+
+.AlertContactsTDNickname {
+    width:100%;
+    padding:15px 0 0 5px;
+}
+
+.AlertContactsNicknameInput {
+    width:15em;
+}
+
+.AlertContactsSMSAddressTD {
+    padding:0 0 0 5px;
+}
+
+.AlertContactsButtonDiv {
+    margin:15px;
+}
+
+.AlertContactsAddContactMessageLabel {
+    color:red;
+    padding-right:20em;
+}
+
+/* View Range Bar */
+.GridViewRange {
+    margin: -35px 0 0 0;
+    padding: 0 10px 10px;
+    width: 500px;
+    float: right;
+}
+
+/*  */
+.multi-quick-payment-container {
+    border:none;
+}
+
+.multi-quick-payment-container th.PayeeAmountContainer {
+    padding-right: 9px;
+    vertical-align: inherit;
+}
+
+#MultiQuickPaymentButton.ColorButton {
+    width: 98%;
+    margin: -8px 0 4px 0px;
+}
+
+.multi-quick-payment-container div.PayeeNameContainer {
+    padding: 3px 0;
+}
+
+.multi-quick-payment-container .paymentTotalsDiv .qpPaymentsTotal {
+    padding-right:10px;
+	background-color: #ffffff;
+	border-top: 1px solid #e2e3e3;
+	border-bottom: 1px solid #e2e3e3;
+}
+
+.RateInfoHelpDiv{
+    position: relative;
+}
+
+.HelpLink img {
+    padding-top:2px;
+}
+
+.AccountInfoDropdownTable {
+    border: 0;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+.AccountInfoDropdownTableLabel{
+    font-weight:400;
+    font-style: normal;
+    padding-right: 2px;
+	position: relative;
+	top: 3px;
+}
+
+.AccountTransactionSearchPrimaryBoxHeader {
+    background-color:#fff;
+}
+
+.AccountTransactionSearchPrimaryBox {
+    background-color:#fff;
+    border-width: 0 0 0 0;
+    margin-left:auto;
+    margin-right:auto;
+    width:970px;
+}
+
+.AccountTransactionSearchClearBoth {
+    clear:both;
+}
+
+.AccountTransactionSearchDateInput {
+    width: 106px;
+}
+
+.AccountTransactionSearchButtonContainer {
+	width: 980px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom: 10px;
+	position: relative;
+	right: 55px;
+}
+
+/*.AccountTransactionsModernizedHeaderRowDiv {
+    background-color:#fff;
+    border: 0;
+    margin-bottom: -5px;
+}*/
+
+.AccountTransactionsModernizedViewRangeBar {
+    border: none;
+    background-color:inherit;
+    /*margin-top:-56px;*/
+    height:0 !important;
+    padding:10px;
+
+}
+
+.HeaderRange.AccountTransactionsNTHeaderRange
+{
+    width: 100%;
+    margin-top: 13px;
+}
+
+.AccountTransactionsNTHeaderRange .AccountTransactionsNTHeaderRangeBalances {
+    float: none;
+    margin: 0px;
+}
+
+#datagrid.AccountTransactionsNTPad5LeftRight {
+    padding: 0;
+    margin-top: 15px;
+}
+
+#datagrid .TransactionsDataGrid tr td {
+    border: 0;
+}
+
+.FormFieldset div span.AccountTransfersPendingSpanLabel {
+    padding: 0 10px 3px 0;
+    font-weight: 400;
+    font-style: normal;
+    color: #484848;
+    font-size: 12px;
+}
+
+.hbStatementNoticeViewDiv {
+    margin: 0 auto;
+    width:600px;
+}
+
+.AccountStatmentListAcctDropDown {
+    width: 250px;
+}
+
+.AccountStatmentListDropDown {
+    width: 250px;
+}
+
+.AccountStatmentListDateCell {
+    width: 110px;
+    text-align: center;
+}
+
+.AccountStatmentListDescCell {
+    padding-left: 10px;
+    width: 60%;
+}
+
+.AccountStatmentListFormatCell {
+    padding-right: 10px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.AccountStatmentListGrid .th td {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.AccountStatementViewButtonContainer {
+    text-align: center;
+}
+
+.AccountStatementViewDisclaimerButton {
+    margin-right: 15px;
+}
+
+.AccountStatementViewInstructions {
+    margin-top: 15px;
+}
+
+.hbStatementNoticeDownloadDiv {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+.row .hbStatementNoticeInstructions {
+    width: 100%;
+}
+
+.row .hbStatementNoticeDownload {
+    width: 100%;
+}
+
+/*ACCOUNTS PAGE*/
+.account-listing-container .HeaderHelp img {
+    margin-top: 0px;
+}
+
+/* ACCOUNT INFO VIEW */
+.account-info-container {
+	margin: 0 auto;
+	border-top: 1px solid #e2e3e3;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+    padding-top: 35px;
+}
+
+.account-info-container pre hr {
+	border-top: 1px solid #d2d2d2;
+}
+
+.AccountInfoHeaderTable {
+    margin-top:37px;
+}
+
+/*CURRENT TRANSACTIONS*/
+.TransactionsDataGrid tbody {
+	border-top: 1px solid #e2e3e3;
+}
+
+#ctl00_PageContent_ctl00_tab_transactionsDataGrid tbody tr.Total.BillShrinkTotal {
+	border-top: 1px solid #e2e2e2!important;
+}
+
+#ctl00_PageContent_ctl00_tab_transactionsDataGrid tbody tr.Total.BillShrinkTotal td {
+	font-weight: 600!important;
+	font-style: normal;
+}
+
+#ctl00_PageContent_ctl00_tab_transactionsDataGrid tbody tr.Total.BillShrinkTotal td:nth-child(1) {
+	display: block;
+	padding-top: 5px;
+	padding-left: 15px;
+}
+.TransactionsDataGrid tr td:last-child, .TransactionsDataGrid tr th:last-child
+{
+    padding-right: 15px !important;
+}
+.AccountTransactionsDateColumn
+{
+    width: 100px;
+}
+.AccountTransactionsCheckNumber
+{
+    width: 120px;
+}
+.AccountTransactionsCheckImage
+{
+    text-align:center;
+}
+
+#ada_maincontent div.MainContent div.HeaderRow.noPrint {
+	background-color: #ffffff;
+	border-style: none;
+	margin-top: -10px;
+}
+
+#ctl00_PageContent_ctl00_tab_printTransactionsButton {
+	margin-right: -50px;
+    margin-bottom: 10px;
+}
+
+.AccountTransactionsContentWrapper .MainContent {
+    padding-top: 0;
+}
+
+div.AccountTransactionsNTHeaderRangeViewRangeBarDiv {
+    right: 30px;
+    top: -35px;
+    position: absolute;
+    padding: 0;
+    width: 410px;
+}
+
+div.AccountTransactionsNTHeaderRangeViewRangeBarDiv:focus {
+        outline: none;
+        border: 2px solid #4D97E0 !important;
+    }
+
+.BillShrinkPager ul li :focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+
+/*INTEREST RATES*/
+.rate-info-container .HeaderRow, .rate-info-container .HeaderDiv {
+	margin-bottom: -10px;
+}
+
+.rate-info-container .HeaderDiv {
+	border-style: none;
+}
+
+#ctl00_PageContent_ctl00_RateGrid tbody tr.th td:nth-child(4), #ctl00_PageContent_ctl00_RateGrid tbody tr td:nth-child(4) {
+	text-align: center;
+	width: 13%;
+	padding: 0;
+}
+
+#ctl00_PageContent_ctl00_RateGrid tbody tr.th td:nth-child(5), #ctl00_PageContent_ctl00_RateGrid tbody tr td:nth-child(5) {
+	text-align: center;
+	width: 13%;
+	padding: 0;
+}
+
+#ctl00_PageContent_ctl00_Template_TransferDateLabel .AccountTransfersNewTemplateAsterisk {
+	position: relative;
+	bottom: 13px;
+}
+
+/*BUTTONS*/
+input.ColorButton, input.download, input.previous, input.StandardButton, a.ColorLink, a.StandardLink {
+    border-collapse: collapse;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    font: 600 12px "Open Sans",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style:normal;
+    background-image: none;
+    height: 35px;
+    padding: 7px 15px;
+}
+div.ui-dialog-buttonset button {
+    border-collapse: collapse!important;
+    border-radius: 3px!important;
+    -moz-border-radius: 3px!important;
+    -webkit-border-radius: 3px!important;
+    cursor: pointer!important;
+    font: 400 12px "Open Sans",Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-style:normal!important;
+    background-image: none!important;
+    height: 35px!important;
+    padding: 4px 15px 7px 15px !important;
+    text-decoration:none!important;
+}
+input.StandardButton,
+a.StandardLink {
+    font-weight: 400;
+    font-style:normal;
+    text-decoration: none;
+}
+div.ui-dialog-buttonset button.ColorButton {
+    font-weight: 600!important;
+}
+
+.jha-user-watermark input[type="image"] {
+    opacity: 1;
+}
+input:disabled, input.ColorButton:disabled, input.StandardButton:disabled, a.ColorButton:disabled, a.ColorLink:disabled, a.StandardButton:disabled, a.StandardLink:disabled {
+	cursor: default;
+	opacity: 0.5;
+}
+
+div.ui-dialog-buttonset button:disabled {
+	cursor: default!important;
+	opacity: 0.5!important;
+}
+
+input.StandardButton:hover,
+a.StandardLink {
+	opacity: 0.95;
+}
+
+div.ui-dialog-buttonset button:hover {
+	opacity: 0.95!important;
+}
+
+.ui-datepicker-trigger {
+	background-color: #ffffff;
+	border: 0px none;
+    margin: 5px 0 0 6px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/*NEW STOP PAYMENTS*/
+.NewStopPaymentButtonDiv {
+    text-align:right;
+	position: relative;
+	padding: 5px 0;
+	right: 1px;
+}
+
+.StopPaymentsNewTable tbody tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.unselectedPageTab {
+	width: 20%;
+	display: table-cell;
+	border-style: none;
+	text-align: center;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-right-style: solid;
+	border-right-color: rgba(0, 0, 0, 0.1);
+	font-weight: 400;
+	font-style: normal;
+}
+
+.unselectedPageTab:hover {
+	cursor: pointer;
+}
+
+#pageTab2.pageTab, #pageTab1.pageTab {
+	width: 20%;
+	display: table-cell;
+	border-style: none;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: rgba(0, 0, 0, 0.1);
+	font-weight: 600;
+	font-style: normal;
+	background-color: rgba(0, 0, 0, 0.05);
+	cursor: default;
+}
+
+#tabLink1:hover, #tabLink2:hover {
+	cursor: inherit;
+}
+
+.AccountTransactionDownloadTemplateDatePicker {
+    width: 235px;
+}
+
+div.AccountTransactionDownloadTemplateButtonDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AlertsHeaderLink {
+    padding-top:7px;
+}
+
+.StopPaymentsNewTable{
+    border:0;
+    margin:0 auto;
+    width:450px;
+}
+
+#datagrid.StopPaymentDatagrid thead tr.th td {
+    border-top: 1px solid #C8C8C8;
+}
+
+.StopPaymentsReviewTable{
+    border:0;
+    margin:0 auto;
+    width:440px;
+}
+
+.StopPaymentsReviewTable .fieldLabel {
+width: 220px;
+    vertical-align: top;
+}
+
+.StopPaymentsNewTable input.k-formatted-value.stop-start-check-number.k-input, .StopPaymentsNewTable input.k-formatted-value.stop-end-check-number.k-input, .StopPaymentsNewTable input.k-formatted-value.stop-amount.k-input, .StopPaymentsNewTable input.k-formatted-value.stop-end-amount.k-input, .NewStopPaymentPayeeTextBox {
+    border: 1px solid #C8C8C8;
+}
+
+    .StopPaymentsNewTable input.k-formatted-value.stop-start-check-number.k-input:hover, .StopPaymentsNewTable input.k-formatted-value.stop-end-check-number.k-input:hover, .StopPaymentsNewTable input.k-formatted-value.stop-amount.k-input:hover, .StopPaymentsNewTable input.k-formatted-value.stop-end-amount.k-input:hover, .NewStopPaymentPayeeTextBox:hover {
+        border: 1px solid #C8C8C8;
+    }
+
+table.StopPaymentsReviewTable tr td div.NewStopPaymentButtonDiv{
+    text-align:center;
+    position: relative;
+    padding: 10px 0 5px;
+    left: 8px;
+}
+
+select:hover, select:focus {
+    border: 1px solid #C8C8C8;
+}
+
+.AccountTransactionSearchEndAmount {
+    padding: 5px 0 0 0;
+}
+
+.AccountTransactionSearchEndAmount label {
+    color: #484848;
+    padding: 5px 0;
+}
+
+.ModernRightSubmitButton{
+    float:right;
+}
+
+.ModernRightCancelButton{
+    float:right;
+    right:100px;
+}
+
+.IDRules, .PINRules {
+	width: 330px!important;
+	margin-left: 10px;
+}
+
+.PINRules {
+	margin-top: -41px;
+}
+
+.ModernCancelButton{
+    right:80px;
+    position:relative;
+}
+
+.ModernSubmitButton{
+    left:80px;
+    position:relative;
+}
+
+.AlertEditTDFloatLeft {
+    float:left;
+}
+
+select.OptionsAccountsAccountTypeDropdown {
+    width:200px;
+}
+div.ui-datepicker{
+    width:240px;
+}
+
+.AlertEventEditConfirmEmailLabel {
+	font-weight: 400!important;
+	font-style: normal;
+}
+
+td.NT.AlertEventEditConfirmSmsTD {
+	padding-left: 0;
+	padding-top: 30px;
+}
+
+.SMSAddressPadding0.SMSAddressWirelessProviderTD {
+	position: relative;
+	bottom: 11px!important;
+}
+
+.OnlineEnrollmentAgreement {
+    overflow-y:auto;
+}
+
+.OnlineEnrollmentPersonalButtonDiv .StandardButton {
+    margin:0;
+}
+
+.ColorButton:disabled, .ColorButton:disabled:hover {
+    opacity:0.5;
+}
+
+p.CollectPhoneNumbersCallbackConfirmTextLabel {
+    width: 550px;
+    margin: 10px auto;
+}
+
+ul {
+    list-style-type:none;
+}
+.BackOfficeHTMLInputWrapper ul {
+    list-style-type:inherit;
+}
+
+.MfaSmsCollectionFieldset {
+    margin-left:auto !important;
+    margin-right:auto;
+    width:600px;
+}
+
+.ViewPayeesGrid .PayFromAccountColumn {
+    text-align: center;
+}
+
+.ViewPayeesGrid .th .PayeeNameColumn,
+.ViewPayeesGrid .th .PayFromAccountColumn,
+.ViewPayeesGrid .th .PayeeTypeColumn,
+.ViewPayeesGrid .th .LastPaidDateColumn,
+.ViewPayeesGrid .th .LastPaidDateColumn {
+    color: #484848;
+}
+
+.payeeSearchBlock table.PayeeSearchTableModernized {
+    width: 450px;
+    margin: 0 auto;
+    padding-right: 200px;
+}
+
+table.PayeeSearchTableModernized th.NT {
+    text-align: right;
+    font-weight: 400;
+    font-style: normal;
+    padding-right:5px;
+}
+
+.payeeSearchBlock  .PayeeNameContainer input,
+.payeeSearchBlock .PayFromAccountContainer input,
+.payeeSearchBlock .PayeeAddressContainer input {
+    margin-bottom:5px;
+}
+
+table.PayeeSearchTableModernized .NT.PayeeSearchAddress2 {
+        padding-right: 6px;
+    }
+
+.PayeeSearchTableModernized td.SmallTextTD.PayeeSearchTDAccountDisclaimer {
+    position: absolute;
+    width: 270px;
+    overflow: visible;
+    border: 1px solid #C8C8C8;
+    background-color: #F5F5F5;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.PayeeSearchTableModernized td.RequiredMsg.PayeeSearchRequiredTD {
+    padding: 10px 0 0 160px;
+}
+
+.payeeSearchBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton {
+    margin: 0;
+}
+
+.payeeSearchBlock .PayeeStateContainer select {
+    width: 225px;
+}
+
+.payeeSearchBlock .SearchResultsContainer {
+    margin: 15px 0px 0px 0px;
+    padding-left: 45px;
+}
+
+.payeeSearchBlock .MainContent .buttonsContainer {
+    height: inherit;
+}
+
+.payeeSearchBlock .payeeSearchTable{
+    padding-bottom:5px;
+}
+
+.AddPayeeTable {
+    border-collapse:collapse;
+}
+
+.DeletePayeeBlock .MainContent .titleContainer {
+    text-align: right;
+    padding-top:5px;
+}
+
+.DeletePayeeBlock .MainContent div.deletePayeeContent {
+    float: none;
+    padding: 10px 15px 20px;
+}
+
+.DeletePayeeBlock .MainContent div.deletePayeeContent table {
+    margin: 0 auto 0 auto;
+    padding-left: 28px;
+}
+
+.DeletePayeeBlock div.buttonsContainer {
+    float: none !important;
+    text-align: center;
+    width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+.DeletePayeeBlock .buttonsContainer .btnDeleteContainer,
+.DeletePayeeBlock .buttonsContainer .btnCancelContainer {
+    float: none;
+    display: inline-block;
+}
+
+.DeletePayeeBlock .buttonsContainer .deleteButton,
+.DeletePayeeBlock .buttonsContainer .cancelButton {
+    margin: 0;
+}
+
+.DeletePayeeBlock .buttonsContainer {
+    padding-top: 10px;
+}
+
+.addPayeeBlock table.AddPayeeTableModernized {
+    width: 410px;
+    margin: 0 auto;
+	padding-left: 20px;
+	padding-bottom: 8px;
+}
+
+.payeeSearchBlock .AddPayeeTable {
+    border-spacing:0;
+}
+
+table.AddPayeeTableModernized th.NT {
+    text-align: right;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.addPayeeBlock .PayeeStateContainer select {
+    width: 225px;
+}
+
+.AddPayeePhoneNumber1 {
+    width:65px
+}
+
+.AddPayeePhoneNumber2 {
+    width:75px;
+}
+
+.AddPayeeTableModernized tbody tr td.Data:nth-child(2) {
+	width: 330px;
+}
+
+.AddPayeeTableModernized td.RequiredMsg.AddPayeeRequiredMsg {
+    padding: 5px 0 0 133px;
+}
+
+.addPayeeBlock .MainContent .buttonsContainer {
+    height:inherit;
+	padding-top: 10px;
+}
+
+    .addPayeeBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton {
+        margin: 0;
+    }
+
+.PaymentRefNumColumn.ModernizedTheme {
+    text-align:center;
+}
+
+.PaymentConfirmationColumn.ModernizedTheme {
+    text-align:center;
+}
+
+.BPHistoryGrid .Total.ModernizedTheme {
+    font-style:normal;
+    height:30px;
+    padding:0 49px 0 5px;
+}
+
+.PowerPayHistorySelectTable {
+    margin-left:auto;
+    margin-right:auto;
+    width:350px;
+}
+
+.PowerPayHistorySelectDropDown {
+    width:200px;
+}
+
+.PowerPayHistorySelectDatePicker.ModernizedTheme {
+    width:172px !important;
+}
+
+.PowerPayHistorySelectDollarTextBox.ModernizedTheme {
+    width:133px;
+    text-align:right;
+}
+
+.PowerPayHistorySelectCentTextBox.ModernizedTheme {
+    width:55px;
+}
+
+.PowerPayHistorySelectButtons .btnCancelContainer .StandardButton {
+    margin:0;
+}
+
+.PowerPayHistorySelectTable .PowerPayHistorySelectRadioButtons {
+    padding-left:14px;
+}
+
+.PowerPayHistorySelectDollarSign {
+   position:relative;
+   right:11px;
+}
+
+.PowerPayHistorySelectAmtLabel {
+    position:relative;
+    right:8px;
+}
+
+.BPHistorySelectBlock .buttonsContainer {
+    padding:15px 0 0 0;
+}
+
+.EditPayeeBlock .EditPayeeMainTable {
+    width: 700px;
+    margin: auto;
+}
+
+.EditPayeeBlock .EditPayeeMainTable .newValues {
+    border-collapse: collapse;
+}
+
+.EditPayeeBlock .EditPayeeMainTable .newValues tr td,
+.EditPayeeBlock .EditPayeeMainTable .newValues tr th {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.EditPayeeTopAlign {
+    width: 300px;
+}
+
+.EditPayeeBlock .EditPayeeNameDDL,
+.EditPayeeBlock .EditPayeeTextBoxColumn50,
+.EditPayeeBlock .EditPayeeTextBoxColumn25,
+.EditPayeeBlock .EditPayeeTextBoxColumn35 {
+    width: 252px;
+}
+
+.EditPayeeBlock .btnCancelContainer .EditPayeeCancelButton {
+    margin: 0;
+}
+
+.EditPayeeBlock .buttonsContainer {
+    padding-top: 15px;
+}
+
+.EditPayeeBlock .payeeSelectRow td,
+.EditPayeeBlock .payeeSelectRow th {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.EditPayeeBlock .newValues th {
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+}
+
+.EditPayeeBlock .oldValues .payeeSelectRow {
+    display: none;
+}
+
+.EditPayeeBlock .oldValues th {
+    text-align: right;
+}
+
+.EditPayeeBlock .oldValues th,
+.EditPayeeBlock .oldValues td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.EditPayeeBlock .oldValues {
+    border: 1px solid #C8C8C8;
+    background-color: #F5F5F5;
+    padding: 0 25px 0 25px;
+    margin-top: 3px;
+}
+
+.EditPayeeBlock .EditPayeeState {
+    width: 252px;
+}
+
+.ViewScheduledPaymentsDivDataGrid.ModernizedTheme {
+    border: 1px solid #C8C8C8;
+}
+
+.ScheduledPaymentsGrid .PaymentFrequencyColumn {
+    text-align:center;
+}
+
+.ScheduledPaymentsGrid .Total {
+    font-style:normal;
+    border:0;
+}
+
+.ScheduledPaymentsGrid .Total .GridTotals {
+    top:0;
+}
+
+.ScheduledPaymentsGrid .Total .editButton {
+    color:#3ea7d1;
+    background-color:transparent;
+}
+
+.PaymentQuickEditGrid .AmountColumn .BillPayPmtQuickEditDollarsTbx {
+   margin-right: 2px;
+}
+
+.PaymentQuickEditGrid .AmountColumn .BillPayPmtQuickEditCentsTbx {
+    margin-left: 2px;
+    width: 40px !important;
+}
+
+.BillPayPmtQuickEditFromAcctDDL {
+    width: 100% !important;
+}
+
+.BillPayPmtQuickEditPmtDate {
+    width: 90px !important;
+}
+
+.BillPayPmtQuickEditMemoTbx {
+    width: 98%;
+}
+
+.PaymentsQuickEditBlock .MainContent {
+    padding-top: 0;
+    border: 1px solid #C8C8C8;
+}
+
+.PaymentsQuickEditBlock .MainContent .buttonsContainer {
+    height: 55px;
+}
+
+.PaymentsQuickEditBlock .HeaderRow {
+    padding-right: 0;
+}
+
+.PaymentQuickEditGrid .AmountColumn {
+    text-align: right;
+    width: 130px;
+}
+
+.PaymentQuickEditGrid .PaymentDateColumn {
+    width: 130px;
+}
+
+.PaymentQuickEditGrid .PayeeNameColumn {
+    width: 190px;
+}
+
+.PaymentQuickEditGrid .PaymentFrequencyColumn {
+    text-align: center;
+}
+
+.PaymentQuickEditGrid .PaymentDateColumn .ui-datepicker-trigger {
+    margin-top: -1px;
+}
+
+.SetUpBillPayAccountTable {
+    margin:0 auto;
+    width:500px;
+}
+
+.qpSelectPayeesBlock .MainContent {
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.qpSelectPayeesBlock div.msgContainer.QuickPaymentSelectPayeesLabelDiv {
+    width: 270px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+table.QuickPaymentSelectPayees {
+    width: 700px;
+    margin: 0 auto;
+}
+
+table.QuickPaymentSelectPayees tr {
+    background-color:inherit;
+}
+
+.QuickPaymentSelectPayees tr td{
+    vertical-align:top;
+    width:200px;
+}
+
+.qpSelectPayeesBlock .buttonsContainer.QuickPaymentSelectPayeesButtonDiv {
+    text-align:center;
+    margin-bottom: 15px;
+}
+
+.qpEditPaymentsBlock .MainContent {
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.QuickPaymentsDataGrid .PayeeNameColumn {
+    min-width: 250px;
+}
+
+.QuickPaymentsDataGrid .PaymentMemoColumn {
+    width: 25%;
+    padding-right: 10px;
+}
+
+.QuickPaymentsDataGrid .PaymentMemoColumn input {
+    width:100%;
+}
+
+.QuickPaymentsDataGrid .PayFromAccountColumn select.payFromAccountDDLWidth {
+    width: 200px;
+}
+
+.QuickPaymentsDataGrid .PayFromAccountColumn {
+    width: 200px;
+}
+
+.QuickPaymentsDataGrid .PaymentDateColumn,
+.QuickPaymentsDataGrid .EstimatedArrivalDateColumn {
+    width: 130px;
+    text-align: center;
+}
+
+.QuickPaymentsDataGrid .PayeeTypeColumn {
+    width:50px;
+}
+
+.QuickPaymentsDataGrid .AmountColumn {
+    text-align: right;
+    width:150px;
+    padding-right: 15px;
+}
+
+    .QuickPaymentsDataGrid .AmountColumn span {
+        padding: 0 3px;
+    }
+
+    .QuickPaymentsDataGrid .AmountColumn input.QuickPaymentEditPaymentsCentsTextBox {
+        width: 40px !important;
+    }
+
+.QuickPaymentsDataGrid .PaymentDateColumn img {
+    margin: 0 0 2px 3px;
+}
+
+.QuickPaymentEditPaymentsButtonDiv {
+    margin-bottom: 15px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.qpConfirmPaymentsBlock .MainContent {
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.qpConfirmPaymentsBlock .buttonsContainer.QuickPaymentConfirmPaymentsButtonDiv {
+    margin: 0 0 15px 0;
+    border-top: 1px solid #e3e3e3;
+}
+
+.multi-quick-payment-container .multi-quick-payment-last-col {
+    vertical-align: middle !important;
+}
+
+.MultiQuickPaymentsWidgetTable .k-numeric-wrap.k-state-default.k-expand-padding {
+    width: inherit;
+}
+
+.multi-quick-payment-container .lastPaidDateContainer {
+    font-style:normal;
+}
+
+.ViewPayeesBlock .MainContent {
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding-top:0;
+}
+
+.PowerPayHistoryDetailTable .MainContent table {
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+}
+
+.PowerPayHistoryDetailTable .titleContainer {
+    text-align:right;
+}
+
+.PowerPayHistoryDetailTable .MainContent .buttonsContainer{
+    padding-top:10px;
+    padding-bottom:0px;
+    padding-right:100px;
+}
+
+.MainContent .chargeDetailsDiv {
+    float: none !important;
+    width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chargeDetailsBlock .MainContent .chargeDetailsDiv .IAgreeContainer {
+    float: left;
+    padding: 21px 10px 15px 284px;
+}
+
+.chargeDetailsBlock .MainContent .chargeDetailsDiv .buttonsContainer {
+    float: left;
+}
+
+.chargeDetailsBlock .MainContent .chargeDetailsDiv .buttonsContainer .ChargeDetailsSubmitButton {
+    margin-right: 5px;
+}
+
+.PayFromAccountContainer.ModernizedTheme {
+    height:64px;
+}
+
+.PayFromAccountContainer.ModernizedTheme .field-label {
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	left: 4px;
+    top:-4px;
+}
+
+.AccountSelectorDropDownList{
+    top:23px;
+    right:40px;
+    position:relative;
+}
+
+.PaymentCenterAccountSelector .AccountSelectorDropDownList select {
+	width: 95%;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.PaymentCenterAccountSelector {
+    padding:0 !important;
+}
+
+.EditOneTimePaymentContent {
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+    border:0;
+}
+
+.EditOneTimePaymentContainer {
+    border-left: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    padding-bottom: 5px;
+}
+
+.EditOneTimePaymentContent .rpTable {
+    margin-top:5px;
+}
+
+.editOneTimePaymentBlock .MainContent .buttonsContainer {
+    padding-top:10px;
+}
+
+.btnCancelContainer input.StandardButton {
+    margin:0;
+}
+
+.EditOneTimePaymentFieldWidth {
+    width:280px;
+}
+
+.EditOneTimePaymentCents {
+    width:50px;
+}
+
+.EditOneTimePaymentDollars {
+    width:220px;
+    text-align:right;
+}
+
+.EditOneTimePaymentDescription.ModernizedTheme {
+    width:280px;
+}
+
+.EditOneTimePaymentDescriptionLabelRight {
+    text-align:right;
+    padding-right:10px;
+}
+
+.EditOneTimePaymentButtons {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.LoginBackOfficeSpan a {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.EditOneTimePaymentDateMessage {
+    position:relative;
+    top:33px;
+    right:287px;
+}
+
+.EditOneTimePaymentContent .rpLabelCol span {
+    font-weight:400;
+    font-style: normal;
+}
+
+td.EditOneTimePaymentBottom > input {
+    width:252px !important;
+}
+
+.PaymentDetailsTable .MainContent table {
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+    padding-top:10px;
+}
+
+.PaymentDetailsTable .MainContent .titleContainer {
+    text-align:right;
+}
+
+.PaymentDetailsTable .MainContent .buttonsContainer {
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-right:90px;
+}
+
+.ScehduledPaymentsWidgetTotal {
+    font-weight:600;
+    font-style: normal;
+}
+
+.newPaymentBlock .MainContent .rpTable {
+    width:500px;
+    margin:0 auto;
+}
+
+.rpLabelCol {
+    text-align:right;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.newPaymentBlock .MainContent .rpTable select {
+    width:250px;
+}
+
+.newPaymentBlock .rpLabelCol span {
+    font-weight:400;
+}
+
+input.PowerPayNewPaymentDollars {
+    width:160px;
+}
+
+input.PowerPayNewPaymentCents {
+    width:80px;
+}
+
+.PowerPayNewPaymentTDDate input {
+    width: 225px !important;
+}
+
+.PowerPayNewPaymentTDDate img {
+    margin: 6px 0 0 3px;
+    vertical-align: top;
+}
+
+.PowerPayNewPaymentButtonTD .submitButton {
+    margin-top:5px;
+}
+
+.newPaymentBlock .MainContent .buttonsContainer {
+    padding: 15px 0 15px 55px;
+    text-align: left;
+}
+
+.editRecurringPaymentBlock .MainContent .rpTable {
+    width:500px;
+    margin:0 auto;
+    padding-top: 15px;
+}
+
+.editRecurringPaymentBlock .MainContent .rpTable select {
+    width:205px;
+}
+
+.editRecurringPaymentBlock .rpLabelCol span {
+    font-weight:400;
+    font-style: normal;
+}
+
+input.PowerPayEditRecurringDollars {
+    width:135px;
+}
+
+input.PowerPayEditRecurringCents {
+    width:60px;
+}
+
+.editRecurringPaymentBlock .PowerPayEditRecurringMemoRow td, .editRecurringPaymentBlock .PowerPayEditAlertPaymentRow td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.PowerPayEditRecurringTDDate input {
+    width: 175px !important;
+}
+
+.PowerPayEditRecurringTDDate img {
+    margin: 6px 0 0 3px;
+    vertical-align: top;
+}
+
+.editRecurringPaymentBlock .firstPaymentDateLastDayMonth, .editRecurringPaymentBlock .secondPaymentDateLastDayMonth, .editRecurringPaymentBlock .expirationDateNoExpire {
+    padding-left:5px;
+}
+
+.editRecurringPaymentBlock .firstPaymentDateLastDayMonth input, .editRecurringPaymentBlock .secondPaymentDateLastDayMonth input, .editRecurringPaymentBlock .expirationDateNoExpire input{
+    vertical-align: middle;
+}
+
+.editRecurringPaymentBlock .MainContent .buttonsContainer {
+    height: inherit;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.multi-quick-payment-container .multi-quick-payment-content {
+    max-height: 420px;
+}
+
+.DeletePaymentsTable .MainContent table {
+    margin-left:auto;
+    margin-right:auto;
+    width:400px;
+}
+
+.DeletePaymentsTable .MainContent .contentTable .buttonsCell {
+    padding-top:10px;
+    padding-bottom:0;
+    text-align:center;
+}
+
+td.DeletePaymentCellTitle {
+    white-space:nowrap;
+    padding:3px;
+    text-align:right;
+}
+
+td.DeletePaymentCellText {
+    white-space:nowrap;
+    padding:3px;
+    text-align:left;
+}
+
+.mfa-sms-collection-text {
+    width: 300px;
+    height: auto;
+    font-weight: 600;
+    overflow:auto;
+}
+
+.FormFieldset.MfaSmsCollectionFieldset div label {
+    width:138px;
+}
+
+input.MfaSmsCollectionPhoneNumberTextBox {
+    width:300px;
+}
+
+.FormFieldset.MfaSmsCollectionFieldset .carrier-drop-down {
+    width:300px;
+}
+
+.button-containerADA input.MfaSmsCollectionSubmitButtonNoSkipButton {
+    margin-left: 73px;
+}
+
+.mfa-sms-collection-container .button-containerADA {
+    padding-left:162px;
+}
+
+.powerPayPop {
+    padding: 0;
+    border: 1px solid #C8C8C8;
+}
+
+.powerPayPop hr {
+    display: none;
+}
+
+.powerPayPop .powerPayPopHeader {
+    height: 34px !important;
+    background-color: #eaeaea;
+    padding-left: 10px;
+    padding-top: 8px;
+    display: block;
+}
+
+.powerPayPop .powerPayPopClose {
+    text-align: right;
+    padding: 5px;
+}
+
+.powerPayPop .powerPayPopBody {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    float:none;
+}
+
+.NewPaymentConfirmationTable .MainContent .rpTable {
+    margin:-5px auto 10px auto;
+    width:500px;
+}
+
+.NewPaymentConfirmationTable .MainContent .buttonsContainer {
+    margin-left:auto;
+    margin-right:auto;
+    width:500px;
+    padding-top:15px;
+    padding-right:200px;
+}
+
+.NewPaymentConfirmationTable .buttonsContainer .btnEditContainer input.StandardButton {
+    margin:5px 5px 0 5px ;
+}
+.NewPaymentConfirmationTable .buttonsContainer .btnCancelContainer input.StandardButton {
+    margin:5px 5px 0 5px ;
+}
+
+
+#paymentInlineCalendar div.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+	width: 97%;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.spWidgetContainer .totalsContainer {
+	font-weight: 600!important;
+	font-style: normal;
+}
+
+
+#paymentInlineCalendar div.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+	width: 97%;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.BillPayLoginFieldsTable {
+    margin: 10px auto 15px auto;
+}
+
+.BillPayLoginPassword {
+    width: 204px;
+}
+
+.loginBlock .MainContent .BillPayLoginFieldsTable .buttonsContainer {
+    padding: 15px 0 0 0;
+}
+
+.BillPayChangePasswordTable {
+    margin: 10px auto 10px auto;
+}
+
+.BPContentContainer .MainContent .BillPayChangePasswordTable .buttonsContainer {
+    padding: 15px 0 0 0;
+}
+
+.BillPayChangePasswordSubmit {
+    margin-right: 10px;
+}
+
+.BillPayChangePasswordTable .rpLabelCol {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.BillPayChangePwdTbx {
+    width: 135px;
+}
+
+.MainContent .CPayeeToEDataContainer {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.cPayeeToEBlock .MainContent .convertToElectronicMsg {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cPayeeToEBlock .MainContent .buttonsContainer {
+    width: 500px;
+    margin: 0 auto 25px auto;
+    padding-top: 15px;
+}
+
+.CPayeeToEDataContainer .CPayeeToEGrid .th td,
+.CPayeeToEDataContainer .CPayeeToEGrid .th th {
+    color: #484848;
+}
+
+.CPayeeToEDataContainer .CPayeeToEGrid .PayeeNameColumn {
+    padding-left: 10px;
+}
+
+.deletePaymentBlock .DeletePaymentContent.MainContent {
+    padding:15px 0 10px 0;
+}
+
+.newPaymentBlock table.PowerPayWidth100 {
+    border-spacing: 0;
+}
+
+.opWidgetContainer .footerContainer {
+    border-top: 1px solid #e3e3e3;
+    padding-top: 10px;
+}
+
+.rpWidgetContainer .footerContainer {
+    border-top: 1px solid #e3e3e3;
+    padding:10px 15px;
+}
+
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .th td,
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .th th {
+    color: #484848;
+}
+
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .AmountColumn {
+    padding-left: 20px;
+    width: 100px;
+}
+
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .PayFromAccountColumn {
+    padding-left: 20px;
+    width: 150px;
+}
+
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .ProcessDateColumn {
+    padding-left: 20px;
+    width: 100px;
+}
+
+.opWidgetContainer .noncleared-payments-container .NonClearedPaymentsDataGrid .CheckNumberColumn {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 115px;
+}
+
+div.PowerPayElectronicConfirm {
+    width:300px;
+    margin:0 auto;
+}
+
+div.PowerPayElectronicConfirm table {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.cPayeeToEBlock .MainContent div.PowerPayElectronicConfirmButtonDiv {
+    width:300px;
+}
+
+.PowerPayElectronicConfirmButtonDiv table {
+    border-spacing: 0;
+}
+
+.SetUpBillPayAccountSelect {
+    width:250px;
+}
+
+.SetUpBillPayAccountTD {
+    padding-top:10px;
+}
+
+.setUpAccountBlock .MainContent .setUpAccountContent .buttonsContainer {
+    padding-top: 15px;
+}
+
+.NTSyncBold.ModernizedTheme {
+    font-weight:400;
+    font-style: normal;
+}
+
+.EditOneTimePaymentTrainstop {
+    padding-top:2px;
+}
+
+.spWidgetContainer .ScheduledPaymentsWidgetFooter.footerContainer {
+    padding:8px 15px 8px 15px;
+}
+
+.spWidgetContainer .ScheduledPaymentsWidgetGrid.datagrid th.AmountColumn {
+    padding:1px 20px 1px 5px;
+}
+
+.spWidgetContainer .ScheduledPaymentsWidgetGrid.datagrid td.AmountColumn {
+    padding-right:20px;
+}
+
+.ViewPaymentDetailsMain.paymentViewDetailsBlock .MainContent {
+    padding:5px;
+}
+
+.ViewPaymentDetailsMain.paymentViewDetailsBlock .MainContent .contentTable .buttonsCell {
+    padding:10px 0;
+}
+
+.cPayeeToEBlock .MainContent {
+padding: 10px 20px 10px 20px;
+}
+
+.CPayeeToEGrid .PayeeNameColumn {
+padding-left: 15px;
+}
+
+.BPHistoryGrid .ListLinkTD {
+    width: 110px;
+}
+
+.BPHistoryGrid tfoot tr {
+    background-color: white;
+}
+
+.PowerPayHistoryViewRangeBar {
+    padding-top: 7px;
+}
+
+th.PowerPayHistoryButtonDiv {
+    border-right:0;
+}
+
+.BPHistoryGrid .PayeeNameColumn {
+    min-width:300px;
+}
+
+.BPHistoryGrid .PaymentStatusColumn {
+    min-width: 160px;
+    width:250px;
+    color: #484848;
+}
+
+.BPHistoryGrid .PaymentRefNumColumn {
+    width:170px;
+}
+
+.BPHistoryGrid .ProcessDateColumn {
+    width: 150px;
+}
+
+.BPHistoryGrid .PaymentConfirmationColumn {
+    width:170px;
+}
+
+.BPHistoryGrid .AmountColumn {
+    width:200px;
+}
+
+.addPayeeBlock .Data{
+    width:255px;
+}
+
+PowerPayEditButtonContainer{
+    padding: 10px!important;
+}
+
+.availablePayeesContainer tbody tr td span.Payee label {
+display: block;
+text-align: left;
+position: relative;
+bottom: 25px;
+left: 17px;
+margin-right: 25px;
+}
+
+.availablePayeesContainer .QuickPaymentSelectPayees {
+width: 800px;
+margin: auto;
+}
+
+.availablePayeesContainer tbody tr td {
+background-color: #ffffff;
+}
+.AuthLoginEmailButtonContainer {
+    text-align: right;
+	padding-right: 40px!important;
+    padding: 0 49px;
+}
+.AuthEmailLogin{
+    width:245px;
+    /*float:left;*/
+}
+.AuthCellPhoneLogin{
+    width:245px;
+}
+
+.PassCardConfirmTableTD{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.AccountTransactionsModernizedHeaderRowDiv {
+    background-color:#fff;
+    border: 0;
+	margin-bottom: -5px;
+    margin-top: -2px;
+}
+
+div.HeaderDiv.AccountTransactionsHeaderDiv {
+	padding-left: 20px;
+}
+
+.TransactionsDataGrid tr:last-child {
+	border-top: 1px solid #e2e2e2!important;
+}
+
+.TransactionsDataGrid tbody th {
+	border-bottom: 1px solid #e2e3e3!important;
+}
+
+.TransactionsDataGridPending tr:last-child {
+	border-top: 0px !important;
+}
+
+#ctl00_PageContent_ctl00_RateGrid tbody tr.th td:nth-child(4), #ctl00_PageContent_ctl00_RateGrid tbody tr td:nth-child(4) {
+	text-align: center;
+	width: 13%;
+	padding: 0;
+}
+
+#ctl00_PageContent_ctl00_RateGrid tbody tr.th td:nth-child(5), #ctl00_PageContent_ctl00_RateGrid tbody tr td:nth-child(5) {
+	text-align: center;
+	width: 13%;
+	padding: 0;
+}
+
+.OfmMainSubmitButton {
+    margin: 0px;
+}
+
+.OfmMainTOSTable {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .OfmMainTOSTable .OfmMainTOSPanel {
+        border: 1px solid #C8C8C8;
+        height: 400px;
+        overflow-y: auto;
+        margin-right: 5px;
+    }
+
+.OfmMainTOSCheckBoxTD {
+    text-align: right;
+    position: relative;
+    left: 175px;
+}
+
+.OfmMainTOSButtonsTD {
+    text-align: right;
+}
+
+.OfmMainSpacerTR {
+    line-height: 5px;
+}
+.PowerOnLinkButtons {
+    color: #303030;
+    border: 1px solid #C8C8C8;
+    text-decoration: none;
+    padding: 6px 16px 8px 16px;
+}
+.AccountTransfersPendingSelectDiv {
+    padding:0 0 10px 25px !important;
+}
+.AccountTransfersNewAvailableFundsDialog {
+    display:none;
+}
+.FormFieldset div.AccountTransfersNewTransactionNoteDiv span.AccountTransfersNewTransactionNoteSpan {
+    width: auto;
+    text-align: left;
+    padding: 0;
+    font-weight: 400;
+    line-height: inherit;
+    font-size: 100%;
+}
+#ExtTypeOneAdditionalInfo {
+    color: red;
+    text-align: left;
+    padding-bottom: 0;
+    padding-left: 150px;
+    padding-right: 0;
+    padding-top: 0;
+    font-weight: normal;
+    line-height: inherit;
+    font-size: 100%;
+    white-space: nowrap;
+}
+.AccountTransfersNewTemplatePaymentOptionsDropdown {
+    width:250px;
+    margin: 5px 0 5px 4px;
+}
+
+.newStopPaymentContainer .HelpLink
+{
+    top: 0 !important;
+}
+.ipay-date-container img.ui-datepicker-trigger
+{
+    margin: 0 0 0 6px;
+}
+.InfoPagesTable {
+    border-collapse: collapse;
+}
+.InfoPagesMainContent {
+    border: 1px solid #C8C8C8;
+    padding: 0;
+}
+.InfoPagesPanelWrapper {
+    margin: 20px 0;
+}
+.InfoPagesPanelWrapper .infoPanel {
+    width: 96%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-color: #e3e3e3;
+    padding: 15px;
+    overflow-y: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: auto;
+    max-height: 450px;
+}
+.ipay-qp-widget-container td.ipay-account-container, .ipay-qp-widget-container th.ipay-account-container {
+    min-width:200px;
+    width:200px;
+}
+.PowerPayNewPaymentCancelButton {
+    margin-top:5px;
+}
+.AccountTransactionCalImg {
+    padding-bottom:7px;
+}
+.AccountTransactionDownloadTemplateDivWrapper {
+    margin-right: 200px;
+}
+.AccountTransactionDownloadEndDate {
+    padding-top: 2px;
+}
+.StopPaymentsNewTable img.ui-datepicker-trigger {
+    padding-top: 6px !important;
+}
+.StopPaymentsNewRemarksTextBox
+{
+    width: 250px;
+}
+table.StopPaymentsNewTable
+{
+    width: 470px;
+}
+.StopPaymentsNewTable tr td.fieldLabel
+{
+    font-weight: 400;
+    font-style: normal;
+}
+.StopPaymentsNewPanel
+{
+    padding-right:100px;
+}
+
+.OrderChecksTable2 .ButtonTD
+{
+    padding-bottom: 0!important;
+}
+.OrderChecksTable2 .ButtonTD input
+{
+    margin: 5px;
+}
+.OrderChecksTable2 .ButtonTD input:last-child
+{
+    margin-right: 2px;
+}
+.OrderChecksMainDiv table.TableSpacing0 tr td.SpacedBoldTD
+{
+    padding-top: 10px !important;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.deluxe {
+    margin-right:5px;
+}
+.validate {
+    margin-right:5px;
+}
+
+
+.account-info-container pre {
+    padding-left:35% ;
+}
+.AccountTransactionDownloadFieldSection {
+    margin-bottom: 2px;
+}
+.deluxe {
+    margin-right:5px;
+}
+.validate {
+    margin-right:5px;
+}
+
+
+.account-info-container pre {
+    padding-left:35% ;
+}
+.AccountTransactionDownloadFieldSection {
+    margin-bottom: 2px;
+}
+
+.IPayHandoff-container, div.IPayHandoffRadioDivAccount, div.IPayHandoffButtonDivSumbit {
+    width: 430px;
+    margin: 0 auto;
+}
+div.IPayHandoffButtonDivSumbit {
+    text-align: right;
+}
+
+table.EdocsTopPadding {
+    padding-top:15px;
+}
+.EdocsContainerClass .NT {
+    font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.EdocsContainerClass .EdocsTableWidth100Padding {
+    width: 700px;
+    margin: 0 auto;
+}
+.EdocsContainerClass .EdocsTableWidth100Padding td {
+    padding: 0 5px;
+}
+.EdocsLabel {
+    font-weight:400;
+}
+.EdocsBoldLabel {
+    font-weight:600;
+}
+.EdocsTopLabel {
+    border-bottom: 1px solid #e3e3e3;
+}
+.EdocsPaddingLabel {
+    padding: 10px 0;
+}
+.EdocsTRInline {
+    display: inline-block;
+}
+.EdocsContainerClass .EdocsTableWidth100Padding td.EdocsRadio {
+    padding-top: 10px;
+}
+.EdocsRadio input {
+    vertical-align: sub;
+}
+div.EdocsDisclosureLabel {
+    border: 1px solid #C8C8C8;
+    width: 100%;
+}
+.EdocsContainerClass .button-container {
+    padding-bottom: 15px;
+}
+.EdocsAgreeLabel {
+    padding-top: 10px;
+}
+.EdocsAgreeLabel input {
+    vertical-align: sub;
+}
+table#widget-table a.tooltipified {
+    color: inherit;
+}
+.ActivityAlertGridCol0{
+    width:3%;
+}
+.ActivityAlertGridCol1{
+    width:25%;
+}
+.ActivityAlertGridCol2{
+    width:20%;
+}
+.ActivityAlertGridCol3{
+    width:12%;
+}
+.ActivityAlertGridCol4{
+    width:12%;
+}
+.ActivityAlertGridCol5{
+    width:15%;
+}
+.ActivityAlertGridCol6{
+    width:5%;
+}
+.ActivityAlertGridCol7{
+    width:5%;
+}
+.ActivityAlertGridCol8{
+    width:3%;
+}
+.BillShrinkPager {
+    text-align: center !important;
+    border-top: solid 1px #E3E3E3 !important;
+    background-color:#ffffff !important;
+
+}
+.SynergyPager {
+    font-weight:400 !important;
+
+}
+.SynergyStatementLableNone {
+    padding-left: 40%;
+    font-weight: 400;
+
+}
+.SynergyDocumentsContent {
+    min-height: 120px;
+}
+.ui-button-icon-only span.ui-button-text
+{
+    padding:0;
+}
+.SynergyTab {
+    padding-left: 5px;
+}
+
+.widget-content.ACHInitiatedBatches .borderedgridcell
+{
+    padding-left:15px;
+}
+.widget-content.ACHInitiatedBatches th.ach-viewlink-cell
+{
+    visibility: hidden;
+}
+.widget-content.RecentACH .ach-date-cell.borderedgridcell
+{
+    padding-left:15px;
+    text-align:center;
+    padding-right:5px;
+}
+.widget-content.RecentACH th.ach-link-cell
+{
+    visibility: hidden;
+}
+.widget-content.RecentACH .ach-cell
+{
+    padding-left:10px;
+}
+.HeaderHelp a:focus {
+    outline:none;
+}
+
+.recent-transfers-container .transfer-date-cell {
+    width: 85px !important;
+}
+.WireTransferTransmitMainTable .RecurEffectiveDateTD, .WireTransferTransmitMainTable .WireFrequencyTD,
+.WireTransferTransmitMainTable .EffectiveDateTD, .WireTransferTransmitMainTable .RecurRetainTemplateLabelTD {
+    padding-top: 10px;
+}
+
+.WireTransferTransmitMainTable .RecurWeekDayTD, .WireTransferTransmitMainTable .RecurMonthDayTD,
+.WireTransferTransmitMainTable .RecurStartDateTD, .WireTransferTransmitMainTable .RecurExpirationDateTD,
+.WireTransferTransmitMainTable .RecurFirstDayTD,
+.WireTransferTransmitMainTable .RecurSecondDayLabelTD, .WireTransferTransmitMainTable .RecurSecondDayTD {
+    padding-top: 5px;
+}
+
+.WireTransferTransmitMainTable .RecurStartDateLabelTD, .WireTransferTransmitMainTable .RecurExpirationDateLabelTD {
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+.WireTransferTransmitMainTable .RecurSecondDayTD, .WireTransferTransmitMainTable .RecurStartDateTD,
+.WireTransferTransmitMainTable .RecurExpirationDateTD, .WireTransferTransmitMainTable .RecurMonthDayTD,
+.WireTransferTransmitMainTable .RecurSecondDayTD {
+    white-space:nowrap;
+}
+
+.WireTransferTransmitMainTable .RequiredFieldAsterik {
+    min-width:15px;
+    display:inline-block;
+    text-align:right;
+}
+
+.WireTransferTransmitMainTable .datepicker {
+    width: 122px;
+}
+
+.WireTransferTransmitMainTable .wireFrequency, .WireTransferTransmitMainTable .recurWeekDay,
+.WireTransferTransmitMainTable .recurMonthDay,
+.WireTransferTransmitMainTable .recurFirstDay, .WireTransferTransmitMainTable .recurSecondDay {
+    width: 150px;
+}
+
+.WireTransferTransmitMainTable .recurringStartDateNoteContainer {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.WireTransferTransmitMainTable .recurringStartDateNoteContainer, .WireTransferTransmitMainTable .recurNoExpiration,
+.WireTransferTransmitMainTable .recurMonthDayLastDay, .WireTransferTransmitMainTable .recurSecondDayLastDay {
+    padding-left: 10px;
+}
+
+.WireTransferTransmitMainTable .recurMonthDayLastDay input, .WireTransferTransmitMainTable .recurSecondDayLastDay input,
+.WireTransferTransmitMainTable .recurStartDateLastDay input, .WireTransferTransmitMainTable .recurNoExpiration input {
+    vertical-align: middle;
+}
+
+.RecurringWireListDataGrid, .RecurringWireListMainContent .no-recurring-records-container {
+    display: none;
+}
+
+.RecurringWireListMainContent .WireListDataGridDiv {
+    padding: 0px;
+    margin-bottom: 0px
+}
+
+.RecurringWireListTabContainer, .RecurringWireListTabContainer .HeaderRow {
+    background-color:inherit;
+}
+
+
+.RecurringWireListTabContainer td.pageTab {
+    background: white;
+    font-weight: 400;
+}
+
+.RecurringWireListTabContainer td:first-child, .RecurringWireListTabContainer td:nth-child(2) {
+    border-right: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+.RecurringWireListTabContainer td.pageTab.linkColoredBackgroundColor {
+    font-weight: 700;
+}
+
+.RecurringWireListTabContainer td.emptyTab {
+    width: 100%;
+    border-top: 1px solid #e3e3e3;
+}
+
+#datagrid table.RecurringWireListDataGrid tbody tr.pager td {
+    padding: 15px 0;
+    border-top: 1px solid #e3e3e3;
+}
+
+.CmWireEditTable .RecurWeekDayTD, .CmWireEditTable .RecurMonthDayTD, .CmWireEditTable .RecurFirstDayTD, .CmWireEditTable .RecurSecondDayTD,
+.CmWireEditTable .RecurStartDateTD, .CmWireEditTable .RecurExpirationDateTD {
+    padding-top: 5px;
+}
+
+.CmWireEditTable .RecurMonthDayTD, .CmWireEditTable .RecurSecondDayTD, .CmWireEditTable .RecurStartDateTD, .CmWireEditTable .RecurExpirationDateTD {
+    white-space: nowrap;
+}
+
+.CmWireEditTable .recurMonthDayLastDay, .CmWireEditTable .recurSecondDayLastDay, .CmWireEditTable .recurringStartDateNoteContainer,
+.CmWireEditTable .recurNoExpiration {
+    padding-left: 10px;
+}
+
+.CmWireEditTable .RecurRetainTemplateTD {
+    vertical-align: bottom;
+}
+
+.CmWireEditTable .RecurRetainTemplateLabelTD {
+    padding-top: 10px;
+}
+
+.CmWireEditTable .recurringStartDateNoteContainer {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.CmWireEditTable .recurFrequency, .CmWireEditTable .recurWeekDay, .CmWireEditTable .recurMonthDay,
+.CmWireEditTable .recurFirstDay, .CmWireEditTable .recurSecondDay {
+    width: 150px;
+}
+
+.CmWireEditTable .datepicker {
+    width: 122px;
+}
+
+.CmWireEditTable .RequiredFieldAsterik {
+    float: right;
+    margin-left:5px;
+}
+
+.CmWireEditTable .RecurStartDateLabelTD {
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.CmWireEditTable .recurMonthDayLastDay input,
+.CmWireEditTable .recurStartDateLastDay input {
+    vertical-align: middle;
+}
+
+.recurSecondDayLastDay label {
+    padding:0;
+}
+
+.CmWireEditTable .recurMonthDayLastDay label{
+    padding:2px 0px 0px 2px;
+}
+
+.CmWireEditTable .recurStartDateLastDay label{
+    top:0px;
+}
+
+.WireHistorySearchBy td {
+    white-space: nowrap;
+}
+
+.VerifyPdfEnhancedMainContent, .VerifyPdfMainContent {
+    width:600px;
+    margin:0 auto;
+}
+li.VerifyPdfEnhanceddisclosureArea {
+    border: 1px solid #C8C8C8;
+    width: 100%;
+    left: 0;
+}
+input.watermarked, input.unwatermarked {
+    height:34px;
+    background-color: #ffffff;
+}
+.VerifyPdfEnhancedButtonContainer, .VerifyPdfButtonContainer {
+    text-align:right;
+}
+input.ColorButton.VerifyPdfEnhancedProceedBtn {
+    margin-right:0;
+}
+
+.recurNoExpiration label{
+    display:inline-block;
+    width:180px;
+    white-space:normal;
+    vertical-align:middle;
+    line-height:18px;
+    position:relative;
+    top:3px;
+}
+
+.CmWireEditTable .recurNoExpiration label {
+    display: inline-block;
+    width: 180px;
+    white-space: normal;
+    vertical-align: middle;
+    line-height: 18px;
+    top:0px;
+}
+
+.recurStartDateLastDay label,
+.recurMonthDayLastDay label,
+.recurSecondDayLastDay label{
+    display:inline-block;
+    width:180px;
+    white-space:normal;
+    vertical-align:middle;
+    line-height:18px;
+    padding-left:3px;
+    position:relative;
+    top:7px;
+}
+
+.recurMonthDayLastDay label,
+.recurSecondDayLastDay label {
+    position:relative;
+    top:6px;
+    padding-left:3px;
+}
+
+.CmWireEditTable .recurStartDateLastDay input,
+.CmWireEditTable .recurNoExpiration input {
+    vertical-align:top;
+    margin-top:10px;
+}
+
+.RecurExpirationDateTD img{
+    vertical-align:top;
+}
+
+.DateRangeRadioButtonContainer .fieldLabel {
+    width: 35px;
+    padding-left: 0px !important;
+}
+
+.TransactionTypeTD_CCM, .AddtionalReportingOptionsTableTD, .AddtionalReportingOptionsTableByAmountTD,
+.AdditionalSelectionTD_CCM, .PositivePayReportTypeLable {
+    padding-top: 8px;
+}
+
+.PanelActivityReport, .PanelSummaryReport, .PanelPositivePayReport {
+    margin-top: 10px;
+}
+
+.ReportRefineSearch{
+    margin-right : 10px;
+}
+
+.SummaryReportButtonContainerPadding{
+    padding-right : 70px;
+}
+
+.ReportChkBox{
+    margin-right : 0px;
+}
+
+.ui-icon-closethick {
+    background-position-x: 0px !important;
+    background-position-y: 0px !important;
+    width: 17px !important;
+    height: 17px !important;
+}
+
+.ui-dialog-titlebar-close {
+    border: none !important;
+    background-image:url('../images/icon_close.png') !important;
+    background-repeat:no-repeat !important;
+}
+
+.ui-dialog-titlebar {
+    border: none !important;
+}
+
+.ui-dialog {
+    border: none !important;
+}
+
+.SavedReportDeleteDialogDivHidden .button-container {
+    padding-top: 5px;
+}
+
+.SavedReportRenameDialogDivHidden .button-container {
+    padding-top: 15px;
+}
+
+.Colon {
+    display: none;
+}
+.AchStandardEntryDataElementSelect {
+    width: 200px;
+    max-width: 200px;
+    box-shadow: inset 0px 3px 6px 0px rgba(0,0,0,0.1);
+}
+_:-ms-lang(x), .AchStandarEntryDataElementSelectIe { margin-left: -3px; }
+
+.AchImportFormatButtonDiv input:first-child, .AchImportFormatButtonDiv input:nth-child(2) {
+    float: right;
+}
+
+.AchImportFormatButtonDiv input {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.CmAchImportFormatSelectFormatP span.BoldOnly {
+    padding-right: 5px;
+}
+
+.CmAchImportFormatSelectFormatP select {
+    width: 250px;
+}
+
+.AccountSelectionTableTD_CCM, .DateRangeSelectionTableTD, .TransactionTypeTD_CCM, .AdditionalSelectionTD_CCM,
+.AddtionalReportingOptionsTableByAmountTD, .AddtionalReportingOptionsTableTD, .AddtionalReportingOptionsTableSubTotalTD,
+.AccountSelectionTH2_CCM a, .AccountSelectionTH3_CCM a, .AccountSelectionTH4_CCM a, .AccountSelectionTH5_CCM a {
+    font-weight: 600;
+}
+
+.TransactionTypeSelectionDetailsTD {
+    padding-left: 7px;
+}
+
+.SpecificTransactionTypeDiv select.lbTranCode {
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.PanelActivityFilter .PanelActivityFilterSubContainer, .PanelSummaryFilter .PanelSummaryFilterSubContainer,
+.PanelPositivePayFilter .PanelPositivePayFilterSubContainer {
+    padding-top: 10px;
+}
+
+.PanelActivityFilter .PanelActivityFilterSubContainer, .PanelActivityFilter .PanelActivityFilterButtomContainer,
+.PanelSummaryFilter .PanelSummaryFilterSubContainer, .PanelSummaryFilter .PanelSummaryFilterButtomContainer,
+.PanelPositivePayFilter .PanelPositivePayFilterSubContainer, .PanelPositivePayFilter .PanelPositivePayFilterButtonContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 820px;
+}
+
+
+.AccountSelectionTableTD_CCM, .DateRangeSelectionTableTD, .TransactionTypeTD_CCM, .AdditionalSelectionTD_CCM, .PositivePayReportTypeLable,
+.AddtionalReportingOptionsTableByAmountTD, .AddtionalReportingOptionsTableTD, .AddtionalReportingOptionsTableSubTotalTD {
+    width: 150px;
+}
+
+.ArpExceptionsControlDatagrid tr.th td:nth-child(5), .ArpExceptionsControlDatagrid tr td:nth-child(5) {
+    padding-right: 10px;
+}
+
+.PositivePayExceptionsWidgetTable .account-name-cell {
+    padding-left: 10px !important;
+}
+
+.CmWireEditTable .RecurExpirationDateLabelTD{
+    padding-bottom:8px;
+}
+
+.scheduled-ibt-container .transfer-date-cell {
+    width: 85px !important;
+}
+.scheduled-ibt-container .transfer-link-cell {
+    width: 80px !important;
+}
+
+.AchTranListControlRecurringPanel .six {
+    width: 49.2%;
+}
+
+.CMReportSaveOptionSaveReportContainer, .CMReportSaveOptionSaveReportContainer, .ActivityReportButtonsContainer, .CMReportSaveOptionReportNameContainer, .PositivePayReportButtonsContainer {
+    width: 670px !important;
+}
+
+.ResetButtonMargin{
+    margin-right : 10px;
+}
+
+.AchImportFormatButtonDiv {
+    text-align: right;
+    padding-right: 76px;
+    direction: ltr;
+    -moz-padding-end: 84px;
+    -webkit-padding-end: 66px;
+}
+.modernizedIconOverRide {
+    background-image: none !important;
+}
+
+.RealTimePostingConfirmDoNotShowAgain {
+    padding-top: 8px;
+}
+
+.RealTimePostingButtonPanel input.RealTimePostingCancelButton {
+    float:none;
+    margin-left:48px;
+    -webkit-margin-start:48px;
+    -moz-margin-start:32px;
+
+}
+
+.logoutModalConfirmButtonPanel {
+    text-align:right;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+.CMSSOIDColumn
+{
+    padding-right: 20px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.headerFieldRequired {
+    text-align: left;
+    padding-bottom: 15px !important;
+}
+
+.headerStopPayment {
+    width: auto !important;
+    padding-left: 13px !important;
+    font-weight: 400 !important;
+    color: #484848 !important;
+    margin-left: 170px;
+}
+
+.blackAsterisk {
+    background: url("../Images/black_asterisk.svg") no-repeat center left;
+    padding-left: 13px;
+    display: inline-block;
+}
+
+.blackAsteriskPosTransactionDownloadForAccount {
+    background-position-x: 7px;
+}
+
+.blackAsteriskPosTransactionDownloadForRange {
+    background-position-x: 76px;
+}
+
+.blackAsteriskPosTransactionDownloadForFormat {
+    background-position-x: 70px;
+}
+
+.blackAsteriskPosTransactionDownloadforBeginDate {
+    background-position-x: 177px;
+}
+
+.blackAsteriskPosTransactionDownloadforEndDate {
+    background-position-x: 193px;
+}
+
+label.validateError {
+    color: #CC1010;
+    background: url("../Images/icon_errors.png") no-repeat scroll 0 transparent;
+    text-align:left !important;
+    margin-left: 10px;
+    padding-left: 23px !important;
+}
+
+.FormFieldset div label.widthAuto, .FormFieldset div div label.widthAuto {
+    width: auto;
+}
+
+input.validateError, table.validateError, div.validateError, span.validateError{
+    border: 1px solid #CC1010 !important;
+    background-color: rgba(204,16,16,0.04);
+}
+
+select.validateError {
+    border: 1px solid #CC1010 !important;
+    background: url(../Images/selection_background_error.svg) right no-repeat rgba(204,16,16,0.04);
+}
+
+td.validateError {
+    border: 1px solid #CC1010 !important;
+}
+
+.qtip-ValidateError {
+    background-color: white;
+	border: 1px solid #CC1010;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    min-height: 10px;
+    max-width: 560px;
+    margin-left: 10px;
+    vertical-align: text-top;
+    color: #CC1010;
+    background: url("../Images/icon_errors.png") no-repeat scroll white;
+    background-position: 5px center;
+    padding-left: 23px !important;
+}
+
+label.validatePositionForTransactionsDownload{
+    position:absolute;
+}
+label.validateAlertMessages {
+    position: inherit;
+}
+
+label.validatePositionTransactionsDownloadRange{
+    position : absolute;
+    float:right;
+    margin-left : 270px
+}
+
+.datepickerValidation {
+    margin-left: 13px !important;
+}
+
+.selectValidation, .datepickerValidation {
+    vertical-align: bottom !important;
+}
+
+.extraReportValidation {
+    border: 1px solid #CC1010 !important;
+    padding: 2px 14px 2px 7px !important;
+    border-radius: 5px;
+    background-position-x: 3px !important;
+    margin-top: 7px !important;
+    margin-left: 4px !important;
+    position: absolute;
+    background-color: white !important;
+}
+
+.extraAccountSelectionValidation {
+    width: 163px;
+}
+
+.conflictNoteValidation {
+    padding-right: 263px !important;
+}
+
+.stopPaymentValidation {
+    position: absolute;
+    width: 150px;
+    line-height: 25px;
+}
+
+.stopPaymentCheckValidation {
+    margin-left: 58px !important;
+}
+
+.stopPaymentAmountValidation {
+    margin-left: 160px !important;
+}
+.stopPaymentCheckValidations {
+    margin-left: 10px !important;
+}
+
+.stopPaymentAmountValidations {
+    margin-left: 10px !important;
+}
+.extraEDIAccountValidation {
+    top: 2px;
+    left: 302px;
+}
+
+.extraReportAmountValidationWidth {
+    width: 343px;
+}
+
+.extraReportCheckValidationWidth {
+    width: 414px;
+}
+
+.extraActivityTransactionValidationWidth {
+    width: 300px;
+}
+
+.extraActivityGroupValidation {
+    top: 0px;
+    right: -173px;
+}
+
+.TransactionGroupWidth {
+    width: 384px;
+}
+
+/* Start- Rsa GoId Authentication - */
+.RsaGoIDActivationContainerTheme2{
+    width: 400px;
+    margin: 0 37.5% 0 37.5%;
+}
+
+.RsaGoIDActivationActivationDivTheme2{
+    padding : 15px 0px 0px 22px;
+}
+
+.RsaGoIDActivationTableTheme2, .SerialNumberTextBoxTheme2, .TokenCodeTextBoxTheme2{
+    width: 100%;
+}
+
+.RSAActivationButtonsContainerTheme2{
+    text-align : right;
+}
+
+/* End- Rsa GoId Authentication - */
+
+.exceptionsDisableButton  {
+	cursor: default !important;
+	opacity: 0.5 !important;
+}
+
+.exceptionNoRecordsMessage {
+    font-weight: 600;
+    margin: 25px 0px 65px 0px;
+}
+
+.arpExceptionNoRecordsMessage {
+    font-weight: 600;
+    margin: 60px;
+}
+
+/* PlaceHolder Text Opacity - Trey Suggestion */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #B8B8B8;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #B8B8B8;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.6;
+}
+::-ms-input-placeholder { /* Edge */
+    color: #B8B8B8;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #B8B8B8;
+}
+/* End - PlaceHolder Text Opacity */
+
+div.AccountTransfersSearchPrimaryLabel {
+	width: 160px;
+}
+
+.MutlitDetetedMainContent{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+.MultiTabDetectedButtonContainerDiv {
+    text-align:right;
+}
+
+.MultiTabDetectedContinueButton {
+   margin-left: 5px;
+}
+
+.MultiTabHeaderText {
+    font-size:14px !important;
+    margin-top: 8px !important;
+    float: left !important;
+}
+
+.MultiTabDetetedContainer {
+    width: 160px;
+}
+
+.MultiDetectedHeader {
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+
+.MultiDetectedForm {
+    width: 460px;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top:8%;
+}
+
+.MultiDetectedHeaderRow {
+    background: #ffffff;
+}
+
+.divitemOptionsValidateError {
+    border: 1px solid #CC1010 !important;
+    background-color: rgba(204,16,16,0.04);
+    border-radius: 5px;
+}
+
+.divItemAlertHeaderRow{
+	width:500px;
+    padding-left:40px;
+}
+
+.divItemAlertInputsRow{
+    padding-left:100px;
+	text-align: right;
+	position: relative;
+}
+
+.divItemAlertHeaderAlertCol{
+	left:0;
+    padding-left:5px;
+}
+.divItemAlertHeaderItemCol{
+	left:0;
+    padding-left:180px;
+}
+.divItemAlertHeaderClearsCol{
+	left:0;
+    padding-left:80px;
+}
+
+.divItemAlertErrorMessage{
+	display: inline;
+	padding-left: 40px;
+}
+.divItemAlertCheckBoxes{
+    width:205px;
+    text-wrap:none;
+}
+.divItemAlertNumberErrorIcon{
+    display: table-cell;
+    width:20px;
+}
+
+.divItemAlertTypeErrorIcon{
+    display: table-cell;
+    width:10px;
+}
+
+.divItemAlertTypeErrorIcon2{
+    display: inline;
+    width:10px;
+}
+.divItemAlertErrorIconSP{
+    display: table-cell;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.divItemAlertItemNumber{
+	display: table-cell;
+	padding-left: 40px;
+}
+.divItemAlertItemAccounts{
+	padding-left: 5px;
+}
+.divItemAlertItemButton{
+	display: inline;
+	padding-left: 2px;
+}
+
+.divItemAlertItemForm{
+    margin: 5px 5px 5px 0;
+	text-align: right;
+	position: relative;
+	right: 10px;
+}
+
+.divItemAlertItemSubmitCancelRow{
+    padding-top:20px;
+    padding-left:412px;
+}
+
+/* End: Item Alert Validation */
+
+.BalanceAlertErrorMessage{
+    text-align:center;
+}
+
+.divTable{
+    display:table;
+}
+
+.divTableHeaderGroup{
+    display:table-header-group;
+}
+
+.divTableRow{
+    display:table-row;
+}
+
+.divTableCell{
+    display:table-cell;
+}
+
+.divTableCell2{
+    width:160px;
+}
+
+.divTableCell3{
+    width:200px;
+    padding-left:5px;
+}
+
+.divTableCellTH2{
+    width:182px;
+}
+
+.AccountTransfersNewHsaContributionNote {
+    width: 470px !important;
+    text-align: left !important;
+    padding-top: 10px;
+    font-weight: 400 !important;
+    color: #484848;
+    position: fixed;
+}
+
+.AccountTransfersNewHsaContributionDropdown {
+    width:250px;
+    margin: 5px 0 5px 4px;
+}
+
+/*Change ORder*/
+.ChangeOrderTabColumnHeader{
+    margin-bottom:10px;
+    margin-left: 90px;
+    text-align:left !important;
+    font-weight:600 !important;
+    border-bottom:1px solid #e3e3e3;
+    width:370px;
+}
+div.ChangeOrderTabTextAlignCenter {
+    text-align: left;
+	padding-top: 10px;
+    width: 550px;
+    margin: 0 auto 10px;
+}
+.ChangeOrderTabFieldset {
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+.ChangeOrderTabFieldset .row.seven{
+    width: 100%;
+}
+.ChangeOrderTabFieldset .row.seven .six.columns:first-child{
+    width: 205px;
+}
+.ChangeOrderTabFieldset div.six.columns img.RequiredImage{
+    margin-left: -14px;
+    padding-right: 5px;
+}
+.ChangeOrderTabFieldset div.row.seven .p-shadow{
+    top: 110px;
+}
+.ChangeOrderTabAmountLeft, .ChangeOrderTabFieldset #ctl00_PageContent_AmountDataElement_LeftTextBox {
+    width: 120px;
+	text-align: right;
+}
+.ChangeOrderTabAmountLeft + label{
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: sub;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 5px;
+}
+input.ChangeOrderTabAmountRight{
+    width: 56px;
+}
+.ChangeOrderTab select,
+.ChangeOrderTab select.ten,
+.ChangeOrderTab input.ten {
+    width: 190px;
+    text-align: right;
+}
+.ChangeOrderTab a {
+    padding-left:20px;
+}
+.ChangeOrderTabRequiredText {
+    display:none;
+}
+.ChangeOrderTabWrapperDiv {
+    margin-left: 200px;
+}
+.ChangeOrderTabLeftDiv {
+    display:inline-block;
+    max-width: 400px;
+    vertical-align: top;
+}
+.ChangeOrderTabRightDiv {
+    display:inline-block;
+    max-width: 400px;
+}
+.ChangeOrderTabComment {
+    width: 190px !important;
+}
+.ChangeOrderTabAddress {
+    text-align: left !important;
+}
+.ChangeOrderTab input.readOnlyTextBox {
+    background-color: #F2F2F2 !important;
+    border-color: #ddd;
+}
+
+.ChangeOrderTab.ErrorImage {
+    padding: 5px;
+    text-align: left;
+    padding: 5px;
+    line-height: inherit;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.AdditionReportsTable_CCM .reportType{
+    width:240px;
+}
+
+.byTypeEDI{
+    width:280px;
+}
+
+.ReportByAmountSpacing{
+    margin-left: -7px;
+}
+
+.DownloadNachaEDI {
+    margin-left: 10px;
+}
+
+.NachaEDIPanelContent {
+    margin-right: 100px;
+}
+
+.ACHActivitySameDayText {
+    float: left;
+    margin: 13px;
+}
+
+.ACHSameDayGreenText {
+    color: #197300;
+}
+
+.ACHBatchListingSameDayText {
+    float:left;
+}
+
+/* Candlestick - Credit Card pages css Start*/
+
+.CCTransactionAccountInfo {
+    border:0;
+    margin:5px 15px 15px;
+}
+
+.CCTransactionAccountDiv {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.CCTransactionUsageDiv {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    width: 360px;
+    margin-right: 5px;
+    text-align:left;
+}
+
+.CCTransactionLastPaymentDiv, .CCTransactionPaymentDueDiv, .CCTransactionAccessPointFsccDiv {
+    width: 165px;
+    min-height: 220px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: solid 1px #ccc;
+    margin: 5px 5px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+.CCTransactionCenter{
+    text-align:center;
+    display:inline-block;
+    width:74%;
+}
+
+.CCTransactionViewAccount {
+    margin: 0 0 15px 15px;
+}
+
+.CCTransactionMakePaymentDiv {
+    display: none;
+    padding: 10px 20px;
+    border-top: solid 1px #ccc;
+    text-align:center;
+}
+
+.CCTransactionPayDiv {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.CCTransactionCardTitle {
+    margin-bottom: 20px;
+}
+
+.CCTransactionUsageChart {
+    width: 45%;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.CCTransactionUsageDetails {
+    width: 40%;
+    margin: 14px 10px 0 0;
+    float: right;
+    text-align: right;
+}
+
+.CCTransactionHorizontalLabel {
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 5px;
+    position: relative;
+}
+
+.CCTransactionBigFont {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.CCTransactionMediumFont {
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.CCTransactionSmallFont {
+    font-weight: 300;
+    color: #707070;
+    font-size: 13px;
+}
+
+.CCTransactionSmallDarkFont {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.CCTransactionVerticalLable {
+    display:block;
+    line-height:20px;
+}
+
+.CCTransactionLoyaltiPoint {
+    display: none;
+    height: 40px;
+    width: 130px;
+    border: solid 1px #99C3DB;
+    border-radius: 2px;
+    color: #337AB7;
+    padding-left: 20px;
+    font-size: 10px;
+    margin-left: 305px;
+    background: #F9FDFD url("../Images/icon_arrow_right.svg") no-repeat 110px 14px;
+}
+
+.CCTransactionLoyaltiPointFont {
+    display: block;
+    font-weight: 600;
+    color: #337AB7;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.CCTransactionDropDownWidth {
+    width: 250px;
+}
+
+.CCTransactionAPRMargin {
+    margin-bottom: 0;
+}
+
+.CCTransactionPayCard {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width:135px;
+}
+
+.CCTransactionShowDiv {
+    padding-bottom: 9px;
+    border-bottom: solid 1px #ccc;
+}
+
+.CCTransactionShowFilter {
+    width: 70%;
+    display:inline-block;
+}
+
+.CCTransactionDwnPrint {
+    width: 29%;
+    display: inline-block;
+    text-align: right;
+}
+
+.CCTransactionDisplayInLine {
+    display: inline-block;
+}
+
+.CCTransactionShow {
+    margin-left: 75px;
+}
+
+.CCTransactionFilterIcon {
+    background: url("../Images/icon_filter.svg") no-repeat 7px;
+}
+
+.CCTransactionDownloadIcon {
+    background: url("../Images/icon_download.svg") no-repeat 10px;
+    padding-right:20px;
+    border-right: 1px solid #ccc;
+}
+
+.CCTransactionPrintIcon {
+    background: url("../Images/icon_print.svg") no-repeat 10px;
+    margin: 0 20px 0 5px;
+}
+
+.CCTransactionFilterIcon span, .CCTransactionDownloadIcon input, .CCTransactionPrintIcon span {
+    color: #337AB7;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.CCTransactionFilterDiv {
+    display: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.CCTransactionFirstCriteria {
+    width: 70%;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    text-align:center;
+}
+
+.CCTransactionSecondCriteria {
+    width: 29%;
+    display: inline-block;
+    padding: 20px 10px 0 25px;
+    text-align: center;
+    vertical-align:top;
+}
+
+.CCTransactionAmount {
+    margin: 30px 0;
+}
+
+.CCTransactionMarginLeft {
+    margin-left: 5px;
+}
+
+.CCTransactionFromLable {
+    margin-right:130px;
+}
+
+.CCTransactionToLable {
+    margin-right:145px;
+}
+
+.CCTransactionAmountButtons {
+    margin: 15px 0 15px 183px;
+}
+
+.CCTransactionSortOrder {
+    margin:10px 83px 10px 0;
+}
+
+    .CCTransactionSortOrder span, .CCTransactionInclude span {
+        vertical-align: super;
+    }
+
+.CCTransactionRadioButtonList {
+    display: inline;
+}
+
+    .CCTransactionRadioButtonList label, .CCTransactionCheckBoxList label {
+        vertical-align: top;
+    }
+
+.CCTransactionInclude {
+    margin-right: 110px;
+}
+
+.CCTransactionCheckBoxList {
+    display: inline;
+    text-align: left;
+}
+
+.CCTransactionCompletedList {
+}
+
+.CCTransactionPendingGridTop {
+    height: 30px;
+    padding: 7px 0 0 15px;
+}
+
+.CCTransactionGridTop {
+    height: 30px;
+    border-top: solid 1px #ccc;
+    padding: 7px 0 0 15px;
+}
+
+    .CCTransactionGridTop span, .CCTransactionPendingGridTop span {
+        color: #3498db;
+        font-size: 12px;
+        font-weight:600;
+        text-transform: uppercase;
+    }
+
+.CCTransactionPaymentConfirmation, .CCTransactionPaymentError {
+    display: none;
+}
+
+.TermsAndConditions {
+    display: none;
+}
+.modalAlert {
+    display: none;
+}
+
+.ESIPDFIFrame {
+    border: none;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.CCTransactionChart {
+    text-align: center;
+    width: 180px;
+    margin-top: 10px;
+}
+
+.CCTransactionChartBackground {
+    position: relative;
+    height: 100px;
+    background-color: #C3E2EE;
+    border-radius: 150px 150px 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.CCTransactionChartMask {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    left: 13px;
+    height: 130px;
+    background-color: #FFF;
+    border-radius: 150px 150px 0 0;
+}
+
+.CCTransactionChartPercentage {
+    position: absolute;
+    top: 100px;
+    left: -200%;
+    width: 400%;
+    height: 400%;
+    margin-left: 100px;
+    background-color: #399FC9;
+    transform-origin: top center;
+}
+
+.CCTransactionChartValue {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+}
+
+.CCTransactionChartPercentageFont {
+    font-size: 21px;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.CCTransactionChartCurrentBalance {
+    margin-top: 18px;
+}
+
+.CCTransactionChartLimit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.CCTransactionConfirmPayment {
+    border: 1px solid #68BC5E;
+    border-radius: 2px;
+    color: #326A3C;
+    background-color: #E1F6DF;
+    padding: 10px 40px;
+}
+
+.CCTransactionErrorPayment {
+    border: 1px solid #D97E7E;
+    border-radius: 2px;
+    color: #B93C3C;
+    background-color: #FFEDED;
+    padding: 10px 40px;
+}
+
+.CCTransactionDialog{
+    margin-left:-130px;
+    border:none;
+}
+
+.CCTransactionPaymentUnsuccessMessage{
+    margin:15px 0 15px 15px;
+}
+
+.CCTransactionOneTimePay {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.CCTransactionMakePaymentMargin {
+    margin-left: 15px;
+}
+
+.divCCNoTransaction{
+    display:none;
+    text-align:center;
+    font-size:15px;
+    margin:15px;
+}
+
+.CCTransactionGridRowBorder {
+    border: 1px solid #399FC9 !important;
+}
+
+.CCTransactionButton {
+    background: none !important;
+    border: none;
+    font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.CCTransactionPager {
+    font-size: 13px;
+}
+
+.CCTransactionAmountTextbox {
+    border: 1px solid #BABABA;
+}
+
+.CCScPointsDisplayCmd {
+    text-align:center;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    margin-top:1em;
+    cursor: pointer;
+}
+
+/* Candlestick - Credit Card pages css End*/
+
+/* NOA - CSS Start */
+
+.AccountTransferIdNoIdsDiv {
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.InformationMessageSuccess {
+    width: 100%;
+    border: 1px solid #68BC5E;
+    border-radius: 2px;
+    color: #326A3C;
+    background-color: #E1F6DF;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.InformationMessageError {
+    border: 1px solid #D97E7E;
+    border-radius: 2px;
+    color: #B93C3C;
+    background-color: #FFEDED;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.TransferIDAccountColumn {
+    padding-left: 10px;
+}
+
+.TransferIDButton {
+    padding-left: 50px;
+}
+
+.TransferIDGenerateColumnButton {
+    position: relative;
+    right: 140px;
+}
+
+.InternalTransfersDivWrapper {
+    width: 100%;
+}
+
+.InternalTransfersDivWrapper label.InternalTransfersLabel {
+    width: 170px;
+    position: relative;
+    top: 2px;
+}
+
+.InternalTransferFieldSet .transfer-from {
+    width: 250px;
+}
+
+fieldset.FormFieldset.InternalTransferFieldSet {
+    width: 700px;
+    margin: auto;
+}
+
+.InternalTransferTotalFundsDiv, .spanAccountHolderName {
+    margin-left: 25px;
+    position: relative;
+    display: inline;
+}
+
+.button-containerADA.InternalTransferButtonContainer {
+    padding-bottom: 10px;
+    width: 700px;
+    margin: auto;
+    text-align: right;
+    padding-right: 272px;
+}
+
+.reviewInternalTransferForm {
+    display: none;
+}
+
+.InternalTransferMarginBottom {
+    margin-bottom: 3px;
+}
+
+.internal-transfer-amount {
+    width: 250px;
+}
+
+.InternalTransfersFundFromAsterisk {
+    background-position-x:33px;
+}
+
+.InternalTransfersIDAsterisk {
+    background-position-x: 83px;
+}
+
+.InternalTransfersAmountAsterisk {
+    background-position-x: 100px;
+}
+
+.InternalTransferTextBox {
+    width: 250px;
+    background-color: #ffffff;
+}
+
+.InternalTransferTextBox:-webkit-autofill,
+.InternalTransferTextBox:-webkit-autofill:hover,
+.InternalTransferTextBox:-webkit-autofill:focus,
+.InternalTransferTextBox:-webkit-autofill:active {
+    -webkit-box-shadow: 0px 0px 0px 250px #fff inset;
+    -webkit-text-fill-color: #000;
+}
+
+.spanAccountHolderName {
+    text-align: left !important;
+    padding-left: 0px !important;
+}
+
+.AccountTransferIdDialog, .InternalTransferDialog {
+    display: none;
+}
+
+.InternalTransferViewForm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 15px !important;
+}
+
+.InternalTransferViewForm .FormFieldset span {
+    width: 180px !important;
+}
+
+.InternalTransferDialogButtonContainer {
+    text-align: right;
+    border-top: 1px solid #E3E3E3;
+    padding-bottom: 0;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.InternalTransferTooltipDiv {
+    position: relative;
+    display:inline-block;
+}
+
+.InternalTransferToolTip {
+    display: none;
+    background: #F6FBFF;
+    top: -43px;
+    width: 250px;
+    left: 0;
+    position: absolute;
+    border: 1px solid #B2D3F3;
+    padding-left: 5px;
+}
+
+.InternalTransferToolTip:before {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 120px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #B2D3F3;
+    }
+
+.InternalTransferBlueBox {
+    background: #F6FBFF;
+    border: 1px solid #B2D3F3;
+    padding: 10px !important;
+}
+
+.InternalTransferFINameDiv{
+    display:inline;
+}
+
+.InternalTransferReviewHeader {
+    width: 500px;
+    margin: 10px auto;
+}
+
+.InternalTransferFieldset {
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: -20px;
+}
+
+.InternalTransferFieldset div span {
+    line-height: 18px !important;
+    padding-left: 0 !important;
+}
+
+.InternalTransferFieldset .InternalTransferLable {
+    padding-right: 10px;
+}
+
+.InternalTransferReviewButtonContainer {
+    margin-top: 25px;
+}
+
+.InternalTransferConfirmHeader {
+    width: 400px;
+    margin: 10px auto;
+}
+
+.InternalTransferConfimNumberDiv {
+    margin:20px 0px;
+}
+
+.InternalTransferConfimContact {
+    width: 400px !important;
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    max-width: 390px;
+    word-wrap: break-word;
+}
+
+.internal-transfer-id:focus {
+    border-color: #4D97E0;
+}
+
+.InternalTransferScheduleHeader {
+    display: none;
+    width: 99% !important;
+    margin-left: 10px;
+}
+
+.InternalTransferBold {
+    font-weight: bold;
+}
+
+.StandardButton2:hover{
+    content:"standardbutton2"
+}
+/* NOA - CSS End  */
+
+/* ESI Enrollment Start*/
+
+.EsiAccountEnrollmentModal {
+    display: none;
+    width: 700px;
+}
+
+.EsiAccountFailedModal {
+    display: none;
+}
+
+.gvAccounts {
+    vertical-align: top;
+}
+
+.cbAllAccounts {
+    padding-bottom: 2px;
+}
+
+.EsiAccountNameCell {
+    width: 200px;
+    vertical-align: top;
+    padding-bottom: 3px;
+    padding-top: 4px;
+}
+
+.EsiDocumentNameCell {
+    width: 200px;
+}
+
+.EsiAccountCheckboxCell {
+    width: 20px;
+    vertical-align: top;
+    padding-bottom: 3px;
+    padding-top: 4px;
+}
+
+.EsiAccountExpandCell {
+    width: 20px;
+    vertical-align: top;
+    padding-bottom: 3px;
+    padding-top: 2px;
+}
+
+.EsiEnrollmentDocuments {
+    width: 360px;
+    vertical-align: top;
+    padding-bottom: 3px;
+    padding-top: 2px;
+}
+
+.EsiEnrollmentDocumentsButton {
+    text-align: right;
+}
+
+.EsiEnrollmentRow {
+    border-top: inset;
+}
+
+.EsiDocumentCheckBox {
+    vertical-align: top;
+    width: 20px;
+}
+
+.EsiPromptAlignment {
+    width: 600px !important;
+    text-align: left !important;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.EsiLabelAlignment {
+    display: contents !important;
+    white-space: pre-wrap;
+    width: 600px !important;
+    font-size: small;
+}
+
+.EsiCheckbox {
+    display: contents !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.EsiTermsAndConditions {
+    overflow-y: scroll;
+    width: 580px;
+    Height: 600px;
+}
+
+.EmailfieldLabel {
+    padding-right: 15px;
+    text-align: left !important;
+    white-space: nowrap;
+    font: normal 12px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-left: 5px;
+}
+
+#ctl00_BannerContent_BankLogo:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+
+.ViewRangeBar :focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+
+.FocusSetOutlineClass:focus {
+    outline: 2px solid #4D97E0 !important;
+}
+
+.FocusSetClass:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+
+.datagrid tbody .th td:focus, .datagrid tbody tr:focus, .datagrid tbody tr td:focus, .datagrid tbody tr td a:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+
+button[type="button"]:focus, input[type="button"]:focus, button[role="button"]:focus {
+    outline: 2px solid #4D97E0 !important;
+}
+
+input[type="checkbox"]:focus, input[type="search"]:focus {
+    outline: 2px solid #4D97E0 !important;
+}
+
+input[type="submit" ]:focus {
+    outline: none;
+    border: 2px solid #4D97E0 !important;
+}
+.dollarSign {
+    padding: 0px 10px 0px 0px;
+    width: 0px;
+    font-weight: normal;
+    vertical-align: inherit;
+    display: initial;
+}
+#ctl00_PageContent_FileUploadStatusControl__template_JhaTab__rbp:focus {
+    outline: 2px solid #4D97E0 !important;
+}
+.OrderCheckSubMenuDropDown {
+    display: table-cell;
+    padding-left: 0px 8px 0px 0px;
+    width: 270px;
+}
+input[type="search"]:focus {
+    outline: 2px solid #4D97E0 !important;
+}
+/* ES Enrollment End*/

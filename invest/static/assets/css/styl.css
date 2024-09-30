@@ -1,0 +1,6539 @@
+/*Linked stylesheets*/
+@import url(ACHSync.css);
+@import url(ARPSync.css);
+@import url(WiresNTSync.css);
+@import url(CashManagerSync.css);
+@import url(PowerOnSync.css);
+
+/* classes to be included in all themes */
+.NTSyncFloatLeft {
+    float:left;
+}
+.NTSyncFloatRight {
+    float:right;
+}
+.NTSyncNoWrap {
+    white-space:nowrap;
+}
+.NTSyncTextLeft {
+    text-align:left;
+}
+.NTSyncTextRight {
+    text-align:right;
+}
+
+.NTSyncBold{
+    font-weight:bold;
+}
+
+.CmWireEditSize43 {
+    width: 40px;
+}
+
+.CmWireEditSize60 {
+    width: 60px;
+}
+
+.CmWireEditSize50 {
+    width: 50px;
+}
+
+.CmWireEditSize65 {
+    width: 75px;
+}
+
+.ToUpperCase {
+    text-transform: uppercase;
+}
+
+.WiresEditEMSStateTextbox {
+    width: 40px;
+    margin-left: -5px !important;
+}
+
+.WiresEditEMSZipTextbox {
+    width: 75px;
+    margin-left: -53px !important;
+}
+/* Account Listing Base */
+.AccountListingBaseDiv {
+    display: table;
+    width: 100%;
+}
+.AccountListingBaseTableRowDiv {
+    display: table-row;
+}
+.AccountListingBaseTableCellDiv {
+    display:table-cell; 
+    vertical-align:top;
+}
+.AccountListingBaseWidth100Div {
+    width:100%;
+}
+.AccountListingBaseCbodyDiv {
+    display: table-cell;
+}
+.AccountListingBaseMarketingDiv {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    float: right;
+}
+
+/* Account Listing Summary */
+.AccountListingSummaryPaddingDiv {
+    padding:10px;
+}
+.AccountListingSummaryWidth100Div {
+    width:100%;
+}
+
+/* Modal Popup */
+.modalBackground {
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.modalPopup {
+    background-color: #ffffdd;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 3px;
+    width: 250px;
+}
+
+/* Marketing Ads */
+.MarketingAdsPanel {
+    display:none;
+}
+
+/* Scheduled Transfers Widget */
+.ScheduledTransfersWidgetHeaderTable, 
+.ScheduledTransfersWidgetDataTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+/* Account Balances Widget */
+.AccountBalancesWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+/* Widgets */
+/* Watermark FDIC Ehl Banner */
+.WatermarkFdicEhlBannerDiv {
+    display: table;
+    width: 100%;
+    margin-left: 10px
+}
+
+.WatermarkFdicEhlBannerDivWatermark {
+    display: table-cell;
+    float: left;
+}
+
+.WatermarkFdicEhlBannerDivRight {
+    display: table-cell;
+    float: right;
+}
+
+.WatermarkFdicEhlBannerDivSmallCenterText {
+    display: table-cell;
+    padding-right: 10px;
+}
+
+.WatermarkFdicEhlBannerDivSmallCenter {
+    display: table-cell;
+}
+
+/* iPay Multi Quick Payments Widget */
+.iPayMultiQuickPaymentsWidgetHeaderTable,
+.iPayMultiQuickPaymentsWidgetDataTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.iPayMultiQuickPaymentsWidgetQPMessageDialog {
+    display: none;
+}
+
+.ipay-qp-widget-container .ipay-amount-container .iPayMultiQuickPaymentsWidgetAmountTextbox {
+    width: 75px;
+}
+.ipay-qp-widget-container{
+    width:100%;
+
+}
+/* iPay Schedule Payments Widget */
+.iPaySchedulePaymentsWidgetHeaderTable,
+.iPaySchedulePaymentsWidgetDataTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.iPaySchedulePaymentsWidgetDeleteDialog {
+    display: none;
+}
+.iPaySchedulePaymentsWidgetDeleteDialogTable {
+    width:325px;
+}
+.iPaySchedulePaymentsWidgetDeleteDialogDeleteText {
+    font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: Red;
+}
+.iPaySchedulePaymentsWidgetDeleteDialogTdRightFive {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.iPaySchedulePaymentsWidgetDeleteDialogTdLeftFive {
+    text-align: left;
+    padding-left: 5px;
+}
+.iPaySchedulePaymentsWidgetDeleteDialogTdRightFiveWrap {
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+.PaymentTypeInfoDivModal{
+    width:400px;
+}
+
+.AddPayeeAccountNumberTextLabel{
+    font-size:smaller;
+}
+
+.EditPayeeTDTop{
+    vertical-align:top;
+}
+
+.EditPayeeTDLeft{
+    text-align:left;
+}
+
+.ExpeditedPaymentDeliveryFeeDataElementDiv{
+    position:absolute;
+    margin-left:370px;
+}
+
+.ExpeditedPaymentDeliveryDateMessagePanelDiv{
+    text-align:center;
+}
+
+.ExpeditedPaymentPayeePhone1Label{
+    width:30px;
+}
+
+.ExpeditedPaymentPayeePhone2Label{
+    width:30px;
+}
+
+.ExpeditedPaymentPayeePhone3Label{
+    width:40px;
+}
+
+.PayeeSearchlblAddress2NameTH{
+    height:28px;
+}
+
+.PayeeSearchLblSearchResult{
+    font-weight:bold;
+    color:red;
+}
+
+.PowerPayHistoryImage{
+    height:7px;
+    width:8px;
+}
+
+.PowerPaySortByAmountButton{
+    text-align:right;
+}
+
+.PowerPayHistoryDetailTable{
+    border-spacing: 0;
+}
+
+.EPaymentsFundingAccountsDiv{
+    border:1px solid #808080;
+    width:700px;
+    padding:5px;
+}
+
+/* OFM Mdx Main */
+.OFMMdxMainDiv {
+    text-align: center;
+    vertical-align: top;
+}
+
+/* OFM Main */
+.OfmMainDiv {
+    margin: 0px;
+    background-color: White;
+}
+.OfmMainTableWhite {
+    background-color: White;
+}
+.OfmMainPanel {
+    overflow-y: scroll;
+    border-width: 1px;
+    border-style: solid;
+    padding:5px;
+}
+.OfmMainEmbedScripts {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/* PowerPay */
+.PowerPayTable {
+    padding:0;
+    border-spacing:0;
+}
+.PowerPayTableBorder {
+    border-collapse:collapse;
+    border:0;
+}
+.PowerPayWidth100 {
+    width:100%;
+}
+.PowerPayLeftNowrap {
+    white-space: nowrap;
+    text-align: left;
+}
+.PowerPayRightNowrap {
+    text-align:right;
+    white-space:nowrap;
+}
+.PowerPayNoWrap {
+    white-space:nowrap;
+}
+.PowerPayWidth100ValignTop {
+    vertical-align:top;
+    width:100%;
+}
+.PowerPayHide {
+    display:none;
+}
+.PowerPayShow {
+    display:none;
+}
+.PowerPayTableCellTitle {
+    text-align:left;
+    white-space:nowrap;
+    padding:3px;
+}
+.PowerPayTableCellText {
+    text-align:left;
+    white-space:nowrap;
+    padding:3px 3px 3px 10px;
+}
+.PowerPayDetailTitle {
+    font-weight:bold;
+}
+.PowerPayWidth65px {
+    width: 65px;
+}
+.PowerPayWidth75px {
+    width: 75px;
+}
+.PowerPayWidth25px {
+    width: 25px;
+}
+.PowerPayWidth125px {
+    width: 125px;
+}
+.PowerPayWidth205px {
+    width:205px;
+}
+.PowerPayWidth110px {
+    width:110px;
+}
+.PowerPayWidth137px {
+    width:137px;
+}
+.PowerPayWidth173px {
+    width:173px;
+}
+.PowerPayWidth160px {
+    width:160px;
+}
+.PowerPayNowrap130px {
+    white-space: nowrap;
+    width: 130px;
+}
+.PowerPayWidth130px {
+    width: 130px;
+}
+.PowerPayNowrapPadLeft5px {
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.PowerPayAlignLeft {
+    text-align:left;
+}
+.PowerPayAlignRight {
+    text-align:Right;
+}
+.PowerPayPaddingTop20 {
+    padding-top:20px;
+}
+.PowerPayMarginLeft5 {
+    margin-left: 5px;
+}
+.PowerPayTrainStopControl {
+    color: black;
+    width:225px;
+}
+.PowerPayHeight55 {
+    height:55px;
+}
+.PowerPayWhiteSpaceNormal {
+    white-space:normal;
+}
+.PowerPayAlignTop {
+    vertical-align: top;
+}
+.PowerPayWidthAuto {
+    width:auto;
+}
+.CCPayeeToEGridStyle {
+    height: 20px;
+}
+.PowerPayFloatLeft {
+    float:left;
+}
+.PowerPayEditOneTimePaymentPaymentDateMessage {
+    position: relative;
+    padding-left: 5px;
+    text-align: left;
+}
+.PowerPayFontMedium {
+    font-size:medium;
+}
+.PowerPayMainMargin2 {
+    margin: 2px;
+}
+
+/* Web Alert Settings */
+.WebAlertSettingsTabControlTable
+{
+    width: 100%;
+}
+.WebAlertSettingsMainContentDiv
+{
+    padding:10px;
+}
+.WebAlertSettingsMainContentTable
+{
+    width:500px;
+}
+.WebAlertSettingsEmailLabel
+{
+    width:125px;
+}
+.WebAlertSettingsEmailTextBox
+{
+    width: 100%
+}
+.WebAlertSettingsEmailTD
+{
+    white-space:nowrap;
+}
+.WebAlertSettingsEmailDelete
+{
+    padding-left:5px;
+}
+.WebAlertSettingsMobileLabel
+{
+    width:170px;
+}
+.WebAlertSettingsSmsTD
+{
+    white-space:nowrap;
+}
+
+.BrowserNoteTable{
+    display:table;
+    width:100%;
+}
+
+
+.BrowserNoteHide{
+    display:none;
+}
+
+.BrowserNoteDiv{
+    text-align:center;
+}
+
+.ChallengePhoneHide{
+    display:none;
+}
+
+.ChallengePhoneMainContentDiv{
+    margin-bottom:30px;
+}
+
+.ChallengePhoneDiv1{
+    padding-left:45px;
+    text-align:left;
+}
+
+.ChallengePhoneDiv2{
+    padding-left:70px;
+    text-align:left;
+}
+
+.jscriptHelpBannerMultiLogo{
+    border-width:0;
+    border-color:#000000;
+    width:100%;
+}
+
+.jscriptHelpHide{
+    display:none;
+}
+
+.jscriptHelpDiv{
+    margin-left:10px;
+}
+
+.jscriptHelpSpan{
+    color:red;
+    font-size:large;
+}
+
+.jscriptHelpGreen{
+    color:green;
+    font-size:110%;
+}
+
+.LoginHide{
+    display:none;
+}
+
+/*.LoginCmHide{
+    display:none;
+}*/
+
+.LoginCmMainContent{
+    margin-bottom:30px;
+}
+
+.LoginCmMainContentDiv{
+    height:10px;
+}
+
+.LoginCmMainIdLabel{
+    font-weight:bold;
+    float:right;
+    line-height:25px;
+}
+
+.LoginCmMainIdTextBox{
+    width:230px;
+}
+
+.LoginCMOnlineAgreementHide{
+    display:none;
+}
+
+.LoginCMOnlineAgreementDiv{
+    margin:15px;
+}
+
+.LoginCMOnlineAgreementCheckBox{
+    text-align:center;
+}
+
+.LoginCollectPersonalQuestionsHide{
+    display:none;
+}
+
+.LoginCollectPersonalQuestionsDiv{
+    width:835px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.LoginCollectPersonalQuestionsTextBox{
+    width:600px;
+}
+
+.LoginErrorCmAliasHide{
+    display:none;
+}
+
+.LoginErrorCmAliasP{
+    text-align:center;
+}
+
+.LoginMultiFactorAuthHide{
+    display:none;
+}
+
+.LoginMultiFactorAuthDiv{
+    margin-bottom:30px;
+}
+
+.LoginMultiFactorAuthDiv2{
+    margin:15px;
+    width:100%;
+}
+
+.LoginOnlineAgreementButton{
+}
+
+.LoginOnlineAgreementLabel{
+    text-align:left;
+    font-size:130%;
+}
+
+.LoginOnlineAgreementDiv{
+    margin:15px;
+}
+
+LoginOnlineAgreementDiv2{
+    margin: 15px 15px 0px 15px;
+}
+
+.LoginOnlineAgreementDiv3{
+    text-align:center;
+}
+
+LoginOnlineAgreementButtonDiv{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.LoginPasswordChangeHide{
+    display:none;
+}
+
+.LoginPasswordChangeMainContent{
+    margin-bottom:30px;
+}
+
+.LoginPasswordChangePasswordLabel{
+    text-align:left;
+    font-size:150%;
+    width:auto;
+}
+
+.LoginPasswordHeaderBottomGray:after {
+    content: " ";
+    border-top: 1px solid #cfcfcf;
+    display: block;
+    width: 435px;
+    left: 28%;
+    position: absolute;
+}
+@media only screen and (min-width : 1824px) {
+.LoginPasswordHeaderBottomGray:after {
+    left: 32%;
+}
+}
+
+.LoginPasswordHeaderBottomGray:after {
+    content: " ";
+    border-top: 1px solid #cfcfcf;
+    display: block;
+    width: 435px;
+    left: 28%;
+    position: absolute;
+}
+@media only screen and (min-width : 1824px) {
+.LoginPasswordHeaderBottomGray:after {
+    left: 32%;
+}
+}
+
+.LoginPasswordChangeMarginLeft{
+    margin-left:20%;
+}
+
+.LoginPasswordChangeRowDiv{
+    line-height:25px;
+}
+
+.LoginPasswordChangeTextBox{
+    width:35%;
+}
+
+.LoginPasswordChangePasswordNoteDiv{
+    display: inline !important;
+    position: absolute !important;
+    margin-left:68%;
+}
+
+.LoginPasswordChangePasswordNoteLabel{
+    color:blue;
+}
+
+.LoginPasswordChangeAliasLabel{
+    line-height:25px;
+    text-align:center;
+}
+
+.LoginPasswordChangeNewAliasDiv{
+    width:35%;
+    float:left;
+}
+
+.LoginPasswordChangeNewAliasTextBox{
+    width:100%;
+}
+
+.LoginPasswordChangeNewAliasNoteDiv{
+    display: inline !important;
+    position: absolute !important;
+    padding:0 0 0 20px;
+    width:65%;
+}
+
+.LoginPasswordChangeNewAliasNoteLabel{
+    color:blue;
+    float:left;
+}
+
+.LoginPasswordChangeAliasIDLabel{
+    line-height:35px;
+    text-align:center;
+}
+
+.LoginPasswordChangeNewIDAliasTextBox{
+    width:200px;
+}
+
+.LoginPasswordChangeNewIDdiv{
+    width: 200px;
+    float: left;
+}
+
+.LoginPasswordChangeIDButton{
+    padding: 5px 10px;
+    float: right;
+}
+
+.LoginPasswordSelfResetDiv{
+    padding:10px;
+}
+
+.LoginPasswordSelfResetLabel{
+    float:right;
+    line-height:25px;
+    font-weight: 700;
+}
+
+.ShowInfoModalDefaults{
+    width:800px;
+    height:425px;
+}
+
+.ShowInfoModalLoginPasswordSelfReset{
+    width:600px;
+    height:310px;
+
+}
+
+.LoginNetopChatImage{
+    cursor:pointer;
+}
+
+.LoginPasswordSelfResetConfirmSecretAnswer{
+    width:500px;
+}
+
+.LoginPasswordSelfResetConfirmLabel{
+    text-align:right;
+    font-weight:bold;
+}
+
+.LoginPasswordSelfResetWhatsThisDiv{
+    margin-top:108px;
+}
+
+.LoginSecurityConfirmationSecurityMonitoringLabel{
+    font-weight:bold;
+}
+
+.LoginSecurityConfirmationButtonDiv{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.LoginTransferToColdFusionHide{
+    display:none;
+}
+
+.LoginTransferToColdFusionDiv{
+    margin:15px;
+    width:100%;
+}
+
+.LoginTransferToColdFusionButtonDiv{
+    height:0;
+}
+
+.LogoutNTHide{
+    display:none;
+}
+
+.LogoutNTDiv{
+    margin-top:20px;
+}
+
+.MeridianLinkSSOAuthHandoffHide{
+    display:none;
+}
+
+.MeridianLinkSSOAuthHandoffDiv{
+    border:1px solid gray;
+}
+
+.MfaSmsCollectionHide{
+    display:none;
+}
+
+.MfaSmsCollectionPhoneNumberTextBox{
+    width:200px;
+}
+
+.OnlineEnrollmentAgreementHide{
+    display:none;
+}
+
+.OnlineEnrollmentAgreementDiv1{
+    margin:15px;
+}
+
+.OnlineEnrollmentAgreementDiv2{
+    text-align:center;
+}
+
+.OnlineEnrollmentAgreementDiv3{
+    margin-right:15px;
+    margin-bottom:15px;
+}
+
+.OnlineEnrollmentDisclosureHide{
+    display:none;
+}
+
+.OnlineEnrollmentFailureHide{
+    display:none;
+}
+
+.OnlineEnrollmentFailureDiv{
+    margin: 15px 30px 15px 30px;
+}
+
+.RsaGoIdAuthenticationHide{
+    display:none;
+}
+
+.SVPChallengeQuestionsHide{
+    display:none;
+}
+
+.SVPChallengeQuestionsChallengeLabel{
+    text-align:left;
+    font-size:130%;
+}
+
+.SVPChallengeQuestionsTD{
+    width:10%;
+}
+
+.SVPConfirmHide{
+    display:none;
+}
+
+.SVPErrorHide{
+    display:none;
+}
+
+.SVPLoginHide{
+    display:none;
+}
+
+.SVPLoginSecurityFeaturesHide {
+    display: none;
+}
+
+/* Alert Event Edit */
+.AlertEventEditPlaceholderTable
+{
+    width: 100%;
+    padding:0 0 20px 0;
+}
+.AlertEventEditGridHeading
+{
+    width: 50%;
+}
+.AlertEventEditGridDivLeft
+{
+    width:35%;
+    text-align:center;
+    float:left;
+}
+.AlertEventEditGridDivRight
+{
+    width:65%;
+    text-align:left;
+    float:left;
+}
+.AlertEventEditDataList
+{
+    width: 100%;
+}
+.AlertEventEditDataListLeft
+{
+    width:35%;
+    text-align:left;
+    float:left;
+    white-space:nowrap;
+}
+.AlertEventEditDataListRight
+{
+    width:65%;
+    text-align:left;
+    float:left;
+    white-space:nowrap;
+    font-weight:bold;
+}
+.AlertEventEditDataListCheckBox
+{
+    float:left;
+    width:33%;
+}
+.AlertEventEditEmailFeeTD
+{
+    text-align: center;
+}
+.AlertEventEditEmailFeeGrid
+{
+    width: 50%;
+    border-collapse: collapse;
+    border-style: none;
+}
+.AlertEventEditConfirmEmailTable
+{
+    padding:35px 0 0 0;
+}
+.AlertEventEditConfirmEmailLabel
+{
+    width: 100px;
+    font-weight: bold;
+    text-align: left;
+}
+.AlertEventEditConfirmEmailTextBox
+{
+    width: 300px;
+}
+.AlertEventEditConfirmSms
+{
+    padding:35px 0 0 5px;
+}
+.AlertEventEditConfirmSmsTD
+{
+    padding:35px 0 0 0;
+}
+.AlertEventEditConfirmButtonTR
+{
+    text-align: center;
+}
+.AlertEventEditErrEmailAddress
+{
+    border-collapse: collapse;
+    border-style: none;
+}
+.AlertEventEditConfirmEmailHeader
+{
+    width:100%;
+    text-align: left;
+}
+.SVPLoginSecurityFeaturesTD{
+    text-align:center;
+}
+
+.SVPMFAErrorHide{
+    display:none;
+}
+
+.VerifyPDFHide{
+    display:none;
+}
+
+.watermarked{
+    background-color:#F0F8FF;
+    border:1px solid #BEBEBE;
+    color:gray;
+    height:20px;
+    padding:2px 0 0 2px;
+    width:215px;
+    font-size:1em;
+}
+
+.unwatermarked{
+    border:1px solid #BEBEBE;
+    height:20px;
+    padding:2px 0 0 2px;
+    width:215px;
+    font-size:1em;
+}
+
+.VerifyPdfEnhancedHide{
+    display:none;
+}
+
+.VerifyPdfEnhancedTD{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.VerifyPdfEnhanceddisclosureArea{
+    width:95%;
+    height:150px;
+    left:10px;
+    background:#FFF;
+    overflow:auto;
+    border:1px solid black;
+    padding:5px;
+    vertical-align:top;
+}
+
+.EsiSelectDocsArea {
+    left: 10px;
+    background: #F4F4F4;
+    overflow: auto;
+    border: 0px solid #e3dbdb;
+    padding: 5px;
+    padding-left:10px;
+}
+
+.WatermarkSelectHide{
+    display:none;
+}
+
+.WatermarkSelectHeader2Label{
+    text-align:left;
+    margin-left:25%;
+    font-size:130%;
+}
+
+.WatermarkSelectDiv{
+    margin-left:20%;
+}
+
+.WatermarkSelectCurrentImage{
+    float:left;
+    border-width:1px;
+}
+
+.WatermarkSelectImageTop{
+    vertical-align:top;
+}
+
+.WatermarkSelectImageTopPadding{
+    vertical-align:top;
+    padding-top:7px;
+}
+
+.WatermarkSelectImageButtonDiv{
+    margin-top:10px;
+    float:left;
+}
+
+.WatermarkSelectDiv2{
+    height:20px;
+}
+
+/* MultiQuickPaymentWidget */
+.MultiQuickPaymentsWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.MultiQuickPaymentsWidgetTextBox {
+    width: 90px;
+    text-align: right;
+}
+.MultiQuickPaymentWidgetDialog {
+    display: none;
+}
+.MultiQuickPaymentWidgetWidth325 {
+    width: 325px;
+}
+.MultiQuickPaymentWidgetRight5 {
+    text-align: right;
+    padding-right: 5px;
+}
+.MultiQuickPaymentWidgetBoldLeft5 {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+.MultiQuickPaymentWidgetRight5Nowrap {
+    text-align: right;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+.MultiQuickPaymentWidgetLeft5 {
+    text-align: left;
+    padding-left: 5px;
+}
+.MultiQuickPaymentWidgetCenter20 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Mobile Text Settings Confirm */
+.MobileTextSettingsConfirmTabTable
+{
+    width: 100%;
+}
+.MobileTextSettingsConfirmTabRightTD
+{
+    white-space: nowrap;
+    text-align: right;
+}
+.MobileTextSettingsConfirmMainContent
+{
+    overflow:hidden;
+    width:100%;
+    position:relative;
+}
+.MobileTextSettingsConfirmMainDiv
+{
+    margin:10px;
+    overflow:hidden;
+    position:relative;
+}
+.MobileTextSettingsConfirmFITextNumberDiv
+{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+.MobileTextSettingsConfirmFITextNumberLabel
+{
+    position:absolute;
+    width:190px;
+    left:0;
+    top:0;
+}
+.MobileTextSettingsConfirmFITextNumber
+{
+    position:absolute;
+    left:190px;
+    top:0;
+}
+.MobileTextSettingsConfirmMobileNumberDiv
+{
+    position:relative;
+    width:100%;
+    height:40px;
+    left:0px;
+}
+.MobileTextSettingsConfirmMobileNumberLabel
+{
+    position:absolute;
+    width:190px;
+    left:0px;
+    top:0px;
+}
+.MobileTextSettingsConfirmMobilNumber
+{
+    position:absolute;
+    width:115px;
+    left:190px;
+    top:0px;
+}
+.MobileTextSettingsConfirmMobileNumberMsg
+{
+    position:absolute;
+    width:100%;
+    left:305px;
+    top:0px;
+}
+.MobileTextSettingsConfirmMobileCarrierDiv
+{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0px;
+}
+.MobileTextSettingsConfirmWirelessProvider
+{
+    position:absolute;
+    width:190px;
+    left:0px;
+    top:0px;
+}
+.MobileTextSettingsConfirmMobileCarrierLabel
+{
+    position:absolute;
+    width:115px;
+    left:190px;
+    top:0px;
+}
+.MobileTextSettingsTextAccountsDiv
+{
+    position:relative;
+    width:100%;
+    height:20px;
+    left:0px;
+}
+.MobileTextSettingsTextAccounts
+{
+    position:absolute;
+    width:100%;
+    white-space:nowrap;
+    left:0px;
+    top:0px;
+    text-decoration:underline;
+}
+.MobileTextSettingsTextAccessDisabledDiv
+{
+    position:relative;
+    width:100%;
+    height:60px;
+    left:0px;
+}
+.MobileTextSettingsTextAccessDisabled
+{
+    position:absolute;
+    width:100%;
+    white-space:nowrap;
+    left:0px;
+    top:0px;
+}
+.MobileTextSettingsTextSettingsSavedDiv
+{
+    position:relative;
+    width:100%;
+    left:0px;
+    overflow:auto;
+    padding-bottom:10px;
+}
+.MobileTextSettingsTextSettingsSaved
+{
+    position:relative;
+    width:100%;
+    left:0px;
+    top:0px;
+}
+.MobileTextSettingsAvailableAccountsDiv
+{
+    position:relative;
+    width:100%;
+    padding-bottom:10px;
+    left:0px;
+    overflow:auto;
+}
+.MobileTextSettingsAvailableAccounts
+{
+    width:60%;
+    left:0px;
+    top:0px;
+    float:left;
+}
+.MobileTextSettingsCommandList
+{
+    background-color:#dfdfdf;
+    float:left;
+    width:38%;
+    height:auto;
+    margin-top:4em;
+    left:0px;
+    text-align:center;
+    border:1px solid #000000;
+    padding:5px;
+}
+.MobileTextSettingsMobileTextNo
+{
+    color: red;
+}
+.MobileTextSettingsMobileTextYes
+{
+    color: green;
+}
+.MobileTextSettingsMobileNumber
+{
+    width: 100%;
+}
+
+/* EPayments Add Funding Account */
+.EPaymentsAddFundingAcctTabHelp
+{
+    text-align: left;
+}
+.EPaymentsAddFundingAcctMainDiv
+{
+    border-style:solid;
+    border-color:#808080;
+    border-width:1px;
+    width:700px;
+    padding:5px;
+}
+.EPaymentsAddFundingAcctWarningLabel
+{
+    border-style: none;
+    font-weight: bold;
+    color: red;
+}
+.EPaymentsAddFundingAcctResponseLabel
+{
+    border-style: none;
+    color: red;
+}
+.EPaymentsAddFundingAcctBankAcctsDiv
+{
+    margin-left:30px;
+    width:700px;
+    padding:5px;
+}
+.EPaymentsAddFundingAcctAcctsTD
+{
+    width: 210px;
+}
+.EPaymentsAddFundingAcctAsterisk
+{
+    border-style: none;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+.EPaymentsAddFundingAcctSpacerTD
+{
+    width: 210px;
+}
+.EPaymentsAddFundingAcctNicknameTD
+{
+    width: 210px;
+}
+.EPaymentsAddFundingAcctButtonDiv
+{
+    text-align:center;
+    width:700px;
+    padding:5px;
+}
+.EPaymentsAddFundingAcctTabTable
+{
+    width: 100%;
+}
+.EPaymentsAddFundingAcctAcctsLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+.EPaymentsAddFundingAcctNicknameDE
+{
+    width: 200px;
+}
+.EPaymentsAddFundingAcctAcctsDDL
+{
+    width: 200px;
+}
+.EPaymentsAddFundingAcctNicknameLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+
+/* EPayments Add Funding Account Enrollment */
+.EPayAddFundingAcctEnrollTabTable
+{
+    width: 100%;
+}
+.EPayAddFundingAcctEnrollTabHelp
+{
+    text-align: left;
+}
+.EPayAddFundingAcctEnrollMainDiv
+{
+    border-style:solid;
+    border-color:#808080;
+    border-width:1px;
+    width:700px;
+    padding:5px;
+}
+.EPayAddFundingAcctEnrollWarningLabel
+{
+    border-style: none;
+    font-weight: bold;
+    color: red;
+}
+.EPayAddFundingAcctEnrollResponseLabel
+{
+    border-style: none;
+    color: red;
+}
+.EPayAddFundingAcctEnrollAccountsDiv
+{
+    margin-left:30px;
+    width:700px;
+    padding:5px;
+}
+.EPayAddFundingAcctEnrollAccountsTD
+{
+    width: 180px;
+}
+.EPayAddFundingAcctEnrollAsterisk
+{
+    border-style: none;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+.EPayAddFundingAcctEnrollSpacerTD
+{
+    width: 180px;
+}
+.EPayAddFundingAcctEnrollNicknameTD
+{
+    width: 180px;
+}
+.EPayAddFundingAcctEnrollButtonDiv
+{
+    text-align:center;
+    width:700px;
+    padding:5px;
+}
+.EPayAddFundingAcctEnrollAcctLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+.EPayAddFundingAcctEnrollNicknameDE
+{
+    width: 200px;
+}
+.EPayAddFundingAcctEnrollAcctsDDL
+{
+    width: 200px;
+}
+.EPayAddFundingAcctEnrollNicknameLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+
+.AchTranSearchFieldset{
+    padding-top:10px;
+}
+
+.AchTranSearchDiv{
+    padding-top:5px;
+}
+
+.AchTranSearchCompanyNameTextBox{
+    width:150px;
+}
+
+.AchTranSearchCompanyIdTextBox{
+    width:100px;
+}
+
+.AchTranSearchCategoryTextBox{
+    width:100px;
+}
+
+.AchTranSearchAmountDollarsTextBox{
+    width:50px;
+    text-align:right;
+}
+
+.AchTranSearchAmountCentsTextBox{
+    width:25px;
+}
+
+.AchBatchDownloadDiv{
+    margin:5px;
+}
+
+.AchBatchDownloadNoWrapDiv{
+    white-space:nowrap;
+}
+
+.AchBatchDownloadBoldDiv{
+    font-weight:bold;
+}
+
+.AchBatchDownloadCenterDiv{
+    text-align:center;
+}
+
+.AchBatchQuickInitiateContainerDiv{
+    margin-bottom:30px;
+}
+
+.AchBatchQuickInitiateMainContentDiv{
+    float:right;
+    padding-bottom:5px;
+    padding-right:5px;
+    padding-top:10px;
+}
+
+.AchBatchQuickInitiateCheckBox{
+    font-weight:bold;
+}
+
+.AchBatchQuickInitiateResetDiv{
+    padding-left:5px;
+    padding-bottom:5px;
+    height: 18px;
+}
+
+.AchActivityControlViewRangeBarDiv{
+    text-align:right;
+}
+
+.AchActivityControlViewButtonDiv{
+    padding-top:10px;
+}
+
+.AchActivityControlViewPlaceHolderDiv{
+    padding: 5px 0;
+}
+
+.AchActivityControlViewDataElementDiv{
+    padding:10px 0;
+}
+
+.AchBatchListingControlDiv{
+    padding-top:5px;
+}
+
+/*.AchBatchListingControlUpdatePanel{
+    float:right;
+    padding-top:5px;
+}*/
+
+.AchBatchListingControlClearDiv{
+    clear:both;
+}
+
+.AchBatchListingControlLiteral{
+    font-style:italic;
+}
+
+.ItalicFont{
+    font-style:italic;
+}
+
+.AchTranMultipleAddendaSubHeaderDiv{
+    text-align:center;
+    padding-top:5px;
+}
+
+.AchTranMultipleAddendaSubHeaderLabel{
+    font-weight:bold;
+}
+
+.AchTranMultipleAddendaDiv2{
+    width:99%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5px;
+}
+
+/*.AchTranListEditControlRestrictBatchLabel{
+    float:left;
+    font-weight:bold;
+}*/
+
+.AchTranListEditControlHide{
+    display:none;
+}
+
+AchTranListEditControlCheckBox{
+    text-align:center;
+}
+
+.AchTranListEditControlButton{
+    margin-bottom:10px;
+}
+
+.AchTransListGridCell{
+    width:100%;
+}
+
+
+
+.AchTranListQEditControlCheckBox{
+    text-align:center;
+}
+
+/*AchTranListQEditControlHide{
+    display:none;
+}*/
+
+.AchTranListQEditControlCheckBoxMiddle{
+    vertical-align:middle;
+}
+
+.AchTranListSearchResultControlClearDiv{
+    clear:both;
+}
+
+.AchTranListSearchResultControlCheckbox{
+    text-align:left;
+}
+
+.ACHTranListUninitiateControlDiv{
+    text-align:center;
+    color:#ff0000;
+    font-weight:bold;
+}
+
+
+.cmAchTaxPaymentEditShow{
+    display:block;
+}
+
+.cmAchTaxPaymentEditTaxInfoId1TextBox{
+    width:60px;
+}
+
+.cmAchTaxPaymentEditTableTD{
+    text-align:center;
+}
+
+.cmAchTaxPaymentViewTable{
+    border-spacing:0;
+}
+
+.cmAchTaxPaymentViewTH{
+    white-space:nowrap;
+}
+
+.AchUpdateStatusControlTemplateDiv{
+    margin:30px;
+    font-weight:bolder;
+}
+
+.AchUpdateStatusControlTemplateButtonDiv{
+    text-align:center;
+}
+
+.AchTranDeleteControlTemplateFieldset{
+    margin-left:10%;
+    margin-right:15%;
+}
+
+.AchTranDeleteControlTemplateClear{
+    clear:both;
+}
+
+.CommercialBatchEditTH1{
+    margin-left:10px;
+}
+
+.CommercialBatchEditTH2{
+    width:125px;
+}
+
+.CommercialBatchEditTH3 {
+    width: 250px;
+}
+
+.CommercialBatchEditDiv{
+    padding-bottom:0;
+    padding-top:5px;
+}
+
+.CommercialBatchEditDivTD{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.CommercialBatchHistorySearchPanel{
+    border: 2px solid black;
+    background-color:white;
+    display:none;
+    z-index:103;
+    position:absolute;
+    right:20px;
+    width:475px;
+}
+
+.CommercialBatchHistorySearchPanelDiv{
+    margin:10px;
+}
+
+.CommercialBatchHistorySearchPanelTable{
+    padding: 0;
+    border-spacing: 0;
+}
+
+.CommercialBatchHistorySearchPanelTD1{
+    text-align:center;
+}
+
+.CommercialBatchHistorySearchPanelTD2{
+    width:10px;
+}
+
+.CommercialBatchHistorySearchPanelDollarsTextBox{
+    text-align:right;
+}
+
+.AchTranListQEditSelectAllControlRightCell{
+    white-space:nowrap;
+    float:right;
+    width:400px;
+}
+
+.AchTranListQEditSelectAllControlTable{
+    padding: 0;
+    border-spacing: 0;
+    width:400px;
+}
+
+.AchTranListQEditSelectAllControlDiv{
+    margin:5px;
+}
+
+.AchTranListQEditSelectAllControlTDLeft{
+    text-align:left;
+}
+
+.AchTranListQEditSelectAllControlTDRight{
+    float:right;
+}
+
+.AchTranListQEditSelectAllControlDataGrid{
+    width:100%;
+}
+
+.ArpItemsListControlHide{
+    display:none;
+}
+
+.ArpItemsListControlTable{
+    border-collapse:collapse;
+}
+
+.ArpItemsListControlTH{
+    width:40%;
+}
+
+.ArpItemsListControlButtonDiv{
+    margin:15px;
+}
+
+.ArpItemsListControlCell1{
+    padding-left:4px;
+}
+
+.ArpItemsListControlCell2{
+    padding-right:15px;
+}
+
+.ArpItemsListControlCheckNumber{
+    text-decoration:none;
+    cursor:text;
+    color:inherit;
+}
+
+
+.ArpUploadApprovalControlButtonDiv{
+    padding-top:5px;
+}
+
+.ArpUploadApprovalControlHide{
+    display:none;
+}
+
+.ArpUploadControlTable{
+    display:table;
+}
+
+.ArpUploadControlTableRow{
+    display:table-row;
+}
+
+.ArpUploadControlTableCell{
+    display:table-cell;
+}
+
+.ArpUploadControlHide{
+    display:none;
+}
+
+.ArpUploadControlItemNumber{
+    text-align:right;
+    width:95px;
+}
+
+.ArpUploadControlIssueDate{
+    width:90px;
+}
+
+.ArpUploadControlAmountDollars{
+    width:105px;
+}
+
+.ArpUploadControlPayee{
+    width:260px;
+}
+
+.ArpUploadControlImage{
+    border:none;
+}
+
+/* EPayments Single Funding Account */
+.EPaySingleFundingAcctTabTable
+{
+    width: 100%;
+}
+.EPaySingleFundingAcctTabHelp
+{
+    text-align: left;
+}
+.EPaySingleFundingAcctMainDiv
+{
+    border-style:solid;
+    border-color:#808080;
+    border-width:1px;
+    width:520px;
+    padding:5px;
+}
+.EPaySingleFundingAcctWarningLabel
+{
+    border-style: none;
+    font-weight: bold;
+    color: red;
+}
+.EPaySingleFundingAcctResponseLabel
+{
+    border-style: none;
+    color: red;
+}
+.EPaySingleFundingAcctAcctDiv
+{
+    margin-left:30px;
+    width:700px;
+    padding:5px;
+}
+.EPaySingleFundingAcctNicknameTD
+{
+    width: 214px;
+}
+.EPaySingleFundingAcctAsterisk
+{
+    border-style: none;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+.EPaySingleFundingAcctButtonDiv
+{
+    text-align:center;
+    width:500px;
+    padding:5px;
+}
+.EPaySingleFundingAcctAcctNameLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+.EPaySingleFundingAcctAcctName
+{
+    border-style: none;
+    width: 200px;
+}
+.EPaySingleFundingAcctNicknameDE
+{
+    width: 200px;
+}
+.EPaySingleFundingAcctNicknameLabel
+{
+    font-weight: bold;
+    border-style: none;
+}
+.RateInfoHelpDiv{
+    position: relative;
+}
+
+/* International Wire Transfer List */
+.InternationalWireTransferListDatagrid
+{
+    border-collapse:collapse;
+}
+.InternationalWireTransferListDatagrid tr td
+{
+    border-right: 1px solid #E2E2E2;
+	padding: 0 10px;
+}
+
+/* Account Transfers New Template */
+.AccountTransfersHistoryHiddenDialogDiv{
+    display:none;
+}
+.AccountTransfersNewTemplateAsterisk {
+    vertical-align: text-top;
+    margin-left: 2px;
+}
+.AccountTransfersNewTemplatePadRight17 {
+    padding-right: 17px;
+}
+.AccountTransfersNewTemplateButtonContainer {
+    width: 50%;
+    padding: inherit;
+    text-align: inherit;
+    margin: 0 0 0 365px;
+}
+#AccountTransfersNewTemplateDateFormat {
+    display: none;
+}
+div span.AccountTransfersNewTemplateDateFormat {
+    display: none;
+}
+
+/* Arp Ach Filter List */
+.ArpAchFilterListTabTable
+{
+    width: 100%;
+}
+.ArpAchFilterListFilterHeader
+{
+    width: 90%;
+}
+.ArpAchFilterListHelpCell
+{
+    text-align: left;
+}
+.ArpAchFilterListRightCell
+{
+    white-space: nowrap;
+    text-align: right;
+}
+
+.ArpAccountUploadDropDownList{
+    min-width:160px;
+}
+
+.ArpUploadControlYellow{
+    background-color:yellow;
+}
+
+.ShowModalViewTransferDetails{
+    width:500px;
+    height:400px;
+    min-width:500px;
+}
+
+.ShowModalEditPendingTransfer{
+    width:700px;
+    min-width:700px;
+
+}
+
+.DoListActionBackGroundGray{
+    background-color:#e9e9e9;
+}
+
+.DoListActionBackGroundWhite{
+    background-color:white;
+}
+
+.TransfersAvailableFundsShowModal{
+    width:500px;
+    min-width:500px;
+    height:auto;
+}
+
+.ShowDivModalDefaults{
+    width:275px;
+    height:200px;
+}
+
+/* Data Selection */
+.DataSelectionMainTable
+{
+    border-collapse: collapse;
+}
+.DataSelectionRangeLabelTD
+{
+    width: 200px;
+}
+.DataSelectionDownloadDataRangeDiv
+{
+    margin-top:5px;
+    display: none;
+}
+.DataSelectionDataRangeFromTD
+{
+    width:35px;
+}
+.DataSelectionDataRangeBeginDate
+{
+    vertical-align:top;
+}
+.DataSelectionDataRangeEndDate
+{
+    vertical-align:top;
+}
+.DataSelectionDateSpecificDiv
+{
+    margin-top:5px;
+    display: none;
+}
+.DataSelectionSpecificDate
+{
+    vertical-align:top;
+}
+.DataSelectionSpecificDateLabelTD
+{
+    vertical-align:top;
+}
+
+/* Saved Report */
+.SavedReportDeleteDialogDiv
+{
+    display:none;
+}
+.SavedReportDeletePkId
+{
+    display:none;
+}
+.SavedReportDeleteButtonGroup
+{
+    margin: 15px;
+}
+.SavedReportRenameDialogDiv
+{
+    display:none;
+}
+.SavedReportRenameDataGrid
+{
+    border-collapse: collapse;
+}
+.SavedReportNewNameTextbox
+{
+    width:20em;
+}
+.SavedReportCmReportCmUserId
+{
+    display: none;
+}
+.SavedReportRenamePkId
+{
+    display: none;
+}
+.SavedReportReportButtonGroup
+{
+    margin: 15px;
+}
+
+/* EPayments Add Customer */
+.EPaymentsAddCustomerTable {
+    width:100%;
+    padding:0;
+    border-spacing:0;
+    border-collapse:collapse;
+}
+.EPaymentsAddCustomerAlignLeft {
+    text-align:left;
+}
+.EPaymentsAddCustomerDivWrapper {
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    width: 800px;
+    padding: 5px;
+}
+.EPaymentsAddCustomerWarningLabel {
+    border:none;
+    color:red;
+    font-weight:bold;
+}
+.EPaymentsAddCustomerResponseLabel {
+    border:none;
+    color:red;
+}
+.EPaymentsAddCustomerLiteralWrapper {
+    margin-left: 30px;
+    width: 800px;
+    padding: 5px;
+}
+.EPaymentsAddCustomerWidth214 {
+    width:214px;
+}
+.EPaymentsAddCustomerAsterisk {
+    border:none;
+    color:red;
+    font-size:small;
+    font-weight:bold;
+}
+.EPaymentsAddCustomerBorderNone {
+    border:none;
+}
+.EPaymentsAddCustomerButtonContainer {
+    text-align: center;
+    width: 700px;
+    padding: 5px;
+}
+.EPaymentsAddCustomerBlueLabel {
+    border:none;
+    color:blue;
+    font-size:small;
+    font-weight:normal;
+}
+.EPaymentsAddCustomerDataElementNoBorder {
+    width:200px;
+    font-weight:bold;
+    border:none;
+}
+.EPaymentsAddCustomerDataElement {
+    width:200px;
+    font-weight:bold;
+}
+.EPaymentsAddCustomerDataElementBold {
+    font-weight:bold;
+}
+.EPaymentsAddCustomerDataElementBold125 {
+    font-weight:bold;
+    width:125px;
+}
+.EPaymentsAddCustomerDataElement125 {
+    width:125px;
+}
+
+/* EPayments Customer Record */
+.EPaymentsCustomerRecordTable {
+    width:100%;
+    padding:0;
+    border-spacing: 0;
+    border-collapse:collapse;
+}
+.EPaymentsCustomerRecordLeft {
+    text-align:left;
+}
+.EPaymentsCustomerRecordDivWrapper {
+    border-style: solid;
+    border-color: #808080;
+    border-width: 1px;
+    width: 800px;
+    padding: 5px;
+}
+.EPaymentsCustomerRecordRedLabelBold {
+    border:none;
+    color:red;
+    font-weight:bold;
+}
+.EPaymentsCustomerRecordRedLabel {
+    border:none;
+    color:red;
+}
+.EPaymentsCustomerRecordLiteralDiv {
+    margin-left: 30px;
+    width: 800px;
+    padding: 5px;
+}
+.EPaymentsCustomerRecord214 {
+    width:214px;
+}
+.EPaymentsCustomerRecordAsterisk {
+    border:none;
+    color:red;
+    font-size:small;
+    font-weight:bold;
+}
+.EPaymentsCustomerRecordLabel {
+    border:none;
+}
+.EPaymentsCustomerRecordBlueLabel {
+    border:none;
+    color:blue;
+    font-size:small;
+}
+.EPaymentsCustomerRecordButtonContainer {
+    text-align: center;
+    width: 700px;
+    padding: 5px;
+}
+.EPaymentsCustomerRecordBold200 {
+    width:200px;
+    font-weight:bold;
+}
+.EPaymentsCustomerRecordBold {
+    font-weight:bold;
+}
+.EPaymentsCustomerRecord125 {
+    width:125px;
+}
+.EPaymentsCustomerRecord200 {
+    width:200px;
+}
+
+.ArpUploadEditFormatControlTable{
+    display:table;
+}
+
+.ArpUploadEditFormatControlTableCell{
+    display:table-cell;
+}
+
+.ArpUploadEditFormatControlTableCell2{
+    display:table-cell;
+    width:350px;
+}
+
+.ArpUploadEditFormatControlTableRow{
+    display:table-row;
+}
+
+.ArpUploadFormatDropDownList{
+    width:160px;
+}
+
+.ArpUploadEditFormat_CsvTable{
+    padding:0;
+}
+
+.ArpUploadEditFormat_CsvTD{
+    white-space:nowrap;
+}
+
+/* SVP Authentication */
+.SVPLoginDisplayNone {
+    display: none;
+}
+.SVPLoginTable {
+    width:100%;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+.SVPLoginTDRightNowrap {
+    text-align:right;
+    white-space: nowrap;
+}
+.SVPLoginTableBorder0 {
+    border:0;
+    width:100%;
+}
+.SVPLoginTDLabelCenter {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.SVPLoginTDLabelLeftMiddle {
+    text-align: left;
+    vertical-align: middle;
+}
+.SVPLoginTDLabelLeft {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.SVPLoginWidth50 {
+    width: 50%;
+}
+.SVPLoginWidth100 {
+    width: 100%;
+}
+.SVPLoginNowrapLeft {
+    white-space: nowrap;
+    text-align: left;
+}
+.SVPLoginWidth50Padleft15AlignLeft {
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+}
+.SVPLoginTop15AlignCenter {
+    padding-top: 15px;
+    text-align: center;
+}
+.SVPLoginLeft {
+    text-align:left;
+}
+.SVPLoginRight {
+    text-align:right;
+}
+
+.SVPConfirmCheckbox {
+    height: 76px;
+    width: 525px;
+}
+.SVPLoginTDRightNowrap {
+    text-align:right;
+    white-space: nowrap;
+}
+.SVPConfirmWidth200 {
+    width:200px;
+}
+
+.SVPErrorLeft {
+    text-align: left;
+}
+.SVPLoginTableBorder0 {
+    border:0;
+    width:100%;
+}
+.SVPLoginTDLabelCenter {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.SVPLoginTDLabelLeftMiddle {
+    text-align: left;
+    vertical-align: middle;
+}
+.SVPErrorRight {
+    text-align:right;
+}
+
+.SVPMFAErrorLeft {
+    text-align: left;
+}
+.SVPLoginTDLabelLeft {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.SVPMFAErrorRight {
+    text-align:right;
+}
+
+.AlertOptionsAlertButtonTD {
+    vertical-align: baseline;
+    text-align: right;
+    white-space: nowrap;
+}
+.SVPLoginWidth50 {
+    width: 50%;
+}
+
+
+.AlertOptionsGridView {
+    width: 100%;
+}
+.SVPLoginWidth100 {
+    width: 100%;
+}
+
+.AlertOptionsHeaderBold {
+    font-weight: bold;
+}
+
+
+
+
+/* Alerts Modal */
+.modal-body {
+    margin: 2px 2px 2px 2px !important;
+}
+
+.AlertsModalPanel {
+    display: inline;
+    width: 500px;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+.AlertsModalDetailDiv {
+    display: none;
+}
+
+.AlertsModalTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.AlertsModalTableTDUpdatePanel {
+    text-align: right;
+    display: none;
+}
+
+.AlertsModalDivDatagrid {
+    text-align: left;
+    border: solid 1px gray;
+}
+
+.AlertsModalDivDatagrid500 {
+    text-align: left;
+    border: solid 1px gray;
+    width: 500px;
+}
+
+.AlertsModalTDRight {
+    text-align: right;
+}
+
+.AlertsModalAnchorPointer {
+    cursor:pointer;
+}
+
+.AlertsModalTD5 {
+    width:5px;
+}
+
+.AlertsModalEmptyColumn {
+    width: 5px;
+}
+
+.AlertsModalPagerStyle {
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.AlertsModalItemStyle {
+    width: 50px;
+}
+
+.AlertsModalColumn1HeaderStyle {
+    width: 160px;
+}
+
+.AlertsModalColumn2ItemStyle {
+    text-align: center;
+}
+
+.AlertsModalColumn2HeaderStyle {
+    width: 40px;
+}
+
+/* Account Transaction Download Template */
+
+.AccountTransactionDownloadTemplateCheckbox {
+    float: left;
+    margin: 5px 10px;
+    border: 0px solid gray;
+    display: block;
+    width: 310px;
+}
+
+.AlertOptionsAlertButtonTD{
+    vertical-align:baseline;
+    text-align:right;
+    white-space:nowrap;
+}
+.AccountTransactionDownloadTemplateAgreementDiv {
+    display: none;
+    overflow-y: auto;
+}
+
+.AlertsTextAlignRight {
+    text-align: right;
+}
+.AlertOptionsHeaderBold{
+    font-weight:bold;
+}
+
+/* Account Transaction Download Template */
+
+.AccountTransactionDownloadTemplateCheckbox {
+    float: left;
+    margin: 5px 10px;
+    border: 0px solid gray;
+    display: block;
+    width: 310px;
+}
+
+.AlertOptionsAlertButtonTD{
+    vertical-align:baseline;
+    text-align:right;
+    white-space:nowrap;
+}
+.AccountTransactionDownloadTemplateAgreementDiv {
+    display: none;
+    overflow-y: auto;
+}
+
+.AlertsTextAlignRight {
+    text-align: right;
+}
+.AlertOptionsHeaderBold{
+    font-weight:bold;
+}
+
+.AlertsCursorPointer {
+    cursor: pointer;
+}
+AlertOptionsRowHeight{
+    height:20px;
+}
+AlertOptionsRowHeight{
+    height:20px;
+}
+.AccountTransactionSearchFloatRightNtSync {
+    float:right;
+}
+
+.AccountTransactionsCurrentLiteral {
+    padding: 5px 5px 5px 5px;
+}
+.AccountTransactionsFloatLeft {
+    float:left;
+}
+.AccountTransactionsNTClear {
+    clear:both;
+}
+.AccountTransactionsWidth150 {
+    width:150px;
+}
+.AccountTransactionsDataGrid {
+    padding-left: 30px;
+    width:100%;
+}
+.AccountTransactionsNoTransactionsDiv {
+    padding: 10px;
+    display: none;
+}
+.AccountTransactionsPendingHoldLiteralDataGrid {
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 30px;
+}
+.AccountTransactionsPendingHoldLiteralTDLeft5 {
+    text-align:left;
+    width:5%;
+}
+.AccountTransactionsPendingHoldLiteralTDLeft {
+    text-align:left;
+}
+.AccountTransactionsPendingHoldLiteralTDRight5 {
+    text-align:right;
+    width:5%;
+}
+.AccountTransactionsPendingHoldLiteralTRTop {
+    vertical-align:top;
+}
+.AccountTransactionsPendingHoldLiteralTDPaddingLeft10 {
+    text-align:left;
+    padding-left: 10px;
+}
+.AccountTransactionsPendingHoldLiteralTDRightPadding10 {
+    text-align:right;
+    padding-left: 10px;
+}
+.PadLeftRight10 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.AccountTransactionsCheckImage {
+    width:5px;
+    white-space:nowrap;
+}
+.AccountTransactionsAmount {
+    width:125px;
+    white-space:nowrap;
+}
+.AccountTransactionsDebitCreditBalance {
+    width:115px;
+    white-space:nowrap;
+}
+.AccountTransactionsLeft {
+    float:left;
+}
+.AccountTransactionsHeaderDiv {
+    padding-left: 10px;
+    vertical-align: top;
+    padding-top: 8px;
+}
+.AccountTransactionsNTHeaderRange {
+    padding-right: 8px;
+}
+.AccountTransactionsNTHeaderRangeBalances {
+    margin-right: 20px;
+    float: left;
+}
+.AccountTransactionsNTHeaderRangeViewRangeBarDiv {
+    padding-right: 8px;
+    padding-bottom: 6px;
+}
+.AccountTransactionsNTDisplayNone {
+    display: none;
+}
+.AccountTransactionsNTWidth490px {
+    width: 490px;
+}
+.AccountTransactionsNTPadTop5 {
+    padding-top:5px;
+}
+.AccountTransactionsNTPadTop10 {
+    padding-top:10px;
+}
+.AccountTransactionsNTPad5LeftRight {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.AccountTransactionsNTDataGridPadLeft30 {
+    padding-left: 30px;
+}
+.AccountTransactionsNTNoTransactionsDiv {
+    display: none;
+    padding-top: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-top: 1px solid #E3E3E3;
+    font-weight: 600;
+}
+.AccountTransactionsNTPrintHeaderRange {
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.AccountTransactionsNTScheduledTransactions {
+    color: #1020d0;
+}
+
+.AccountTransfersPendingCellCenter {
+    text-align:center;
+}
+.AccountTransfersPendingWidth100P {
+    width:100%;
+}
+
+.AlertsDataGridHeaderStyle {
+    width:40px;
+}
+
+/* Account Transaction Download Template */
+.AccountTransactionDownloadTemplateCenter {
+    text-align:center;
+}
+.AccountTransactionDownloadTemplateDivWrapper {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.AccountTransactionDownloadTemplateInline {
+    display:inline;
+}
+.AccountTransactionDownloadTemplateDropdown {
+    width:250px;
+}
+.AccountTransactionDownloadTemplateCheckboxDiv {
+    visibility: hidden;
+    display: none;
+    display: inline;
+}
+
+.AccountTransactionDownloadTemplateDateRangeDiv {
+    margin-top: 5px;
+    display: none;
+}
+.AccountTransactionDownloadTemplateDatePicker {
+    vertical-align:top;
+}
+
+/* Alerts Panel */
+.Jha-Alerts-Panel {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    background-color: white;
+    display: none;
+    position: absolute; 
+    z-index: 999;
+    width: 475px;
+}
+
+.InterbankTransferEnrollmentDiv{
+    text-align:center;
+}
+
+
+.MessageNewoptin-panel input
+{    
+    float: left;
+}
+.MessageNewoptin-panel label
+{    
+    margin-left: 25px;
+    display: block;
+}
+
+.MessageNewOptinMainContentDiv{
+    margin-left:50px;
+}
+
+.MessageNewMainContentTable{
+    border:0;
+    width:80%;
+    align-self:center;
+}
+
+.MessageNewMainContentTableTD{
+    width:100%;
+}
+
+.MessageNewMainContentTableLabel{
+    width:250px;
+}
+
+.MessageNewMainContentTableTextBox{
+    width:400px;
+}
+
+.MessageNewMainContentTableRadioButton {
+    text-align:left;
+    width:200px;
+}
+
+.MessageNewAccountCheckListSectionTH{
+    vertical-align:text-top;
+}
+
+.MessageNewMessageSectionTextBox{
+    height: 100px;
+    width: 500px;
+}
+
+.MessageNewMessageSectionTH{
+    vertical-align:top;
+}
+
+.MessageNewFileListTypeLabel{
+    width:340px;
+}
+
+.MessageNewButtonTable{
+    border:0;
+}
+
+.MessageNewButtonTableTD{
+    text-align:center;
+}
+
+/* Interbank Transfer Pending */
+.InterbankTransferPendingPadding {
+    padding:10px;
+}
+.InterbankTransferPendingFooterRight {
+    text-align:right;
+}
+
+/* Interbank Transfer Accounts */
+.InterbankTransferAccountsText {
+    margin: 10px 10px 10px 30px;
+    text-align: center;
+}
+.InterbankTransferAccountsPadding10 {
+    padding:10px;
+}
+.InterbankTransferAccountsDeleteText {
+    margin: 10px 1px 10px 1px;
+    text-align: center;
+}
+
+/* Options - Account */
+.OptionsAccountsLabel{
+    margin-right:10px;
+}
+.OptionsAccountsSpan{
+    margin-left:10px;
+}
+
+.OptionsAccountsLabel .OptionsAccountsSpan :focus {
+    border: 1px solid #C8C8C8;
+}
+.OptionsAccountsContainerDiv{
+    width:100%;
+}
+.OptionsAccountsContainerTable{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+}
+.OptionsAccountsTableHeader{
+    display:table-header-group;
+}
+.OptionsAccountsTableRow{
+    display:table-row;
+    font-weight:bold;
+}
+.OptionsAccountsTableCell {
+    display: table-cell;
+    white-space: nowrap;
+}
+.OptionsAccountsModalDescSpan{
+    margin:10px;
+}
+.OptionsAccountsTableRow2{
+    display:table-row;
+}
+
+/* Authentication Questions */
+.ChallengeQuestionFieldSet {
+    font-weight: bold;
+    width: 650px;
+    line-height: 25px;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-left: 10px;
+	margin: auto;
+}
+
+.ChallengeQuestionLabel {
+    text-align: left;
+    font-weight: normal;
+    padding: 0 0 0 10px;
+    width: 470px;
+}
+.ChallengeQuestionText {
+    display: inline-block;
+    width: 470px;
+    text-align: left;
+    font-weight: normal;
+    padding:0;
+    margin-left:10px !important;
+}
+
+.QuestionLabel{
+    text-align:right;
+    width:100px;
+    display:inline-block;
+
+}
+
+/* Authentication Password */
+.ChallegePasswordTable {
+    Width: 100%;
+    Padding: 0;
+    border-spacing: 0;
+}
+.ChallegePasswordMainTable {
+    Width: 400px;
+}
+.ChallengePasswordTH {
+    white-space: nowrap;
+}
+.ChallengePasswordButton {
+    text-align: center;
+}
+
+/* Authentication Phone */
+.ChallengePhoneChangeDiv {
+    padding-left: 45px;
+    text-align: left;
+    width: 330px;
+}
+.ChallengePhoneCallingDiv {
+    padding-left: 45px;
+    text-align: left;
+}
+.ChallengePhoneCallingModal45 {
+    padding-left: 45px;
+    text-align: left;
+}
+.ChallengePhoneCallingModal70 {
+    padding-left: 70px;
+    text-align: left;
+}
+
+.AccountTransfersPendingNoTransfersDiv {
+    padding: 10px;
+    display: none;
+}
+
+.InterbankTransferHistoryRightMargin8 {
+    float: right;
+    margin-right: 8px;
+}
+
+/* Interbank Transfer Add Transfer */
+.InterbankTransferAddTransfersMainContentMargin {
+    margin: 10px 10px 0px 30px;
+}
+.InterbankTransferAddTransfersTextAlignCenter {
+    text-align: center;
+}
+
+
+.InterbankTransferAddTransfersNoWrap {
+    white-space: nowrap;
+}
+
+.InterbankTransferAddTransfersAmountRight {
+    width: 45px;
+}
+
+.BalanceAlertTableTH1{
+    white-space:nowrap;
+    width:5px;
+}
+
+.BalanceAlertTableTH2{
+    white-space:nowrap;
+    width:30%;
+}
+
+.BalanceAlertTableTH3{
+    white-space:nowrap;
+    width:20%;
+    text-align:left;
+}
+
+.BalanceAlertTableTH4{
+    white-space:nowrap;
+    width:20%;
+}
+
+.AlertTR{
+    line-height:2.75;
+}
+
+.BalanceAlertTD{
+    text-align:left;
+}
+
+.BalanceAlertWatchAmountDollarsField1{
+    width:91px;
+}
+
+.BalanceAlertLeftTD{
+    text-align:left;
+}
+
+.BalanceAlertWatchAmountCentsField1{
+    width:25px;
+}
+
+.BalanceAlertFeeControlsTable{
+    width:100%;
+    padding: 0 0 0 5px;
+}
+
+.BalanceAlertConfirmEmailPlaceHolderTable{
+    padding: 35px 0 0 0;
+}
+
+.BalanceAlertConfirmEmailPlaceHolderTableTD{
+    padding: 0 0 15px 5px;
+}
+
+.BalanceAlertConfirmEmailPlaceHolderTableTDLabel{
+    width:100%;
+    text-align:left;
+}
+
+.BalanceAlertImgErrEmailAlertAddress{
+    border:none;
+}
+
+.BalanceAlertConfirmEmailLabel{
+    font-weight:bold;
+    width:100px;
+    text-align:left;
+}
+
+.BalanceAlertConfirmEmailText{
+    width:300px;
+}
+
+.BalanceAlertConfirmSmsPHTable{
+    padding: 35px 0 0 5px;
+}
+
+.BalanceAlertEmailFeeTD{
+    text-align:center;
+}
+
+
+.ItemAlertTH1{
+    white-space:nowrap;
+    width:5px;
+}
+
+.ItemAlertTH2{
+    white-space:nowrap;
+    width:30%;
+}
+
+.ItemAlertTH3{
+    white-space:nowrap;
+    width:20%;
+}
+
+.ItemAlertTH4{
+    white-space:nowrap;
+    width:5%;
+}
+
+.ItemAlertTH5{
+    white-space:nowrap;
+}
+
+.ItemAlertTR1TD{
+    text-align:center;
+}
+
+
+/* Web Alert Options */
+.WebAlertOptionsTable {
+    width:100%;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+.WebAlertOptionsAlignLeft {
+    text-align:left;
+}
+.WebAlertOptionsAlignRight {
+    text-align:right;
+}
+
+/* Options Mobile Web Settings Edit */
+.MobileWebSettingsEditHeaderTable
+{
+    width: 100%;
+}
+.MobileWebSettingsEditHeaderSpacer
+{
+    text-align: right;
+    white-space: nowrap;
+}
+.MobileWebSettingsEditMainContent
+{
+    overflow:hidden;
+    width:100%;
+    min-height:245px;
+    position:relative;
+
+}
+.MobileWebSettingsEditInnerContent
+{
+    margin:10px;
+    overflow:hidden;
+    min-height:225px;
+    position:relative;
+}
+.MobileWebSettingsEditContentTable
+{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.MobileWebSettingsEditEnableLabel
+{
+    width: 175px;
+}
+.MobileWebSettingsEditSeperator
+{
+    width:100%;
+    height:1px;
+    left:0;
+    top:50%;
+    background-color:gray;
+}
+
+.MobileWebSettingsEditMobileNumberAreaCode, 
+.MobileWebSettingsEditMobileNumberPrefix {
+    width:35px;
+}
+.MobileWebSettingsEditMobileNumberLine {
+    width:50px;
+}
+
+.MobileWebSettingsConfirmButtonsDiv {
+    position:relative; width:100%; text-align:center; height:50px; left:0px;
+}
+
+.OptionsMainTable{
+    padding: 0;
+    border-spacing: 0;
+    border:0;
+}
+
+.OptionsMainTableTD
+{
+    width:10px;
+}
+
+.OptionsMainTableSubTable{
+    padding: 3px;
+    border-spacing: 0;
+    border:0;
+}
+
+.OptionsMainTableTD2{
+    width:15%;
+}
+
+.OptionsMainImage{
+    border:none;
+}
+
+.OptionsMainTableTD3{
+    padding:15px 0 0 5px;
+}
+
+.OptionsMainShowWatermarkTable{
+    padding: 0;
+    border-spacing: 10PX;
+    border:0;
+}
+
+.OptionsMainShowWatermarkTableTD{
+    vertical-align:middle;
+    width:65px;
+}
+
+.OptionsMainTextAssist{
+    vertical-align:middle;
+}
+
+.OptionsMainHomeAddressTableTD1{
+    width:10px;
+}
+
+.OptionsMainHomeAddressTableTD2{
+    width:250px;
+}
+
+.OptionsMainLoginTable{
+    padding: 0;
+    border-spacing: 0;
+    border:0;
+    width:100%;
+}
+
+.OptionsMainLoginTableTD1{
+    width:10px;
+}
+
+.OptionsMainLoginSubTable{
+    padding: 0;
+    border-spacing: 3px;
+    border:0;
+    width:100%;
+}
+
+.OptionsMainLoginSubTableTD1{
+    width:320px;
+}
+
+.OptionsMainLoginSubTableTD2{
+    width:175px;
+    vertical-align:top;
+}
+
+.OptionsMainLoginSubTableDiv1{
+    vertical-align:top;
+    padding:0 0 10px 0;
+}
+
+.OptionsMainPersonalQuestionTextBox {
+    width: 600px;
+}
+
+.OptionsMainLoginSubTableDiv2{
+    vertical-align:bottom;
+}
+.OptionsMainEmailAddress {
+    width:259px;
+}
+.OptionsMainPersonalQuestionTextBoxQuestion {
+    width:418px;
+}
+.OptionsAddressChangeText {
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+.OptionsAddressChangeLastLine {
+    padding-bottom: 6px;
+}
+.screenReaderOnly {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* SMS Address */
+.SMSAddressTDLabel {
+    padding:0 0 15px 0;
+}
+.SMSAddressLabel {
+    width:100%;text-align:left;
+}
+.SMSAddressPadding0 {
+    padding: 0;
+}
+.SMSAddressNumberDivWrapper {
+    position: relative;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    left: 0px;
+}
+.SMSAddressNumberDivContainer {
+    float: left;
+    white-space: nowrap;
+}
+.SMSAddressNumberAreaCode {
+    margin: 0 2px 0 0;
+    width: 29px;
+}
+.SMSAddressNumberPrefix {
+    margin: 0 2px 0 2px;
+    width: 29px;
+}
+.SMSAddressNumberLine {
+    margin: 0 0 0 2px;
+    width: 35px;
+}
+.SMSAddressFloatLeft {
+    float:left;
+}
+
+/* CarrierAddressSelector */
+.CarrierAddressSelectorFloatLeft {
+    float:left;
+}
+.CarrierAddressSelectorAddressTextbox {
+    width:200px;
+}
+.CarrierAddressSelectorModal {
+    display:none;
+}
+.CarrierAddressSelectorModalRowTD {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Login */
+.LoginWelcomeLiteralDiv {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.LoginWatermarkDiv {
+    border-bottom: 1px solid #d0d0d0;
+}
+.LoginWatermarkDivTable {
+    display: table;
+    width: 100%;
+}
+.LoginWatermarkDivTableRow {
+    display:table-row;
+}
+.LoginWatermarkDivTableImage {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.LoginWatermarkDivTableImageLabel {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    display: table-cell;
+    word-wrap: break-word;
+}
+.LoginClear {
+    clear: both;
+}
+.LoginPadding10 {
+    padding: 10px;
+}
+.LoginTextBox {
+    float: right;
+    line-height: 25px;
+}
+.LoginCenter {
+    text-align: center;
+}
+.LoginBackOfficeDiv {
+    width: 100%;
+    text-align: center;
+}
+.LoginBackOfficeSpan {
+    width: 50%;
+    margin: 0px auto;
+    text-align: left;
+}
+.LoginLinksDiv {
+    width: 100%;
+    text-align: left;
+}
+.LoginLinksInnerDiv {
+    text-align: left;
+}
+.LoginVerisignDiv {
+    text-align: right;
+    padding-top: 15px;
+}
+.LoginPinModal {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.LoginPinModalP {
+    text-align: left;
+    width: 500px;
+}
+.LoginPinModalButtonDiv {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.LoginPinModalButtonGroup {
+    text-align: left;
+    width: 500px;
+}
+.LoginPinModalAgree {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.LoginPinModalAgreeLabel {
+    display: table-cell;
+    padding-left: 5px;
+}
+.LoginPinModalSpacer {
+    display: table-row;
+    height: 10px;
+}
+
+
+.PersonalAlertTR1{
+    line-height:2px;
+}
+.PersonalAlertTH1{
+    white-space:nowrap;
+    width:5px;
+}
+.PersonalAlertTH2{
+    white-space:nowrap;
+    width:30%;
+}
+.PersonalAlertTH3{
+    white-space:nowrap;
+    width:20%;
+}
+.PersonalAlertTH4{
+    white-space:nowrap;
+    width:2%;
+}
+.PersonalAlertTH5{
+    white-space:nowrap;
+    width:55%;
+}
+.PersonalAlertTH6{
+    white-space:nowrap;
+}
+.PersonalAlertTR2{
+    line-height:2.75px;
+}
+.PersonalAlertWatchDateField{
+    width:75px;
+}
+.PersonalAlertFeeControlsTable{
+    width:100%;
+    padding:0 0 0 5px;
+}
+.PersonalAlertConfirmEmailPlaceHolderTable{
+    padding:35px 0 0 0;
+}
+.PersonalAlertConfirmEmailPlaceHolderTableTD{
+    padding:0 0 15px 5px;
+}
+.PersonalAlertConfirmEmailPlaceHolderTableLabel{
+    width:100%;
+    text-align:left;
+}
+.PersonalAlertImgErrEmailAlertAddress{
+    border:none;
+}
+.PersonalAlertConfirmEmailLabel{
+    font-weight:bold;
+    width:100px;
+    text-align:left;
+}
+.PersonalAlertConfirmEmailText{
+    width:300px;
+}
+.PersonalAlertConfirmSmsPHTable{
+    padding: 35px 0 0 5px;
+}
+.PersonalAlertEmailFeeTable{
+    text-align:center;
+}
+.MarketingAdsBasicPopup{
+    display:none;
+}
+.trainstop { 
+	padding-bottom:5px;
+    float: right;
+    width:250px;
+}
+.TrainStopTextCell{
+    float:left;
+    color:black;
+    text-align:center;
+}
+
+.TrainStopTextCell.selected{
+    float:left;
+    color:black;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* Login Collect Questions */
+.LoginCollectQuestionsMultiLogo
+{
+    display: table;
+    width: 100%;
+}
+.LoginCollectQuestionsLogoLeft
+{
+    text-align: left;
+    display: table-cell;
+}
+.LoginCollectQuestionsLogoRight
+{
+    text-align: right;
+    display: table-cell;
+}
+.LoginCollectQuestionsMainContainer
+{
+    margin-bottom: 30px;
+}
+.LoginCollectQuestionsQuestionPrompt
+{
+    margin-left:215px;
+    white-space:nowrap;
+    color:#ff0000;
+    font-weight:bold;
+}
+.LoginCollectQuestionsDropDown
+.LoginCollectQuestionsFieldSet
+{
+    width: 475px !important;
+}
+.LoginCollectQuestionsAnswerPrompt {
+    margin-left: 215px;
+    white-space: nowrap;
+    color: #ff0000;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+.LoginCollectQuestionsAnswerTextBox
+{
+    width:475px;
+}
+.LoginCollectQuestionsFieldSet
+{
+    border: none;
+    /*margin-left:15%;*/
+}
+.LoginCollectQuestionsConfirmFieldSet
+{
+    border: none;
+    margin-left:20%;
+}
+
+.LoginCollectQuestionsConfirmQuestion
+{
+    white-space:nowrap;
+    text-align:left !important;
+}
+.LoginCollectQuestionsConfirmFieldSet .LoginCollectQuestionsConfirmAnswer
+{
+    white-space:nowrap;
+    text-align:left;
+}
+.LoginCollectQuestionsButtonContainer
+{
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.MobileWebSettingConfirmTD{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.MobileWebSettingsConfirmMainContent{
+    overflow:hidden;
+    width:100%;
+    position:relative;
+}
+
+.MobileWebSettingsConfirmMainContentDiv{
+    margin:10px;
+    overflow:hidden;
+    position:relative;
+}
+
+.MobileWebSettingsConfirmMobileNumberDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+
+.MobileWebSettingsConfirmMobileNumberDivDiv{
+    position:absolute;
+    width:190px;
+    left:0;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileNumberLabel{
+    position:absolute;
+    width:115px;
+    left:190px;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileNumberMsgLabel{
+    position:absolute;
+    width:465px;
+    left:305px;
+    top:0;
+}
+
+.MobileWebSettingsConfirmEnableMobileTextAlertsDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+
+.MobileWebSettingsConfirmEnableMobileTextAlertsDivDiv{
+    position:absolute;
+    width:190px;
+    left:0;
+    top:0;
+}
+
+.MobileWebSettingsConfirmEnableMobileTextAlerts{
+    position:absolute;
+    width:115px;
+    left:190px;
+    top:0;
+}
+
+.MobileWebSettingsConfirmEnableMobileTextAlertsMsg{
+    position:absolute;
+    width:465px;
+    left:305px;
+    top:0;
+}
+.MobileWebSettingsConfirmMobileWebAddressLabelDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+
+.MobileWebSettingsConfirmMobileWebAddressLabelDivDiv{
+    position:absolute;
+    width:190px;
+    left:0;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileWebAddressDiv{
+    position:absolute;
+    left:190px;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileAccountsLabelDiv{
+    position:relative;
+    width:100%;
+    height:20px;
+    left:0;
+}
+
+.MobileWebSettingsConfirmMobileAccountsLabelDivDiv{
+    position:absolute;
+    width:100%;
+    white-space:nowrap;
+    left:0;
+    top:0;
+    text-decoration:underline;
+}
+
+.MobileWebSettingsConfirmMobileAccessDisabledDiv{
+    position:relative;
+    width:100%;
+    height:60px;
+    left:0;
+}
+
+.MobileWebSettingsConfirmMobileAccessDisabledDivDiv{
+    position:absolute;
+    width:100%;
+    white-space:nowrap;
+    left:0;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileAccountsDiv{
+    position:relative;
+    width:100%;
+    left:0;
+    overflow:auto;
+    padding-bottom:20px;
+}
+
+.MobileWebSettingsConfirmMobileAccountsDivDiv{
+    position:relative;
+    width:100%;
+    left:0;
+    top:0;
+}
+
+.MobileWebSettingsConfirmMobileAgreementDiv{
+    position:relative;
+    height:100px;
+    overflow:auto;
+    margin:15px 0 15px 10px;
+    left:0;
+    border:1px solid black;
+}
+
+.MobileWebSettingsConfirmMobileAgreementDivDiv{
+    position:absolute;
+    left:0;
+    top:0;
+    padding:10px;
+}
+
+.MobileWebSettingsConfirmMobileWebAgreementAcceptDivDiv {
+    position:absolute; padding:10px;width:300px;margin-left:20px;
+}
+.MobileWebSettingsConfirmMobileWebAgreementAcceptDivDivCB {
+    position:absolute;width:20px; left:0px; top:0px;
+}
+.MobileWebSettingsConfirmMobileWebAgreementAcceptDivDivLabel {
+    position:absolute;width:275px; left:15px; top:0px;
+}
+
+.MobileWebSettingsConfirmMobileWebAgreementAcceptDiv{
+    position:relative;
+    text-align:center;
+}
+
+/* RSA Go ID Register Prompt */
+.RsaGoIDRegisterPromptDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDRegisterPromptMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDRegisterPromptNoButton
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Window */
+.RsaGoIDRegisterWindowDivContainer
+{
+    margin: 15px;
+
+
+}
+.RsaGoIDRegisterWindowMainBodyContent
+{
+    margin-bottom: 30px;
+
+}
+
+/* RSA Go ID Activation */
+.RsaGoIDActivationDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDActivationActivationDiv
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDActivationTable
+{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RsaGoIDActivationRow1
+{
+    display: table-row;
+}
+.RsaGoIDActivationRow1Cell1
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: right;
+}
+.RsaGoIDActivationRow1Cell2
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: left;
+}
+.RsaGoIDActivationRow2
+{
+    display: table-row;
+}
+.RsaGoIDActivationRow2Cell1
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: right;
+}
+.RsaGoIDActivationRow2Cell2
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: left;
+}
+.RsaGoIDActivationCancel
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Auth Down */
+.RsaGoIdAuthDownDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthDownDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID Authentication */
+.RsaGoIdAuthDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthAuthLabel
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdAuthDivTable
+{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RsaGoIdAuthDivCell1
+{
+    display: table-cell;
+    text-align: right;
+}
+.RsaGoIdAuthDivCell2
+{
+    display: table-cell;
+    text-align: left;
+}
+.RsaGoIdAuthCancelButton
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Auth Error */
+.RsaGoIdAuthErrorDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthErrorDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdAuthErrorLogoff
+{
+    margin-left: 5px;
+}
+.RsaGoIdAuthErrorResync
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Error */
+.RsaGoIdRegisterErrorDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdRegisterErrorDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdRegisterErrorLogoff
+{
+    margin-left: 5px;
+}
+.RsaGoIdRegisterErrorResync
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Success */
+.RsaGoIDRegisterSuccessDivContainer
+{
+    margin: 15px;
+
+
+
+}
+.RsaGoIDRegisterSuccessMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID Register Window Exceeded*/
+.RsaGoIDWindowExceededDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDWindowExceededMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID */
+.RsaGoIDReSyncDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDReSyncSyncLabel
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDReSyncTable
+{
+    display: table; margin-left: auto; margin-right: auto; text-align: center;
+}
+.RsaGoIDReSyncRow1
+{
+    display: table-row;
+}
+.RsaGoIDReSyncRow1Cell1
+{
+    display: table-cell; padding: 3px; text-align: right;
+}
+.RsaGoIDReSyncRow1Cell2
+{
+    display: table-cell; padding: 3px;
+}
+.RsaGoIDReSyncRow2
+{
+    display: table-row;
+}
+.RsaGoIDReSyncRow2Cell1
+{
+    display: table-cell; padding: 3px; text-align: right;
+}
+.RsaGoIDReSyncRow2Cell2
+
+{
+    display: table-cell; padding: 3px;
+}
+.RsaGoIDReSyncLogoff
+{
+    margin-left: 5px;
+}
+
+.AlertOptionsGridsCol0{
+    width:3%;
+}
+
+.AlertOptionsGridsCol1{
+    width:25%;
+}
+
+.AlertOptionsGridsCol2{
+    width:19%;
+}
+
+.AlertOptionsGridsCol3{
+    width:19%;
+}
+
+.AlertOptionsGridsCol4{
+    width:21%;
+}
+
+.AlertOptionsGridsCol5{
+    width:5%;
+}
+
+.AlertOptionsGridsCol6{
+    width:5%;
+}
+
+.AlertOptionsGridsCol7{
+    width:3%;
+}
+.MobileTextSettingCarrierDialog {
+    display:none;
+}
+.MobileTextSettingsEditSpacer1Div{
+    position:relative;
+    height:10px;
+}
+.MobileTextSettingsEditTableTD{
+    text-align:right;
+    white-space:nowrap;
+}
+.MobileTextSettingsEditMainContentDiv{
+    margin:10px;
+    position:relative;
+}
+.MobileTextSettingsEditMainContentEnableMobileTextAccessDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0px;
+}
+.MobileTextSettingsEditMainContentEnableMobileTextAccessDivDiv{
+    left:20px;
+}
+.MobileTextSettingsEditAgreementModal{
+    height:300px;
+    width:600px;
+}
+.MobileTextSettingsEditAvailableAccountsLabelDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+
+.MobileTextSettingsEditAvailableAccountsLabelDivDiv{
+    width: 465px;
+    left: 0px; 
+    top: 0px;
+}
+.MobileTextSettingsEditAvailableAccountsCommandListDiv{
+    background-color:#dfdfdf;
+    float:left;
+    width:38%;
+    height:auto;
+    margin-top:4em;
+    left:0;
+    text-align:center;
+    border: 1px solid #000000;
+    padding:5px;
+}
+.MobileTextSettingsEditAvailableAccountsDataGridDivDiv{
+    width:60%;
+    left:0;
+    top:0;
+    float:left;
+}
+.MobileTextSettingsEditAvailableAccountsDataGridDiv{
+    position:relative;
+    width:100%;
+    left:0;
+    overflow:auto;
+}
+.MobileTextSettingsEditMainContent{
+    overflow:hidden;
+    width:100%;
+    min-height:245px;
+    position:relative;  
+}
+.MobileTextSettingsEditMobileNumberDiv{
+    margin-top:10px;
+}
+.MobileTextSettingsEditMobileNumberSpan{
+    display:inline-block;
+    width:220px;
+}
+.MobileTextSettingsEditMobileCarrierDDLDiv{
+    margin-top:15px;
+}
+.MobileTextSettingsEditDivPositionRelative{
+    position:relative;
+}
+.MobileTextSettingsEditHRDiv{
+    margin:20px 0;
+}
+.MobileTextSettingsEditHR{
+    width:100%;
+    height:1px;
+    left:0;
+    top: 50%;
+    color:gray;
+}
+.MobileTextSettingsEditAreaCode{
+    width:30px;
+}
+.MobileTextSettingsEditPrefix{
+    width:30px;
+}
+.MobileTextSettingsEditLine{
+    width:37px;
+}
+.MobileTextSettingsEditAgreementModal {
+    display:none;
+}
+
+.IDRules{
+    vertical-align:top;
+}
+
+
+/*.MessageSendButtonTableTD{
+    text-align:center;
+}
+.MessageSendButtonTableDiv{
+    margin: 5px 0px 10px 0px;
+}*/
+.WebAlertSettingsDeleteButtonHide {
+    display:none;
+}
+
+.PassCardConfirmTableTD{
+    text-align:right;
+    white-space:nowrap;
+}
+.RsaGoIDRegisterPromptMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDRegisterPromptNoButton
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Window */
+.RsaGoIDRegisterWindowDivContainer
+{
+    margin: 15px;
+
+
+}
+.RsaGoIDRegisterWindowMainBodyContent
+{
+    margin-bottom: 30px;
+
+}
+
+/* RSA Go ID Activation */
+.RsaGoIDActivationDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDActivationActivationDiv
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDActivationTable
+{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RsaGoIDActivationRow1
+{
+    display: table-row;
+}
+.RsaGoIDActivationRow1Cell1
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: right;
+}
+.RsaGoIDActivationRow1Cell2
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: left;
+}
+.RsaGoIDActivationRow2
+{
+    display: table-row;
+}
+.RsaGoIDActivationRow2Cell1
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: right;
+}
+.RsaGoIDActivationRow2Cell2
+{
+    display: table-cell;
+    padding: 3px;
+    text-align: left;
+}
+.RsaGoIDActivationCancel
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Auth Down */
+.RsaGoIdAuthDownDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthDownDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID Authentication */
+.RsaGoIdAuthDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthAuthLabel
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdAuthDivTable
+{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.RsaGoIdAuthDivCell1
+{
+    display: table-cell;
+    text-align: right;
+}
+.RsaGoIdAuthDivCell2
+{
+    display: table-cell;
+    text-align: left;
+}
+.RsaGoIdAuthCancelButton
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Auth Error */
+.RsaGoIdAuthErrorDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdAuthErrorDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdAuthErrorLogoff
+{
+    margin-left: 5px;
+}
+.RsaGoIdAuthErrorResync
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Error */
+.RsaGoIdRegisterErrorDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIdRegisterErrorDivMainBodyContent
+{
+    margin-bottom: 30px;
+}
+.RsaGoIdRegisterErrorLogoff
+{
+    margin-left: 5px;
+}
+.RsaGoIdRegisterErrorResync
+{
+    margin-left: 5px;
+}
+
+/* RSA Go ID Register Success */
+.RsaGoIDRegisterSuccessDivContainer
+{
+    margin: 15px;
+
+
+
+}
+.RsaGoIDRegisterSuccessMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID Register Window Exceeded*/
+.RsaGoIDWindowExceededDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDWindowExceededMainBodyContent
+{
+    margin-bottom: 30px;
+}
+
+/* RSA Go ID */
+.RsaGoIDReSyncDivContainer
+{
+    margin: 15px;
+}
+.RsaGoIDReSyncSyncLabel
+{
+    margin-bottom: 30px;
+}
+.RsaGoIDReSyncTable
+{
+    display: table; margin-left: auto; margin-right: auto; text-align: center;
+}
+.RsaGoIDReSyncRow1
+{
+    display: table-row;
+}
+.RsaGoIDReSyncRow1Cell1
+{
+    display: table-cell; padding: 3px; text-align: right;
+}
+.RsaGoIDReSyncRow1Cell2
+{
+    display: table-cell; padding: 3px;
+}
+.RsaGoIDReSyncRow2
+{
+    display: table-row;
+}
+.RsaGoIDReSyncRow2Cell1
+{
+    display: table-cell; padding: 3px; text-align: right;
+}
+.RsaGoIDReSyncRow2Cell2
+
+{
+    display: table-cell; padding: 3px;
+}
+.RsaGoIDReSyncLogoff
+{
+    margin-left: 5px;
+}
+
+.AlertOptionsGridsCol0{
+    width:3%;
+}
+
+.AlertOptionsGridsCol1{
+    width:25%;
+}
+
+.AlertOptionsGridsCol2{
+    width:19%;
+}
+
+.AlertOptionsGridsCol3{
+    width:19%;
+}
+
+.AlertOptionsGridsCol4{
+    width:21%;
+}
+
+.AlertOptionsGridsCol5{
+    width:5%;
+}
+
+.AlertOptionsGridsCol6{
+    width:5%;
+}
+
+.AlertOptionsGridsCol7{
+    width:3%;
+}
+.MobileTextSettingCarrierDialog {
+    display:none;
+}
+.MobileTextSettingsEditSpacer1Div{
+    position:relative;
+    height:10px;
+}
+.MobileTextSettingsEditTableTD{
+    text-align:right;
+    white-space:nowrap;
+}
+.MobileTextSettingsEditMainContentDiv{
+    margin:10px;
+    position:relative;
+}
+.MobileTextSettingsEditMainContentEnableMobileTextAccessDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0px;
+}
+.MobileTextSettingsEditMainContentEnableMobileTextAccessDivDiv{
+    left:20px;
+}
+.MobileTextSettingsEditAgreementModal{
+    height:300px;
+    width:600px;
+}
+.MobileTextSettingsEditAvailableAccountsLabelDiv{
+    position:relative;
+    width:100%;
+    height:30px;
+    left:0;
+}
+
+.MobileTextSettingsEditAvailableAccountsLabelDivDiv{
+    width: 465px;
+    left: 0px; 
+    top: 0px;
+}
+.MobileTextSettingsEditAvailableAccountsCommandListDiv{
+    background-color:#dfdfdf;
+    float:left;
+    width:38%;
+    height:auto;
+    margin-top:4em;
+    left:0;
+    text-align:center;
+    border: 1px solid #000000;
+    padding:5px;
+}
+.MobileTextSettingsEditAvailableAccountsDataGridDivDiv{
+    width:60%;
+    left:0;
+    top:0;
+    float:left;
+}
+.MobileTextSettingsEditAvailableAccountsDataGridDiv{
+    position:relative;
+    width:100%;
+    left:0;
+    overflow:auto;
+}
+.MobileTextSettingsEditMainContent{
+    overflow:hidden;
+    width:100%;
+    min-height:245px;
+    position:relative;  
+}
+.MobileTextSettingsEditMobileNumberDiv{
+    margin-top:10px;
+}
+.MobileTextSettingsEditMobileNumberSpan{
+    display:inline-block;
+    width:220px;
+}
+.MobileTextSettingsEditMobileCarrierDDLDiv{
+    margin-top:15px;
+}
+.MobileTextSettingsEditDivPositionRelative{
+    position:relative;
+}
+.MobileTextSettingsEditHRDiv{
+    margin:20px 0;
+}
+.MobileTextSettingsEditHR{
+    width:100%;
+    height:1px;
+    left:0;
+    top: 50%;
+    color:gray;
+}
+.MobileTextSettingsEditAreaCode{
+    width:30px;
+}
+.MobileTextSettingsEditPrefix{
+    width:30px;
+}
+.MobileTextSettingsEditLine{
+    width:37px;
+}
+.MobileTextSettingsEditAgreementModal {
+    display:none;
+}
+
+.IPayHandoffRadioDivAccount {
+    margin:0px 0px 0px 50px;
+}
+.IPayHandoffButtonDivSumbit {
+    margin:0px 0px 0px 325px;
+ }
+.IPayHandoffTextEmail {
+    width:250px;
+}
+.IPayHandoffIFrame {
+    height: 800px;
+    width:100%;
+    border:0;
+    overflow:auto;
+}
+.StandardTable{
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+}
+.ViewScheduledPaymentsMainContent {
+    margin:2px;
+}
+.ViewScheduledPaymentsTableTDUpdatePanel {
+    text-align:right;
+    white-space:nowrap;
+}
+.ViewScheduledPaymentsDivDataGrid {
+    width:100%;
+}
+.ViewScheduledPaymentsActionDownload {
+    width:160px;
+}
+
+.PowerPayHistorySelectDatePicker {
+    width:80px;
+}
+.PowerPayHistorySelectDollarTextBox {
+    width:100px;
+}
+.PowerPayHistorySelectCentTextBox {
+    width:45px;
+}
+.PowerPayHistorySoryByImage {
+    height:7px;
+    width:8px;
+}
+.BillPayChargeDetailsTableTD {
+    width:100%;
+    padding:0 20px;
+    vertical-align: top;
+}
+.BillPayChargeDetailsTDPad3LeftTop {
+    padding-left: 3px;
+    padding-top: 3px;
+}
+.BillPayChargeDetailsCancelButton {
+    margin-left:5px;
+}
+.EditPayeeZipCodeTextBox1 {
+    width:63px;
+}
+.EditPayeeZipCodeTextBox2 {
+    width:57px;
+}
+.EditPayeePhoneNumber1 {
+    width:51px;
+}
+.EditPayeePhoneNumber2 {
+    width:57px;
+}
+.EditPayeeTopAlign {
+    vertical-align:top;
+}
+.EditPayeeTextBoxColumn50 {
+    width: 333px;
+}
+.EditPayeeTextBoxColumn35 {
+    width: 243px;
+}
+.EditPayeeTextBoxColumn25 {
+    width: 183px;
+}
+.EditPayeeTextBoxColumn3 {
+    width: 51px;
+}
+.EditPayeeTextBoxColumn4 {
+    width: 57px;
+}
+.EditPayeeTextBoxColumn5 {
+    width: 63px;
+}
+.DeletePayeeTopAlign {
+    vertical-align:top;
+}
+.DeletePayeeTopAlign100 {
+    vertical-align:top;
+    width:100%;
+}
+.PowerPayNewPaymentTopAlign {
+    vertical-align:top;
+}
+.PowerPayNewPaymentDollars {
+    width:65px;
+}
+.PowerPayNewPaymentCents {
+    width:25px;
+}
+.PowerPayNewPaymentMemo,
+.PowerPayNewPaymentDescription {
+    width:205px;
+}
+.PowerPayNewPaymentFrequency {
+    width:110px;
+}
+
+.PowerPayNewPaymentTDDate{
+    white-space:nowrap;
+    width:130px;
+}
+.PowerPayNewPaymentDatePicker {
+    width:75px;
+}
+.PowerPayNewPaymentTDFirstPaymentCBoxTD {
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.PowerPayNewPaymentButtonPadding {
+    padding-top:20px;
+}
+.PowerPayNewPaymentCancelButton {
+    margin-left:5px;
+}
+.PowerPayNewPaymentDisplayNone {
+    display:none;
+}
+
+.AddPayeeTable{
+    padding:0;
+    border:0;
+}
+
+.AddPayeeRightCell{
+    float:right;
+    white-space:nowrap;
+}
+
+.AddPayeeInfoDiv{
+    display:none;
+}
+
+PayeeSearchAddress2{
+    height:28px;
+}
+
+/* Watermark FDIC EHL Banner Auth */
+.WatermarkFdicEhlBannerAuthTable
+{
+    display: table;
+    width: 100%;
+}
+.WatermarkFdicEhlBannerAuthTableCell
+{
+    display: table-cell;
+    float: right;
+}
+.WatermarkFdicEhlBannerAuthFDIC
+{
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+.WatermarkFdicEhlBannerAuthNCUA
+{
+    display: table-cell;
+    padding-right: 10px;
+}
+.WatermarkFdicEhlBannerAuthEHL
+{
+    display: table-cell;
+}
+
+
+.QuickPaymentTable{
+    padding: 0;
+    border-spacing: 0;
+}
+
+.ViewScheduledPaymentsTD{
+    vertical-align:top;
+}
+
+.EditOneTimePaymentTD{
+    vertical-align:top;
+}
+
+.EditOneTimePaymentFirstDate{
+    float:left;
+    width:75px;
+}
+
+.EditOneTimePaymentFirstDateLabel{
+    position:relative;
+    padding-left:5px;
+    text-align:left;
+}
+
+.EditOneTimePaymentDescription{
+    width:205px;
+}
+
+.EditOneTimePaymentFieldColDate{
+    text-align:left;
+}
+
+
+.QuickPaymentEditPaymentsDateInput {
+    width: 75px;
+}
+
+.AddPayeeTable{
+    padding:0;
+    border:0;
+}
+
+.AddPayeeRightCell{
+    float:right;
+    white-space:nowrap;
+}
+
+.AddPayeeInfoDiv{
+    display:none;
+}
+
+PayeeSearchAddress2{
+    height:28px;
+}
+
+/* Watermark FDIC EHL Banner Auth */
+.WatermarkFdicEhlBannerAuthTable
+{
+    display: table;
+    width: 100%;
+}
+.WatermarkFdicEhlBannerAuthTableCell
+{
+    display: table-cell; 
+    float: right;
+}
+.WatermarkFdicEhlBannerAuthNCUA
+{
+    display: table-cell;
+    padding-right: 10px;
+}
+.CollectPhoneNumbersDivDropDown{
+    height:22px; 
+    margin-bottom:3px;
+}
+.CollectPhoneNumbersDivTextBox{
+    margin-top:3px;
+    width:40px;
+}
+.CollectPhoneNumbersDivTextBoxWidth40{
+    width:40px;
+}
+.CollectPhoneNumbersDivTextBoxWidth64{
+    width:64px;
+}
+.CollectPhoneNumbersDivTextBoxWidth50{
+    width:50px;
+}
+.CollectPhoneNumbersDivTextBoxWidth48{
+    width:48px;
+}
+.CollectPhoneNumbersDivTextBoxWidth49{
+    width:49px;
+}
+.CollectPhoneNumbersDivTextBox64{
+    margin-top:3px;
+    width:64px;
+}
+.CollectPhoneNumbersDivTextBox50{
+    margin-top:3px;
+    width:50px;
+}
+.CollectPhoneNumbersSecondDiv{
+    margin: 10px auto 0; 
+    display: table;
+}
+.CollectPhoneNumbersConfirmDiv{
+    margin: 10px auto 0; 
+    display: table;
+}
+.CollectPhoneNumbersSpanNoWhitespace {
+	white-space: nowrap;
+}
+
+.NewPaymentConfirmationTD{
+    vertical-align:top;
+}
+
+.NewPaymentConfirmationPayeeInfo{
+    width:137px;
+}
+
+.NewPaymentConfirmationAmountCol{
+    white-space:nowrap;
+    text-align:left;
+}
+
+.NewPaymentConfirmationMemo{
+    width:205px;
+}
+
+.NewPaymentConfirmationFrequency{
+    width:173px;
+}
+
+.NewPaymentConfirmationFirstPayment{
+    width:130px;
+}
+.WatermarkFdicEhlBannerAuthEHL
+{
+    color:Blue;
+    padding-top:6px;
+    /*width:470px !important;*/
+    text-align:left !important;
+    vertical-align:top !important;
+    height:20px;
+    line-height:15px !important;
+    margin-left: 16%;
+}
+
+.NewPaymentConfirmationGuaranteePayment{
+    white-space:nowrap;
+    text-align:left;
+    height:55px;
+}
+
+.NewPaymentConfirmationDescription{
+    width:205px;
+}
+
+.NewPaymentConfirmationButton{
+    margin-left:5px;
+}
+
+.DeletePaymentTD{
+    vertical-align:top;
+}
+
+.DeletePaymentDisplayNone{
+    display:none;
+}
+
+.CmAdminUserEditContent .achTable { 
+    display: table;
+    width: 90%;
+    padding-left: 50px;
+}
+
+.CmAdminUserEditContent .achTableRow{
+    display:table-row
+}
+
+.CmAdminUserEditContent .achTableCell { 
+    display: table-cell;
+    width:32%;
+}
+
+.achTableCell.checkboxCell {
+    width: 20px;
+}
+
+.StopPaymentTableWidth50Percent {
+    width:50%;
+}/* Configure Account List Widget */
+.ConfigureAccountListWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+
+.ConfigureAccountListWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+.ConfigureAccountListWidgetHeight5 {
+    height:5px;
+
+
+}
+
+.ConfigureAccountListWidgetRenameInput {
+    width: 200px;
+
+
+}
+
+.ConfigureAccountListWidgetErrorLabel {
+    color: red;
+
+
+
+}
+
+/* Configure Account Statement List Widget */
+.ConfigureAccountStatementListWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.ConfigureAccountStatementListWidgetContent {
+    border: solid 1px #ccc;
+    padding: 10px 5px;
+}
+.ConfigureAccountStatementListWidgetListBox {
+    height: 220px;
+    width: 720px;
+
+
+}
+
+/* Configure Go To Widget */
+.ConfigureGoToWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.ConfigureGoToWidgetListBox {
+    height: 275px;
+    width: 737px;
+}
+
+
+/* Configure MyNetTeller Widget */
+.ConfigureMyNetTellerWidgetTable {
+
+
+    padding: 0;
+
+    border-spacing: 0;
+    border-collapse: separate;
+
+    border: none;
+}
+.ConfigureMyNetTellerWidgetContent {
+    border: solid 1px #ccc;
+    padding: 10px 5px;
+}
+.ConfigureMyNetTellerWidgetDropdownWrapper {
+    margin: 5px 0 10px 5px;
+}
+.ConfigureMyNetTellerWidgetListBox {
+    height: 220px;
+    width: 735px;
+
+
+
+
+
+
+
+
+}
+
+/* Configure Recent Transactions Widget */
+.ConfigureRecentTransactionsWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.ConfigureRecentTransactionsWidgetContent {
+    border: solid 1px #ccc;
+    padding: 10px 5px;
+}
+.ConfigureRecentTransactionsWidgetContentMargin {
+
+    margin: 5px 0 10px 5px;
+}
+.ConfigureRecentTransactionsWidgetListBox {
+    height: 220px;
+    width: 735px;
+}
+
+/* Configure Recent IBT Widget */
+.ConfigureRecentIBTWidgetTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.ConfigureRecentIBTWidgetContent {
+    border: solid 1px #ccc;
+    padding: 10px 5px;
+}
+.ConfigureRecentIBTWidgetListBox {
+    height: 220px;
+    width: 720px;
+
+
+}
+
+.Jha-AlertDetailDiv {
+    margin: 10px;
+    display: none;
+}
+.Jha-AlertDetailDescription {
+    padding-left: 20px;
+    font-weight: bold;
+}
+.Jha-AlertsDataGrid {
+    text-align: left;
+    border: solid 1px gray;
+}
+.Jha-alertsListDiv {
+    margin: 10px;
+}
+
+/* Stop Payments */
+.StopPaymentsNewTable {
+	width: 550px;
+	margin: auto;
+}
+.StopPaymentsNewTD{
+    width:181px;
+}
+.StopPaymentDatagrid {
+	border-collapse:collapse;
+}
+.StopPaymentsConfirmationDivcenter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.StopPaymentsConfirmationTD{
+    width:100px;
+}
+.StopPaymentsConfirmationTDHeight{
+    height:50px;
+}
+.StopPaymentsConfirmationTDBold{
+    font-weight:bold;
+}
+.StopPaymentsConfirmationfieldLabel {
+    width: 100px;
+	font-weight: bold;
+	padding-right: 15px;
+	/*text-align: right;*/
+	white-space: nowrap;
+	font-size: 12px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	/*padding-left: 5px;*/
+}
+.StopPaymentsListfieldLabel {
+    width: 50%;
+	font-weight: bold;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	padding-left: 5px;    
+}
+.StopPaymentsfieldLabel {
+    width: 400px;
+	font-weight: bold;
+	padding-right: 15px;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 12px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	padding-left: 5px;    
+}
+.StopPaymentContentDiv{
+    text-align:right;
+    white-space:nowrap;
+}
+.NewStopPaymentNote{
+    padding-left:10px;
+}
+.StopPaymentsReviewTable .NewStopPaymentButtonDiv {
+    text-align:right;
+    position: relative;
+    padding: 5px 0;
+    right: 150px;
+}
+.StopPaymentsConfirmationButtonDiv {
+	padding-bottom: 10px;
+    text-align: left;
+}
+.NewStopPaymentDateTextBox{
+    width:140px;
+    padding-top:4px;
+}
+.NewStopPaymentDateTextBox + .ui-datepicker-trigger{
+    background-color: #ffffff;
+	border: 0px none #ffffff;
+    margin: 0 0 0 3px;
+    padding-top:6px;
+    vertical-align: middle;
+}
+.NewStopPaymentDateTextBox + .ui-datepicker-trigger{
+    background-color: #ffffff;
+	border: 0px none #ffffff;
+    margin: 0 0 0 3px;
+    padding-top:6px;
+    vertical-align: middle;
+}
+.StopPaymentsNewTableTD{
+    width:181px;
+}
+.StopPaymentsNewTopPadding{
+    padding-top:10px;
+}
+.StopPaymentsNewTable img.ui-datepicker-trigger {
+	padding-top: 2px;
+}
+.newStopPaymentContainer .HelpLink {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 7px;
+	left: 3px;
+}
+.newStopPaymentContainer table tbody tr.HeaderRow td.pageTab.HeaderDiv,
+.newStopPaymentReviewContainer table tbody tr.HeaderRow td.pageTab.HeaderDiv {
+	position: relative;
+	top: 4px;
+	right: 4px;
+}
+.StopPaymentsReviewTable tbody tr td.fieldLabel {
+	width: 250px;
+}
+.StopPaymentsReviewTable {
+	width: 500px;
+	margin: auto;
+}
+
+/* Stop Payments Confirmation */
+.StopPaymentsConfirmationTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border:0;
+}
+.StopPaymentsConfirmationTableBorder {
+    border:0;
+}
+
+.modal-body {
+    margin: 2px 2px 2px 2px !important;
+}
+
+.AlertsModalPanel {
+    display: inline;
+    width: 500px;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+.AlertsModalDetailDiv {
+    display: none;
+}
+
+.AlertsModalTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+.AlertsModalTableTDUpdatePanel {
+    text-align: right;
+    display: none;
+}
+
+.AlertsModalDivDatagrid {
+    text-align: left;
+    border: solid 1px gray;
+}
+
+.AlertsModalDivDatagrid500 {
+    text-align: left;
+    border: solid 1px gray;
+    width: 500px;
+}
+
+.AlertsModalTDRight {
+    text-align: right;
+}
+
+.AlertsModalAnchorPointer {
+    cursor:pointer;
+}
+
+.AlertsModalTD5 {
+    width:5px;
+}
+
+.AlertsModalEmptyColumn {
+    width: 5px;
+}
+
+.AlertsModalPagerStyle {
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.AlertsModalItemStyle {
+    width: 50px;
+}
+
+.AlertsModalColumn1HeaderStyle {
+    width: 160px;
+}
+
+.AlertsModalColumn2ItemStyle {
+    text-align: center;
+}
+
+.AlertsModalColumn2HeaderStyle {
+    width: 40px;
+}
+
+.AlertsModalPagerStyle20 {
+    height: 20px;
+}
+.MessageSendMainContentDiv{
+    margin-left: 50px;
+}
+.MessageSendMainContentTable{
+    border:0;
+    width:80%;
+    align-self:center;
+}
+
+.MessageSendMainContentTableTextBox{
+    width:400px;
+}
+
+.MessageSendMainContentTableRadioButton{
+    text-align:left;
+    width:200px;
+}
+
+.MessageSendMainContentTableReplyLabel{
+    vertical-align:text-top;
+}
+
+.MessageSendMainContentTableMessageTextBox{
+    height:100px;
+    width:500px;
+}
+
+.MessageSendPreviousMessageTextBox{
+    height:100px;
+    width:500px;
+}
+
+.MessageSendFileTypeLabel{
+    width:340px;
+}
+.MessageSendButtonTable{
+    border:0;
+}
+.MessageSendButtonTableTD{
+    text-align:center;
+}
+.MessageSendButtonTableDiv{
+    margin: 5px 0px 10px 0px;
+}
+.WebAlertSettingsDeleteButtonHide {
+    display:none;
+}
+
+.PassCardConfirmTableTD{
+    text-align:right;
+    white-space:nowrap;
+}
+.InfoLinkDiv{
+    border:1px solid #808080;
+    width: 100%;
+    padding:5px
+}
+
+.NTSyncRangeBar{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.OfmMainTOSWrapper
+{
+    margin: 0;
+    background-color: White;
+}
+.OfmMainTOSTable
+{
+    border: 0;
+    background-color: White;
+}
+.OfmMainTOSPanel
+{
+    border: 1px solid black;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.OfmMainDisplayContent
+{
+    text-align: center;
+}
+
+
+.CollectPhoneNumbersMainDiv{
+    text-align: center;
+}
+.CollectPhoneNumbersSubDiv{
+    margin: 10px auto 0; 
+    display: table;
+}
+.CollectPhoneNumbersSubH2{
+    text-align: left; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+.CollectPhoneNumbersSubDivRow{
+    display: table-row; 
+    text-align: left; 
+	font-weight: bold;
+}
+.CollectPhoneNumbersPhoneTypeLabel{
+    display: table-row; 
+    text-align: left; 
+}
+.CollectPhoneNumbersSubDivRowLeft{
+    display: table-row; 
+    text-align: left; 
+    height: 25px;
+}
+.CollectPhoneNumbersSubDivRowCell{
+	text-align: right;
+    display: table-cell; 
+    padding-right: 5px;
+}
+.CollectPhoneNumbersSubDivCellNumber{
+    display: table-cell; 
+    padding-right: 5px;
+}
+.CollectPhoneNumbersDivRow{
+    display: table-row;
+}
+.CollectPhoneNumbersTableCell{
+    display: table-cell;
+}
+.CollectPhoneNumbersDivDropDown{
+    height:22px; 
+    margin-bottom:3px;
+}
+.CollectPhoneNumbersDivTextBox{
+    margin-top:3px;
+    width:40px;
+}
+.CollectPhoneNumbersDivTextBoxWidth40{
+    width:42px;
+}
+.CollectPhoneNumbersDivTextBoxWidth64{
+    width:64px;
+}
+.CollectPhoneNumbersDivTextBoxWidth50{
+    width:50px;
+}
+.CollectPhoneNumbersDivTextBoxWidth48{
+    width:48px;
+}
+.CollectPhoneNumbersDivTextBoxWidth49{
+    width:49px;
+}
+.CollectPhoneNumbersDivTextBox64{
+    margin-top:3px;
+    width:64px;
+}
+.CollectPhoneNumbersDivTextBox50{
+    margin-top:3px;
+    width:50px;
+}
+.CollectPhoneNumbersSecondDiv{
+    margin: 10px auto 0; 
+    display: table;
+}
+.CollectPhoneNumbersConfirmDiv{
+    margin: 10px auto 0; 
+    display: table;
+}
+.CollectPhoneNumbersSpanNoWhitespace {
+	white-space: nowrap;
+}
+
+.ProcessedPaymentsByDateWidgetTable {
+    width: 100%;
+    padding-top: 10px;
+    padding-right:60px;
+}
+.StandardDiv{
+    border:1px solid #808080;
+    height:800px;
+    width:100%;
+    margin:0 auto 0 auto;
+    overflow:auto;
+}
+.InfoLinkDiv{
+    border:1px solid #808080;
+    height:800px;
+    width:100%;
+    margin:0 auto 0 auto;
+    overflow:auto;
+}
+.StandardDivAuto{
+    border:1px solid #808080;
+    height:800px;
+    width:100%;
+    margin:0 auto 0 auto;
+    overflow:auto;
+}
+.StandardIFrame{
+    border:none;
+    height:800px;
+    width:100%;
+    margin:0 auto 0 auto;
+    overflow:auto;
+}
+
+.GeezeoStandardIFrame {
+    border: none;
+	height: 2200px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    overflow: auto;
+}
+
+.OptionsMainBottomHR{
+    display:none;
+}
+.AuthInfoMessageTableRow {
+    display: table-row;
+}
+
+.LoginCMPasswordChangeContentPasswordColLabel{
+    color: blue; 
+    padding-top: 6px; 
+    width: 450px; 
+    text-align: left; 
+    vertical-align: top; 
+    height: 20px; 
+    line-height: 15px;
+}
+
+.ChallagePhoneConfirmMainContent{
+    margin-bottom:30px;
+}
+
+.ChallagePhoneConfirmMainLabel{
+    text-align:left;
+}
+
+.ChallagePhoneConfirmMainP{
+    text-align:left;
+}
+
+.AccountTransfersNewAvailableFundsDialog{
+    display:none;
+}
+
+.AccountTransfersNewTotalFundsDiv, .AccountTransfersNewTotalFundsToAcctDiv {
+    margin-left: 25px;
+    position: relative;
+    top: 4px;
+	display: inline;
+}
+
+.LoginEmailPromptEmailHeader{
+    margin:15px 30px 15px 30px;
+}
+
+.LoginCellPhonePromptHeader{
+    margin:15px 30px 15px 30px;
+}
+
+.LoginEmailPromptNote{
+    font-weight:bold;
+}
+
+.LoginNewCmAliasInfoLabel{
+    width:200px;
+    margin-left:15px;
+    margin-top:2px;
+    text-align:left;
+    display:inline;
+}
+
+.LoginNewCmAliasFormFieldset{
+    margin-left:10%;
+}
+
+.FormFieldset .LoginNewCmAliasPasswordLabel{
+    text-align:left;
+    font-size:130%;
+    color:blue;
+    width:auto;
+}
+
+.LoginNewCmAliasTableRowDiv{
+    display:table-row;
+}
+
+.LoginNewCmAliasTableCellDiv{
+    display:table-cell;
+    vertical-align:top;
+}
+
+.LoginNewCmAliasTableCellDiv2{
+    display:table-cell;
+    vertical-align:top;
+    padding-left:10px;
+}
+
+.LoginNewCmAliasNewSSOIDLabel{
+    width:270px;
+}
+
+.LoginNewCmAliasNewSSOIDTextBox{
+    width:244px;
+}
+
+.FormFieldset .LoginNewCmAliasNewSSOIDNoteLabel{
+    color:blue;
+    width:560px;
+    text-align:left;
+    vertical-align:top;
+    height:20px;
+    line-height:15px;
+    display:inline;
+    padding-left:0px;
+}
+
+.FormFieldset .LoginNewCmAliasSSOPasswordNoteLabel{
+    color:blue;
+    width:560px;
+    text-align:left;
+    vertical-align:top;
+    height:20px;
+    line-height:15px;
+    display:inline;
+    padding-left:0px;
+}
+
+.LoginNewCmAliasTableCellDiv3{
+    display:table-cell;
+}
+
+.CommercialLoginDiv {
+    margin-bottom:30px;
+}
+.CommercialLoginScreenLabel {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.CommercialLoginWatermarkDiv {
+    border-bottom: 1px solid #d0d0d0;
+}
+.CommercialLoginWatermarkTable {
+    display: table;
+    width: 100%;
+}
+.CommercialLoginWatermarkRow {
+    display:table-row;
+}
+.CommercialLoginWatermarkRowDiv {
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.CommercialLoginWatermarkRowLabelDiv {
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    display: table-cell;
+}
+.CommercialLoginWatermarkLabel {
+    float: right;
+    line-height: 25px;
+}
+.CommercialLoginWatermarkPlaceholderCenter {
+    padding-top: 15px;
+    text-align: center;
+}
+.CommercialLoginWatermarkPlaceholderRight {
+    text-align: right; padding-top: 15px;
+}
+.CommercialLoginTrust{
+    display:none;
+}
+fieldset.CommercialLoginFieldSet .six input, fieldset.AuthenticationLoginFieldset .six input {
+    width: 217px;
+}
+.AccountTransfersPendingSelectDiv{
+    padding: 6px 6px 6px 6px;
+}
+
+.RequiredFieldAsterik{
+    color:red;
+    font-weight:bold;
+    margin-left:-12px;
+}
+
+.PINRequiredFieldAsterik{
+    color:red;
+    font-weight:bold;
+    vertical-align:top; 
+    font-size:large;
+    display:none;
+}
+
+.NTSyncNoWrap.NT {
+    white-space:nowrap;
+}
+
+.LoginEmailPromptPasswordQuestion{
+    width:600px;
+}
+
+.LoginEmailPromptPasswordAnswer{
+    width:600px;
+}
+
+.LoginCollectQuestionsDropDown{
+    width:475px;
+}
+
+.NonClearedProcessedPaymentsbyDateWidgetLayout{
+    padding-right:60px !important;
+}
+
+
+.WebAlertEditPersonalAlertTextBox
+{
+    width: 200px;
+}
+
+.WebAlertEditItemNumberTextBox{
+    width:100px;
+}
+.WebAlertSettingsBottomDivider
+{
+    display:none;
+}
+
+.WebAlertEditEventsTable
+{
+    width: 100px;
+}
+.WebAlertEditEventsTableCell1
+{
+    width:10px;
+}
+
+.DeletePayeeDetailTitleLabel {
+    font-weight:bold;
+}
+.ExpeditedPaymentPhone1 {
+    width:30px;
+}
+.ExpeditedPaymentPhone2 {
+    width:40px;
+}
+
+.WebAlertEditConfirmEmailText
+{
+    width: 300px;
+}
+.WebAlertConfirmSmsNumberWrapper
+{
+    float:left;
+    white-space:nowrap;
+    padding:0 5px 5px 0;
+}
+.WebAlertConfirmSmsAreaCode
+{
+    margin:0 2px 0 0;
+    width:30px;
+}
+.WebAlertConfirmSmsPhone1
+{
+    margin:0 2px 0 2px;
+    width:30px;
+}
+.WebAlertConfirmSmsPhone2
+{
+    margin:0 0 0 2px;
+    width:38px;
+}
+.WebAlertConfirmSmsCarrierWrapper
+{
+    float:left;
+}
+.LaunchBarDiv{
+    azimuth:inherit;
+}
+.LaunchBarTop4{
+    margin-top:-4px;
+}
+
+.WebAlertEditPersonalAlertTextBox
+{
+    width: 200px;
+}
+
+.WebAlertEditItemNumberTextBox{
+    width:100px;
+}
+.WebAlertSettingsBottomDivider
+{
+    display:none;
+}
+
+.WebAlertEditEventsTable
+{
+    width: 100px;
+}
+.WebAlertEditEventsTableCell1
+{
+    width:10px;
+}
+
+.DeletePayeeDetailTitleLabel {
+    font-weight:bold;
+}
+.ExpeditedPaymentPhone1 {
+    width:30px;
+}
+.ExpeditedPaymentPhone2 {
+    width:40px;
+}
+
+.WebAlertEditConfirmEmailText
+{
+    width: 300px;
+}
+.WebAlertConfirmSmsNumberWrapper
+{
+    float:left;
+    white-space:nowrap;
+    padding:0 5px 5px 0;
+}
+.WebAlertConfirmSmsAreaCode
+{
+    margin:0 2px 0 0;
+    width:30px;
+}
+.WebAlertConfirmSmsPhone1
+{
+    margin:0 2px 0 2px;
+    width:30px;
+}
+.WebAlertConfirmSmsPhone2
+{
+    margin:0 0 0 2px;
+    width:38px;
+}
+.WebAlertConfirmSmsCarrierWrapper
+{
+    float:left;
+}
+.AccountTransfersPendingSelectSpan
+{
+    font-weight: bold;
+}
+.AccountTransfersNewMemoNote
+{
+    font-weight: bold;
+    display: inline !important;
+    line-height: inherit !important;
+    padding: 0 !important;
+}
+
+.AccountTransfersPendingViewOnlyDiv {
+    visibility: hidden;
+    display: none;
+}
+.AccountTransfersHistoryViewAccount
+{
+    font-weight: 800;
+}
+.AccountTransactionsViewAccount
+{
+    font-weight: 800;
+}
+.StopPaymentListAcctSelect
+{
+    font-weight: 800;
+}
+
+/* Account Transfers Search */
+.AccountTransfersSearchPrimaryLabel {
+    width: 160px;
+}
+.AccountTransfersSearchAccountDropdownDiv {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.AccountTransfersSearchCriteriaGroup {
+    width: 100%;
+    margin-right:100px;
+}
+.AccountTransfersSearchCriteriaBox {
+    width: 35%;
+    margin-top: 2px;
+}
+
+.AccountTransfersSearchFloatLeft {
+    float:left;
+}
+.AccountTransfersSearchMargin10 {
+    margin:10px;
+}
+.AccountTransfersSearchDatePicker {
+    vertical-align: top;
+    width: 80px;
+}
+.AccountTransfersSearchAmount {
+    width:90px;
+}
+.AccountTransfersSearchClear {
+    clear:both;
+}
+.AccountTransfersSearchButton {
+    margin:15px 0px 15px 15px;
+}
+
+.EdocsStandardTable {
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: none;
+}
+.EdocsRightNowrap {
+    text-align: right;
+    white-space: nowrap;
+}
+.EdocsTableWidth100Padding {
+    width:100%;
+    border-spacing: 0;
+    padding: 0px 25px;
+}
+.EdocsWidth10 {
+    width:10px;
+}
+.EdocsWidth130 {
+    width:130px;
+}
+.EdocsWidth255 {
+    width:255px;
+}
+.EdocsWidth200 {
+    width:200px;
+}
+.EdocsDisclosureLabel {
+    border: solid 2px silver;
+    padding: 4px;
+    width: 770px;
+    height: 150px;
+    overflow: auto;
+    background-color: white;
+}
+.ActivityAlertGridCol0{
+    width:3%;
+}
+
+.ActivityAlertGridCol1{
+    width:25%;
+}
+
+.ActivityAlertGridCol2{
+    width:20%;
+}
+
+.ActivityAlertGridCol3{
+    width:12%;
+}
+
+.ActivityAlertGridCol4{
+    width:12%;
+}
+
+.ActivityAlertGridCol5{
+    width:15%;
+}
+
+.ActivityAlertGridCol6{
+    width:5%;
+}
+
+.ActivityAlertGridCol7{
+    width:5%;
+}
+.ActivityAlertGridCol8{
+    width:3%;
+}
+.EpisysBatchSearchTDWidth {
+    width: 10px;
+}
+
+.CommercialBatchCreateHeaderTable tr th:nth-child(1)
+{
+    margin-left:10px;
+}
+.CommercialBatchCreateHeaderTable tr th:nth-child(2)
+{
+    width: 125px;
+}
+.CommercialBatchCreateHeaderTable tr td:nth-child(3)
+{
+    width:205px;
+}
+.CommercialBatchCreateHeaderTable tr td:nth-child(4)
+{
+    width:125px;
+}
+.CommercialBatchCreateHeaderTable tr td:nth-child(5)
+{
+    width:auto;
+}
+
+.CommercialBatchHistorySearchLabel
+{
+    margin-left:10px;
+    width:115px;
+    display:inline-block;
+}
+.CommercialBatchHistorySearchLongDiv
+{
+    margin-left:89px;
+    width:225px;
+    display:inline-block;
+}
+.CommercialBatchHistorySearchDiv2
+{
+    width:86px;
+    display:inline-block;
+}
+.CommercialBatchHistorySearchDiv3
+{
+    width: 230px;
+    display:inline-block;
+}
+
+.CommercialBatchDownloadTable tr th:nth-child(1)
+{
+    margin-left:10px;
+}
+.CommercialBatchDownloadTable tr th:nth-child(2)
+{
+    width:125px;
+}
+.CommercialBatchDownloadTable tr td:nth-child(3)
+{
+    width:250px;
+}
+.CommercialBatchDownloadTable tr td:nth-child(4)
+{
+    width:125px;
+}
+.CommercialBatchDownloadSelectFormat
+{
+    font-weight:bold;
+}
+.CommercialBatchDownloadFormatTable
+{
+    width: 300px;
+    margin:auto;
+    text-align:center;
+}
+
+.CommercialBatchCopyTable tr th:nth-child(1)
+{
+    margin-left:10px;
+}
+.CommercialBatchCopyTable tr th:nth-child(2)
+{
+    width:125px;
+}
+.CommercialBatchCopyTable tr td:nth-child(3)
+{
+    width:250px;
+}
+.CommercialBatchCopyTable tr td:nth-child(4)
+{
+    width:125px;
+}
+.CommercialBatchCopyViewRangeDiv
+{
+    padding-bottom:0;
+    padding-top:5px;
+}
+.CommercialBatchCopyViewRangeTD
+{
+    text-align:right;
+    white-space:nowrap;
+}
+.CommercialBatchCopyDataGridDiv
+{
+    margin-left:10px;
+    margin-right:5px;
+}
+.EpisysBatchViewRangeBar {
+    padding-bottom:5px; padding-top: 5px; float:right; margin-right:5px;
+
+}
+.EpysisBatchViewCol1 {
+    margin-left:10px;
+}
+.EpysisBatchViewCol2 {
+    width:125px;
+}
+.EpysisBatchViewCol3 {
+    width:250px;
+}
+.EpysisBatchViewCol4 {
+    width:125px;
+}
+.EpisysBatchViewDataGrid {
+    margin-left:10px; 
+    margin-right:5px;
+}
+
+.CommercialBatchInitiateTable tr th:nth-child(1)
+{
+    margin-left:10px;
+}
+.CommercialBatchInitiateTable tr th:nth-child(2)
+{
+    width:125px;
+}
+.CommercialBatchInitiateTable tr td:nth-child(3)
+{
+    width:250px;
+}
+.CommercialBatchInitiateTable tr td:nth-child(4)
+{
+    width:125px;
+}
+.CommercialBatchInitiateDateLabel
+{
+    font-weight:bold;
+}
+.CommercialBatchInitiateDateTD
+{
+    text-align:center;
+}
+
+.CommercialAddTransactionViewTable tr th:nth-child(1)
+{
+    margin-left:10px;
+}
+.CommercialAddTransactionViewTable tr th:nth-child(2)
+{
+    width:125px;
+}
+.CommercialAddTransactionViewTable tr td:nth-child(3)
+{
+    width:150px;
+}
+.CommercialAddTransactionViewTable tr td:nth-child(4)
+{
+    width:125px;
+}
+
+.CommercialBatchDownloadPDFTable
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+.CommercialBatchDownloadLinkTD
+{
+    text-align:center;
+}
+.CommercialBatchDownloadInstructionsTable
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+}
+.CommercialBatchHistoryViewRangeBar
+{
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+.CommercialWireHistorySearchDiv
+{
+    margin:10px;
+    text-align:left;
+}
+.CommercialWireHistorySearchInfoLabel
+{
+    text-align:center;
+}
+.CommercialWireHistorySearchLabel
+{
+    margin-left:10px;
+    width:120px;
+    display:inline-block;
+}
+.CommercialWireHistorySearchLongDiv
+{
+    padding-left:100px;
+    display: inline-block;
+}
+.CommercialWireHistorySearchShortDiv1
+{
+    width:97px;
+    display: inline-block;
+}
+.CommercialWireHistorySearchShortDiv2
+{
+    display: inline-block;
+}
+.CommercialWireHistorySearchButtons
+{
+    text-align:center;
+}
+
+.trainstop { 
+	padding-bottom:5px;
+    float: right;
+    width:250px;
+}
+
+.TrainStopTextCell{
+    float:left;
+    text-align:center;
+}
+
+.TrainStopTextCell.selected{
+    float:left;
+    text-align:center;
+    font-weight:bold;
+}
+
+.TrainStopTextItemCellUnselected{
+    height:1px;
+    margin-top:2px;
+    float:left;
+}
+
+.TrainStopTextItemSelected{
+    float:left;
+    height:6px;
+}
+#menu-primary {
+    height: auto !important;
+}
+
+.columnRightAlign {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.WireHistoryHR{
+    display:none;
+}
+
+.SavedReportDeleteDialogDivHidden, .SavedReportRenameDialogDivHidden {
+    display:none;
+}
+
+.SavedReportDeleteDialogDivHidden p {
+    text-align:center;
+}
+
+.SavedReportRenameDialogDivHidden div {
+    white-space: nowrap;
+}
+
+.SavedReportRenameDialogDivHidden span {
+    padding-right: 10px;
+}
+
+.SavedReportRenameDialogDivHidden .input-container {
+    padding-top: 10px;
+}
+
+.SavedReportRenameDialogDivHidden #txtNewName {
+    width: 310px;
+}
+
+.SavedReportRenameDialogDivHidden .button-container {
+    margin-bottom: 5px;
+}
+
+.ui-dialog-title {
+    font-weight: bold;
+}
+
+.ReconPrintLbls {
+    font-weight: bold;
+}
+
+.CorrectionDialogSectionHeader, .CorrectionDialogSectionHeader2 {
+    border-bottom: 1px solid #E1E2E1;
+    font-weight: 600;
+}
+
+.CorrectionDialogSectionHeader2 {
+    padding-top: 10px;
+}
+
+.CorrectionDialogTable input, .CorrectionDialogTable textarea {
+    width: 255px;
+}
+
+.CorrectionDialogTable .th {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.CorrectionDialogButtonsContainer {
+    text-align: right;
+}
+
+.CorrectionDialogButtonsContainer input {
+    width: auto;
+}
+
+.CorrectionDialogButtonsContainer #submitCorrectionButton {
+    margin-right: 0px;
+}
+
+.AccountSelectionTable .EvenRowColor {
+    background-color: #F2F3F5;
+}
+
+.AccountSelectionTable .OddRowColor {
+    background-color: #FFFFFF;
+}
+
+.DateRangeSelectionContainer {
+    float: left;
+    margin-right: 5px;
+    background-color: #F8F8F8;
+}
+
+.DateRangeSelectionContainerSelected {
+    border: 1px solid #E3E3E3;
+    background-color: #F5F5F5;
+}
+
+.DateRangeSelectionContainerSelected .FieldRow {
+    visibility: visible !important;
+}
+
+.DateRangeSelectionContainer div {
+    white-space: nowrap;
+}
+
+.DateRangeRadioButtonContainer .fieldLabel {
+    display: inline-block;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.DateRangeSelectionContainer .FieldRow {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.DateRangeSelectionContainer .RadioButtonRow {
+    padding-bottom: 10px;
+}
+
+.DateRangeSelectionContainer .displayRecentDaysPt1 {
+    display: inline-block;
+}
+
+.PreviousBusinessDayRadioButtonContainer {
+    background-color: #FFFFFF;
+}
+
+.PreviousNumOfDaysRadioButtonContainer {
+    padding-right: 10px;
+}
+
+.DateRangeSelectionContainer .dl-previousnumofdays {
+    width: 65px;
+}
+
+.TransactionTypeSelectionTD, .TransactionTypeSelectionDetailsTD, .AdditionalSelectionTD, .PositivePayReportTypeDropDown {
+    vertical-align: top;
+}
+
+.AccountSelectionTableTD_CCM, .DateRangeSelectionTableTD, .TransactionTypeTD_CCM,  
+.AddtionalReportingOptionsTableByAmountTD, .AddtionalReportingOptionsTableTD, .AddtionalReportingOptionsTableSubTotalTD,
+ .AdditionalSelectionTD_CCM, .PositivePayReportTypeLable {
+    vertical-align: top;
+    text-align: right;
+}
+
+.AccountSelectionTableTD_CCM, .DateRangeSelectionTableTD, .TransactionTypeTD_CCM, .AddtionalReportingOptionsTableTD, .AddtionalReportingOptionsTableSubTotalTD,
+.AdditionalSelectionTD_CCM, .PositivePayReportTypeLable {
+    padding-right: 20px;
+}
+
+.AdditionalSelectionTD_CCM, .AdditionalSelectionTD, .PositivePayReportTypeLable, .PositivePayReportTypeDropDown {
+    display: inline-block;
+}
+
+.AdditionalSelectionDivTopMargin_CCM {
+    margin-top: 20px;
+}
+
+.AccountSelectionSubTable_CCM {
+    border: 0;
+    padding: 1px 1px 0px 1px;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    width: auto;
+}
+
+.AccountSelectionSubTable_CCM_NoScroll{
+    border: 0;
+    padding: 1px 1px 0px 1px;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    width: 515px;
+}
+
+.AccountSelectionFixedHeader_CCM {
+    background-color: #FFFFFF;
+    color: #0079b5;
+}
+
+.AccountSelectionFixedHeader_CCM a {
+    text-decoration: none;
+}
+
+.AccountSelectionTH1_CCM {
+    text-align:left;
+    width:15px;
+    padding: 1px;
+}
+
+.AccountSelectionTH2_CCM {
+    text-align:left; 
+    width:168px; 
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTH3_CCM {
+    text-align:center;
+    width:102px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTH4_CCM {
+    text-align:center;
+    width:82px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTH5_CCM {
+    text-align:right;
+    width:122px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionListView_CCM {
+    height:225px;
+    width:515px;
+    overflow:auto
+}
+
+.AccountSelectionTD1_CCM {
+    text-align:left;
+    width:15px;
+    padding: 1px;
+}
+
+.AccountSelectionTD2_CCM {
+    text-align:left; 
+    width:165px; 
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTD3_CCM {
+    text-align:center;
+    width:100px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTD4_CCM {
+    text-align:center;
+    width:80px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionTD5_CCM {
+    text-align:right;
+    width:120px;
+    padding: 1px 11px 1px 6px;
+}
+
+.AccountSelectionListViewTable_CCM {
+    border: 0;
+    padding: 0px 1px 1px 1px;
+    border-collapse: collapse; 
+    border-spacing: 0;
+    width: 100%;
+}
+
+.DateRangeSelectionDetailsTD {
+    padding-left: 5px;
+}
+
+.TransactionTypeTable_CCM, .AdditionReportsTable_CCM, .AdditionalSelection_CCM {
+    width: 800px;
+    border: 0;
+}
+
+.TransactionGroupDiv {
+    margin-top: -5px;
+}
+
+.TransactionGroupDiv td {
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+.TransactionTypeSelectionTD, .DateRangeRadioButtonContainer, .TransactionTypeSelectionTD .ddlTransactionType, 
+.AdditionalSelectionTD .ddlAdditionalSelection, .PositivePayReportTypeDropDown .ddlPositivePayReportType {
+    width: 175px;
+}
+
+.SpecificTransactionTypeDiv select {
+    padding: 0px;
+    width: 300px;
+    height: 200px;
+}
+
+.SpecificTransactionTypeDiv {
+    padding-left: 5px;
+}
+
+.AddtionalReportingOptionsTableByAmountTD {
+    padding-right: 5px;
+}
+
+.AddtionalReportingOptionsTableByAmountTD span {
+    padding-left: 15px;
+    font-weight: normal;
+}
+
+.AddtionalReportingOptionsTableTR {
+    height: 30px;
+    vertical-align: bottom;
+}
+
+.AddtionalReportingOptionsTableTR, .AddtionalReportingOptionsTableSubTotalTD {
+    vertical-align: bottom;
+}
+
+.AdditionReportsTable_CCM .textInput, .AddtionalReportingOptionsTableInputTD {
+    width: 155px;
+}
+
+.AddtionalReportingOptionsTableExtraSpace {
+    width: 25px;
+}
+
+.AddtionalReportingOptionsTableSeperatorTD {
+    width: 30px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.CMReportSaveOptionSaveReportContainer, .CMReportSaveOptionReportNameContainer, .ActivityReportButtonsContainer, .SummaryReportButtonsContainer, .PositivePayReportButtonsContainer {
+    width: 740px;
+    text-align: right;
+}
+
+.CMReportSaveOptionSaveReportContainer, .CMReportSaveOptionReportNameContainer {
+    padding-bottom: 5px;
+}
+
+.CMReportSaveOptionReportNameContainer input {
+    width: 200px;
+}
+
+.ActivityReportDivider, .SummaryReportDivider, .PositivePayReportDivider {
+    border-top: 1px solid #E2E2E2;
+    height: 5px;
+}
+
+.PositivePayReportDividerMargin {
+    margin: 10px 0 30px 0;
+}
+
+.ActivityReportButtonsContainer .SubmitButton, .ActivityReportNewSearchButtonContainer .NewSearchButton,
+.SummaryReportButtonsContainer .SubmitButton, .SummaryReportNewSearchButtonContainer .NewSearchButton, 
+.PositivePayReportButtonsContainer .SubmitButton, .PositivePayReportNewSearchButtonContainer .NewSearchButton {
+    margin-right: 0px;
+}
+
+.ActivityReportNewSearchButtonContainer, .SummaryReportNewSearchButtonContainer, .PositivePayReportNewSearchButtonContainer {
+    text-align: right;
+}
+
+.PanelActivityReport, .PanelSummaryReport, .PanelPositivePayReport {
+    border-top: 1px solid #E2E2E2;
+    overflow:visible;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PanelActivityReport table, .PanelSummaryReport table, .PanelPositivePayReport table {
+    width: auto;
+}
+
+.PanelSummaryReport {
+    width: 913px;
+}
+
+.PanelActivityReport, .PanelPositivePayReport {
+    width: 853px;
+}
+
+.PanelActivityReport input[type=text], .PanelSummaryReport input[type=text], .PanelPositivePayReport input[type=text] {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.PanelActivityReport input[type=image], .PanelSummaryReport input[type=image], .PanelPositivePayReport input[type=image], 
+.PanelActivityReport a img, .PanelSummaryReport a img, .PanelPositivePayReport a img {
+    vertical-align: middle;
+}
+
+.PanelActivityReport span div table, .PanelPositivePayReport span div table {
+    width: 100%;    
+}
+
+.InfoMessageTable .InfoMessageTableRow span.ErrorMessageLabel {
+    vertical-align: middle;
+}
+
+.DateRangeRadioButtonContainer .FieldRow, .SpecificDateRadioButtonContainer .FieldRow, .PreviousNumOfDaysRadioButtonContainer .FieldRow {
+    visibility: hidden;
+}
+
+.FormFieldset div span.AccountTransfersNewTransactionNoteSpan {
+    width: 500px;
+}
+
+.OptionsMainNoPaddingRight {
+    padding-right: 0;
+}
+
+.DivTableFull {
+    display:table;width:100%;
+}
+
+.DivTableCell {
+    display:table-cell;
+}
+
+.RealTimePostingConfirmDialogContent {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    
+}
+
+.RealTimePostingConfirmDialogContent p, .RealTimePostingConfirmDoNotShowAgain {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.RealTimePostingButtonPanel {
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.RealTimePostingButtonPanel .ColorButton {
+    margin-bottom: 5px;
+    float: right;
+    margin-right: 10px;
+}
+
+.RealTimePostingConfirmDoNotShowAgain {
+    margin-left: -5px;
+    float: left;
+}
+
+.RealTimePostingConfirmDoNotShowAgain label {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.RealTimePostingConfirmDoNotShowAgain input {
+    outline:none;
+    vertical-align:middle;
+}
+
+.three.columns.PassInput{
+    padding-left:7px;
+}
+.jha-dynarule-rule {
+    display: none;
+}
+.jha-dynarule-container-hide {
+    display: none;
+}
+.jha-dynarule-popup-container {
+    display: flex;
+    position: absolute;
+    color:blue;
+}
+.jha-dynarule-popup-note {
+    color:blue;
+    text-align:left;
+    vertical-align:top;
+    line-height:15px;
+    display:inline;
+    padding-top:2px;
+    padding-left:0px;
+}
+.jha-dynarule-image {
+    margin-bottom: -4px;
+}
+.SSONewConfirmPasswordLabel {
+    padding-left: 7px;
+}
+.LoginNewSSOSetupHiddenStyleBlock {
+    display: none;
+}
+.editemailaddressimg {
+    padding-left:5px;
+    margin-bottom:-3px;
+}

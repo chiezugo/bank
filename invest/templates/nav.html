@@ -1,0 +1,213 @@
+{% load static %}
+
+<div id="__nuxt"><!---->
+    <div><!---->
+        <main class="dashboard">
+            <div>
+                <div class="dashboard__navigation">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand" href="#">FIRST COMMUNITY BANK</a>
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'api:dashboard' %}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                                            <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                                        </svg>
+                                        <bold>Home</bold>
+                                        <span class="sr-only">(current)</span></a>
+
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'api:card' %}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                                            <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                                            <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                                        </svg>
+                                        <bold>Cards</bold>
+                                        <span class="sr-only">(current)</span></a>
+
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'api:setting' %}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
+                                            <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z"/>
+                                        </svg>
+                                        <bold>Settings</bold>
+                                        <span class="sr-only">(current)</span></a>
+
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'api:transactions' %}">
+                                        <svg height="24" viewBox="0 0 24 24" width="24"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="none" fill-rule="evenodd" stroke="#7C889D" stroke-linecap="round"
+                                               stroke-linejoin="round" stroke-width="1.636" transform="translate(1 1)">
+                                                <circle cx="14.438" cy="7.563" r="6.875"></circle>
+                                                <path d="M5.844 12.918c0 .502.306.954.772 1.14l1.893.758a1.23 1.23 0 0 1-.459 2.371H6.187M7.563 18.563v-1.375M4.84 8.128a6.875 6.875 0 1 0 9.033 9.031M15.813 4.813h-1.864a1.23 1.23 0 0 0-.458 2.37l1.892.758a1.23 1.23 0 0 1-.459 2.372h-1.861M14.438 4.813V3.438M14.438 11.688v-1.376"></path>
+                                            </g>
+                                        </svg>
+                                        <bold>Transactions</bold>
+                                        <span class="sr-only">(current)</span></a>
+
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="{% url 'api:logout' %}">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                        <bold>Logout</bold>
+                                        <span class="sr-only">(current)</span></a>
+
+                                </li>
+                            </ul>
+                            <div class="dashboard__navigation__item dropdown"><span
+                                    class="dashboard__navigation__item__link dashboard__navigation__item__link--icon">
+                                <svg
+                                        height="23" viewBox="0 0 20 23" width="20" xmlns="http://www.w3.org/2000/svg"><g
+                                        fill="none" fill-rule="evenodd" stroke="#8B98AD" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.64"><path
+                                        d="M8 19.75a2.087 2.087 0 0 0 4.005 0M10 1a7.5 7.5 0 0 1 7.5 7.5c0 7.046 1.5 8.25 1.5 8.25H1s1.5-1.916 1.5-8.25A7.5 7.5 0 0 1 10 1z"></path></g></svg>
+                            </span>
+                                <!----></div>
+                        </div>
+                    </nav>
+                    <div aria-labelledby="acceptRequestLabel" id="acceptRequest" role="dialog" tabindex="-1"
+                         class="modal fade">
+                        <div role="document" class="modal__dialog modal__dialog--sm">
+                            <div class="modal__content">
+                                <div class="modal__header">
+                                    <div class="modal__title text-center">Accept Request</div>
+                                    <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                                        <svg height="13" viewBox="0 0 13 13" width="13"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                                                  fill="#C0C6D8" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="modal__body modal__body--pad">
+                                    <form class="form">
+                                        <div class="form__pad">
+                                            <div class="form__item"><label for="" class="form__label form__label--2">Enter
+                                                Pin to Accept Request</label> <input autocomplete="false"
+                                                                                     required="required" type="password"
+                                                                                     class="form__input form__input--2">
+                                            </div>
+                                        </div>
+                                        <div class="form__footer">
+                                            <button type="submit" class="btn btn--primary btn--md btn--block">Accept
+                                                Request
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__main">
+
+
+                <div class="dashboard__main__sidebar" id="side">
+                    <div class="dashboard__main__sidebar__item show--xs">
+                        <svg height="26" viewBox="0 0 130 26" width="130" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" class="brandlogo">
+                            <defs>
+                                <path d="M0 .04h30.007V26H0z" id="a"></path>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <g>
+                                    <mask fill="#fff" id="b">
+                                        <use xlink:href="#a"></use>
+                                    </mask>
+                                    <path d="M9.142 16.465c.345 2.807 1.382 5.582.059 8.651-.745-2.918-1.57-5.59-2.848-8.116-1.424-2.813-3.337-5.33-5.364-7.786C-.183 7.795-.285 7.048.533 6.415c.979-.757 2.317-.442 3.417.847.464.544.858 1.138 1.285 1.709.417.557.615 1.284 1.457 1.603 2.98-5.787 8.094-8.936 14.7-10.272C22.806.016 24.209 0 25.61.085c2.938.179 4.109 1.91 3.066 4.484-.65 1.605-1.661 3.031-2.93 4.274-1.03 1.008-2.138 1.946-3.297 2.993 1.676 1.46 3.3 2.77 4.64 4.33 1.576 1.834 2.925 3.766 2.918 6.239-.004 1.783-.683 2.608-2.542 3.241-1.383.472-2.736.438-4.153.101-5.21-1.235-9.275-4.045-12.65-7.823-.462-.517-.71-1.217-1.52-1.459"
+                                          fill="#F5A622" mask="url(#b)"></path>
+                                </g>
+                                <path d="M48.537 13.917c-.015-.154-.052-.69-.119-1.222-.09-.715-.32-1.37-1.144-1.646-.903-.303-1.662.012-2.264.603-.51.5-.97 1.055-1.37 1.632-1.06 1.528-1.388 3.254-1.602 5.022-.203 1.677.105 2.056 1.862 2.143 1.31.066 2.248-.481 2.984-1.399 1.13-1.41 1.57-3.03 1.653-5.133M36 23.957c.455-3.573.862-6.849 1.29-10.123.52-3.965 1.043-7.93 1.592-11.892C39.15.01 39.177.012 41.298 0c.838-.003 1.677 0 2.515.019.155.003.306.097.663.22L43.27 9.681c1.138-.748 1.941-1.539 3.019-1.99 3.615-1.515 6.927-.02 7.52 3.562.575 3.466-.126 6.735-2.445 9.609-2.663 3.298-5.814 3.983-9.802 2.118-.436-.205-.649-.286-.987.093-1.16 1.3-2.726.783-4.575.884M66.442 10.605c-1.635-.34-2.814.3-3.84 1.177-1.679 1.435-2.187 3.359-2.275 5.39-.066 1.533.558 2.757 1.488 2.865 1.37.162 2.027-.812 2.624-1.72 1.546-2.35 1.7-5.01 2.003-7.712m-1.284 10.811c-.624.507-1.2 1.051-1.856 1.496-3.44 2.325-7.469.761-8.15-3.146C53.98 13.046 59.76 6.83 67.057 7.004c1.226.029 2.45.218 3.67.36.97.114 1.391.565 1.244 1.558-.458 3.11-.828 6.23-1.25 9.344-.204 1.52-.487 3.03-.655 4.552-.089.795-.476.995-1.276.993-1.84-.003-2.662-.5-3.632-2.395"
+                                      fill="#000"></path>
+                                <path d="M105.969 13.795c1.49.049 2.722-.258 3.896-.781.898-.398 1.508-1.043 1.032-1.992-.436-.872-1.395-.751-2.161-.524-1.62.48-2.36 1.668-2.767 3.297m9.498 7.016c-2.333 2.232-5.001 3.245-8.173 3.187-3.618-.066-6.134-1.883-7.005-5.128-1.486-5.532 2.944-11.368 8.997-11.84 1.347-.105 2.647.066 3.88.611 1.615.712 2.705 1.824 2.823 3.515.123 1.776-.79 3.09-2.434 3.988-1.903 1.04-4.06 1.296-6.156 1.756-.674.15-1.833-.457-1.93.837-.079 1.077.734 2.16 1.907 2.406 1.148.243 2.277.09 3.429-.244 2.028-.589 2.859-.372 4.662.912"
+                                      fill="#010101"></path>
+                                <path d="M96.44 2.007c.263 1.723-.672 3.212-.248 4.867l3.808.161c-.394 1.894-1.471 3.032-3.435 3.25-.863.095-1.14.49-1.226 1.182-.298 2.408-.631 4.813-.88 7.225-.091.87.177 1.508 1.415 1.374.848-.091 2.283 1.402 2.318 2.205.02.478-.354.65-.724.84-1.77.906-3.667 1.097-5.585.675-1.87-.412-2.989-1.871-2.874-3.9.132-2.34.505-4.666.781-6.998.065-.544.169-1.083.237-1.626.053-.413-.029-.9-.535-.872-1.778.1-1.469-.977-1.475-2.018-.006-1.121.45-1.593 1.638-1.432 1.123.152 1.465-.421 1.454-1.357-.003-.308.08-.621.15-.928.481-2.103 1.06-2.555 3.408-2.644.569-.022 1.14-.004 1.773-.004"
+                                      fill="#000"></path>
+                                <path d="M80.984 10c.697-.705 1.228-1.286 1.81-1.823.732-.675 1.583-1.13 2.659-1.17 1.523-.054 1.724.152 1.436 1.583-.124.613-.265 1.225-.36 1.843-.155.996-.55 1.467-1.81 1.254-1.505-.255-2.51.623-3.23 1.787-.856 1.38-1.225 2.893-1.411 4.458-.185 1.554-.459 3.103-.539 4.66-.06 1.162-.626 1.462-1.752 1.4-1.162-.065-2.33-.014-3.273-.014-.592-.307-.53-.644-.49-.938.654-4.964 1.35-9.923 1.953-14.893.12-.98.603-1.114 1.473-1.084 1.969.067 2.841 1.344 3.534 2.938M123.815 10.199c1.658-1.75 3.01-3.874 6.156-2.968.164 1-.417 1.93-.468 2.91-.061 1.161-.504 1.797-2.026 1.534-1.36-.236-2.32.648-2.986 1.745-.842 1.387-1.251 2.887-1.415 4.465-.17 1.637-.41 3.269-.57 4.908-.085.865-.482 1.223-1.434 1.206-5.037-.09-4.214.592-3.639-3.513.567-4.04 1.053-8.09 1.589-12.135.17-1.277.624-1.568 1.942-1.208 1.556.425 2.473 1.45 2.851 3.056"
+                                      fill="#010101"></path>
+                                <path d="M106 13.996c.4-1.41 1.125-2.438 2.716-2.854.752-.196 1.693-.3 2.12.454.468.822-.13 1.38-1.011 1.724a9.374 9.374 0 0 1-3.825.676"
+                                      fill="#F3F4F5"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="{% url 'api:dashboard' %}" aria-current="page"
+                       class="dashboard__main__sidebar__item router-link-exact-active active">
+                        <div class="dashboard__main__sidebar__item__icon">
+                            <svg height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+                                <g fill-rule="evenodd" id="homeIcon">
+                                    <path d="M.727.72a.917.917 0 0 0-.269.649v10.097c0 .506.41.916.917.916h7.333c.507 0 .917-.41.917-.916V1.382a.917.917 0 0 0-.917-.916L1.375.452A.917.917 0 0 0 .727.72zM20.625.452l-7.333.013a.917.917 0 0 0-.917.916v4.584c0 .506.41.916.917.916h7.333c.506 0 .917-.41.917-.916V1.369a.917.917 0 0 0-.917-.917zM9.356 21.28a.917.917 0 0 0 .269-.649v-4.583a.917.917 0 0 0-.917-.917H1.375a.917.917 0 0 0-.917.917v4.57c0 .506.41.916.917.916l7.333.013a.917.917 0 0 0 .648-.268zM20.625 9.632h-7.333a.917.917 0 0 0-.917.917v10.083c0 .507.41.917.917.917l7.333-.013c.506 0 .917-.41.917-.917V10.55a.917.917 0 0 0-.917-.917z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="dashboard__main__sidebar__item__text">Home</div>
+                    </a>
+                    <a href="{% url 'api:card' %}" class="dashboard__main__sidebar__item">
+                    <div class="dashboard__main__sidebar__item__icon">
+                        <svg height="19" viewBox="0 0 26 19" width="26" xmlns="http://www.w3.org/2000/svg">
+                            <g fill-rule="evenodd" id="cardIcon" stroke-linecap="round" stroke-linejoin="round"
+                               stroke-width="1.636" transform="translate(1 1)">
+                                <rect height="16.07" rx="1.636" width="22.5" x=".75" y=".73"></rect>
+                                <path d="M1.636 5.113h20.728M5.25 9.496h8.25M5.25 12.418h5.25"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="dashboard__main__sidebar__item__text">Cards</div>
+                </a>
+                    <a href="{% url 'api:transactions' %}" class="dashboard__main__sidebar__item">
+                        <div class="dashboard__main__sidebar__item__icon">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd" stroke="#7C889D" stroke-linecap="round"
+                                   stroke-linejoin="round" stroke-width="1.636" transform="translate(1 1)">
+                                    <circle cx="14.438" cy="7.563" r="6.875"></circle>
+                                    <path d="M5.844 12.918c0 .502.306.954.772 1.14l1.893.758a1.23 1.23 0 0 1-.459 2.371H6.187M7.563 18.563v-1.375M4.84 8.128a6.875 6.875 0 1 0 9.033 9.031M15.813 4.813h-1.864a1.23 1.23 0 0 0-.458 2.37l1.892.758a1.23 1.23 0 0 1-.459 2.372h-1.861M14.438 4.813V3.438M14.438 11.688v-1.376"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="dashboard__main__sidebar__item__text">Transactions</div>
+                    </a>
+                    <a href="{% url 'api:setting' %}" class="dashboard__main__sidebar__item">
+                        <div class="dashboard__main__sidebar__item__icon">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd" stroke="#7C889D" stroke-linecap="round"
+                                   stroke-linejoin="round" stroke-width="1.636" transform="translate(1 1)">
+                                    <path d="M9.667 2.235a1.794 1.794 0 0 0 2.666 0l.867-.952a1.796 1.796 0 0 1 3.126 1.296l-.065 1.283a1.795 1.795 0 0 0 1.88 1.883l1.283-.065a1.796 1.796 0 0 1 1.293 3.126l-.955.861a1.797 1.797 0 0 0 0 2.667l.955.861a1.796 1.796 0 0 1-1.296 3.126l-1.283-.065a1.795 1.795 0 0 0-1.885 1.885l.066 1.283a1.796 1.796 0 0 1-3.119 1.293l-.863-.955a1.796 1.796 0 0 0-2.665 0l-.867.955a1.796 1.796 0 0 1-3.122-1.291l.066-1.283a1.795 1.795 0 0 0-1.884-1.885l-1.284.065A1.795 1.795 0 0 1 1.283 13.2l.955-.862a1.797 1.797 0 0 0 0-2.666l-.955-.867a1.795 1.795 0 0 1 1.292-3.122l1.283.065A1.795 1.795 0 0 0 5.745 3.86l-.062-1.284a1.796 1.796 0 0 1 3.123-1.293l.861.952z"></path>
+                                    <circle cx="11" cy="11.001" r="4.125"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="dashboard__main__sidebar__item__text">Settings</div>
+                    </a>
+                  <a href="{% url 'api:logout' %}" > <div class="dashboard__main__sidebar__item" style="cursor: pointer;">
+                        <div class="dashboard__main__sidebar__item__icon">
+                            <svg fill="none" height="23" viewBox="0 0 23 23" width="23"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.57 4.428a10 10 0 1 1-14.14 0M11.499 1.5v8.889" stroke="#FF615C"
+                                      stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+                            </svg>
+                        </div>
+                        <div class="dashboard__main__sidebar__item__text" style="color: rgb(255, 97, 92);">Log out
+                        </div>
+                    </div></a>
+                </div>

@@ -1,0 +1,13 @@
+{% load static %}
+
+<div class="dashboard__main__content__settings__left">
+    <div class="dashboard__main__content__settings__title">Profile Settings</div>
+    <div class="dashboard__main__content__settings__nav"><a href="{% url 'api:setting' %}"
+                                                            aria-current="page"
+                                                            class="dashboard__main__content__settings__nav__item router-link-exact-active active">Edit
+        profile</a> <!----> <a href="{% url 'api:change-pin' %}"
+                        class="dashboard__main__content__settings__nav__item">Change your transaction
+        pin</a>  <a
+            href="mailto:hi@flutterwavego.com" class="dashboard__main__content__settings__nav__item">Help
+        &amp; Support</a></div>
+</div>

@@ -1,0 +1,206 @@
+{% extends 'inerbase.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+{% include "nav.html" %}
+
+<div class="dashboard__main__content">
+    <div class="dashboard__main__content__container">
+        <div class="dashboard__main__content__row">
+            <div class="dashboard__main__content__row__item"><h1
+                    class="dashboard__main__content__pagetitle">Transactions</h1></div>
+        </div>
+        <div class="dashboard__main__content__home">
+            <div class="dashboard__main__content__home__left">
+                <div class="time">
+                    <div class="time__header">Time Period</div>
+                    <div class="time__content">
+                        <div class="time__content__item">
+                            <div class="time__content__item__title">To</div>
+                            <div class="time__content__item__input">
+                                <div class="time__content__item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                         viewBox="0 0 16 16">
+                                        <path fill="#F5A623" fill-rule="nonzero"
+                                              d="M14.333 2H12.5a.167.167 0 0 1-.167-.167V.667a.667.667 0 1 0-1.333 0v3.166a.5.5 0 1 1-1 0v-1.5A.333.333 0 0 0 9.667 2H5.5a.167.167 0 0 1-.167-.166V.667A.667.667 0 1 0 4 .667v3.166a.5.5 0 1 1-1 0v-1.5A.333.333 0 0 0 2.667 2h-1C.93 2 .333 2.597.333 3.333v11.334C.333 15.403.93 16 1.667 16h12.666c.737 0 1.334-.597 1.334-1.333V3.333c0-.736-.597-1.333-1.334-1.333zM14 14.667H2a.333.333 0 0 1-.333-.334v-8C1.667 6.15 1.816 6 2 6h12c.184 0 .333.15.333.333v8c0 .184-.149.334-.333.334z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__main__content__home__right">
+                <div class="transaction">
+                    <div class="transaction__header">
+                        <div class="transaction__header__title">All Transactions</div>
+                    </div>
+                    <div class="transaction__filters hide">
+                        <div class="search">
+                            <div class="search__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                     viewBox="0 0 18 18">
+                                    <path fill="#8891A1" fill-rule="nonzero"
+                                          d="M17.538 16.214l-4.897-4.896a6.963 6.963 0 1 0-1.326 1.325l4.897 4.897a.95.95 0 0 0 1.326 0 .938.938 0 0 0 0-1.326zM2.062 7.125a5.062 5.062 0 1 1 10.125 0 5.062 5.062 0 0 1-10.124 0z"></path>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="Search transaction"
+                                   class="search__input"></div>
+                    </div>
+                    <div>
+                        <div class="transaction__content">
+                            <div> {% for item in item %}
+                                <div class="transaction__content__dateSeparator">{{ item.date }}
+                                </div>
+                                <div class="transaction__content__item">
+                                    <div class="transaction__content__item__avatar">
+                                        <div class="transaction__content__item__avatar__placeholder">
+
+                                        </div>
+                                    </div>
+                                    <div class="transaction__content__item__details">
+                                        <div class="transaction__content__item__details__left">
+                                            <div class="transaction__content__item__details__title" style="color:darkturquoise !important">ref:
+                                                {{ item.trans_reference }}
+                                            </div>
+                                            <div class="transaction__content__item__details__caption">
+                                                <div class="ml-2">{{ item.transaction_type }}</div>
+                                            </div>
+                                        </div>
+                                        <div class="transaction__content__item__details__right green">
+                                            ${{item.amount}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 {% endfor %}
+                            </div>
+                            <div class="pagination justify-content-center">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo;  first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">next</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div aria-labelledby="airtimeRechargeLabel" id="airtimeRecharge" role="dialog" tabindex="-1"
+     class="modal fade" style="display: none;">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Airtime Recharge</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item form__item--2"><input type="tel"
+                                                                     class="v-money form__input form__input--3 form__input--lg"
+                                                                     autocomplete="false"
+                                                                     spellcheck="false"> <!----></div>
+                        <div class="form__item"><label for="" class="form__label form__label--2">Phone
+                            Number</label> <input autocomplete="false" maxlength="11"
+                                                  required="required" type="text"
+                                                  class="form__input form__input--2"> <!----></div>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn--primary btn--md btn--block">Continue
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="pinRequestLabel" id="pinRequest" role="dialog" tabindex="-1" class="modal fade">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Pin</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item"><label for="" class="form__label form__label--2">Enter
+                            Pin to complete request</label> <input autocomplete="false" maxlength="4"
+                                                                   required="required" type="password"
+                                                                   class="form__input form__input--2">
+                            <!----></div>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn--primary btn--md btn--block">Continue
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="verificationModalLabel" id="verificationModal" role="dialog" tabindex="-1"
+     class="modal fade">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Verify your account</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item"><p class="form__text" style="text-align: center;">Hello!
+                            Thank you again for choosing Barter. In order to get started with sending
+                            and receiving money, You will need to verify your account.</p>
+                            <p class="form__text" style="text-align: center;">Verifying your account
+                                helps us ensure that your identity and money are kept safe and
+                                secure.</p></div>
+                    </div>
+                    <div class="form__footer"><a href="/dashboard/settings/verify"
+                                                 class="btn btn--primary btn--md btn--block"
+                                                 type="submit">Continue</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+</div>
+</div>
+
+</body>
+{% endblock content %}

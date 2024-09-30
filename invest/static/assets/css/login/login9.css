@@ -1,0 +1,1702 @@
+/*
+	Regex pattern to clear out colors
+	:b([background\-|border\-]*color)\:[:ba-zA-Z0-9#]*;
+*/
+/* Added for .NET, not used in Cold Fusion */
+
+.navforms { display: inline; }
+
+.HelpLink { background: navy url('Images/help.png'); cursor: pointer; margin: 5px 0 0 5px; padding: 3px 10px; text-decoration: none; color: black !important; }
+.HelpPopup { float: none; display: none; position: absolute; width: 300px; border: 1px solid black; font-size: 10px; padding: 5px; margin: -5px; color: black; background-color: #ffffe1; opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);z-index:1000;}
+.BasicPopup { float: none; width: 300px; border: 1px solid black; font-size: 10px; padding: 5px; margin: -5px; color: black; background-color: #ffffe1;}
+.HelpPopupShim { display:none; position:absolute; width:300px; margin:-5px; }
+.ProgressBarDone { background-color: #2A3F55; }
+.ProgressBarNotDone { background-color: #A0A0A4; }
+.ProgressBarText { font-family: Arial; color: #000000; font-size: 8pt; width: 56px; font-weight: normal; text-align: center; }
+.ProgressBarTextBold { font-family: Arial; color: #000000; font-size: 8pt; width: 56px; font-weight: bold; text-align: center; }
+
+.ViewRangeBar { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; white-space: nowrap; text-align: right; }
+.ViewRangeBar .selected a { text-decoration: none; font-weight: bold; color: #000000; }
+
+.DataElement th { text-align: left; width: 1%; white-space: nowrap; white-space:nowrap; }
+.WizardStepActive { font-size: 11px; padding: 0px 5px 0px 5px; border-bottom: solid 5px Navy; }
+.WizardStepInActive { font-size: 11px; padding: 0px 5px 0px 5px; border-bottom: solid 2px Gray; }
+
+.InfoMessage_container { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; border-width: 0px 0px 0px 0px; border-color: gray; border-style: solid solid solid solid; clear: left; }
+.InfoMessageTable { border: 1px; border-color: black; width: 100%; border-width: 1px 1px 1px 1px; border-color: gray; border-style: solid solid solid solid; font-weight: bold; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.InfoMessageLabel { color: White; background-color: Green; white-space: normal; text-align: center; width: 250px; }
+.InfoMessage_container .ErrorMessageLabel { width: 250px; }
+.InfoMessageTD { padding-left: 10px; text-align: left; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; white-space: normal; }
+.ErrorMessageLabel { color: White; background-color: Red; white-space: normal; text-align: center; }
+.ErrorMessageTD { padding-left: 10px; text-align: left; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; white-space: normal; }
+.Disclaimer { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; white-space: normal; }
+.Disclaimer p { margin-left: 15px; text-align: left; }
+
+.MainContent_Container { width: 100%; }
+.MainContent { width: 100%; text-align: left; border: solid 1px gray; position: relative; }
+.PageSection { border-bottom: solid 1px gray; }
+
+.subheading { margin: 0px 15px 15px 15px; padding-top: 15px; }
+.headerLabel { margin: 15px 15px 0px 0px; }
+.headerLabelLeftIndent { margin: 15px 15px 0px 15px; }
+p.contentLabel { margin: 15px; }
+.enrollmentSubTitle { margin: 15px 15px 0px 15px; border-bottom: solid thin; }
+.enrollmentAutoTitle { margin: 15px 15px 0px 15px; border-bottom: solid thin;}
+#enrollmentConfirmation { border: 1px solid #CCCCCC; margin:15px; padding:10px; }
+.rsaInputRow { text-align:center; }
+.infoPanel { border-width: 1px; border-style: Solid; height: 310px; overflow-y: scroll; white-space: normal; padding: 5px; }
+.derivedColor { color: Navy; }
+.derivedBorderColor { border-color: Navy; }
+
+.ColorButton { font-weight: bold; font-size: 10px; line-height: 18px; }
+.ColorButton:disabled { color: gray;}
+.buttonsTable {width:100% !important; height:50px !important;}
+.gpDisclaimerContainer{width:auto !important; padding: 10px !important;}
+.gpDisclaimerContainer td{width:100% !important; padding: 10px !important;}
+
+.center { text-align: center; }
+.center table { margin-left: auto; margin-right: auto; text-align: left; }
+.button-container, .button-container-options { text-align: center; }
+.button-container .ColorButton, .button-container-options .ColorButton { margin: 5px 5px 5px 5px; }
+.button-container-top { text-align: right;margin: 5px 5px 5px 5px;}
+.login-message { text-align: center; padding: 5px 5px 5px 5px; }
+.welcome-message { padding: 5px 5px 5px 5px; border-bottom: 1px solid #d0d0d0; }
+.verisign-button { padding-right: 10px; }
+.button-link {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+}
+
+/* Asp:DataGrid */
+#datagrid, .datagrid { }
+#datagrid table, .datagrid table { font-size: 12px; width: 100%; border-spacing: 0; *border-collapse: collapse; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; border: none; }
+#datagrid tr, .datagrid tr { }
+#datagrid .th, .datagrid .th{ text-align: left; text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px; border-width: 1px 0px 1px 0px; border-style: solid none solid none; font-weight: normal; }
+#datagrid .th a, .datagrid .th a { text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 0px 0px 0px 0px; border-style: solid none solid none; }
+#datagrid td, .datagrid td { margin: 0; }
+#datagrid td a, .datagrid td a { }
+#datagrid .altColor, .datagrid .altColor { }
+#datagrid .Total, .datagrid .Total { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; font-weight: bold; font-style: italic; line-height: 15px; border-width: 1px 0px 0px 0px; border-style: solid none none none; }
+#datagrid .AmountSubHeader, .datagrid .AmountSubHeader { text-align: right; }
+#datagrid .CenterTD, .datagrid .CenterTD { text-align: center; }
+#datagrid .AmountTD, .datagrid .AmountTD { text-align: right; }
+#datagrid form, .datagrid form { margin: 0; padding: 0; }
+#datagrid .pager, .datagrid .pager { }
+#datagrid .pager td, .datagrid .pager td { margin: .3em 0 .3em 0; padding: 0; text-align: center; font-weight: bold; }
+#datagrid .pager td a, .datagrid .pager td a { font-weight: normal; }
+
+.datagrid-linkbutton
+{
+	text-align: center;
+	white-space:nowrap;
+	width:60px;
+}
+
+/* Copied from Style.cfm with colors from database removed */
+html { margin: 0px; padding: 0px; text-align: left; }
+body { margin: 5px 20px 20px 20px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+hr { }
+div#banner { clear: both; padding: 0px; margin: 0px; margin-bottom: 3px;}
+div#navigation { margin: 0px; }
+div#Page_container { padding-top: 0px; border-width: 0px; }
+div#bankaddress { width: 99%; clear: both; font-size: 11px; margin: 0px 0px 20px 0px; border-style: solid; border-width: 0px; text-align: right; }
+#bankaddress p { float: right; }
+
+.LabelInputField { font-family: 'Arial'; font-size: 10pt; font-weight: bold; }
+.fieldLabel { font-weight: bold; white-space: nowrap; }
+.preWrap { white-space: pre-wrap; }
+.TextAssist { font-family: 'Arial'; font-size: 8pt; white-space: normal; }
+span.TextAssist { background-color:Transparent; font-family: 'Arial'; font-size: 8pt; white-space: normal; }
+.TextLink { font-family: 'Arial'; font-size: 10pt; }
+TD.StandardMessageArea { font-family: 'Arial'; font-size: 10pt; font-weight: bold; }
+.pageTab { padding: 5px 0px 5px 0px; width: 250px; text-align: center; margin: 0px 0px 0px 0px; font-size: 10px; font-weight: bold; text-align: center; text-decoration: none; white-space: nowrap; }
+.unselectedPageTab { padding: 5px 0px 5px 0px; text-align: center; margin: 0px 0px 0px 0px; font-size: 10px; font-weight: bold; text-align: center; text-decoration: none; white-space: nowrap; }
+.powerPayPop { background-color:White; display: none; position: absolute; width: 200px; border: 1px solid black; font-size: 10px; padding: 10px; margin: 10px; }
+hr.powerPayPop { height: 1px; }
+
+table.GridShell { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; border-width: 1px 1px 1px 1px; border-style: solid solid solid solid; clear: left; }
+th.GridHeading { text-align: left; text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px; border-width: 1px 0px 1px 0px; border-style: solid none solid none; font-weight: normal; }
+th.RightGridHeading { text-align: right; text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px; border-width: 1px 0px 1px 0px; border-style: solid none solid none; font-weight: normal; }
+th.CenterGridHeading { text-align: center; text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 20px; border-width: 1px 0px 1px 0px; border-style: solid none solid none; font-weight: normal; }
+th.AmountGridHeading { text-align: right; width: 20%; text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 1px 0px 1px 0px; border-style: solid none solid none; font-weight: normal; }
+th.CenteredTH { text-decoration: none; font-family: Helvetica, Verdana, Arial, sans-serif; text-align: center; font-weight: bold; }
+a.GridHeading { text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 0px 0px 0px 0px; border-style: solid none solid none; }
+a.GridHeading:hover { text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 0px 0px 0px 0px; border-style: solid none solid none; }
+a.GridHeading:link { text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 0px 0px 0px 0px; border-style: solid none solid none; }
+a.GridHeading:active { text-decoration: none; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; line-height: 20px; border-width: 0px 0px 0px 0px; border-style: solid none solid none; }
+td.GridTotals { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; font-weight: bold; font-style: italic; line-height: 15px; border-width: 1px 0px 0px 0px; border-style: solid none none none; }
+td.RightGridTotals { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; font-weight: bold; font-style: italic; line-height: 15px; border-width: 1px 0px 0px 0px; border-style: solid none none none; }
+td.CenterGridTotals { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; font-weight: bold; font-style: italic; line-height: 15px; border-width: 1px 0px 0px 0px; border-style: solid none none none; }
+
+ul#launchBar, ul#TopLinks li { list-style-type: none; margin: 0px; float: right; }
+ul#launchBar li { min-width: 100px; width: auto; margin-right: 0px; text-align: center; display: inline-block; }
+ul#launchBar a { display: block; text-decoration: none; font-size: 11px; padding: 2px; }
+
+div#tabBar_container { float: left; width: 100%; padding-top: 0px; }
+#tabBar_container { clear: both; margin: 0px; padding: 0px; text-align: left; }
+#tabBar { list-style-type: none; margin: 0px; padding: 0px 0px .1em 0px; text-align: left; }
+#tabBar li { display: inline; font-weight: bold; text-align: center; }
+#tabBar li.selected a { }
+
+ul#tabBar_container li { list-style-type: none; margin: 0px; padding: 0px; width: 100%; }
+ul#tabBar { list-style-type: none; margin: 0px; padding: 0px; width: 100%; font-weight: bold; font-size: 10px; }
+ul#tabBar a { float: left; font-size: 10px; width: 130px; padding: 5px 0px; text-decoration: none; }
+ul#tabBar li { float: left; margin-right: 3px; text-align: center; width: 130px; }
+ul#tabBar li.activelink a { font-weight: bold; font-size: 10px; }
+
+div.menuBar_container { clear: both; float: left; margin: 0px; padding: 0px; text-align: left; width: 100%; }
+#menuBar { list-style-type: none; margin: 0px; padding: 0px; }
+#menuBar li a { text-decoration: none; padding: 2px; margin: 0; }
+
+ul#menuBar { list-style-type: none; margin: 0px; padding: 0px; width: 100%; }
+ul#menuBar a { float: left; width: 150px; padding: 5px 0; text-decoration: none; font-weight: bold; }
+ul#menuBar li { float: left; font-size: 10px; margin: 0px; text-align: center; }
+
+div.menuBar2_container { clear: both; float: left; margin: 0px; padding: 0px; border: solid; border-width: 0px; border-bottom-width: 1px; text-align: left; width: 100%; }
+#menuBar2 { list-style-type: none; margin: 0px 0px 0px 2px; padding: 0px; width: 100%; font-size: 10px; }
+#menuBar2 li { list-style-type: none; margin: 0px 3px 0px 0px; padding: 0px; float: left; text-align: center; width: 150px; }
+#menuBar2 a { float: left; padding: 5px 0px; text-decoration: none; }
+#menuBar2 li a.selected { font-weight: bold; }
+
+ul#pageTab { font-size: 10px; list-style-type: none; margin: 0px 0px 0px 0px; padding: 0px; }
+ul#pageTab li { float: left; text-align: left; font-size: 10px; list-style-type: none; margin: 0px; padding: 0px; }
+ul#pageTab a { float: left; padding: 0px 0px 0px 0px; text-decoration: none; }
+ul#pageTab a:hover { }
+
+table.NT { padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; border: none; }
+table.MediumTable { width: 570px; border: none; }
+table.SmallTable { width: 380px; border: none; }
+table.XSmallTable { margin-left:auto; margin-right:auto; width: 0px; border: none; }
+table.XSmallBorderTable { width: 0px; border: none; }
+table.SmallBorderTable { width: 380px; border: none; }
+
+table.CalendarTable { width: 294px; border: 0px; }
+table.HelpTable { width: 456px; border: 0px; }
+table.AutoTable { margin: 0; padding: 0; width:auto; }
+table.no-padding { border-spacing: 0; border-collapse: collapse; }
+
+tr.AccentTR { }
+tr.Accent2TR { }
+
+th.NT { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; white-space: normal; }
+th.CenterNT { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; white-space: normal; }
+th.RightTH { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+th.TopTH { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; vertical-align: top; text-align: left; }
+
+th.Header { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; background-color:inherit; color:inherit; color: inherit !important;}
+th.SubHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; }
+th.RightHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+th.RightSubHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+th.CenterHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+th.CenterSubHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+th.AmountSubHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; width: 1%; }
+th.hbAmountSubHeader { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; width: 20%; }
+
+font.NT { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+
+td.NT { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; white-space: normal; padding-left: 5px; }
+td.CenterNT { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; white-space: normal; padding-left: 5px; }
+td.TDWrap { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; white-space: normal; }
+td.BoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+td.RightTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+td.RightBoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; font-weight: bold; }
+td.CenterTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.CenterTDNowrap { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; white-space: nowrap; }
+td.CenterBoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; font-weight: bold; }
+td.Total { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; font-weight: bold; font-style: italic; }
+Total { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; font-weight: bold; font-style: italic; }
+td.TotalLeftAlign { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; font-weight: bold; font-style: italic; }
+td.TotalLeftAlignLarge { font-size: 20px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; font-weight: bold; font-style: italic; }
+
+td.TopTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; vertical-align: top; }
+td.CenterSubHeaderTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+
+td.GreenText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.GreenCenterText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.SmallGreenText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.GreenBoldText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+td.YellowText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.RedText { color: Red; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.RedCenterText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.SmallRedText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.SmallRedUText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; }
+td.RedBoldText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+td.BlueText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.BlueCenterText { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.SmallUText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; }
+td.SmallCenterText, div.SmallCenterText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.SmallInfoMessageTD { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; white-space: normal; }
+.SmallRedText { color:Red; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td.MarketingMessageTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; white-space: normal; }
+td.SmallTextTD { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.SmallTextTDWrap { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; white-space: normal; }
+td.RightSmallTextTD { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+td.LeftSpacedTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; text-align: left; }
+.SmallText { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+td.SpacedTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; }
+td.SpacedBoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; font-weight: bold; }
+td.RightSpacedTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; text-align: right; }
+td.RightSpacedBoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; text-align: right; font-weight: bold; }
+td.LeftSpacedBoldTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; height: 40px; text-align: left; font-weight: bold; }
+
+td.ButtonTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td.AlignedButtonTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; }
+td.ListLinkTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; width: 40px; text-align: center; }
+td.ErrorAmountTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: right; }
+td.AmountTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; width: 0px; text-align: right; }
+td.BlankTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; width: 700px; }
+td.DescriptionTD { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; white-space: nowrap; }
+
+a.List { text-decoration: underline; font-weight: normal; font-style: normal; }
+a.List:hover { text-decoration: underline; font-weight: normal; font-style: normal; }
+a.List:link { text-decoration: underline; font-weight: normal; font-style: normal; }
+a.List:active { text-decoration: underline; font-weight: normal; font-style: normal; }
+
+a.Calendar { text-align: center; text-decoration: underline; font-size: 11px; }
+a.Calendar:hover { text-align: center; text-decoration: underline; font-size: 11px; }
+a.Calendar:link { text-align: center; text-decoration: underline; font-size: 11px; }
+a.Calendar:active { text-align: center; text-decoration: underline; font-size: 11px; }
+
+a.Header { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.Header:hover { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.Header:link { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.Header:active { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.SubHeader { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.SubHeader:hover { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.SubHeader:link { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.SubHeader:active { text-decoration: none; font-weight: bold; font-size: 12px; }
+a.SmallText { text-decoration: none; font-weight: bold; font-size: 10px; }
+a.SmallText:hover { text-decoration: none; font-weight: bold; font-size: 10px; }
+a.SmallText:link { text-decoration: none; font-weight: bold; font-size: 10px; }
+a.SmallText:active { text-decoration: none; font-weight: bold; font-size: 10px; }
+a.qtip-icon, a.qtip-icon:hover { color: transparent; text-indent: -9999px; background: url(../NewTeller/Images/buttons_sprite.png) no-repeat -4px -2px; width: 19px; height: 19px; }
+
+input.ColorButton { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; vertical-align: top; text-decoration: none; white-space: nowrap; font-weight: bold; line-height: 18px; }
+a.ColorButton { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; vertical-align: top; text-decoration: none; white-space: nowrap; font-weight: bold; line-height: 18px; border:outset; padding-left: 10px; padding-right: 10px; padding-top: 3px; padding-bottom: 3px; }
+a.ColorButton:hover {
+    text-decoration: none;
+    color: white;
+}
+a.ColorButton:visited {
+    color: white;
+}
+
+select { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; vertical-align: middle; text-decoration: none; white-space: nowrap; }
+
+/* For the available funds display on InterbankTransferAddTransfers.aspx */
+table.available-balance { width: 1px; border-collapse: collapse;  font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; margin: 0 15px 0 15px; }
+table.available-balance th { font-weight: bold; white-space: nowrap; padding-left: 3px; }
+table.available-balance td { white-space: nowrap; padding-left: 3px; }
+table.available-balance td.money-text { text-align: right; white-space: nowrap; padding-left: 3px;}
+
+/* For the Available Accounts table on MobileWebSettingsEdit.aspx */
+.MobileAccountsTable {width:auto;}
+.MobileAccountsTable td{ vertical-align:top; padding-right:20px; padding-bottom:10px;}
+
+/* For the Available Accounts Grid on MobileTextSettingsEdit.aspx & MobileTextSettingsConfirm.aspx */
+.MobileAccountsGrid .GridHeader{ border-bottom: solid 1px black; background-color:#ffffff;}
+.MobileAccountsGrid .GridHeader td{ padding-bottom:5px; padding-top:5px; font-weight:bold;}
+.MobileAccountsGrid .Grid1stItem td{padding-top:4px;}
+.MobileAccountsGrid .GridItem td{ padding-top:1px;}
+.MobileAccountsGrid .GridAltItem td{padding-top:1px;}
+
+/* For the Scheduled Payments Grid on ViewScheduledPayments.aspx  */
+.ScheduledPaymentsGrid .EditPaymentCheckboxColumn{padding-right:5px; padding-left:5px; text-align:center; width:25px; }
+.ScheduledPaymentsGrid .PayeeNameColumn {padding-right:25px; padding-left:5px; text-align:left;}
+.ScheduledPaymentsGrid .PayeeTypeColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.ScheduledPaymentsGrid .AmountColumn {padding-right:5px; padding-left:5px; text-align:right;}
+.ScheduledPaymentsGrid .PayFromAccountColumn {padding-right:5px; padding-left:5px; text-align:left;}
+.ScheduledPaymentsGrid .PaymentFrequencyColumn {padding-right:5px; padding-left:5px; text-align:left;}
+.ScheduledPaymentsGrid .PaymentDateColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.ScheduledPaymentsGrid .EstimatedArrivalDateColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.ScheduledPaymentsGrid .IsGuaranteedPaymentColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.ScheduledPaymentsGrid .PaymentActionColumn {padding-right:5px; padding-left:5px; text-align:left; width:150px;}
+.ScheduledPaymentsGrid .altColor { height:20px; }
+.ScheduledPaymentsGrid .itemRow { height:20px; }
+.ScheduledPaymentsGrid .grandTotal { vertical-align:middle; text-align:right; }
+.ScheduledPaymentsGrid .th{white-space:nowrap;}
+.ScheduledPaymentsGrid tr.Total { height:25px !important; font-weight:bold; vertical-align:middle !important;}
+.ScheduledPaymentsGrid .Total .buttonContainer{ vertical-align:top; padding:0px;}
+.ScheduledPaymentsGrid .Total .buttonContainer .datagrid{ width:auto;}
+.ScheduledPaymentsGrid .Total .buttonContainer .editButton{ padding:0px 40px 0px 5px;}
+.ScheduledPaymentsGrid .Total .buttonContainer .editButton,.ScheduledPaymentsGrid .Total .buttonContainer .editButton:hover {text-decoration: underline !important;}
+.ScheduledPaymentsGrid .Total .emptyContainer{ vertical-align:top; padding:0px;}
+.ScheduledPaymentsGrid .Total .buttonContainer .btnEditContainer{ vertical-align:top; padding:0px;}
+.ScheduledPaymentsGrid .Total .grandTotalsTitle{ position:relative; text-align:right;}
+.ScheduledPaymentsGrid .Total .GridTotals{ position:relative; left:0px; top:2px; display:block; text-align:right; padding-right:5px;}
+.ScheduledPaymentsGrid .Total .ColorButton{ position:relative; left:0px; top:20px; display:block;}
+.ScheduledPaymentsGrid .Total .PayeeNameColumn {padding-right:5px; padding-left:5px; text-align:left; vertical-align:top;}
+.ScheduledPaymentsGrid .Total .AmountColumn {padding-right:5px; padding-left:5px; text-align:right; vertical-align:top;}
+
+/*for the payments quick edit grid on QuickEdit page
+.PaymentQuickEditGrid td tr { background-color:none; }
+.PaymentQuickEditGrid table tr { background-color:none; }*/
+.PaymentsQuickEditBlock .MainContent .buttonsContainer{width:auto; height:40px; padding:10px 10px 10px 10px; text-align:right;}
+.PaymentsQuickEditBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.PaymentsQuickEditBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.PaymentsQuickEditBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin: 0px 5px 0px 0px;}
+.PaymentsQuickEditBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin: 0px 0px 0px 5px;}
+
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer{width:auto; height:40px; padding:10px 10px 10px 10px; text-align:right;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnEditContainer{text-align:left; display:inline;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin: 0px 5px 0px 0px;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnEditContainer .editButton{margin: 0px 0px 0px 5px;}
+.PaymentsQuickEditConfirmBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin: 0px 0px 0px 5px;}
+
+.PaymentQuickEditGrid .ErrorImageColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; width: 15px;}
+.PaymentQuickEditGrid .PayeeNameColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .PayeeTypeColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap; text-align:center;}
+.PaymentQuickEditGrid .AmountColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .PaymentFrequencyColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .PayFromAccountColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .PaymentDateColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .EstimatedArrivalDateColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.PaymentQuickEditGrid .IsGuaranteedPaymentColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+/*.PaymentQuickEditGrid .IsGuaranteedPaymentColumn span{position:relative; vertical-align:middle;}
+.PaymentQuickEditGrid .IsGuaranteedPaymentColumn input{position:relative; float:left;}*/
+.PaymentQuickEditGrid .PaymentMemoColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+
+/*for the quick payments edit grid on QuickPaymentEditPayments page
+.QuickPaymentsDataGrid td tr { background-color:none; }
+.QuickPaymentsDataGrid table tr { background-color:none; }*/
+.QuickPaymentsDataGrid .ErrorImageColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; width: 15px;}
+.QuickPaymentsDataGrid .PayeeNameColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .PayeeTypeColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap; text-align:center;}
+.QuickPaymentsDataGrid .AmountColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .PaymentFrequencyColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .PayFromAccountColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .PayFromAccountColumn .payFromAccountDDLWidth{ width:150px;}
+.QuickPaymentsDataGrid .PayFromAccountColumn .payFromAccountDDLNoWidth{}
+.QuickPaymentsDataGrid .PaymentDateColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .EstimatedArrivalDateColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+.QuickPaymentsDataGrid .IsGuaranteedPaymentColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+/*.QuickPaymentsDataGrid .IsGuaranteedPaymentColumn span{position:relative; vertical-align:middle;}
+.QuickPaymentsDataGrid .IsGuaranteedPaymentColumn input{position:relative; float:left;}*/
+.QuickPaymentsDataGrid .PaymentMemoColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap;}
+
+.TransactionsDataGrid { padding: 1px 0px 1px 0px; }
+.TransactionsDataGrid td { padding: 2px 2px 2px 2px; }
+
+/*layout for recurring payments page*/
+.rpTable{width:auto; margin:25px;}
+.rpLabelCol{ padding-bottom:2px; padding-top:2px; width: 225px; padding-right:10px; white-space:nowrap; font-weight:bold;}
+.rpFieldCol{padding-bottom:2px; padding-top:2px; white-space:nowrap;}
+.rpErrorImgShow{display:inline;}
+.rpErrorImgHide{display:none;}
+
+/* For the View Payees Grid on ViewPayees.aspx  */
+.ViewPayeesGrid .PayeeNameColumn {padding-right:25px; padding-left:10px; text-align:left;}
+.ViewPayeesGrid .PayeeTypeColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.ViewPayeesGrid .PayFromAccountColumn {padding:0px 10px 0px 10px; text-align:left;}
+.ViewPayeesGrid .LastPaidDateColumn {padding: 0px 10px 0px 10px; text-align:center;}
+.ViewPayeesGrid .PayeeActionColumn {padding: 0px 10px 0px 10px; text-align:left; width:150px;}
+.ViewPayeesGrid .th{white-space:nowrap;}
+
+/* For the CPayeeToEGrid on PayeeNotification.aspx  */
+.CPayeeToEGrid .PayeeNameColumn {padding-right:10px; padding-left:5px; text-align:left;}
+.CPayeeToEGrid .PayeeAliasColumn {padding-left:5px; text-align:left;}
+.CPayeeToEGrid .AcceptCheckboxColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.CPayeeToEGrid .th{white-space:nowrap;}
+
+#toolTipDiv{position:absolute;padding: 10px;border:1px solid black;font-size:10px;z-index:100;margin: 10px;width: 200px;}
+
+
+/* Watermarks */
+.watermark { color: #AAA; }
+.watermarkImageBorder { border: 1px solid; height:120px;width:120px; }
+
+/* Override Default jqGrid Whitespace */
+.ui-jqgrid tr.jqgrow td { white-space: nowrap !important; }
+
+/* Ajax Message */
+.ajax-message { border: solid 1px gray; margin: 20px; padding: 20px; text-align: center; border-radius: 5px 5px 5px 5px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
+.ajax-message-header { font-weight: bold; }
+
+/* MyNetTeller Page */
+#mynetteller-action-links { margin: -5px 0 20px 0px; }
+#widget-table { width: 100%; }
+#widget-table .widget-column { vertical-align: top; }
+#widget-table .widget-column-left { padding: 10px 10px 10px 0; }
+#widget-table .widget-column-center { padding: 10px; }
+#widget-table .widget-column-right { padding: 10px 0 10px 10px; }
+#widget-table .widget-column-left-bp  { padding: 10px 10px 10px 0; }
+#widget-table .widget-column-right-bp { padding: 10px 0 10px 10px; float: none; }
+#ajax-loading-container { bottom: 0; right: 0; height: 100px; position: fixed; width: 275px; }
+.ajax-loading-content  { background: url('../../images/loading.gif') no-repeat 0 50%; font-weight: bold; padding-left: 20px; }
+.modal-loading-content { background: url('../../images/loading.gif') no-repeat 0 50%; font-weight: bold; padding-left: 20px; background-position:50%; text-align:center}
+
+
+/* Widget Shell */
+.widget-container { margin-bottom: 10px; width: 100%; }
+.widget-container  .ErrorMessageLabel { padding-left: 10px; }
+.widget-header .widget-icons-cell { text-align: right; }
+.widget-header img { border: none; padding: 0 0 0 4px; }
+.widget-header table { border-spacing: 0; *border-collapse: collapse; clear: left; width: 100%; }
+.widget-content { border: 1px solid gray; padding: 0px; text-align: left; }
+.widget-content .loading { background: url('../../images/loading.gif') no-repeat 0 0; font-weight: bold; height: 75px; margin: 10px 20px 10px 10px; padding-left: 20px; }
+.widget-content .widget-button-container { padding: 5px; text-align: center; }
+/*.widget-footer-last-col,.widget-header-last-col { width: 17px !important; }*/
+
+/* For widgets that have datagrid and potential overflow
+    Gets the scrollbar width so can insert a column in the header and footer of the appropriate size
+    Each browser can potentially give a different value
+*/
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
+
+
+
+.widget-header-graphic
+{
+  width:22px;
+  height:20px;
+  padding: 0px 0px 0px 22px;
+}
+
+.widget-header-graphic-info
+{
+  background: url(../Images/background.png) no-repeat 0 50%;
+}
+
+.widget-header-graphic-config
+{
+  background: url(../../Images/configure.gif) no-repeat 0 50%;
+}
+
+.widget-header-graphic-nav
+{
+  background: url(../../Images/go.gif) no-repeat 0 50%;
+}
+
+.widget-header-graphic-remove
+{
+  background: url(../../Images/close.gif) no-repeat 0 50%;
+}
+
+.widget-content .datagrid th
+{ padding: 1px 5px 1px 5px; }
+
+/* GoTo Widget */
+.widget-content #goto-container { height: 80px; margin: 2px 0px; text-align: center; overflow: auto; }
+/*.widget-content #goto-container { height: 100px; margin-left: 0px; text-align: left; overflow: auto; }*/
+#goto-container .goto-row td { padding: 1px 5px 1px 10px; text-align:left; }
+
+.widget-content #goto-items li { margin: 2px 0 2px 0; }
+
+/* Transfer Widget */
+.widget-content #transfer-widget-container { padding: 5px 10px 5px 5px; }
+.widget-content #transfer-widget-container label { display: block; font-size: .9em; font-weight: bold; margin: 8px 0 2px 0; }
+.widget-content #transfer-widget-container input[type=text] { margin: 0px 0px 0px 0px;  text-align: right; width: 97%; }
+.widget-content #transfer-widget-container select { margin: 0px 0px 0px 0px; width: 100%;  }
+
+/* Internal NonOwned Transfer Widget */
+.widget-content #nonowned-transfer-widget-container { padding: 5px 10px 5px 5px; }
+.widget-content #nonowned-transfer-widget-container label { display: block; font-size: .9em; font-weight: bold; margin: 8px 0 2px 0; }
+.widget-content #nonowned-transfer-widget-container input[type=text] { margin: 0px 0px 0px 0px; width: 97%; }
+.widget-content #nonowned-transfer-widget-container select { margin: 0px 0px 0px 0px; width: 100%;  }
+
+/* Internal MultiCurrency Transfer Widget */
+.widget-content #multicurrency-transfer-widget-container { padding: 5px 10px 5px 5px; }
+.widget-content #multicurrency-transfer-widget-container label { display: block; font-size: .9em; font-weight: bold; margin: 8px 0 2px 0; }
+.widget-content #multicurrency-transfer-widget-container input[type=text] { margin: 0px 0px 0px 0px; width: 97%; }
+.widget-content #multicurrency-transfer-widget-container select { margin: 0px 0px 0px 0px; width: 100%;  }
+
+/* International Wire Widget */
+.widget-content #intl-wire-widget-container { padding: 5px 10px 5px 5px; }
+.widget-content #intl-wire-widget-container label { display: block; font-size: .9em; font-weight: bold; margin: 8px 0 2px 0; }
+.widget-content #intl-wire-widget-container input[type=text] { margin: 2px 0px 0px 0px;  text-align: left; width: 97%; }
+.international-wire-td { padding:5px;vertical-align:top;width:50%; }
+.international-wire-currency-left { float:left; width:40%; }
+.international-wire-currency-right { float:right;  width:60%; }
+.international-wire-clear { clear:both; }
+.international-wire-account, .international-wire-account-type, .international-wire-currency, .international-wire-bank-code-type { width: 99%;  }
+.international-wire-address4, .international-wire-bank-country { width: 99%; }
+
+/* Payment Widget */
+.widget-content #payment-widget-container { padding: 5px 10px 5px 10px; }
+.widget-content #payment-widget-container label { display: block; font-size: .9em; font-weight: bold; margin: 8px 0 2px 0; }
+.widget-content #payment-widget-container input[type=text] { text-align: right; width: 142px; }
+.widget-content #payment-widget-container select { margin: 0 0 2px 17px; width: 145px; }
+
+/* Account List Widget */
+.account-list-container { height: auto; margin-left: 0px; padding: 0px 0px 0px 0px; overflow: auto; overflow-x: hidden; }
+.account-list-container .account-row td { padding: 1px 5px 1px 5px; }
+
+.account-list-container .account-row-over { cursor: default; }
+
+.account-list-data-container { height: 65px; overflow: auto; }
+
+.account-list-container .account-type-cell { width: 22px; text-align: center; }
+.account-list-container .account-name-cell { width: auto; }
+.account-list-container .account-balance-cell { width: 120px; text-align: right; }
+.account-list-container .account-money-cell { width: auto; text-align: right; }
+.account-list-container .account-info-link-cell { width: 75px; text-align: center; }
+.account-list-container .account-date-cell { width: 85px; text-align: right; }
+
+/* Account List Template Widget */
+.account-list-template-container { height: auto; margin-left: 0px; padding: 0px 0px 0px 0px; overflow-y: auto; overflow-x: hidden; }
+.account-list-template-data-big { max-height: 332px; height: auto; overflow-y: auto; }
+.account-list-template-data-small { max-height: 162px; height: auto; overflow-y: auto;  }
+.account-list-template-footer-row-total {
+    border-width: 1px 0px 1px 0px !important;
+    border-style: solid none solid none !important;
+    border-top-color: #E2E2E2 !important;
+    border-bottom-color: #E2E2E2 !important;
+    background-color: #fff !important;
+}
+.account-list-template-footer-cell-total-text { padding-left: 5px; }
+.account-list-template-footer-cell-total { padding-right: 5px; font-weight: bold !important; }
+
+
+.account-list-template-container table { table-layout: fixed;  padding: 0 0 0 0; }
+
+.account-list-template-container .account-row td { padding: 1px 5px 1px 5px; }
+
+.account-list-template-container .account-row-over { cursor: default; }
+
+.account-list-template-container .account-name-cell { width: 23%; text-align: left; }
+
+.account-list-template-container .account-number-cell { width: 15%; text-align: left; }
+.account-list-template-container .account-loandesc-cell {  width: 15%;text-align: left; }
+
+.account-list-template-container .account-desc-cell {  width: 20%; text-align: left; }
+.account-list-template-container .account-date-cell { width: 20%; text-align: right; }
+
+.account-list-template-container .account-money-cell { width: 15%; text-align: right; }
+
+.account-list-template-container .account-info-link-cell { width: 12%; text-align: center; }
+
+.account-list-template-container .account-name-cell-nohost  {  width: 38%; text-align: left; }
+.account-list-template-container .account-desc-cell-nohost  {  width: 35%; text-align: left; }
+
+
+/* AccountList Loans Widget*/
+.account-loanlist-container { height: auto; margin-left: 0px; padding: 0px 0px 0px 0px; overflow-y: auto; overflow-x: hidden; }
+.account-loanlist-data { max-height: 102px; height: auto; overflow-y: auto;  }
+.account-loanlist-container table { table-layout: fixed;  padding: 0 0 0 0; }
+.account-loanlist-container .account-row td { padding: 1px 5px 1px 5px; }
+.account-loanlist-container .account-row-over { cursor: default; }
+.account-loanlist-container .account-number-cell { width: 23%; text-align: left; }
+.account-loanlist-container .account-loandesc-cell {  width: 15%;text-align: left; }
+.account-loanlist-container .account-interest-cell {  width: 10%; text-align: right; }
+.account-loanlist-container .account-date-cell { width: 20%; text-align: right; }
+.account-loanlist-container .account-money-cell { width: 15%; text-align: right; }
+.account-loanlist-container .account-info-link-cell { width: 12%; text-align: center; }
+.LoanInfoDiv { display: none; }
+.LoanInfoDialogWrapper { width:475px; }
+.LoanInfoDialogLabelColumn{ height:200px; display:block; float:left; margin-left: 50px; }
+.LoanInfoDialogDataColumn{  display:block;  text-align: right;  margin-right: 75px;}
+.LoanInfoDialogHeader { height: 50px;  margin-top: 20px;  text-align: center; }
+.LoanInfoDialogAccountRow {  margin-bottom: -5px;}
+.LoanInfoDialogAccount { color: #0069a9;}
+.LoanInfoDialogPastDueWarning { color: #fe0000;}
+
+/* 10 Day Payoff Loan Widget*/
+.tendaypayoff-loan-container { height: 115px; padding-top:5px; padding-bottom:5px; padding-left:1px; padding-right:0px;  overflow: auto; overflow-x: hidden;}
+.tendaypayoff-loan-container table { border-collapse: collapse; border-spacing: 0; }
+.tendaypayoff-loan-container .tendaypayoff-loan-row td { padding: 0px 5px 0px 10px;  height: 18px; }
+.tendaypayoff-loan-container .tendaypayoff-loan-title-row {font-weight: bold;}
+
+
+/* Welcome Widget */
+.WelcomeWidget { padding: 10px 20px 10px 20px; }
+
+/* Download Widget */
+.DownloadWidget .downloadwidgettable { border: none; width:100%; }
+.DownloadWidget .downloadwidgettable .item-row td { padding: 2px 2px 3px 2px; }
+.DownloadWidget select { margin: 0 0 2px 5px; width: 165px; }
+.dl-begindate, .dl-enddate { width:75px; }
+
+/* Alerts Widget */
+.AlertsWidget { padding: 5px 10px 5px 10px; }
+.AlertsWidget .alertswidgettable { border: none; width:100%; }
+.AlertsWidget .alertswidgettable td { padding: 2px 2px 3px 2px; }
+
+/* Messages Widget */
+.MessagesWidget { padding: 5px 10px 5px 10px; }
+.MessagesWidget td { padding: 4px 2px 4px 2px; }
+
+/* In Channel Messaging Widget */
+.InChannelMessagingWidget { height: 150px; padding: 5px 10px 5px 10px; overflow-y:auto }
+.InChannelMessagingWidget td { padding: 4px 2px 4px 2px; }
+
+/* Recent Transactions Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.recent-transactions-list-container { height: auto; padding: 0px 0px 5px 0px; overflow: auto; overflow-x: hidden; }
+
+.recent-transactions-list-container .transaction-row td { padding: 1px; }
+.recent-transactions-list-container .transaction-row-over { cursor: default; }
+.recent-transactions-list-container .transaction-balance-cell { text-align: right; padding-right: 30px; }
+
+.recent-transactions-data-container { height: 160px; overflow: auto; }
+
+/*
+.recent-transactions-container .trans-row td { padding: 1px; }
+*/
+.recent-transactions-container { height: auto; padding: 0px 0px 0px 0px; overflow: auto; overflow-x: hidden; }
+.recent-transactions-container .trans-row td { padding: 1px 5px 1px 5px; }
+
+
+.recent-transactions-container .trans-row-over { cursor: default; }
+
+.recent-transactions-container .trans-date-cell { width: 75px; text-align: center; }
+.recent-transactions-container .trans-cell { width: auto; }
+.recent-transactions-container .trans-amount-cell { width: 120px; text-align: right; }
+
+/* Scheduled Transfers Widget */
+.scheduled-transfers-container { height: auto; padding: 0px; }
+.scheduled-transfers-container .transfer-row td { padding: 1px 5px 1px 5px; }
+
+.scheduled-transfers-container .transfer-row-over { cursor: default; }
+.stmodal-data { font-weight:bold; padding: 0px 5px 0px 5px; text-align:left; }
+
+.scheduled-transfers-data-container { height: 65px; overflow: auto; }
+
+.scheduled-transfers-container .transfer-date-cell { width: 85px; } /* wider for text in date cell */
+.scheduled-transfers-container .transfer-cell { width: auto; }
+.scheduled-transfers-container .transfer-amount-cell { width: 120px; text-align: right; }
+.scheduled-transfers-container .transfer-link-cell { width: 75px; text-align: center; }
+
+/* Recent Transfers Widget */
+.recent-transfers-container { height: auto; padding: 0px; }
+.recent-transfers-container .transfer-row td { padding: 1px 5px 1px 5px; }
+
+
+.recent-transfers-container .transfer-row-over { cursor: default; }
+.rtmodal-data { font-weight:bold; padding: 0px 5px 0px 5px; text-align:left; }
+
+.recent-transfers-data-container { height: 65px; overflow: auto; }
+
+.recent-transfers-container .transfer-date-cell { width: 75px; }
+.recent-transfers-container .transfer-cell { width: auto; }
+.recent-transfers-container .transfer-amount-cell { width: 120px; text-align: right; }
+.recent-transfers-container .transfer-link-cell { width: 75px; text-align: center; }
+
+/* Saved Report Widget*/
+.SavedReportWidget { max-height: 122px; height: auto; overflow-y: auto; }
+
+/* jQuery Modal iframe Content */
+iframe .modal-frame { border: none; height: 100%; width: 100%; }
+.modal-container { margin: auto auto; }
+
+.modal-body
+{
+    color: #000;
+    background-image: none;
+    min-width: 0px;
+    margin: 5px 5px 5px 5px;
+    width:98%;
+    background: none;
+}
+
+/* Multi Quick Payment Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.multi-quick-payment-container { height: auto; margin-left: 0px; padding: 0px 0px 0px 0px; overflow: auto; overflow-x: hidden; }
+.multi-quick-payment-container .multi-quick-payment-content { max-height: 300px; overflow: auto; margin:0px 0px 0px 0px;font-weight:normal !important;}
+.multi-quick-payment-container .PayeeAmountContainer { height:auto; width: auto; vertical-align:bottom; text-align: right; }
+.multi-quick-payment-container .multi-quick-payment-last-col{ padding: 0px 25px 0px 0px !important; vertical-align:bottom !important; }
+.multi-quick-payment-container .multi-quick-payment-content.PayeeAmountContainer { padding: 0px 5px 0px 0px; }
+.multi-quick-payment-container div.PayeeNameContainer { width: auto; }
+.multi-quick-payment-container th.PayeeNameContainer { width: auto; padding-left: 10px!important; }
+.multi-quick-payment-container .payee-row td{ padding:5px 5px 5px 10px;}
+.multi-quick-payment-container .paymentTotalsDiv {width:100%;}
+.multi-quick-payment-container .paymentTotalsDiv .qpPaymentsTotal{text-align:right;padding:0px 25px 0px 0px;}
+.multi-quick-payment-container .widget-button-container {margin:5px 0px 0px 0px; }
+.multi-quick-payment-container .lastPaidDateContainer{ float:left; text-align: left; font-size:10px; font-style:italic; vertical-align:top; width:auto;}
+.multi-quick-payment-container input[type=button] { margin-bottom: 10px; margin-top: -10px; }
+.MultiQuickPaymentsDataGrid .PayeeNameColumn{padding-bottom:1px; padding-top:1px; padding-right:5px; padding-left:5px; white-space:nowrap; width: 100%;}
+.quickPaymentPayee {width:75px;}
+
+/*Account Selector Widget*/
+.account-selector-container { width: 100%; text-align: center; white-space:nowrap; vertical-align:middle; }
+.account-selector-container .field-label {top:2px; font-weight:bold; width: 20%; vertical-align:middle; text-align: right; padding: 0px 5px 0px 5px; }
+.account-selector-container  .account-selector-content{width:100%; }
+.account-selector-container .PayFromAccountContainer { width: 100%; vertical-align:middle; }
+.account-selector-container .PayFromAccountContainer select{ width: 80%; }
+
+.PaymentCenterAccountSelector{padding:10px !important;}
+.PaymentCenterAccountSelector .rpLabelCol{ text-align:left;width:50px; padding:0px !important;}
+.PaymentCenterAccountSelector .rpFieldCol{ text-align:left; padding:0px !important;}
+.PaymentCenterAccountSelector .rpFieldCol .selectedIndex{width:100%;}
+
+/* Recent Statement Widget */
+/*
+.statement-list-container { height: 62px; padding: 5px 10px 5px 10px; overflow: auto; overflow-x: hidden; }
+.statement-list-container .statement-row td { padding: 1px; }
+*/
+.statement-list-container { height: auto; padding: 0px; }
+.statement-list-container .statement-row td { padding: 1px 5px 1px 5px; }
+
+.statement-list-container .statement-row-over { cursor: default; }
+
+.statement-list-data-container { height: 65px; overflow: auto; }
+
+.statement-list-container .statement-name-cell { width: auto; }
+.statement-list-container .statement-date-cell { width: 70px; text-align: center; }
+.statement-list-container .statement-view-link-cell { width: 75px; text-align: center; }
+.statement-list-container .statement-info-link-cell { width: 75px; text-align: center; }
+
+/* PowerOn Widget */
+.poweron-list-container { height: 62px; padding: 5px 10px 5px 10px; overflow: auto; overflow-x: hidden; }
+.poweron-list-container .poweron-row td { padding: 1px; }
+.poweron-list-container .poweron-row-over { cursor: default; }
+.poweron-list-container .poweron-cell { text-align: left; padding-right: 30px; }
+
+/* Scheduled Payments Widgets */
+.scheduled-payments-container .EditPaymentCheckboxColumn{text-align:center; width:30px; padding-left:5px; padding-right:5px; }
+.scheduled-payments-container .PayeeNameColumn {text-align:left;  width:auto;  padding-left:5px; padding-right:5px;}
+.scheduled-payments-container .PayeeTypeColumn {text-align:center; width:40px;  padding-left:5px; padding-right:5px;}
+.scheduled-payments-container .AmountColumn { text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.scheduled-payments-container .PayFromAccountColumn {text-align:left; width:140px;  padding-left:5px; padding-right:5px;}
+.scheduled-payments-container .PaymentFrequencyColumn { text-align:left; width:50px;  padding-left:5px; padding-right:5px;}
+.scheduled-payments-container .PaymentDateColumn { text-align:center; width:85px;  padding-left:5px; padding-right:5px ;}
+.scheduled-payments-container .EstimatedArrivalDateColumn { text-align:center; width:85px;  padding-left:5px ; padding-right:5px ;}
+.scheduled-payments-container .IsGuaranteedPaymentColumn { text-align:center; width:75px;  padding-left:5px ; padding-right:5px ;}
+.scheduled-payments-container .scheduled-payments-table div { padding: 0; margin: 0; }
+.scheduled-payments-container .total-cell { font-weight: bold; }
+.scheduled-payments-data-container
+{
+    vertical-align: top;
+    max-height: 250px;
+    overflow: auto;
+    height: auto;
+}
+
+.processed-payments-container .PayeeNameColumn {text-align:left;  width:auto;  padding-left:10px !important; padding-right:5px;}
+.processed-payments-container .PayeeTypeColumn {text-align:center; width:40px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .AmountColumn { text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .PayFromAccountColumn {text-align:left; width:140px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .ProcessDateColumn { text-align:center; width:85px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .PaymentStatusColumn {text-align:center; width:85px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .ConfirmationNumberColumn { text-align:center; width:85px;  padding-left:5px; padding-right:5px;}
+.processed-payments-container .payment-row-over { cursor: default; }
+.processed-payments-data-container
+{
+    vertical-align: top;
+    max-height: 250px;
+    overflow: auto;
+}
+
+/* Non-Cleared Payments Widgets */
+
+.noncleared-payments-container .PayeeNameColumn {text-align:left;  width:auto;  padding-left:10px !important; padding-right:5px;}
+.noncleared-payments-container .PayeeTypeColumn {text-align:center; width:40px;  padding-left:5px; padding-right:5px;}
+.noncleared-payments-container .AmountColumn { text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.noncleared-payments-container .PayFromAccountColumn {text-align:left; width:140px;  padding-left:5px; padding-right:5px;}
+.noncleared-payments-container .ProcessDateColumn { text-align:center; width:90px;  padding-left:5px; padding-right:5px;}
+.noncleared-payments-container .CheckNumberColumn { text-align:center; width:85px;  padding-left:5px; padding-right:5px;}
+.noncleared-payments-data-container
+{
+    vertical-align: top;
+    max-height: 250px;
+    overflow: auto;
+    height: auto;
+}
+.noncleared-payments-container .payment-row-over { cursor: default; }
+
+/* Did You Know */
+.dykwidgettitlearea { margin-bottom: 5px; }
+.dykwidgettextarea { text-align:right; }
+.dyktitlebold { font-size: 13px; font-weight:bold; }
+.hypdyk { text-align:right; font-weight:bold; }
+#dyk-container ol li { left:0px; padding-bottom:5px; }
+#dyk-container ol a { text-decoration: none; font-size: 12px; }
+
+.dykmodaltitlearea { margin-bottom: 5px; }
+.dyklistdiv { margin-bottom: 5px; }
+.dyklistdiv a { color: #666666; }
+.dyklisttitle { font-weight:bold; }
+.dykmodaltextarea { font-size: 13px; }
+
+table.dykwidgettable {
+  padding: 10px;
+}
+
+/* Scheduled IBT Widget */
+.scheduled-ibt-container { height: auto; padding: 0px; }
+.scheduled-ibt-container .transfer-row td { padding: 1px 5px 1px 5px; }
+
+
+.scheduled-ibt-container .transfer-row-over { cursor: default; }
+
+.scheduled-ibt-container .transfer-date-cell { width: 70px; }
+.scheduled-ibt-container .transfer-amount-cell { text-align: right; padding-right: 30px; }
+.scheduled-ibt-container .transfer-link-cell { text-align: center; width: 55px; }
+
+.stmodal-data { font-weight:bold; padding: 0px 5px 0px 5px; text-align:left; }
+
+.scheduled-ibt-data-container { height: 65px; overflow: auto; }
+
+/* Recent IBT Widget */
+.recent-ibt-container { height: auto; padding: 0px; }
+.recent-ibt-container .transfer-row td { padding: 1px 5px 1px 5px; }
+
+.recent-ibt-container .transfer-row-over { cursor: default; }
+
+.recent-ibt-container .transfer-date-cell { width: 70px; }
+.recent-ibt-container .transfer-amount-cell { text-align: right; padding-right: 30px; }
+.recent-ibt-container .transfer-link-cell { text-align: center; width: 55px; }
+
+.recent-ibt-data-container { height: 65px; overflow: auto; }
+
+/* ESI Widget */
+.esi-list-container { height: auto; padding: 0px; }
+.esi-list-container .esi-row td { padding: 1px 5px 1px 5px; }
+
+.esi-list-container .esi-name-cell { width: auto; }
+.esi-list-container .esi-date-cell { width: 70px; text-align: center; }
+.esi-list-container .esi-view-link-cell { width: 55px; text-align: center; }
+
+.esi-list-data-container { height: 65px; overflow: auto; }
+
+/* Recent ACH Widget */
+.recent-ach-container { height: auto; padding: 0px; }
+.recent-ach-container .ach-row td { padding: 1px 5px 1px 5px; }
+
+.recent-ach-container .ach-row-over { cursor: default; }
+.recent-ach-container .ach-date-cell { width: 70px; }
+.recent-ach-container .ach-amount-cell { width: 100px; text-align: right;}
+.recent-ach-container .ach-link-cell { width: 55px; text-align: center; }
+
+/* Recent ACH Widge Ext */
+.recent-ach-container .ach-date-cell-ext { width: 100px; }
+
+.recent-ach-data-container { height: 65px; overflow: auto; }
+
+/* Initiated Batches Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.batches-ach-container { height: auto; padding: 0px; }
+.batches-ach-container .ach-row td { padding: 1px 5px 1px 5px; }
+
+
+.batches-ach-container .ach-cell { min-width: 135px; width: auto; }
+.batches-ach-container .ach-company-cell { min-width: 135px; width: auto; }
+.batches-ach-container .ach-sec-cell { width: 45px; }
+.batches-ach-container .ach-name-cell { width: 70px; }
+.batches-ach-container .ach-amount-cell { width: 100px; text-align: right; }
+.batches-ach-container .ach-viewlink-cell { text-align: center; width: 55px; }
+.batches-ach-container .ach-approvelink-cell { text-align: center; width: 55px; }
+
+.batches-ach-data-container { height: 65px; overflow: auto; }
+
+/* Recent Payments Widget */
+.recent-payments-container { height: auto; margin-left: 0px; padding: 0px; overflow: auto; overflow-x: hidden; }
+.recent-payments-container .tr td { padding: 1px 5px 1px 5px; }
+.recent-payments-container .payment-row td { padding: 1px 5px 1px 5px; }
+
+
+.recent-payments-data-container { height: 65px; overflow: auto; }
+
+.recent-payments-container .payee-name-cell { width: auto; padding-left:10px !important;}
+.recent-payments-container .payment-amount-cell { text-align: right; width: 100px; }
+.recent-payments-container .payment-date-cell { text-align: center; width: 85px; }
+.recent-payments-container .payment-link-cell { text-align: center; width: 55px; }
+
+.recent-payment-modal-container { margin: 0; padding: 0; }
+.recent-payment-modal-container fieldset { margin: 10px 20px 10px 0; }
+.recent-payment-modal-container fieldset legend { font-weight: bold; padding: 2px 10px 2px 10px; }
+.recent-payment-modal-container table { margin: 5px 10px 5px 10px; }
+.recent-payment-modal-container table tr td { padding: 0 0 5px 0; vertical-align: top; }
+.recent-payment-modal-container .bold { font-weight: bold; }
+
+/* Wires Transmitted Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.wires-xmitted-container { height: auto; padding: 0px; }
+.wires-xmitted-container .wire-row td { padding: 1px 5px 1px 5px; }
+
+.wires-xmitted-container .wire-row-over { cursor: default; }
+
+.wires-xmitted-data-container { height: 65px; overflow: auto; }
+
+.wires-xmitted-container .wire-cell { width: auto; }
+.wires-xmitted-container .wire-account-cell { width: 200px; }
+.wires-xmitted-container .wire-date-cell { width: 70px; text-align: center; }
+.wires-xmitted-container .wire-amount-cell { width: 100px; text-align: right; }
+.wires-xmitted-container .wire-link-cell { width: 55px; text-align: center; }
+
+/* Wires Awaiting Approval Widget */
+.wires-awaiting-container { height: auto; padding: 0px; }
+.wires-awaiting-container .wire-row td { padding: 1px 5px 1px 5px; }
+
+.wires-awaiting-container .wire-row-over { cursor: default; }
+
+.wires-awaiting-container .wire-cell { width: auto; }
+.wires-awaiting-container .wire-date-cell { width: 70px; text-align: center; }
+.wires-awaiting-container .wire-amount-cell { text-align: right; width: 100px; }
+.wires-awaiting-container .wire-viewlink-cell { text-align: center; width: 55px; }
+.wires-awaiting-container .wire-approvelink-cell { text-align: center; width: 55px; }
+
+.waamodal-data { font-weight:normal; padding: 0px 5px 0px 5px; text-align:left; }
+.WidgetRedText { color: Red; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.WidgetGreenText { color: Green; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+.wires-awaiting-data-container { height: 65px; overflow: auto; }
+
+/* Positive Pay Exceptions Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.positive-pay-exceptions-container { height: 116px; padding: 0px; }
+.positive-pay-exceptions-container .positive-pay-exception-row td { padding: 1px 5px 1px 5px; }
+
+.positive-pay-exceptions-container .account-name-cell { width: auto; }
+.positive-pay-exceptions-container .check-number-cell { text-align: right; width: 125px; }
+.positive-pay-exceptions-container .check-amount-cell { text-align: right; width: 100px; }
+.positive-pay-exceptions-container .decision-required { text-align: center; width: 125px; }
+
+
+.positive-pay-exceptions-data-container { height: 116px; overflow: auto; }
+
+/* Account Balances Widget - Styles are also defined in NetTellerLayoutCSS_IE7 and NetTellerLayoutCSS_Other */
+.account-balances-container { height: 95px; padding-top:5px; padding-bottom:5px; padding-left:1px; padding-right:0px;  overflow: auto; overflow-x: hidden;}
+.account-balances-container .account-link-cell { text-align: left; padding-right: 1px; padding-top:2px; }
+
+/* Custom PowerOn Widget */
+.poweron-container { height: 62px; padding: 5px 10px 5px 10px; overflow: auto; overflow-x: hidden; }
+
+/* PowerOn Service Widget */
+.poweron-list-container { height: auto; padding: 0px; }
+.poweron-list-container .powreon-row td { padding: 1px 5px 1px 5px; }
+
+.batches-ach-data-container { height: 65px; overflow: auto; }
+
+
+.QuickPaymentSelectPayees tr td{ width:25%; white-space:normal;}
+
+/* iPay P2P Widget */
+.p2p-container { height: 74px; padding: 0px 10px 5px 10px; overflow: auto; overflow-x: hidden; text-align: right; }
+
+.ipay-qp-list-container {
+    overflow: hidden;
+}
+
+.ipay-qp-widget-container .ipay-header-wrapper{overflow: hidden; max-height:18px;}
+.ipay-qp-widget-container .ipay-header-container{overflow: auto;}
+.ipay-qp-widget-container .ipay-payee-id-container{display:none;}
+.ipay-qp-widget-container .ipay-payee-name-container {display:block; text-align:left; width:auto; min-width:125px; height:auto; padding: 10px 5px 12px 5px;}
+.ipay-qp-widget-container .ipay-amount-container {min-width:90px; text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.ipay-qp-widget-container .ipay-amount-container .ipay-amount{ width:100%;}
+.ipay-qp-widget-container .ipay-account-container {min-width:150px; text-align:left; width:150px;  padding-left:5px; padding-right:5px;}
+.ipay-qp-widget-container .ipay-account-container .ipay-account{ width:100%;}
+.ipay-qp-widget-container .ipay-date-container { text-align:center; width:150px; min-width:150px; padding-left:5px; padding-right:5px;}
+.ipay-qp-widget-container .ipay-qp-footer-container{display:none;}
+.ipay-qp-widget-container .ipay-qp-footer-container .ipay-amount-container { font-weight: bold; white-space:nowrap; }
+.ipay-qp-widget-container .buttonsContainer{padding: 0px 5px 5px 5px; width:auto; text-align:right;}
+.ipay-qp-widget-container .no-records-container{padding:10px;}
+.ipay-qp-list-data-container
+{
+    vertical-align: top;
+    max-height: 140px;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+}
+
+.ipay-sp-widget-container .ipay-header-wrapper{overflow: hidden; max-height:18px;}
+.ipay-sp-widget-container .ipay-header-container{overflow: auto;}
+.ipay-sp-widget-container .ipay-payment-id-container{display:none;}
+.ipay-sp-widget-container .ipay-payee-name-container {display:block; text-align:left; width:auto; min-width:125px; height:auto; padding: 10px 5px 12px 5px;}
+.ipay-sp-widget-container .ipay-method-container{display:none;}
+.ipay-sp-widget-container .ipay-amount-container {min-width:90px; text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.ipay-sp-widget-container .ipay-amount-container .ipay-amount{ width:100%;}
+.ipay-sp-widget-container .ipay-account-container {min-width:150px; text-align:left; width:150px;  padding-left:5px; padding-right:5px;}
+.ipay-sp-widget-container .ipay-account-container .ipay-account{ width:100%;}
+.ipay-sp-widget-container .ipay-date-container {min-width:100px; text-align:center; width:100px;  padding-left:5px; padding-right:5px;}
+.ipay-sp-widget-container .ipay-est-arrival-date-container {min-width:75px; text-align:center; width:75px;  padding-left:5px; padding-right:5px;}
+.ipay-sp-widget-container .ipay-delete-payment-container {text-align:center; width:20px; min-width:20px; padding-left:5px; padding-right:5px;}
+.ipay-sp-widget-container .ipay-sp-footer-container{display:none;}
+.ipay-sp-widget-container .ipay-sp-footer-container .ipay-amount-container { font-weight: bold; white-space:nowrap; }
+.ipay-sp-widget-container .buttonsContainer{padding: 0px 10px 10px 0px; width:auto; text-align:right;}
+.ipay-sp-widget-container .msg-container{padding: 5px 5px 5px 10px; width:auto; text-align:left;}
+.ipay-sp-widget-container .no-records-container{padding:10px;}
+.ipay-sp-list-data-container
+{
+    vertical-align: top;
+    max-height: 140px;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+}
+
+.ipay-rp-widget-container .ipay-header-wrapper{overflow: hidden; max-height:18px;}
+.ipay-rp-widget-container .ipay-header-container{overflow: auto;}
+.ipay-rp-widget-container .ipay-payment-id-container{display:none;}
+.ipay-rp-widget-container .ipay-payee-name-container {display:block; text-align:left;  width:auto; min-width:125px; height:auto; padding: 10px 5px 12px 10px;}
+.ipay-rp-widget-container .ipay-method-container{display:none;}
+.ipay-rp-widget-container .ipay-amount-container {min-width:90px; text-align:right; width:90px;  padding-left:5px; padding-right:5px;}
+.ipay-rp-widget-container .ipay-amount-container .ipay-amount{ width:100%;}
+.ipay-rp-widget-container .ipay-account-container {min-width:150px;text-align:left; width:150px;  padding-left:5px; padding-right:5px;}
+.ipay-rp-widget-container .ipay-account-container .ipay-account{ width:100%;}
+.ipay-rp-widget-container .ipay-date-container {min-width:100px; text-align:center; width:100px;  padding-left:5px; padding-right:5px;}
+.ipay-rp-widget-container .ipay-status-container {min-width:90px;text-align:left; width:90px;  padding-left:5px; padding-right:5px;}
+.ipay-rp-widget-container .ipay-status-container .ipay-status{ width:100%;}
+.ipay-rp-widget-container .ipay-sp-footer-container{display:none;}
+.ipay-rp-widget-container .ipay-sp-footer-container .ipay-amount-container { font-weight: bold; white-space:nowrap; }
+.ipay-rp-widget-container .buttonsContainer{padding: 0px 10px 10px 0px; width:auto; text-align:right;}
+.ipay-rp-widget-container .msg-container{padding: 5px 5px 5px 10px; width:auto; text-align:left;}
+.ipay-rp-widget-container .no-records-container{padding:10px;}
+.ipay-rp-list-data-container
+{
+    vertical-align: top;
+    max-height: 140px;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+}
+
+/* OFM Widgets */
+.ofmcashflowchart-container {  display: inline-block; overflow-x: auto; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; text-align: left; }
+.ofmsavingschart-container {  display: inline-block; overflow-x: auto; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; text-align: left; }
+.ofmspendingchart-container { display: inline-block; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; overflow: auto; text-align: left;}
+.ofmnetworthtable-container {  display: inline-block; overflow-x: auto; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; text-align: left; }
+.ofmnetworthsummarychart-container { display: inline-block; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; overflow: auto; text-align: left; }
+.ofmexternalaccounts-container { display: inline-block; vertical-align: top; height: auto; width: 100%; padding: 0px 0px 0px 0px; overflow: auto; text-align: left; }
+
+.ofmTOSPanel { white-space: normal; border-width: 0px; border-style: Solid; padding: 0px; }
+
+/*  jQuery UI Multiple Select Widget  - http://www.erichynds.com/jquery/jquery-ui-multiselect-widget */
+.ui-multiselect { text-align:left }
+.ui-multiselect span.ui-icon { float:right }
+.ui-multiselect-single input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single label { padding:5px !important }
+
+.ui-multiselect-header { display: none; }
+.ui-multiselect-header { margin-bottom:3px; padding:3px 0 3px 4px }
+.ui-multiselect-header ul { font-size:0.9em }
+.ui-multiselect-header ul li { float:left; padding:0 10px 0 0 }
+.ui-multiselect-header a { text-decoration:none }
+.ui-multiselect-header a:hover { text-decoration:underline }
+.ui-multiselect-header span.ui-icon { float:left }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; padding-right:0 }
+
+.ui-multiselect-menu { display:none; padding:3px; position:absolute; z-index:10000 }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:scroll }
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; padding:3px 1px }
+.ui-multiselect-checkboxes label input { position:relative; top:1px }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:3px; text-align:left; }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid }
+.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none }
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+
+.BPContentContainer { border-spacing: 0; *border-collapse:collapse; border:0px; padding:0px; margin:0px; width:100%;}
+.pageTabBlock {width:100%; padding:0px; margin:0px;}
+.NoPayeesBlock {margin:5px 0 5px 5px; width:100%;}
+.NoScheduledPaymentsBlock {margin:5px 0 5px 5px; width:100%;}
+.DeletePayeeBlock{height:100%; text-align:left; margin:25px;}
+.DeletePayeeBlock .deletePayeeContent{ padding:15px;}
+
+.DeletePayeeBlock table{width:auto; }
+.DeletePayeeBlock .MainContent{width:100%; float:left;}
+.DeletePayeeBlock .MainContent div{width:auto; float:left;}
+.DeletePayeeBlock .MainContent .titleContainer{width:0; white-space:nowrap;}
+.DeletePayeeBlock .MainContent .dataContainer{padding: 5px 0px 0px 15px; white-space:nowrap;}
+.DeletePayeeBlock .buttonsContainer{padding: 30px 0px 0px 0px; float:right !important; height:44px; text-align:right; white-space:nowrap;}
+.DeletePayeeBlock .buttonsContainer .btnDeleteContainer{float:left; text-align:right;}
+.DeletePayeeBlock .buttonsContainer .btnCancelContainer{float:left; text-align:right;}
+.DeletePayeeBlock .buttonsContainer .btnDeleteContainer .deleteButton {margin-right:5px;}
+.DeletePayeeBlock .buttonsContainer .btnCancelContainer .cancelButton {margin-left:5px;}
+
+.BPHistorySelectBlock .MainContent{padding: 15px; width: auto;}
+.BPHistorySelectBlock .MainContent table.NT{width: auto;}
+.BPHistorySelectBlock .MainContent .NT tr .NT{ padding-bottom: 3px !important;}
+.BPHistorySelectBlock .buttonsContainer{width:auto; border:0px; margin:0px; padding:25px 0px 15px 0px; text-align:right; float:right; display:inline;}
+.BPHistorySelectBlock .buttonsContainer .btnSubmitContainer{text-align:right; padding-right:5px; display:inline; float:left;}
+.BPHistorySelectBlock .buttonsContainer .btnCancelContainer{text-align:left; padding-left:5px; display:inline; float:left;}
+
+.BPHistoryDetailBlock .MainContent{padding: 15px; width: auto;}
+.BPHistoryDetailBlock .MainContent table.NT{width: auto;}
+.BPHistoryDetailBlock .MainContent .NT tr .NT{ padding-bottom: 3px !important; font-weight:bold;}
+.BPHistoryDetailBlock .MainContent .titleContainer{width:auto; white-space:nowrap; vertical-align:top;}
+.BPHistoryDetailBlock .MainContent .dataContainer{ padding: 0px 0px 0px 15px; white-space:nowrap; text-align:left;vertical-align:top;}
+.BPHistoryDetailBlock .MainContent .buttonsContainer{width:auto; border:0px; margin:0px; padding:25px 0px 15px 0px; text-align:right; float:right; display:inline;}
+
+.BPHistoryGrid .PayeeNameColumn{padding:0px 5px 0px 10px;text-align:left;}
+.BPHistoryGrid .PaymentStatusColumn{padding:0px 5px 0px 5px;text-align:left;}
+.BPHistoryGrid .PaymentRefNumColumn{padding:0px 5px 0px 5px;text-align:left;}
+.BPHistoryGrid .ProcessDateColumn{padding:0px 5px 0px 5px;text-align:center;}
+.BPHistoryGrid .PaymentConfirmationColumn{padding:0px 5px 0px 5px;text-align:left;}
+.BPHistoryGrid .AmountColumn{padding:0px 5px 0px 5px;text-align:right;}
+.BPHistoryGrid .ListLinkTD{padding:0px 10px 0px 5px;text-align:center;}
+.BPHistoryGrid .Total{padding:0px 60px 0px 5px;text-align:right;}
+.BPHistoryGrid .AlignedButtonTD{text-align:right;padding:10px;}
+.BPHistoryGrid .AlignedButtonTD .prevBtn {margin: 0px 5px 0px 0px;}
+
+.EditPayeeBlock table{width:auto;}
+.EditPayeeBlock .newValues{width:auto;}
+.EditPayeeBlock .oldValues{width:auto; padding:0px 0px 0px 75px;}
+.EditPayeeBlock .payeeSelectRow td,.EditPayeeBlock .payeeSelectRow th{padding:0px 0px 30px 0px; vertical-align:top;}
+.EditPayeeBlock th{width:0; white-space:nowrap; padding: 2px 10px 2px 0px !important;}
+.EditPayeeBlock .MainContent{padding: 15px 15px 15px 15px; width: auto;}
+.EditPayeeBlock .buttonsContainer{width:auto !important; height:auto !important; padding-top:30px; text-align:right;}
+.EditPayeeBlock .buttonsContainer .btnSubmitContainer{text-align:right; padding-right:5px; display:inline; }
+.EditPayeeBlock .buttonsContainer .btnCancelContainer{text-align:left; padding-left:5px; display:inline;}
+
+#paymentInlineCalendar { margin-left: 7px; margin-top: 5px; }
+#paymentInlineCalendarLegend { margin-left: 7px; }
+
+.hoverColor { background-color: #e5e5e5 !important; }
+
+.empty-container {
+	padding: 5px 5px 5px 5px !important;
+}
+
+.spWidgetContainer .footerContainer{ text-align:right; vertical-align:top; height:auto; width:auto; padding: 5px 15px 10px 15px; white-space:nowrap;}
+.spWidgetContainer .footerContainer .btnEditContainer{ width:100px; float:left; left:0px; text-align:left; display:inline; height:auto; }
+.spWidgetContainer .footerContainer .totalsContainer{ width:300px; text-align:left; display:inline; white-space:nowrap;}
+.spWidgetContainer .footerContainer .totalsContainer .titleContainer{ text-align:right; width:50%; display:inline; font-weight:bold; padding: 0px 5px 0px 0px;}
+.spWidgetContainer .footerContainer .totalsContainer .totalContainer{ text-align:left; width:50%; display:inline;}
+
+.opWidgetContainer .footerContainer{ text-align:right; vertical-align:top; height:auto; width:auto; padding: 5px 15px 10px 15px; white-space:nowrap;}
+.opWidgetContainer .footerContainer .messageContainer{ width:100px; float:left; left:0px; text-align:left; display:inline; height:auto; }
+.opWidgetContainer .footerContainer .totalsContainer{ width:300px; text-align:left; display:inline; white-space:nowrap;}
+.opWidgetContainer .footerContainer .totalsContainer .titleContainer{ text-align:right; width:50%; display:inline; font-weight:bold; padding: 0px 5px 0px 0px;}
+.opWidgetContainer .footerContainer .totalsContainer .totalContainer{ text-align:left; width:50%; display:inline;}
+
+.rpWidgetContainer .footerContainer{ text-align:right; vertical-align:top; height:auto; width:auto; padding: 5px 15px 10px 15px; white-space:nowrap;}
+.rpWidgetContainer .footerContainer .messageContainer{ width:100px; float:left; left:0px; text-align:left; display:inline; height:auto; }
+.rpWidgetContainer .footerContainer .totalsContainer{ width:300px; text-align:left; display:inline; white-space:nowrap;}
+.rpWidgetContainer .footerContainer .totalsContainer .titleContainer{ text-align:right; width:50%; display:inline; font-weight:bold; padding: 0px 5px 0px 0px;}
+.rpWidgetContainer .footerContainer .totalsContainer .totalContainer{ text-align:left; width:50%; display:inline;}
+
+.loginBlock .MainContent .buttonsContainer{padding:20px 0px 0px 0px;}
+.loginBlock .MainContent .rpLabelCol{width:auto; padding:0px 20px 0px 0px;}
+.loginBlock .MainContent .rpFieldCol {text-align:right; padding:0px;}
+
+.multi-quick-payment-container .widget-button-container {
+    padding: 15px 2px 2px 0;
+}
+
+.BpGridContent {
+	border-bottom: 1px solid #cccccc;
+}
+
+.bpChangePasswordBlock .MainContent .buttonsContainer{ width:auto; white-space:nowrap; text-align:right; padding:20px 0px 0px 0px;}
+.bpChangePasswordBlock .MainContent .buttonsContainer .btnSubmitContainer{display:inline;}
+.bpChangePasswordBlock .MainContent .buttonsContainer .btnCancelContainer{display:inline;}
+.bpChangePasswordBlock .MainContent .SmallTextTD{padding:0px 0px 0px 5px;}
+
+.deletePayeeWithPaymentsBlock table{width:auto; }
+.deletePayeeWithPaymentsBlock .MainContent{width:100%; float:left;}
+.deletePayeeWithPaymentsBlock .MainContent .deletePayeeContent{padding:15px 15px 0px 15px;}
+.deletePayeeWithPaymentsBlock .MainContent div{width:auto; float:left;}
+.deletePayeeWithPaymentsBlock .MainContent .titleContainer{width:0; white-space:nowrap;}
+.deletePayeeWithPaymentsBlock .MainContent .dataContainer{padding: 5px 0px 0px 15px; white-space:nowrap;}
+.deletePayeeWithPaymentsBlock .buttonsContainer{padding: 30px 0px 0px 0px; float:right !important; height:40px; text-align:right; white-space:nowrap;}
+.deletePayeeWithPaymentsBlock .buttonsContainer .btnDeleteContainer{float:left; text-align:right;}
+.deletePayeeWithPaymentsBlock .buttonsContainer .btnCancelContainer{float:left; text-align:right;}
+.deletePayeeWithPaymentsBlock .buttonsContainer .btnDeleteContainer .deleteButton {margin-right:5px;}
+.deletePayeeWithPaymentsBlock .buttonsContainer .btnCancelContainer .cancelButton {margin-left:5px;}
+
+.paymentViewDetailsBlock .MainContent{ padding:25px; width:auto; text-align:left;}
+.paymentViewDetailsBlock .MainContent .titleContainer{ text-align: left; white-space:nowrap; padding:3px 5px 3px 10px; font-weight:bold;}
+.paymentViewDetailsBlock .MainContent .dataContainer{text-align: left; white-space:nowrap; padding:3px 3px 3px 10px;}
+.paymentViewDetailsBlock .MainContent .buttonsContainer{width:auto; text-align:right; display: inline;}
+.paymentViewDetailsBlock .MainContent .contentTable{width:auto;}
+.paymentViewDetailsBlock .MainContent .contentTable .buttonsCell{ text-align:right; padding:20px 0px 0px 0px;}
+.paymentViewDetailsBlock .contentContainer table{width:auto;}
+
+.editPaymentConfirmBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:0px;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer{float:right; white-space:nowrap; width:100%; height:30px; padding:30px 0px 10px 10px; text-align:right; margin: 0px 0px 0px 40%;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnEditContainer{text-align:center; display:inline;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin: 0px 5px 0px 0px;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnEditContainer .editButton{margin: 0px 5px 0px 5px;}
+.editPaymentConfirmBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin: 0px 0px 0px 5px;}
+
+.paymentAmountDollars{width:65px;}
+.paymentAmountCents{ width:25px;}
+.paymentMemo{ width:205px;}
+.IsGuaranteedPaymentColumn {padding-right:5px; padding-left:5px; text-align:center;}
+.PaymentMemoColumn{padding-right:5px; padding-left:5px; text-align:left;}
+
+.editRecurringPaymentBlock .MainContent .buttonsContainer{height:25px; padding:20px 0px 0px 0px; text-align:right; white-space:nowrap; position:relative;}
+.editRecurringPaymentBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.editRecurringPaymentBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin-right:5px; display:inline;}
+.editRecurringPaymentBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.editRecurringPaymentBlock .MainContent .buttonsContainer .btnDeleteContainer .cancelButton{margin-left:5px; display:inline;}
+
+.editOneTimePaymentBlock .MainContent .buttonsContainer{height:25px; padding:20px 0px 0px 0px; text-align:right; white-space:nowrap; position:relative;}
+.editOneTimePaymentBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.editOneTimePaymentBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin-right:5px; display:inline;}
+.editOneTimePaymentBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.editOneTimePaymentBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin-left:5px; display:inline;}
+.editOneTimePaymentBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:0px;}
+
+.newPaymentBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:0px;}
+.newPaymentBlock .MainContent .buttonsContainer{padding-top:20px; text-align:right; white-space:nowrap;}
+.newPaymentBlock .MainContent .rpTable{margin-top:0px;}
+
+.newPaymentConfirmBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:0px;}
+.newPaymentConfirmBlock .MainContent .buttonsContainer{padding-top:20px; text-align:right; white-space:nowrap;}
+.newPaymentConfirmBlock .MainContent .buttonsContainer .btnSubmitContainer{display:inline;}
+.newPaymentConfirmBlock .MainContent .buttonsContainer .btnEditContainer{display:inline;}
+.newPaymentConfirmBlock .MainContent .buttonsContainer .btnCancelContainer{display:inline;}
+
+.expeditedPaymentBlock .MainContent {width:auto; padding:20px;}
+.expeditedPaymentBlock .MainContent table{width:auto; }
+.expeditedPaymentBlock .MainContent .fieldLabel{white-space:nowrap; padding:0px 15px 0px 0px;}
+.expeditedPaymentBlock .MainContent .DeliveryInfoContainer .fieldLabel{float:left; width:auto; white-space:nowrap; padding:0px 15px 0px 0px;}
+.expeditedPaymentBlock .MainContent .dataContainer{white-space:nowrap; padding:0px;}
+.expeditedPaymentBlock .MainContent .DisclaimerInfoContainer{width:500px;margin-left: auto;margin-right: auto;text-align: center;}
+.expeditedPaymentBlock .MainContent .buttonsContainer{width:500px;}
+.expeditedPaymentBlock .MainContent .DeliveryInfoContainer{margin:25px 0px 20px 0px; border:1px solid;width: 500px;margin-left: auto;margin-right: auto;}
+.expeditedPaymentBlock .MainContent .buttonsContainer{height:25px; padding:20px 0px 0px 0px; text-align:right; white-space:nowrap; position:relative;}
+.expeditedPaymentBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.expeditedPaymentBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin-right:5px; display:inline;}
+.expeditedPaymentBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.expeditedPaymentBlock .MainContent .buttonsContainer .btnDeleteContainer .cancelButton{margin-left:5px; display:inline;}
+
+.payeeSearchBlock .MainContent {width:100%; float:left; padding: 0px;}
+.payeeSearchBlock th.NT{width:0; padding:0px 15px 0px 0px; white-space:nowrap; vertical-align:middle;}
+.payeeSearchBlock .Data{width:225px; padding:0px 0px 0px 0px; vertical-align:middle;}
+.payeeSearchBlock .PayeeNameContainer input{width:225px;}
+.payeeSearchBlock .PayFromAccountContainer input{width:225px;}
+.payeeSearchBlock .PayeeAddressContainer input{width:225px;}
+.payeeSearchBlock .PayeeCityContainer input{width:225px;}
+.payeeSearchBlock .PayeeStateContainer { padding: 5px 0px 5px 0px;}
+.payeeSearchBlock .PayeeStateContainer select{ width:230px;}
+.payeeSearchBlock .RequiredMsg{padding:25px 0px 0px 0px;}
+.payeeSearchBlock .payeeSearchTable{padding:15px;}
+.payeeSearchBlock .payeeSearchTable .SmallTextTD{padding:0px 0px 0px 20px;}
+.payeeSearchBlock .buttonsContainer{text-align:right; float:right;}
+.payeeSearchBlock .SearchResultsContainer{float:left; padding:10px 0px 0px 0px; margin:25px 0px 0px 0px; width:100%; }
+.payeeSearchBlock .SearchResultsContainer .SearchResultLabel{position:relative; font-weight:bold;}
+.payeeSearchBlock .SearchResultsContainer .SearchResultsList{width:100%;  position:relative;}
+.payeeSearchBlock .MainContent .buttonsContainer{height:40px; padding:20px 0px 0px 0px; text-align:right; white-space:nowrap; position:relative;}
+.payeeSearchBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.payeeSearchBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin-right:5px; display:inline;}
+.payeeSearchBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.payeeSearchBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin-left:5px; display:inline;}
+.payeeSearchBlock .SearchResultsContainer .buttonsContainer.AddPayeeButton{position:relative;}
+.payeeSearchBlock .SearchResultsContainer .buttonsContainer .AddCheckPayeeMsg{position:relative;}
+.payeeSearchBlock .SearchResultsContainer .buttonsContainer .AddCheckPayeeLink{position:relative;}
+
+.addPayeeBlock .MainContent {width:100%; float:left; padding: 0px;}
+.addPayeeBlock th.NT{width:0; padding:0px 15px 0px 0px; white-space:nowrap; vertical-align:middle;}
+.addPayeeBlock .Data{width:225px; padding:5px 0px 0px 0px; vertical-align:middle;}
+.addPayeeBlock .addPayeeTable{width:auto; padding:15px;}
+.addPayeeBlock .PayeeNameContainer input{width:225px;}
+.addPayeeBlock .PayeeAliasContainer input{width:225px;}
+.addPayeeBlock .PayFromAccountContainer input{width:225px;}
+.addPayeeBlock .PayeeAddressContainer input{width:225px;}
+.addPayeeBlock .PayeeCityContainer input{width:225px;}
+.addPayeeBlock .PayeeStateContainer { padding: 5px 0px 0px 0px;}
+.addPayeeBlock .PayeeStateContainer select{ width:230px;}
+.addPayeeBlock .RequiredMsg{padding:25px 0px 0px 0px;}
+.addPayeeBlock .addPayeeTable .SmallTextTD{padding:0px 0px 0px 20px;}
+.addPayeeBlock .MainContent .buttonsContainer{height:30px; padding:20px 0px 0px 0px; text-align:right; white-space:nowrap; position:relative;}
+.addPayeeBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.addPayeeBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin-right:5px; display:inline;}
+.addPayeeBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.addPayeeBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin-left:5px; display:inline;}
+
+.cPayeeToEBlock .MainContent{width:auto; padding: 20px 20px 10px 20px;}
+.cPayeeToEBlock .MainContent .convertToElectronicMsg{padding: 0px 0px 10px 0px;}
+.cPayeeToEBlock .MainContent .buttonsContainer{width:auto; height:30px; padding:20px 0px 10px 0px; text-align:right;}
+.cPayeeToEBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; padding-right:5px; display:inline;}
+.cPayeeToEBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; padding-left:5px; display:inline;}
+
+.setUpAccountBlock .MainContent { padding:15px; width:auto;}
+.setUpAccountBlock .MainContent .setUpAccountContent{ width:auto;}
+.setUpAccountBlock .MainContent .setUpAccountContent .buttonsContainer{padding: 25px 0px 0px 0px; text-align:right;}
+.setUpAccountBlock .MainContent .setUpAccountContent .buttonsContainer .submitButton{}
+.setUpAccountBlock .MainContent .setUpAccountContent .buttonsContainer .cancelButton{margin:0px 0px 0px 5px;}
+
+.deletePaymentBlock .MainContent{padding:25px; width:auto;}
+.deletePaymentBlock .MainContent .buttonsContainer{width:auto; height:40px; text-align:center; white-space:nowrap;display: inline;}
+.deletePaymentBlock .MainContent .buttonsContainer .btnDeleteContainer{width:auto; text-align:right; display:inline;}
+.deletePaymentBlock .MainContent .buttonsContainer .btnCancelContainer{width:auto; text-align:right; display:inline;}
+.deletePaymentBlock .MainContent .buttonsContainer .deleteButton{margin-right:5px;}
+.deletePaymentBlock .MainContent .buttonsContainer .cancelButton{margin-left:5px;}
+.deletePaymentBlock .MainContent .contentTable{width:auto;}
+.deletePaymentBlock .MainContent .contentTable .buttonsCell{ text-align:right; padding:20px 0px 0px 0px;}
+.deletePaymentBlock .contentContainer table{width:auto;}
+
+.chargeDetailsBlock{margin:0px; width:100%;}
+.chargeDetailsBlock .MainContent{width:100%; float:left;}
+.chargeDetailsBlock .MainContent .chargeDetailsDiv{padding:15px;float:left;}
+.chargeDetailsBlock .MainContent .termsAgreementContainer{ width:auto; text-align:left;}
+.chargeDetailsBlock .MainContent .disclosureContainer{ width:auto; padding-top:10px; padding-bottom:0px;}
+.chargeDetailsBlock .MainContent .startCheckNumberConatiner{ width:auto; padding-top:30px; padding-bottom:0px; text-align:left;}
+.chargeDetailsBlock .MainContent .startCheckNumberConatiner .TextAssist{ font-size:8pt;}
+.chargeDetailsBlock .MainContent .IAgreeContainer{ width:auto; padding-top:20px; padding-bottom:0px; text-align:right;}
+.chargeDetailsBlock .MainContent .IAgreeContainer .rpFieldCol{text-align:right;}
+.chargeDetailsBlock .MainContent .buttonsContainer{ text-align:right; width:auto; padding:20px 0px 0px 0px; white-space:nowrap;}
+.chargeDetailsBlock .MainContent .buttonsContainer .btnSubmitContainer{width:auto; display:inline; position:relative;}
+.chargeDetailsBlock .MainContent .buttonsContainer .btnCancelContainer{width:auto; display:inline; position:relative;}
+.chargeDetailsBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin-left:5px;}
+
+.qpSelectPayeesBlock .MainContent .availablePayeesContainer{width:auto; padding: 0px 10px 10px 10px;}
+.qpSelectPayeesBlock .MainContent .availablePayeesContainer .Payee input{width:auto; padding: 5px 5px 5px 0px;}
+.qpSelectPayeesBlock .MainContent .msgContainer{width:auto; padding:10px 10px 10px 10px; text-align:left; font-weight:bold; font-size:13px;}
+.qpSelectPayeesBlock .MainContent .buttonsContainer{width:auto; height:40px; padding:10px; text-align:right;}
+
+.qpEditPaymentsBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:10px;}
+.qpEditPaymentsBlock .MainContent .buttonsContainer{width:auto; height:40px; padding:10px 10px 10px 10px; text-align:right;}
+.qpEditPaymentsBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.qpEditPaymentsBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.qpEditPaymentsBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin: 0px 5px 0px 0px;}
+.qpEditPaymentsBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin: 0px 0px 0px 5px;}
+
+.qpConfirmPaymentsBlock .MainContent .gpDisclaimerContainer{width:auto; padding-left:5px; padding-right:5px; padding-top:10px; padding-bottom:10px;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer{width:auto; height:40px; padding:10px 10px 10px 10px; text-align:right; margin: 0px 0px 0px 40%;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnSubmitContainer{text-align:right; display:inline;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnEditContainer{text-align:center; display:inline;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnCancelContainer{text-align:left; display:inline;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnSubmitContainer .submitButton{margin: 0px 5px 0px 0px;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnEditContainer .editButton{margin: 0px 5px 0px 5px;}
+.qpConfirmPaymentsBlock .MainContent .buttonsContainer .btnCancelContainer .cancelButton{margin: 0px 0px 0px 5px;}
+
+.bill-shrink-container { padding-left: 50px; }
+
+/* ACCOUNT INFO, PRIOR DAY, CURRENT DAY VIEWS */
+.account-info-container, .prior-day-container, .current-day-container { margin: 0px 200px; }
+
+/* OPTIONS ACCOUNTS VIEW */
+.options-account-content-container .account-pseudo-name-cell { width: 250px; }
+
+.button-container .ColorButton,
+.button-container-bottom-right .ColorButton {
+	margin: 5px 0px 0px 5px;
+}
+
+.button-container-bottom-right {
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.button-container-bottom-right-secure-token {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.mfa-challenge-secure-token-data {
+    padding: 9px;
+    float: left;
+    margin-left: 5px;
+}
+
+.AutoTable .button-container-bottom-right { margin-right: 0; }
+
+.button-container-left {
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.button-container-center {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.newskin-button-container
+{
+    text-align:center;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* TRANSFER CONFIRMATION */
+.confirmationGrid
+{
+    border-collapse: collapse;
+}
+.confirmationLabel
+{
+    font-weight:bold;
+    padding-bottom:6px;
+    padding-top:6px;
+}
+.confirmationHeader
+{
+    background-color: #007026;
+	color: White;
+    font-weight:bold;
+    padding-bottom:6px;
+    padding-top:6px;
+}
+
+.confirmationHeaderFailure
+{
+    background-color: #D10000;
+	color: White;
+    font-weight:bold;
+    padding-bottom:6px;
+    padding-top:6px;
+    padding-left: 15px;
+}
+.confirmationWrapper
+{
+    border: 1px solid #D9D9D9;
+}
+/* TRANSACTION SEARCH */
+.searchPrimaryLabel {
+	float: left;
+	font-weight: bold;
+	margin-left: 10px;
+	padding: 5px 0px 5px 0px;
+	width: 100px;
+}
+
+.searchFieldLabel {
+	float: left;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.primaryBox {
+	background-color:#E8E8E8;
+	border-bottom: 1px solid #D0D0D0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 100%;
+}
+
+.primaryBoxHeader {
+	background-color: #F9F6E9;
+}
+
+.searchCriteriaGroup {
+	float: left;
+	padding: 5px 0px 5px 0px;
+}
+
+.criteriaBox {
+	background-color: #ffffff;
+	float: left;
+	padding: 5px 0;
+	width: 350px;
+}
+
+.ui-datepicker-trigger {
+	margin-left: 3px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+/* Does not work with Chrome. Use clear:both instead */
+.clearRight {
+    clear: right;
+}
+
+.transferConfirmation
+{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:25px;
+    width:30%;
+}
+
+.transferConfirmationButton
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 175px;
+    margin-bottom:15px;
+}
+
+.dialog-no-close .ui-dialog-titlebar-close {display: none }
+
+.mfa-button-container
+{
+ text-align: right;
+ padding-top:10px;
+}
+
+.mfa-main-text-container
+{
+	text-align: center;
+	font-weight:bold;
+}
+
+.mfa-alt-text-container
+{
+	 font-size:smaller;
+	 padding:15px 0px 15px 0px;
+}
+
+.mfa-bottom-text-container
+{
+	 font-size:smaller;
+	 padding:15px 0px 15px 0px;
+}
+
+.bankLogoL {
+    float: left;
+}
+
+.bankLogoR {
+    float: right;
+}
+
+.jha-govt-logos {
+    padding-right: 20px;
+}
+
+.jha-govt-logos-table {
+	float:right;
+	width: 0px;
+}
+.govt-logo-message-container {
+	word-wrap:break-word;
+}
+
+.no-records-container
+{
+	font-size: larger;
+	text-align: center;
+	font-weight:bold;
+	padding:15px 0px 15px 0px;
+}
+
+.amount-textbox-align
+{
+    text-align:right;
+   	padding: 2px;
+}
+
+/* Make the focus indicator visible in Firefox */
+button:focus::-moz-focus-inner,
+input[type="reset"]:focus::-moz-focus-inner,
+input[type="button"]:focus::-moz-focus-inner,
+input[type="submit"]:focus::-moz-focus-inner,
+input[type="file"] > input[type="button"]:focus::-moz-focus-inner {
+       border-color: #F3F3F3;
+}
+
+.columns-container
+{
+	overflow:hidden;
+}
+
+.left-column-container
+{
+	float: left;
+	width: 45%;
+}
+
+.right-column-container
+{
+	float:left;
+	width: 45%;
+	margin-left: 10px;
+}
+
+.hidden
+{
+	display:none;
+}
+
+.transfer-summary-container
+{
+	display:none;
+}
+
+.spacer { width:10px; }
+.bold-text { font-weight:bold; }
+.red-text { color:red; }
+.blue-text { color:blue; }
+.green-text { color:green; }
+.start-date, .end-date { width:80px; }
+.transfer-amount { width: 120px; }
+.wire-pin { width: 40px; }
+
+.no-records-container
+{
+	font-size: larger;
+	text-align: center;
+	font-weight:bold;
+	padding:15px 0px 15px 0px;
+}
+
+.rotate180
+{
+    /* Firefox */
+    -moz-transform:rotate(180deg);
+    /* Safari and Chrome */
+    -webkit-transform:rotate(180deg);
+    /* Opera */
+    -o-transform:rotate(180deg);
+    /* IE9 */
+    -ms-transform:rotate(180deg);
+}
+
+/* Screen Only */
+@media screen {
+    .Print {
+        display: none;
+    }
+}
+
+/*Lease Security*/
+.lease-sec-show-filter {
+    display:initial;
+    padding: 5px 5px 5px 0;
+}
+/*
+.lease-sec-show-pager {
+    display:initial;
+    padding: 0 0 25px 0;
+}*/
+
+.lease-sec-hide-pager {
+    display:none;
+}
+
+.building-summary-modal-container .building-summary {
+    padding: 15px 15px 15px 15px;
+}
+
+.lease-sec-container .button-containerADA {
+    display:none;
+}
+
+.building-summary-modal-container .building-summary {
+    width:auto;
+}
+
+.lease-sec-container table tbody tr.selected {
+  background-color: #b0bed9;
+  font-weight:bold;
+}
+
+.lease-sec-container table tbody td.select {
+    border-bottom: 3px solid #FFFFB2;
+    border-top: 3px solid #FFFFB2;
+    font-weight:bold;
+
+}
+
+.lease-sec-container .paginate_button.disabled {
+    display:none;
+}
+
+.lease-sec-container .building-name {
+    white-space:nowrap;
+    width:30%;
+}
+
+.lease-sec-container .tenant-name {
+    white-space:nowrap;
+    width:30%;
+}
+
+.lease-sec-container table.dataTable.no-footer {
+  border-bottom: none;
+}
+
+.ArpAchFilterListP {
+    padding-left:10px;
+    margin:0px;
+}

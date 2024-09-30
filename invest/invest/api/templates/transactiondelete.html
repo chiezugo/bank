@@ -1,0 +1,17 @@
+{% extends 'inerbase.html' %}
+
+{% block content %}
+{% include "nav.html" %}
+
+
+        <form action="{% url 'bank:transaction-item' object.id  %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            do you want to delete the transaction "{{ object.amount }} - {{ object.trans_receiver }} "?
+            <p>
+                <button class="btn btn-primary"><input class="btn btn-primary" type="submit" value="yes"/></button>
+            </p>
+        </form>
+        <button><a href="{% url 'bank:transactions' %}">cancel</a></button>
+
+{% endblock %}

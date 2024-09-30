@@ -1,0 +1,90 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>First State Community Bank</title>
+    {% block extra_head %}
+    {% endblock %}
+    <link rel="shortcut icon" href="https://www.fscb.com/hubfs/FSCB%20feb%202017/image/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link type="text/css"
+          href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- all css here -->
+
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Nice-select css -->
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <!-- magnific css -->
+    <link rel="stylesheet" href="{% static 'css/magnific.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+    <!-- magnific js -->
+    <script src="{% static 'js/magnific.min.js' %}"></script>
+    <!-- Nice-select js -->
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <!-- wow js -->
+    <script src="{% static 'vjs/wow.min.js' %}"></script>
+    <!-- meanmenu js -->
+    <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+    <!-- Form validator js -->
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <!-- plugins js -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- main js -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}" role="alert">
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+{% block content %}
+replace me
+{% endblock %}
+
+{% block extra_body %}
+{% endblock %}
+
+
+</body>
+<footer>
+    {% block footer %}
+
+
+    {% endblock footer %}
+
+</footer>
+
+</html>

@@ -1,0 +1,140 @@
+{% extends 'inerbase.html' %}
+{% load static %}
+
+{% block content %}
+
+{% include "nav.html" %}
+
+<div class="dashboard__main__content">
+    <div class="dashboard__main__content__container">
+        <div class="dashboard__main__content__row">
+            <div class="dashboard__main__content__row__item"><h1
+                    class="dashboard__main__content__pagetitle">Settings</h1></div>
+        </div>
+        <div class="dashboard__main__content__settings">
+            {% include "settings-side.html" %}
+            <div class="dashboard__main__content__settings__right">
+                <div>
+                    <div class="dashboard__main__content__settings__main">profile</div>
+                    <div class="dashboard__main__content__settings__caption">Update your profile information.</div>
+                    <div class="dashboard__main__content__settings__content">
+                        <form>
+                            <div class="form__item opacity-5"><label for="" class="form__label form__label--2">Full
+                                Name</label> <input disabled="disabled" required="required" type="text" value="{{user.user.full_name}}"
+                                                    class="form__input form__input--2"></div>
+                            <div class="form__item opacity-5"><label for=""
+                                                                     class="form__label form__label--2">E-MAIL</label>
+                                <input disabled="disabled" required="required" type="text" value="{{user.user.email }}"
+                                       class="form__input form__input--2"></div>
+                            <div class="form__item opacity-5"><label for="" class="form__label form__label--2">Phone
+                                Number</label> <input disabled="disabled" required="required" type="tel" value="{{ profile.mobile }}"
+                                                      class="form__input form__input--2"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div aria-labelledby="airtimeRechargeLabel" id="airtimeRecharge" role="dialog" tabindex="-1"
+     class="modal fade">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Airtime Recharge</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item form__item--2"><input type="tel"
+                                                                     class="v-money form__input form__input--3 form__input--lg"
+                                                                     autocomplete="false"
+                                                                     spellcheck="false"> <!----></div>
+                        <div class="form__item"><label for="" class="form__label form__label--2">Phone
+                            Number</label> <input autocomplete="false" maxlength="11"
+                                                  required="required" type="text"
+                                                  class="form__input form__input--2"> <!----></div>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn--primary btn--md btn--block">Continue
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="pinRequestLabel" id="pinRequest" role="dialog" tabindex="-1" class="modal fade">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Pin</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item"><label for="" class="form__label form__label--2">Enter
+                            Pin to complete request</label> <input autocomplete="false" maxlength="4"
+                                                                   required="required" type="password"
+                                                                   class="form__input form__input--2">
+                            <!----></div>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn--primary btn--md btn--block">Continue
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div aria-labelledby="verificationModalLabel" id="verificationModal" role="dialog" tabindex="-1"
+     class="modal fade">
+    <div role="document" class="modal__dialog modal__dialog--sm">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title text-center">Verify your account</div>
+                <button aria-label="Close" data-dismiss="modal" type="button" class="close">
+                    <svg height="13" viewBox="0 0 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.254 6.5l4.383-4.382A1.24 1.24 0 0 0 10.882.363L6.5 4.746 2.118.363A1.24 1.24 0 1 0 .363 2.118L4.746 6.5.363 10.882a1.24 1.24 0 0 0 1.755 1.755L6.5 8.254l4.382 4.383a1.24 1.24 0 1 0 1.755-1.755L8.254 6.5z"
+                              fill="#C0C6D8" fill-rule="nonzero"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body modal__body--pad">
+                <form class="form">
+                    <div class="form__pad">
+                        <div class="form__item"><p class="form__text" style="text-align: center;">Hello!
+                            Thank you again for choosing Barter. In order to get started with sending
+                            and receiving money, You will need to verify your account.</p>
+                            <p class="form__text" style="text-align: center;">Verifying your account
+                                helps us ensure that your identity and money are kept safe and
+                                secure.</p></div>
+                    </div>
+                    <div class="form__footer"><a href="/dashboard/settings/verify"
+                                                 class="btn btn--primary btn--md btn--block"
+                                                 type="submit">Continue</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+</div>
+</div>
+
+{% endblock content %}

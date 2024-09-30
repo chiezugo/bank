@@ -1,0 +1,63 @@
+<td height="208" width="620" style="padding:0px 40px 0px 40px" bgcolor="">
+
+            <table cellpadding="0" cellspacing="0" height="348" width="620" bgcolor="">
+                <tbody><tr><td width="580" height="30" style="padding:20px 0px 0px 20px;font-family:Century Gothic,helvetica;font-size:0.95em">
+                       Dear {{user1.user.full_name|upper}},
+					   <br>
+					   <br>
+                    </td></tr>
+                <tr><td width="520" height="30" style="padding:10px 0px 10px 80px;font-size:1.3em;color:#342e54;font-family:Century Gothic,helvetica">
+                        <strong>Fscb BANK TRANSACTION ALERT SERVICE</strong>
+                    </td></tr>
+                <tr><td width="580" height="30" style="padding:0px 0px 10px 20px;font-family:Century Gothic,helvetica;font-size:0.95em">
+                        Please be informed that a Debit transaction occurred on your bank account.
+                        Kindly see more information below:
+                    </td></tr>
+                <tr><td>
+                        <table cellpadding="0" cellspacing="0" width="620">
+                            <tbody><tr><td width="20">&nbsp;</td><td colspan="2" bgcolor="#0098db" width="520" height="40" style="padding:0px 0px 0px 40px;font-size:1.3em;color:#ffffff;font-family:Century Gothic,helvetica;border-bottom:2px solid #ffffff">
+                                    Transaction Details
+                                </td><td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:10px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Account Number</td>
+                                <td height="18" width="370" align="left" style="padding:10px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    {{user1.user.ac_num}}</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:10px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Transaction Type</td>
+                                <td height="18" width="370" align="left" style="padding:10px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    {{user_t.transaction_type}}</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:4px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Amount</td>
+                                <td height="18" width="370" align="left" style="padding:4px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    ${{user_t.amount}}</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:4px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Domicile Branch</td>
+                                    <td height="18" width="370" align="left" style="padding:4px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">New York United States</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:4px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Date</td>
+                                <td height="18" width="370" align="left" style="padding:4px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    {{user_t.date}}</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:4px 10px 4px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Transaction Ref</td>
+                                <td height="18" width="370" align="left" style="padding:4px 0px 4px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    {{user_t.trans_reference}}<wbr>~~197829791074151.</td>
+                                <td width="20">&nbsp;</td></tr>
+                            <tr><td width="20">&nbsp;</td>
+                                <td height="18" width="189" align="right" style="padding:4px 10px 10px 0px;background-color:#e6e7e9;font-family:Century Gothic,helvetica;font-size:0.95em;border-right:#ffffff 2px solid">Available Balance</td>
+                                <td height="18" width="370" align="left" style="padding:4px 0px 10px 10px;background-color:#d4d2d3;font-family:Century Gothic,helvetica;font-size:0.95em">
+                                    ${{user1.balance}} USD</td>
+                                <td width="20">&nbsp;</td></tr>
+                        </tbody></table>
+                    </td></tr>
+                <tr><td width="600" height="50">
+                        <table cellpadding="0" cellspacing="0" width="600" height="50px">
+                            <tbody><tr><td width="420" height="50" style="padding:10px 0px 10px 40px;font-size:0.95em;color:#363245;font-family:Century Gothic,helvetica;text-align:right">
+                                    <strong style="font-size:8pt"><em>How do you feel about this notification service?  </em></strong>
+                                </td>
+            </tbody></table>
+        </td>

@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <div id="preloader"></div>
+  <header class="header-one">
+            <!-- Start header top bar -->
+            <div class="topbar-area">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-md-6 col-sm-6 col-xs-12">
+                            <div class="topbar-left">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> info@bultifor.com</a></li>
+                                    <li><a href="#"><i class="fa fa-clock-o"></i> Live support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="topbar-right">
+								<ul>
+                                    <li><a href="#"><img src="{% static 'img/icon/w1.png' %}" alt="">ENG</a>
+                                       <ul>
+                                           <li><a href="#"><img src="{% static 'img/icon/w2.png' %}" alt="">DEU</a>
+                                           <li><a href="#"><img src="{% static 'img/icon/w3.png' %}" alt="">ESP</a>
+                                           <li><a href="#"><img src="{% static 'img/icon/w4.png' %}" alt="">FRA</a>
+                                           <li><a href="#"><img src="{% static 'img/icon/w5.png' %}" alt="">KSA</a>
+                                       </ul>
+                                    </li>
+                                    <li><a href="#"><img src="{% static 'img/icon/login.png' %}" alt="">Login</a>
+                                </ul>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End header top bar -->
+            <!-- Start header menu area -->
+            <div id="sticker" class="header-area hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="row">
+                                <!-- logo start -->
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="logo">
+                                        <!-- Brand -->
+                                        <a class="navbar-brand page-scroll" href="index-2.html">
+                                            <img src="{% static 'img/logo/logo2.png' %}" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- logo end -->
+                                </div>
+                                <div class="col-md-9 col-sm-9">
+                                    <div class="header-right-link">
+                                        <!-- search option end -->
+                                        <a class="s-menu" href="#">Login</a>
+                                    </div>
+                                    <!-- mainmenu start -->
+                                    <nav class="navbar navbar-default">
+                                        <div class="collapse navbar-collapse" id="navbar-example">
+                                            <div class="main-menu">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li><a class="pages" href="#">Home</a>
+                                                    </li>
+                                                    <li><a href="#">About us</a></li>
+                                                    <li><a class="pages" href="#">Know More</a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">FAQ</a></li>
+                                                            <li><a href="#">Terms & Conditions</a></li>
+                                                            <li><a href="#">Login</a></li>
+                                                            <li><a href="#">Register</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a class="pages" href="#">Dashboard</a>
+                                                    </li>
+                                                    <li><a class="pages" href="#">Blog</a>
+                                                    </li>
+                                                    <li><a href="#">contact us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <!-- mainmenu end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- End Header Area -->
+        <!-- Start breadcrumbs area -->
+{% endblock %}
+
+

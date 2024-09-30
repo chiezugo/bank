@@ -1,0 +1,174 @@
+{% extends 'inerbase.html' %}
+{% load static %}
+{% block content %}
+
+<body id="body">
+
+{% include "nav.html" %}
+<div class="dashboard__main__content">
+    <div class="dashboard__main__content__container">
+        <div class="dashboard__main__content__row">
+            <div class="dashboard__main__content__row__item"><h1
+                    class="dashboard__main__content__pagetitle">Home</h1>
+                <p class="dashboard__main__content__pagecaption">
+                    Welcome back,
+                    <span class="capitalize">{{ obj.user.full_name }}</span>.
+                </p></div>
+            <div class="dashboard__main__content__row__item">
+                <button data-target="#fundWallet" data-toggle="modal" class="btn btn--primary">
+                    Account Number: {{ obj.user.ac_num }}
+                    <p>Routing Number:    {{obj.user.routing_num}}</p>
+                </button>
+            </div>
+        </div>
+        <div class="dashboard__main__content__home">
+            <div class="dashboard__main__content__home__left">
+                <div class="balance">
+                    <div class="balance__header">Your Community Bank Balance</div>
+                    <div class="balance__value">
+                        <div class="balance__value__currency">$</div>
+                        <div class="balance__value__amount">{{ user_b.balance }}</div>
+                    </div>
+                    <a href="" class="balance__action"> </a></div>
+                <div class="spending">
+                    <div class="spending__header">
+                        <div class="spending__header__title">Spendings</div>
+                        <div class="spending__header__filter">
+                            <div class="spending__header__filter__text">
+                                <div class="select select--sm">
+                                    <div class="select__icon">
+                                        <svg height="10" viewBox="0 0 6 10" width="6"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.03 3.03L3.025.025.02 3.03h6.01zM5.88 7.071L2.975 9.975.07 7.07H5.88z"
+                                                  fill="#637381" fill-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spending__header__filter__icon"></div>
+                        </div>
+                    </div>
+                    <div class="spending__content">
+                        <div class="spending__content__graph">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+                            <canvas height="68" id="spendingChart"
+                                    style="display: block; width: 96px; height: 68px;" width="96"
+                                    class="chartjs-render-monitor"></canvas>
+                        </div>
+                        <div class="spending__content__details">
+                            <div class="spending__content__details__item">
+                                <div class="spending__content__details__item__title">Total money
+                                    received
+                                </div>
+                                <div class="spending__content__details__item__value green">$
+                                    {{ deposit.balance }}
+
+                                </div>
+                            </div>
+                            <div class="spending__content__details__item">
+                                <div class="spending__content__details__item__title">Total money
+                                    spent
+                                </div>
+                                <div class="spending__content__details__item__value red">$
+                                    {{ withdrawal.balance }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__main__content__home__right">
+                <div class="transaction">
+                    <div class="transaction__header">
+                        <div class="transaction__header__title">Transfer fund</div>
+                    </div>
+                    <div>
+                        <div class="transaction__content">
+                            <div>
+                                {% include 'messages.html' %}
+                                <form action="{% url 'api:transfer-view' %}" method="POST">{% csrf_token %}
+                                    <div class="transaction__content__dateSeparator"></div>
+                                    <div class="transaction__content__item">
+                                        <div class="transaction__content__item__avatar">
+                                            <div class="transaction__content__item__avatar__placeholder">Ac</div>
+                                        </div>
+                                        <div class="transaction__content__item__details">
+                                            <div class="transaction__content__item__details__left">
+                                                <label for="" class="form__label form__label--2">Account Number</label>
+                                                {{form.user_identity}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction__content__item">
+                                        <div class="transaction__content__item__avatar">
+                                            <div class="transaction__content__item__avatar__placeholder">T</div>
+                                        </div>
+                                        <div class="transaction__content__item__details">
+                                            <div class="transaction__content__item__details__left">
+                                                <label for="" class="form__label form__label--2">Transaction pin</label>
+                                                {{form.pin}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction__content__item">
+                                        <div class="transaction__content__item__avatar">
+                                            <div class="transaction__content__item__avatar__placeholder">A</div>
+                                        </div>
+                                        <div class="transaction__content__item__details">
+                                            <div class="transaction__content__item__details__left">
+                                                <label for="" class="form__label form__label--2">Amount</label>
+                                                {{form.amount}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction__content__item">
+                                        <div class="transaction__content__item__avatar">
+                                            <div class="transaction__content__item__avatar__placeholder">DS</div>
+                                        </div>
+                                        <div class="transaction__content__item__details">
+                                            <div class="transaction__content__item__details__left">
+                                                <label for="" class="form__label form__label--2">Description</label>
+                                                {{form.description}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transaction__content__item">
+                                        <div class="transaction__content__item__avatar">
+                                            <div class="transaction__content__item__avatar__placeholder">B</div>
+                                        </div>
+                                        <div class="transaction__content__item__details">
+                                            <div class="transaction__content__item__details__left">
+                                                <label for="" class="form__label form__label--2">Bank </label>
+                                                {{form.bank}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn--primary">Confirm</button>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</main>
+</div>
+
+</div>
+
+
+</body>
+
+{% endblock %}
